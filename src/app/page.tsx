@@ -6,9 +6,10 @@ import {
   Home, HeartPulse, GraduationCap, Wifi, Building2, BookOpen,
   TrendingDown, Landmark, Leaf, Coins, Droplets, Zap, Bus,
   UtensilsCrossed, PawPrint, Wheat, Users, Gavel, Anchor, Fish, Dumbbell,
-  Search, ChevronRight, MapPin,
+  Search, ChevronRight, MapPin, Sparkles,
 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Particles from '@/components/Particles';
 import modulesData from '@/data/decade_records.json';
 import type { Module } from '@/types';
 
@@ -32,127 +33,137 @@ export default function HomePage() {
   );
 
   const totalQ = modules.reduce((a, m) => a + m.questions.length, 0);
+  const isMl = lang === 'ml';
 
   return (
     <main className="min-h-screen bg-kerala-hero relative">
-      {/* Leaf pattern overlay */}
       <div className="leaf-pattern" />
+      <Particles />
 
       <div className="relative z-10 max-w-lg mx-auto px-4 pt-8 pb-20">
         {/* Header */}
         <motion.header
           initial={{ opacity: 0, y: -15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6 }}
           className="mb-8"
         >
           {/* Language toggle */}
-          <div className="flex justify-end mb-4">
+          <div className="flex justify-end mb-5">
             <button
               onClick={() => setLang(lang === 'en' ? 'ml' : 'en')}
-              className="px-3 py-1 rounded-full text-xs font-semibold transition-all active:scale-95"
-              style={{ background: 'var(--kl-card)', border: '1px solid var(--kl-border)', color: 'var(--kl-gold)' }}
+              className="glass-card px-4 py-1.5 rounded-full text-xs font-semibold transition-all active:scale-95"
+              style={{ color: 'var(--kl-gold)' }}
             >
-              {lang === 'en' ? 'മലയാളം' : 'English'}
+              {isMl ? 'English' : 'മലയാളം'}
             </button>
           </div>
 
           {/* Hero section */}
-          <div className="text-center mb-6">
-            {/* Kerala emblem-inspired decorative element */}
-            <div className="flex justify-center mb-4">
-              <div
-                className="w-16 h-16 rounded-2xl flex items-center justify-center"
-                style={{
-                  background: 'linear-gradient(135deg, rgba(0,137,94,0.2), rgba(232,185,74,0.15))',
-                  border: '1px solid rgba(0,214,143,0.15)',
-                }}
-              >
-                <MapPin className="w-7 h-7" style={{ color: 'var(--kl-green-light)' }} />
+          <div className="text-center mb-7">
+            {/* Decorative emblem */}
+            <motion.div
+              className="flex justify-center mb-5"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+            >
+              <div className="relative icon-float">
+                <div
+                  className="absolute inset-0 rounded-2xl blur-xl opacity-40"
+                  style={{ background: 'linear-gradient(135deg, var(--kl-green-light), var(--kl-teal))' }}
+                />
+                <div
+                  className="relative w-16 h-16 rounded-2xl flex items-center justify-center glass-card gradient-border"
+                >
+                  <MapPin className="w-7 h-7" style={{ color: 'var(--kl-green-light)' }} />
+                </div>
               </div>
-            </div>
+            </motion.div>
 
-            <h1 className="text-2xl font-bold" style={{ color: 'var(--kl-green-light)' }}>
-              {lang === 'en' ? 'Kerala Decade Quest' : 'കേരള ദശക ക്വസ്റ്റ്'}
+            <h1 className="text-2xl font-black gradient-text">
+              {isMl ? 'കേരള ദശക ക്വസ്റ്റ്' : 'Kerala Decade Quest'}
             </h1>
-            <p className="text-sm mt-1" style={{ color: 'var(--kl-text-dim)' }}>
-              {lang === 'en' ? '10 Years of Governance — 2016–2026' : 'ഒരു ദശകത്തിന്റെ ഭരണ നേട്ടങ്ങൾ — 2016–2026'}
+            <p className="text-sm mt-1.5" style={{ color: 'var(--kl-text-dim)' }}>
+              {isMl ? 'ഒരു ദശകത്തിന്റെ ഭരണ നേട്ടങ്ങൾ — 2016–2026' : '10 Years of Governance — 2016–2026'}
             </p>
           </div>
 
-          {/* Stats bar */}
-          <div
-            className="flex justify-around py-3 rounded-xl mb-6 wave-divider"
-            style={{ background: 'var(--kl-card)', border: '1px solid var(--kl-border)' }}
+          {/* Stats bar — glass card */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+            className="glass-card gradient-border flex justify-around py-3.5 rounded-2xl mb-6"
           >
             <div className="text-center">
-              <p className="text-lg font-bold" style={{ color: 'var(--kl-green-light)' }}>21</p>
-              <p className="text-[10px] uppercase tracking-wider" style={{ color: 'var(--kl-text-dim)' }}>
-                {lang === 'en' ? 'Ministries' : 'മന്ത്രാലയങ്ങൾ'}
+              <p className="text-xl font-black gradient-text-green">21</p>
+              <p className="text-[10px] uppercase tracking-widest mt-0.5" style={{ color: 'var(--kl-text-dim)' }}>
+                {isMl ? 'മന്ത്രാലയങ്ങൾ' : 'Ministries'}
               </p>
             </div>
-            <div className="w-px" style={{ background: 'var(--kl-border)' }} />
+            <div className="w-px" style={{ background: 'var(--kl-glass-border)' }} />
             <div className="text-center">
-              <p className="text-lg font-bold" style={{ color: 'var(--kl-gold)' }}>{totalQ}</p>
-              <p className="text-[10px] uppercase tracking-wider" style={{ color: 'var(--kl-text-dim)' }}>
-                {lang === 'en' ? 'Questions' : 'ചോദ്യങ്ങൾ'}
+              <p className="text-xl font-black" style={{ color: 'var(--kl-gold)' }}>{totalQ}</p>
+              <p className="text-[10px] uppercase tracking-widest mt-0.5" style={{ color: 'var(--kl-text-dim)' }}>
+                {isMl ? 'ചോദ്യങ്ങൾ' : 'Questions'}
               </p>
             </div>
-            <div className="w-px" style={{ background: 'var(--kl-border)' }} />
+            <div className="w-px" style={{ background: 'var(--kl-glass-border)' }} />
             <div className="text-center">
-              <p className="text-lg font-bold" style={{ color: 'var(--kl-text)' }}>10</p>
-              <p className="text-[10px] uppercase tracking-wider" style={{ color: 'var(--kl-text-dim)' }}>
-                {lang === 'en' ? 'Years' : 'വർഷങ്ങൾ'}
+              <p className="text-xl font-black" style={{ color: 'var(--kl-text)' }}>10</p>
+              <p className="text-[10px] uppercase tracking-widest mt-0.5" style={{ color: 'var(--kl-text-dim)' }}>
+                {isMl ? 'വർഷങ്ങൾ' : 'Years'}
               </p>
             </div>
-          </div>
+          </motion.div>
         </motion.header>
 
-        {/* Search */}
-        <div className="relative mb-5">
+        {/* Search — glass style */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          className="relative mb-5"
+        >
           <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4" style={{ color: 'var(--kl-text-dim)' }} />
           <input
             type="text"
-            placeholder={lang === 'en' ? 'Search ministries...' : 'മന്ത്രാലയങ്ങൾ തിരയുക...'}
+            placeholder={isMl ? 'മന്ത്രാലയങ്ങൾ തിരയുക...' : 'Search ministries...'}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-10 pr-4 py-3 rounded-xl text-sm outline-none placeholder:text-[var(--kl-text-dim)] focus:ring-1"
-            style={{
-              background: 'var(--kl-card)',
-              border: '1px solid var(--kl-border)',
-              color: 'var(--kl-text)',
-            }}
+            className="w-full pl-10 pr-4 py-3 rounded-xl text-sm outline-none glass-card placeholder:text-[var(--kl-text-dim)] focus:ring-1 focus:ring-[var(--kl-green)]"
+            style={{ color: 'var(--kl-text)' }}
           />
-        </div>
+        </motion.div>
 
         {/* Ministry list */}
-        <div className="space-y-2">
+        <div className="space-y-2.5">
           {filtered.map((mod, idx) => {
             const Icon = ICON_MAP[mod.icon] || Home;
             return (
               <motion.div
                 key={mod.slug}
-                initial={{ opacity: 0, y: 12 }}
+                initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.03, duration: 0.3 }}
+                transition={{ delay: 0.45 + idx * 0.035, duration: 0.35 }}
               >
                 <Link href={`/quiz/${mod.slug}`}>
                   <div
-                    className="ministry-card flex items-center gap-3.5 p-4 rounded-2xl active:scale-[0.98] transition-transform"
-                    style={{
-                      background: 'var(--kl-card)',
-                      border: '1px solid var(--kl-border)',
-                    }}
+                    className="ministry-card glass-card flex items-center gap-3.5 p-4 rounded-2xl"
                   >
                     {/* Icon with glow */}
                     <div className="shrink-0 relative">
                       <div
-                        className="absolute inset-0 rounded-xl blur-md opacity-30"
-                        style={{ backgroundColor: mod.color }}
+                        className="absolute inset-0 rounded-xl blur-lg"
+                        style={{ backgroundColor: mod.color, opacity: 0.2 }}
                       />
                       <div
                         className="relative p-2.5 rounded-xl"
-                        style={{ backgroundColor: `${mod.color}18` }}
+                        style={{
+                          backgroundColor: `${mod.color}12`,
+                          border: `1px solid ${mod.color}20`,
+                        }}
                       >
                         <Icon className="w-5 h-5" style={{ color: mod.color }} />
                       </div>
@@ -161,10 +172,10 @@ export default function HomePage() {
                     {/* Text */}
                     <div className="flex-1 min-w-0">
                       <h3 className="font-bold text-sm truncate" style={{ color: 'var(--kl-text)' }}>
-                        {lang === 'en' ? mod.title : mod.title_ml}
+                        {isMl ? mod.title_ml : mod.title}
                       </h3>
                       <p className="text-xs truncate mt-0.5" style={{ color: 'var(--kl-text-dim)' }}>
-                        {lang === 'en' ? mod.title_ml : mod.title}
+                        {isMl ? mod.title : mod.title_ml}
                       </p>
                     </div>
 
@@ -172,7 +183,11 @@ export default function HomePage() {
                     <div className="shrink-0 flex items-center gap-2">
                       <span
                         className="text-[10px] font-bold px-2 py-1 rounded-lg"
-                        style={{ background: `${mod.color}15`, color: mod.color }}
+                        style={{
+                          background: `${mod.color}12`,
+                          color: mod.color,
+                          border: `1px solid ${mod.color}18`,
+                        }}
                       >
                         {mod.questions.length}
                       </span>
@@ -189,24 +204,27 @@ export default function HomePage() {
           <div className="text-center py-12">
             <Search className="w-8 h-8 mx-auto mb-3" style={{ color: 'var(--kl-text-dim)' }} />
             <p className="text-sm" style={{ color: 'var(--kl-text-dim)' }}>
-              {lang === 'en' ? `No ministries found for "${search}"` : `"${search}" കണ്ടെത്തിയില്ല`}
+              {isMl ? `"${search}" കണ്ടെത്തിയില്ല` : `No ministries found for "${search}"`}
             </p>
           </div>
         )}
 
         {/* Footer */}
-        <footer className="mt-14 text-center space-y-2">
+        <footer className="mt-14 text-center space-y-3">
           <div
-            className="h-px mx-auto w-20 mb-4"
-            style={{ background: 'linear-gradient(90deg, transparent, var(--kl-green), transparent)' }}
+            className="h-px mx-auto w-24 mb-4"
+            style={{ background: 'linear-gradient(90deg, transparent, var(--kl-green-light), var(--kl-gold), transparent)' }}
           />
-          <p className="text-[11px]" style={{ color: 'var(--kl-text-dim)' }}>
-            {lang === 'en'
-              ? 'Data: NITI Aayog, RBI, Kerala Planning Board, Official Reports'
-              : 'ഡാറ്റ: നീതി ആയോഗ്, ആർബിഐ, കേരള ആസൂത്രണ ബോർഡ്, ഔദ്യോഗിക റിപ്പോർട്ടുകൾ'}
-          </p>
-          <p className="text-[10px]" style={{ color: 'var(--kl-text-dim)' }}>
-            {lang === 'en' ? 'Educational tool — sources cited per question' : 'വിദ്യാഭ്യാസ ഉപകരണം — ഓരോ ചോദ്യത്തിനും ഉറവിടം'}
+          <div className="flex items-center justify-center gap-1.5 mb-2">
+            <Sparkles className="w-3 h-3" style={{ color: 'var(--kl-gold)' }} />
+            <p className="text-[11px] font-medium" style={{ color: 'var(--kl-text-dim)' }}>
+              {isMl
+                ? 'ഡാറ്റ: നീതി ആയോഗ്, ആർബിഐ, കേരള ആസൂത്രണ ബോർഡ്'
+                : 'Data: NITI Aayog, RBI, Kerala Planning Board'}
+            </p>
+          </div>
+          <p className="text-[10px]" style={{ color: 'var(--kl-text-dim)', opacity: 0.6 }}>
+            {isMl ? 'വിദ്യാഭ്യാസ ഉപകരണം — ഓരോ ചോദ്യത്തിനും ഉറവിടം' : 'Educational tool — sources cited per question'}
           </p>
         </footer>
       </div>

@@ -2,9 +2,11 @@
 
 import { useState, useCallback, useMemo } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight, RotateCcw, Share2, ChevronRight, Trophy } from 'lucide-react';
+import { ArrowLeft, ArrowRight, RotateCcw, Share2, ChevronRight, Trophy, Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import CompareOMeter from '@/components/CompareOMeter';
+import Particles from '@/components/Particles';
+import Confetti from '@/components/Confetti';
 import modulesData from '@/data/decade_records.json';
 import type { Module } from '@/types';
 
@@ -26,7 +28,6 @@ export default function QuizClient({ slug }: { slug: string }) {
   const isCorrect = selectedOption === question?.answer;
   const isMl = lang === 'ml';
 
-  // Get text in current language with fallback
   const q = useMemo(() => {
     if (!question) return { text: '', options: [] as string[], flexFact: '' };
     return {
@@ -102,41 +103,48 @@ export default function QuizClient({ slug }: { slug: string }) {
   if (finished) {
     const pct = Math.round((score / mod.questions.length) * 100);
     const emoji = pct >= 80 ? '🏆' : pct >= 60 ? '👏' : '📚';
+    const showConfetti = pct >= 80;
+
     return (
       <main className="min-h-screen bg-kerala-quiz relative">
         <div className="leaf-pattern" />
+        <Particles />
+        {showConfetti && <Confetti count={50} />}
+
         <div className="relative z-10 max-w-lg mx-auto px-4 py-10">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="text-center space-y-5"
+            className="text-center space-y-6"
           >
-            {/* Score circle */}
+            {/* Score circle with glow */}
             <div className="flex justify-center">
-              <div
-                className="w-28 h-28 rounded-full flex flex-col items-center justify-center"
-                style={{
-                  background: `conic-gradient(${mod.color} ${pct}%, rgba(255,255,255,0.05) 0%)`,
-                  boxShadow: `0 0 40px ${mod.color}20`,
-                }}
-              >
+              <div className="score-ring relative">
                 <div
-                  className="w-24 h-24 rounded-full flex flex-col items-center justify-center"
-                  style={{ background: 'var(--kl-bg)' }}
+                  className="w-32 h-32 rounded-full flex flex-col items-center justify-center"
+                  style={{
+                    background: `conic-gradient(${mod.color} ${pct}%, rgba(255,255,255,0.03) 0%)`,
+                    boxShadow: `0 0 50px ${mod.color}25`,
+                  }}
                 >
-                  <span className="text-2xl font-black" style={{ color: mod.color }}>{score}</span>
-                  <span className="text-xs" style={{ color: 'var(--kl-text-dim)' }}>/ {mod.questions.length}</span>
+                  <div
+                    className="w-[7rem] h-[7rem] rounded-full flex flex-col items-center justify-center glass-card"
+                    style={{ border: 'none' }}
+                  >
+                    <span className="text-3xl font-black gradient-text">{score}</span>
+                    <span className="text-xs font-medium" style={{ color: 'var(--kl-text-dim)' }}>/ {mod.questions.length}</span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="text-3xl">{emoji}</div>
+            <div className="text-4xl">{emoji}</div>
 
             <h2 className="text-lg font-bold" style={{ color: 'var(--kl-text)' }}>
               {isMl ? mod.title_ml : mod.title}
             </h2>
 
-            <p className="text-sm" style={{ color: 'var(--kl-text-dim)' }}>
+            <p className="text-sm leading-relaxed" style={{ color: 'var(--kl-text-dim)' }}>
               {pct >= 80
                 ? (isMl ? 'മികച്ചത്! കേരളത്തിന്റെ വികസന കഥ നിങ്ങൾക്ക് നന്നായി അറിയാം.' : "Outstanding! You know Kerala's story well.")
                 : pct >= 60
@@ -145,11 +153,11 @@ export default function QuizClient({ slug }: { slug: string }) {
             </p>
 
             {/* Actions */}
-            <div className="flex flex-col gap-3 pt-3">
+            <div className="flex flex-col gap-3 pt-2">
               <button
                 onClick={handleShare}
-                className="flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-semibold text-sm transition-all active:scale-[0.97]"
-                style={{ background: 'var(--kl-green)', color: '#fff' }}
+                className="glow-btn flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-semibold text-sm text-white"
+                style={{ background: 'linear-gradient(135deg, var(--kl-green), var(--kl-teal))' }}
               >
                 <Share2 className="w-4 h-4" />
                 {isMl ? 'സ്കോർ ഷെയർ ചെയ്യുക' : 'Share Score'}
@@ -158,33 +166,31 @@ export default function QuizClient({ slug }: { slug: string }) {
               <div className="flex gap-3">
                 <button
                   onClick={handleRestart}
-                  className="flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-sm transition-all active:scale-[0.97]"
-                  style={{ background: 'var(--kl-card)', border: '1px solid var(--kl-border)', color: 'var(--kl-text)' }}
+                  className="flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-sm glass-card transition-all active:scale-[0.97]"
+                  style={{ color: 'var(--kl-text)' }}
                 >
                   <RotateCcw className="w-4 h-4" />
                   {isMl ? 'വീണ്ടും' : 'Retry'}
                 </button>
                 <Link
                   href="/"
-                  className="flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-sm transition-all active:scale-[0.97]"
-                  style={{ background: 'var(--kl-card)', border: '1px solid var(--kl-border)', color: 'var(--kl-text)' }}
+                  className="flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-sm glass-card transition-all active:scale-[0.97]"
+                  style={{ color: 'var(--kl-text)' }}
                 >
                   {isMl ? 'എല്ലാ മന്ത്രാലയങ്ങളും' : 'All Ministries'}
                 </Link>
               </div>
             </div>
 
-            {/* Next ministry */}
+            {/* Next ministry suggestion */}
             <div className="pt-5">
-              <p className="text-xs mb-2" style={{ color: 'var(--kl-text-dim)' }}>
+              <p className="text-xs mb-2 flex items-center justify-center gap-1" style={{ color: 'var(--kl-text-dim)' }}>
+                <Sparkles className="w-3 h-3" style={{ color: 'var(--kl-gold)' }} />
                 {isMl ? 'അടുത്തത്' : 'Up next'}
               </p>
               <Link href={`/quiz/${nextMod.slug}`}>
-                <div
-                  className="ministry-card flex items-center gap-3 p-4 rounded-2xl transition-all active:scale-[0.98]"
-                  style={{ background: 'var(--kl-card)', border: '1px solid var(--kl-border)' }}
-                >
-                  <div className="shrink-0 w-1.5 h-10 rounded-full" style={{ background: nextMod.color }} />
+                <div className="ministry-card glass-card gradient-border flex items-center gap-3 p-4 rounded-2xl active:scale-[0.98] transition-transform">
+                  <div className="shrink-0 w-1.5 h-10 rounded-full" style={{ background: `linear-gradient(180deg, ${nextMod.color}, transparent)` }} />
                   <div className="flex-1 min-w-0">
                     <p className="font-semibold text-sm truncate" style={{ color: 'var(--kl-text)' }}>
                       {isMl ? nextMod.title_ml : nextMod.title}
@@ -205,10 +211,12 @@ export default function QuizClient({ slug }: { slug: string }) {
 
   // ─── Quiz Screen ───
   const progress = ((currentIndex + 1) / mod.questions.length) * 100;
+  const optionLetters = ['A', 'B', 'C', 'D'];
 
   return (
     <main className="min-h-screen bg-kerala-quiz relative">
       <div className="leaf-pattern" />
+      <Particles />
 
       <div className="relative z-10 max-w-lg mx-auto px-4 py-6">
         {/* Top bar */}
@@ -223,22 +231,19 @@ export default function QuizClient({ slug }: { slug: string }) {
           </Link>
           <button
             onClick={() => setLang(lang === 'en' ? 'ml' : 'en')}
-            className="px-3 py-1.5 rounded-full text-xs font-semibold transition-all active:scale-95"
-            style={{ background: 'var(--kl-card)', border: '1px solid var(--kl-border)', color: 'var(--kl-gold)' }}
+            className="glass-card px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all active:scale-95"
+            style={{ color: 'var(--kl-gold)' }}
           >
             {isMl ? 'English' : 'മലയാളം'}
           </button>
         </div>
 
-        {/* Ministry header card */}
-        <div
-          className="p-4 rounded-2xl mb-6 wave-divider"
-          style={{ background: 'var(--kl-card)', border: '1px solid var(--kl-border)' }}
-        >
+        {/* Ministry header — glass card with animated border */}
+        <div className="glass-card animated-border p-4 rounded-2xl mb-6">
           <div className="flex items-center gap-3">
             <div
               className="shrink-0 w-1.5 h-10 rounded-full"
-              style={{ background: mod.color }}
+              style={{ background: `linear-gradient(180deg, ${mod.color}, ${mod.color}40)` }}
             />
             <div>
               <h1 className="text-base font-bold" style={{ color: 'var(--kl-text)' }}>
@@ -250,17 +255,16 @@ export default function QuizClient({ slug }: { slug: string }) {
             </div>
           </div>
 
-          {/* Progress */}
+          {/* Progress bar */}
           <div className="mt-3 flex items-center gap-3">
-            <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ background: 'rgba(255,255,255,0.06)' }}>
+            <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ background: 'rgba(255,255,255,0.04)' }}>
               <motion.div
-                className="h-full rounded-full"
-                style={{ backgroundColor: mod.color }}
+                className="h-full rounded-full progress-gradient"
                 animate={{ width: `${progress}%` }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.4, ease: 'easeOut' }}
               />
             </div>
-            <span className="text-xs font-semibold shrink-0" style={{ color: mod.color }}>
+            <span className="text-xs font-bold shrink-0" style={{ color: mod.color }}>
               {currentIndex + 1}/{mod.questions.length}
             </span>
           </div>
@@ -269,26 +273,26 @@ export default function QuizClient({ slug }: { slug: string }) {
         {/* Score pill */}
         <div className="flex justify-end mb-4">
           <div
-            className="flex items-center gap-1.5 px-3 py-1 rounded-full"
-            style={{ background: 'rgba(0,214,143,0.1)', border: '1px solid rgba(0,214,143,0.15)' }}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full glass-card"
+            style={{ boxShadow: `0 0 12px rgba(0, 232, 138, 0.08)` }}
           >
             <Trophy className="w-3 h-3" style={{ color: 'var(--kl-green-light)' }} />
-            <span className="text-xs font-bold" style={{ color: 'var(--kl-green-light)' }}>{score}</span>
+            <span className="text-xs font-black gradient-text-green">{score}</span>
           </div>
         </div>
 
-        {/* Question */}
+        {/* Question + Options */}
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
-            transition={{ duration: 0.2 }}
+            transition={{ duration: 0.25 }}
           >
             <h3
               className="text-base font-semibold leading-relaxed mb-6"
-              style={{ color: 'var(--kl-text)' }}
+              style={{ color: 'var(--kl-text-bright)' }}
             >
               {q.text}
             </h3>
@@ -296,22 +300,28 @@ export default function QuizClient({ slug }: { slug: string }) {
             <div className="space-y-2.5">
               {q.options.map((option, idx) => {
                 let bg = 'var(--kl-card)';
-                let border = 'var(--kl-border)';
+                let borderColor = 'var(--kl-glass-border)';
                 let textColor = 'var(--kl-text)';
-                let extraClass = '';
+                let letterColor = 'var(--kl-text-dim)';
+                let extraClass = 'option-btn';
+                let shadow = 'none';
 
                 if (selectedOption !== null) {
                   if (idx === question!.answer) {
-                    bg = 'rgba(0, 214, 143, 0.12)';
-                    border = 'rgba(0, 214, 143, 0.35)';
-                    textColor = '#00d68f';
+                    bg = 'rgba(0, 232, 138, 0.1)';
+                    borderColor = 'rgba(0, 232, 138, 0.3)';
+                    textColor = '#00e88a';
+                    letterColor = '#00e88a';
                     extraClass = 'pulse-correct';
+                    shadow = '0 0 20px rgba(0, 232, 138, 0.1)';
                   } else if (idx === selectedOption) {
-                    bg = 'rgba(239, 68, 68, 0.12)';
-                    border = 'rgba(239, 68, 68, 0.35)';
+                    bg = 'rgba(239, 68, 68, 0.08)';
+                    borderColor = 'rgba(239, 68, 68, 0.25)';
                     textColor = '#ef4444';
+                    letterColor = '#ef4444';
                   } else {
                     textColor = 'var(--kl-text-dim)';
+                    bg = 'rgba(255,255,255,0.01)';
                   }
                 }
 
@@ -322,16 +332,30 @@ export default function QuizClient({ slug }: { slug: string }) {
                     onClick={() => handleSelect(idx)}
                     disabled={selectedOption !== null}
                     className={`w-full text-left px-4 py-3.5 rounded-xl text-sm transition-all ${extraClass}`}
-                    style={{ background: bg, border: `1px solid ${border}`, color: textColor }}
+                    style={{
+                      background: bg,
+                      border: `1px solid ${borderColor}`,
+                      color: textColor,
+                      boxShadow: shadow,
+                      backdropFilter: 'blur(8px)',
+                    }}
                   >
-                    <span className="font-bold opacity-50 mr-1">{String.fromCharCode(65 + idx)}</span>{' '}
+                    <span
+                      className="inline-flex items-center justify-center w-5 h-5 rounded-md text-[10px] font-bold mr-2"
+                      style={{
+                        background: `${letterColor}10`,
+                        color: letterColor,
+                      }}
+                    >
+                      {optionLetters[idx]}
+                    </span>
                     {option}
                   </motion.button>
                 );
               })}
             </div>
 
-            {/* Compare-o-Meter */}
+            {/* Compare-o-Meter + Next */}
             {showResult && (
               <>
                 <CompareOMeter
@@ -342,6 +366,7 @@ export default function QuizClient({ slug }: { slug: string }) {
                   flexFact={q.flexFact}
                   source={question!.source}
                   isCorrect={isCorrect}
+                  isMl={isMl}
                 />
 
                 <motion.button
@@ -349,8 +374,10 @@ export default function QuizClient({ slug }: { slug: string }) {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
                   onClick={handleNext}
-                  className="mt-5 w-full flex items-center justify-center gap-2 px-5 py-4 rounded-xl font-semibold text-sm text-white transition-all active:scale-[0.97]"
-                  style={{ backgroundColor: mod.color, boxShadow: `0 4px 20px ${mod.color}30` }}
+                  className="mt-5 w-full glow-btn flex items-center justify-center gap-2 px-5 py-4 rounded-xl font-semibold text-sm text-white"
+                  style={{
+                    background: `linear-gradient(135deg, ${mod.color}, ${mod.color}cc)`,
+                  }}
                 >
                   {currentIndex < mod.questions.length - 1
                     ? <>{isMl ? 'അടുത്ത ചോദ്യം' : 'Next Question'} <ArrowRight className="w-4 h-4" /></>
