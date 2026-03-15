@@ -5,9 +5,9 @@ export default function Particles() {
     left: `${Math.random() * 100}%`,
     duration: `${10 + Math.random() * 15}s`,
     delay: `${Math.random() * 10}s`,
-    opacity: 0.12 + Math.random() * 0.2,
-    size: 2 + Math.random() * 3,
-    color: i % 3 === 0 ? '#f0c35e' : i % 2 === 0 ? '#00c9a7' : '#00e88a',
+    opacity: 0.08 + Math.random() * 0.12,
+    size: 2 + Math.random() * 4,
+    color: i % 3 === 0 ? 'var(--kl-gold)' : i % 2 === 0 ? 'var(--kl-teal)' : 'var(--kl-green)',
   }));
 
   return (

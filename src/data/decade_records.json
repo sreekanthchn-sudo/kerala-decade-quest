@@ -51,10 +51,10 @@
         "options_ml": [
           "വായ്പ മാത്രം നൽകുന്നു",
           "ഭൂമിയും വീടും ഒരുമിച്ച് നൽകുന്നു",
-          "നഗര പ്രദേശങ്ങൾക്ക് മാത്രം",
+          "നഗരപ്രദേശങ്ങൾക്ക് മാത്രം",
           "BPL കുടുംബങ്ങൾക്ക് മാത്രം"
         ],
-        "flex_fact_ml": "LIFE ഗുണഭോക്താക്കളിൽ 95% സ്ത്രീകളാണ് ഉടമസ്ഥർ — വനിതാ ആസ്തി ഉടമസ്ഥതയ്ക്കുള്ള ഉപാധിയായി ഭവനം."
+        "flex_fact_ml": "LIFE ഗുണഭോക്താക്കളിൽ 95% സ്ത്രീകളാണ് ഉടമസ്ഥർ — ഭവനം സ്ത്രീ സ്വത്തുടമസ്ഥതയുടെ മാർഗമാക്കി."
       },
       {
         "id": 3,
@@ -71,14 +71,14 @@
         "historical_benchmark": "No prior comprehensive housing needs survey existed",
         "flex_fact": "The largest participatory housing needs assessment in India — conducted through local self-government bodies.",
         "source": "LIFE Mission Survey Report 2017",
-        "question_ml": "LIFE സർവേയിൽ കേരളത്തിൽ എത്ര ഭവനരഹിത കുടുംബങ്ങൾ കണ്ടെത്തി?",
+        "question_ml": "LIFE സർവേയിൽ കണ്ടെത്തിയ കേരളത്തിലെ ഭവനരഹിത കുടുംബങ്ങളുടെ എണ്ണം?",
         "options_ml": [
           "1.2 ലക്ഷം",
           "2.4 ലക്ഷം",
           "4.3 ലക്ഷം",
           "5.8 ലക്ഷം"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും വലിയ പങ്കാളിത്ത ഭവന ആവശ്യ സർവേ — തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ വഴി നടത്തിയത്."
+        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും വലിയ പങ്കാളിത്ത ഭവന ആവശ്യ വിലയിരുത്തൽ — തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ വഴി നടത്തി."
       },
       {
         "id": 4,
@@ -102,7 +102,7 @@
           "550 sq.ft",
           "700 sq.ft"
         ],
-        "flex_fact_ml": "അടുക്കള, ബാത്ത്‌റൂം, രണ്ട് മുറികൾ ഉൾപ്പെടുന്ന അന്തസ്സുള്ള വീടുകൾ — വെറും ടോക്കൺ ഷെൽട്ടറുകളല്ല."
+        "flex_fact_ml": "അടുക്കള, കുളിമുറി, രണ്ട് മുറികൾ ഉൾപ്പെടുന്ന വീടുകൾ — അന്തസ്സുള്ള ജീവിതത്തിനായി രൂപകൽപ്പന ചെയ്തത്."
       },
       {
         "id": 5,
@@ -126,7 +126,7 @@
           "80%",
           "95%"
         ],
-        "flex_fact_ml": "കേരളം ഭവനത്തെ വനിതാ ആസ്തി ഉടമസ്ഥതയ്ക്കുള്ള ഉപാധിയാക്കി — ദേശീയ ശരാശരിയുടെ 7 മടങ്ങ്."
+        "flex_fact_ml": "ദേശീയ ശരാശരിയുടെ 7 മടങ്ങ് — സ്ത്രീ സ്വത്തുടമസ്ഥതയിൽ കേരളം മാതൃകയായി."
       },
       {
         "id": 6,
@@ -143,14 +143,14 @@
         "historical_benchmark": "Pre-2016: ~1,70,000 NHGs",
         "flex_fact": "Each NHG meets monthly, maintains a social register, and directly interfaces with local body planning — making Kerala's panchayat system the most bottom-up in India.",
         "source": "Kudumbashree Mission Annual Report 2025",
-        "question_ml": "കേരളത്തിൽ എത്ര കുടുംബശ്രീ അയൽക്കൂട്ടങ്ങൾ (NHG) പ്രവർത്തിക്കുന്നു?",
+        "question_ml": "കേരളത്തിൽ തദ്ദേശ ഭരണത്തിന്റെ അടിസ്ഥാന യൂണിറ്റായി പ്രവർത്തിക്കുന്ന Kudumbashree NHG-കളുടെ എണ്ണം?",
         "options_ml": [
           "50,000",
           "1,00,000+",
           "2,00,000+",
           "75,000"
         ],
-        "flex_fact_ml": "ഓരോ NHG-യും പ്രതിമാസം യോഗം ചേരുന്നു, സോഷ്യൽ രജിസ്റ്റർ പരിപാലിക്കുന്നു — ഇന്ത്യയിലെ ഏറ്റവും അടിത്തട്ടിലുള്ള പഞ്ചായത്ത് സംവിധാനം."
+        "flex_fact_ml": "ഓരോ NHG-യും മാസം ഒരിക്കൽ യോഗം ചേരുകയും സോഷ്യൽ രജിസ്റ്റർ പരിപാലിക്കുകയും ചെയ്യുന്നു — ഇന്ത്യയിലെ ഏറ്റവും താഴെത്തട്ടിലുള്ള പഞ്ചായത്ത് സംവിധാനം."
       },
       {
         "id": 7,
@@ -167,14 +167,14 @@
         "historical_benchmark": "2016: ~₹9,000 Cr to LSGIs",
         "flex_fact": "Kerala devolves over 30% of its plan outlay to local bodies — the highest devolution in India, surpassing even the 73rd Amendment's aspirations.",
         "source": "Kerala State Planning Board / Finance Dept",
-        "question_ml": "കേരളത്തിലെ തദ്ദേശ സ്ഥാപനങ്ങൾ നേരിട്ട് കൈകാര്യം ചെയ്യുന്ന വാർഷിക പദ്ധതി വിഹിതം എത്ര?",
+        "question_ml": "കേരളത്തിലെ തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ നേരിട്ട് കൈകാര്യം ചെയ്യുന്ന വാർഷിക പദ്ധതി വിഹിതം?",
         "options_ml": [
           "₹5,000 കോടി",
           "₹10,000 കോടി",
           "₹18,000+ കോടി",
           "₹3,000 കോടി"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിൽ ഏറ്റവും കൂടുതൽ ഫണ്ട് വികേന്ദ്രീകരണം നടത്തിയ സംസ്ഥാനം — മൊത്തം പദ്ധതി വിഹിതത്തിന്റെ 35%+."
+        "flex_fact_ml": "പദ്ധതി വിഹിതത്തിന്റെ 30%-ലധികം തദ്ദേശ സ്ഥാപനങ്ങൾക്ക് കൈമാറുന്നു — ഇന്ത്യയിലെ ഏറ്റവും ഉയർന്ന വികേന്ദ്രീകരണം."
       },
       {
         "id": 8,
@@ -191,14 +191,14 @@
         "historical_benchmark": "Pre-2016: Manual registers at panchayat offices",
         "flex_fact": "Property tax, building permits, trade licences, and birth/death certificates are now fully online — reducing visits to panchayat offices by over 60%.",
         "source": "Kerala LSGD e-Governance Report",
-        "question_ml": "കേരളത്തിന്റെ ജനകീയാസൂത്രണ പ്രസ്ഥാനം ഏത് വർഷം ആരംഭിച്ചു?",
+        "question_ml": "ജനകീയാസൂത്രണ 2.0 പ്രകാരം എത്ര ഗ്രാമ/ബ്ലോക്ക്/ജില്ലാ പഞ്ചായത്തുകൾ SDG ലോക്കൽ പ്ലാനുകൾ ഉണ്ടാക്കി?",
         "options_ml": [
-          "1990",
-          "1996",
-          "2001",
-          "2006"
+          "500+",
+          "750+",
+          "1,000+",
+          "250+"
         ],
-        "flex_fact_ml": "ജനകീയാസൂത്രണം ലോകത്തിലെ ഏറ്റവും വലിയ വികേന്ദ്രീകൃത ആസൂത്രണ പരീക്ഷണമായി കണക്കാക്കപ്പെടുന്നു."
+        "flex_fact_ml": "SDG ലോക്കലൈസ് ചെയ്ത ഏക ഇന്ത്യൻ സംസ്ഥാനം — 17 ലക്ഷ്യങ്ങളും പഞ്ചായത്ത് വാർഡ് തലത്തിൽ മാപ്പ് ചെയ്തു."
       },
       {
         "id": 9,
@@ -215,14 +215,14 @@
         "historical_benchmark": "2016: No such network existed",
         "flex_fact": "Run primarily through Kudumbashree SHGs, each outlet creates direct employment for women while eliminating hunger — two social goals in one intervention.",
         "source": "Kerala Civil Supplies / LSGD Dept",
-        "question_ml": "കേരളത്തിൽ എത്ര തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ ഉണ്ട്?",
+        "question_ml": "LIFE Mission-ൽ ആവശ്യമായ ഭൂമി ഇല്ലാത്ത ഗുണഭോക്താക്കൾക്ക് സർക്കാർ എന്ത് ചെയ്തു?",
         "options_ml": [
-          "500",
-          "750",
-          "1,200",
-          "1,034"
+          "വായ്പ നൽകി",
+          "ഫ്ലാറ്റ് സമുച്ചയങ്ങൾ നിർമ്മിച്ചു",
+          "ലിസ്റ്റിൽ നിന്ന് നീക്കം ചെയ്തു",
+          "മറ്റ് സംസ്ഥാനങ്ങളിലേക്ക് മാറ്റി"
         ],
-        "flex_fact_ml": "ഗ്രാമ പഞ്ചായത്ത്, ബ്ലോക്ക് പഞ്ചായത്ത്, ജില്ലാ പഞ്ചായത്ത്, മുനിസിപ്പാലിറ്റി, കോർപ്പറേഷൻ — അഞ്ച് തലങ്ങളിലായി."
+        "flex_fact_ml": "ഫ്ലാറ്റ് സമുച്ചയങ്ങൾ — ഭൂരഹിതർക്ക് നഗരങ്ങളിൽ അന്തസ്സുള്ള പാർപ്പിടം. 15,000+ ഫ്ലാറ്റുകൾ പൂർത്തിയായി."
       },
       {
         "id": 10,
@@ -239,14 +239,14 @@
         "historical_benchmark": "2015 elections: ~38% women winners",
         "flex_fact": "Kerala exceeded the constitutionally mandated 33% women's reservation — women won seats beyond reserved ones through competitive elections.",
         "source": "Kerala State Election Commission 2020",
-        "question_ml": "Kudumbashree-യിൽ എത്ര സ്ത്രീ അംഗങ്ങൾ ഉണ്ട്?",
+        "question_ml": "കേരളത്തിലെ എത്ര ശതമാനം റോഡുകൾ തദ്ദേശ സ്ഥാപനങ്ങളുടെ നിയന്ത്രണത്തിലാണ്?",
         "options_ml": [
-          "20 ലക്ഷം",
-          "35 ലക്ഷം",
-          "46 ലക്ഷം+",
-          "55 ലക്ഷം"
+          "30%",
+          "50%",
+          "70%+",
+          "90%"
         ],
-        "flex_fact_ml": "ലോകത്തിലെ ഏറ്റവും വലിയ വനിതാ സ്വയം സഹായ ശൃംഖല — 46 ലക്ഷം+ അംഗങ്ങൾ."
+        "flex_fact_ml": "വികേന്ദ്രീകൃത റോഡ് പരിപാലനം — തദ്ദേശ സ്ഥാപനങ്ങൾ 2 ലക്ഷം+ km റോഡ് നിലവാരം ഉയർത്തി."
       },
       {
         "id": 11,
@@ -263,14 +263,14 @@
         "historical_benchmark": "Pre-2016: Tribal housing was largely under central schemes with lower quality standards",
         "flex_fact": "LIFE Mission houses in tribal areas use locally sourced bamboo-composite materials blending traditional design with structural strength — culturally resonant construction.",
         "source": "LIFE Mission / ST Development Dept Kerala",
-        "question_ml": "കേരളത്തിന്റെ ഖരമാലിന്യ സംസ്കരണ മാതൃക ഏത് പേരിൽ അറിയപ്പെടുന്നു?",
+        "question_ml": "2020 പ്രളയ-കോവിഡ് കാലത്ത് Kudumbashree സ്ത്രീകൾ ഉൽപ്പാദിപ്പിച്ച മാസ്കുകളുടെ എണ്ണം?",
         "options_ml": [
-          "Clean Kerala",
-          "Haritha Keralam",
-          "Green Protocol",
-          "Malinya Muktam"
+          "10 ലക്ഷം",
+          "50 ലക്ഷം",
+          "2 കോടി+",
+          "5 ലക്ഷം"
         ],
-        "flex_fact_ml": "ഹരിത കേരളം മിഷൻ ഉറവിട മാലിന്യ സംസ്കരണത്തിൽ ഇന്ത്യയ്ക്ക് മാതൃകയായി."
+        "flex_fact_ml": "Kudumbashree ലോകത്തിലെ ഏറ്റവും വലിയ സ്ത്രീ സ്വയം സഹായ ശൃംഖലയാണ് — 46 ലക്ഷം+ അംഗങ്ങൾ."
       },
       {
         "id": 12,
@@ -287,14 +287,14 @@
         "historical_benchmark": "2016: Open dumps in nearly all panchayats",
         "flex_fact": "Suchitwa introduced door-to-door segregated waste collection before Swachh Bharat made it a national priority — Kerala was years ahead.",
         "source": "Suchitwa Mission, Kerala LSGD",
-        "question_ml": "കേരളത്തിൽ എത്ര ശതമാനം വാർഡുകളിൽ ഉറവിട മാലിന്യ സംസ്കരണം നടപ്പാക്കി?",
+        "question_ml": "കേരളത്തിന്റെ 'Haritha Keralam' മിഷന്റെ ലക്ഷ്യം?",
         "options_ml": [
-          "40%",
-          "60%",
-          "75%+",
-          "90%"
+          "വ്യവസായ വികസനം",
+          "ശുചിത്വം, ജല സംരക്ഷണം, കൃഷി",
+          "ടൂറിസം പ്രോത്സാഹനം",
+          "IT വികസനം"
         ],
-        "flex_fact_ml": "മിക്ക സംസ്ഥാനങ്ങളും 30%-ൽ താഴെ നിൽക്കുമ്പോൾ കേരളം 75%+ കൈവരിച്ചു."
+        "flex_fact_ml": "ഹരിത കേരളം — 10,000+ ജലസ്രോതസ്സുകൾ പുനരുജ്ജീവിപ്പിച്ചു, 5 ലക്ഷം+ കക്കൂസുകൾ നിർമ്മിച്ചു."
       },
       {
         "id": 13,
@@ -311,14 +311,14 @@
         "historical_benchmark": "Launched 1996; revived and scaled post-2016",
         "flex_fact": "UNDP and UN Habitat cite Kerala's People's Plan Campaign as a benchmark for participatory democracy in the developing world.",
         "source": "Kerala State Planning Board / UNDP Reports",
-        "question_ml": "LIFE Mission-ന്റെ ആകെ നിക്ഷേപം ഏകദേശം എത്ര?",
+        "question_ml": "പദ്ധതി ഗുണഭോക്തൃ തിരഞ്ഞെടുപ്പിൽ 'ഗ്രാമസഭ' യുടെ പങ്ക് എന്താണ്?",
         "options_ml": [
-          "₹5,000 കോടി",
-          "₹10,000 കോടി",
-          "₹15,000+ കോടി",
-          "₹20,000 കോടി"
+          "ഒരു പങ്കുമില്ല",
+          "അന്തിമ അംഗീകാരം നൽകുന്നു",
+          "കേവലം ശുപാർശ ചെയ്യുന്നു",
+          "MLA-യ്ക്ക് ലിസ്റ്റ് കൈമാറുന്നു"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും വലിയ സംസ്ഥാന-ധനസഹായ ഭവന പദ്ധതി — കേന്ദ്ര ഫണ്ടിംഗിനെ ആശ്രയിക്കാതെ."
+        "flex_fact_ml": "ഗ്രാമസഭ — ഇന്ത്യയിലെ ഏറ്റവും ശക്തമായ നേരിട്ടുള്ള ജനാധിപത്യ സ്ഥാപനം. കേരളത്തിൽ വർഷം 4 തവണ നിർബന്ധമായി ചേരണം."
       },
       {
         "id": 14,
@@ -335,14 +335,14 @@
         "historical_benchmark": "SC/ST housing exclusion was disproportionately high pre-2016",
         "flex_fact": "LIFE Mission's needs-based targeting ensured the most marginalised communities received a disproportionately higher share of houses — a proactive equity correction.",
         "source": "LIFE Mission Caste Disaggregated Report",
-        "question_ml": "കേരളത്തിലെ എത്ര ഗ്രാമ പഞ്ചായത്തുകൾ ദാരിദ്ര്യ രഹിതമായി പ്രഖ്യാപിച്ചു?",
+        "question_ml": "തദ്ദേശ സ്ഥാപനങ്ങളിലെ സ്ത്രീ പ്രാതിനിധ്യം എത്ര ശതമാനം?",
         "options_ml": [
-          "50",
-          "150",
-          "300+",
-          "500"
+          "33%",
+          "45%",
+          "50%+",
+          "25%"
         ],
-        "flex_fact_ml": "തദ്ദേശ സ്ഥാപനങ്ങളുടെ നേതൃത്വത്തിൽ ദാരിദ്ര്യ നിർമ്മാർജ്ജനം — ഇന്ത്യയിൽ ആദ്യം."
+        "flex_fact_ml": "50%+ സ്ത്രീ പ്രാതിനിധ്യം — ഇന്ത്യയിൽ 33% മാത്രം നിർബന്ധിതമായിരിക്കെ കേരളം 50% കവിഞ്ഞു."
       },
       {
         "id": 15,
@@ -359,14 +359,14 @@
         "historical_benchmark": "Pre-2016: No urban employment guarantee existed anywhere in India",
         "flex_fact": "Named after Ayyankali, the great Dalit reformer of Kerala — the scheme is a direct legacy of his fight for dignified labour for the marginalised.",
         "source": "Kerala LSGD / Urban Affairs Dept",
-        "question_ml": "LIFE Mission ഫ്ലാറ്റ് സമുച്ചയങ്ങൾ ഏത് നഗരങ്ങളിൽ നിർമ്മിച്ചു?",
+        "question_ml": "ദുരന്ത നിവാരണത്തിൽ തദ്ദേശ സ്ഥാപനങ്ങൾ എങ്ങനെ പ്രവർത്തിച്ചു?",
         "options_ml": [
-          "കൊച്ചി മാത്രം",
-          "തിരുവനന്തപുരം, കൊച്ചി",
-          "എല്ലാ കോർപ്പറേഷൻ നഗരങ്ങളിലും",
-          "കോഴിക്കോട് മാത്രം"
+          "കേന്ദ്ര സഹായത്തിനായി കാത്തു",
+          "സ്വന്തം ഫണ്ട് ഉപയോഗിച്ച് ദുരിതാശ്വാസം നടത്തി",
+          "നടപടിയെടുത്തില്ല",
+          "സംസ്ഥാന സർക്കാരിന് കൈമാറി"
         ],
-        "flex_fact_ml": "നഗര ഭൂമിക്ഷാമം പരിഹരിക്കാൻ ഫ്ലാറ്റ് മോഡൽ — ഭൂരഹിതർക്ക് നഗര ജീവിതം ഉറപ്പാക്കുന്നു."
+        "flex_fact_ml": "2018, 2019 പ്രളയങ്ങളിൽ തദ്ദേശ സ്ഥാപനങ്ങൾ ₹2,000 കോടി+ സ്വന്തം ഫണ്ടിൽ നിന്ന് ചെലവഴിച്ചു — ദുരന്ത നിവാരണത്തിലെ വികേന്ദ്രീകൃത മാതൃക."
       }
     ]
   },
@@ -394,14 +394,14 @@
         "historical_benchmark": "Nordic countries: 2–4",
         "flex_fact": "Kerala's IMR is comparable to Scandinavian nations and better than the USA (5.4).",
         "source": "SRS Bulletin, Registrar General of India",
-        "question_ml": "Aardram Mission-ന്റെ പ്രധാന ലക്ഷ്യം എന്താണ്?",
+        "question_ml": "2026-ലെ കേരളത്തിന്റെ ശിശു മരണ നിരക്ക് (IMR) എത്ര?",
         "options_ml": [
-          "സ്വകാര്യ ആശുപത്രികൾ നിർമ്മിക്കുക",
-          "സർക്കാർ ആശുപത്രികൾ സൗഹൃദമാക്കുക",
-          "ഡോക്ടർമാരെ നിയമിക്കുക",
-          "മരുന്ന് സൗജന്യമാക്കുക"
+          "12",
+          "7",
+          "4",
+          "15"
         ],
-        "flex_fact_ml": "Aardram Mission സർക്കാർ ആശുപത്രികളെ OP-മുതൽ-IP വരെ രോഗി-സൗഹൃദമാക്കുന്ന ഇന്ത്യയിലെ ആദ്യ സംസ്ഥാന-വ്യാപക പരിപാടി."
+        "flex_fact_ml": "കേരളത്തിന്റെ IMR സ്കാൻഡിനേവിയൻ രാജ്യങ്ങൾക്ക് തുല്യമാണ് — ദേശീയ ശരാശരിയുടെ പകുതിയിൽ താഴെ."
       },
       {
         "id": 2,
@@ -418,14 +418,14 @@
         "historical_benchmark": "UN SDG 2030 target: <70",
         "flex_fact": "Kerala's MMR meets the UN SDG 2030 target years ahead of deadline.",
         "source": "SRS Special Bulletin on MMR",
-        "question_ml": "കേരളത്തിന്റെ ശിശുമരണ നിരക്ക് (IMR) 2026-ൽ എത്ര?",
+        "question_ml": "Aardram Mission-ന്റെ ലക്ഷ്യം?",
         "options_ml": [
-          "4",
-          "7",
-          "12",
-          "15"
+          "പുതിയ ആശുപത്രികൾ നിർമ്മിക്കൽ",
+          "സർക്കാർ ആശുപത്രികളെ രോഗി-സൗഹൃദമാക്കൽ",
+          "സ്വകാര്യ ആശുപത്രികൾ ദേശസാൽക്കരിക്കൽ",
+          "വിദേശ ഡോക്ടർമാരെ നിയമിക്കൽ"
         ],
-        "flex_fact_ml": "കേരളത്തിന്റെ IMR വികസിത രാജ്യങ്ങൾക്ക് സമാനം — ദേശീയ ശരാശരിയുടെ മൂന്നിലൊന്ന്."
+        "flex_fact_ml": "Aardram — 870+ PHC-കൾ Family Health Centre-കളായി മാറ്റി. OP സമയം 12 മണിക്കൂർ, ലാബ്, ഫാർമസി എല്ലാം ഒരു കുടക്കീഴിൽ."
       },
       {
         "id": 3,
@@ -442,14 +442,14 @@
         "historical_benchmark": "Pre-2016: Basic PHCs with very limited services",
         "flex_fact": "Each center offers OP services, lab, pharmacy, and specialist consultations — a 'hospital at your doorstep'.",
         "source": "Aardram Mission Report, Health Dept Kerala",
-        "question_ml": "എത്ര സർക്കാർ ആശുപത്രികൾ Aardram Mission-ൽ നവീകരിച്ചു?",
+        "question_ml": "കേരളം Nipah വൈറസ് പൊട്ടിപ്പുറപ്പെടലിനെ എങ്ങനെ നേരിട്ടു?",
         "options_ml": [
-          "100",
-          "300",
-          "500+",
-          "800"
+          "WHO ടീമിനെ കാത്തു",
+          "സമ്പർക്ക വിചാരണയും ക്വാറന്റൈനും നടത്തി",
+          "സംസ്ഥാനം ലോക്ക്ഡൗൺ ചെയ്തു",
+          "ബാധിത ജില്ല ഒഴിപ്പിച്ചു"
         ],
-        "flex_fact_ml": "OP വിഭാഗം മുതൽ ട്രോമ കെയർ വരെ — ജനസൗഹൃദ അന്തരീക്ഷം, ടോക്കൺ സിസ്റ്റം, ശുചിത്വ നിലവാരം."
+        "flex_fact_ml": "WHO കേരളത്തിന്റെ Nipah പ്രതികരണത്തെ ആഗോള മാതൃകയായി പ്രഖ്യാപിച്ചു — 3 ആഴ്ചയ്ക്കുള്ളിൽ നിയന്ത്രണം."
       },
       {
         "id": 4,
@@ -466,14 +466,14 @@
         "historical_benchmark": "China: 77 years",
         "flex_fact": "Higher than China and approaching developed-nation levels, driven by universal primary healthcare.",
         "source": "SRS Abridged Life Tables",
-        "question_ml": "കേരളത്തിന്റെ ആയുർദൈർഘ്യം ഏകദേശം എത്ര വർഷം?",
+        "question_ml": "കേരളത്തിലെ ആയുർദൈർഘ്യം എത്ര?",
         "options_ml": [
-          "65 വർഷം",
           "70 വർഷം",
-          "75+ വർഷം",
-          "80 വർഷം"
+          "74 വർഷം",
+          "77+ വർഷം",
+          "68 വർഷം"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്ന ആയുർദൈർഘ്യം — ദേശീയ ശരാശരിയേക്കാൾ 6+ വർഷം കൂടുതൽ."
+        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും ഉയർന്ന ആയുർദൈർഘ്യം — വികസിത രാജ്യങ്ങൾക്ക് സമാനം."
       },
       {
         "id": 5,
@@ -490,14 +490,14 @@
         "historical_benchmark": "Global CFR: ~2%",
         "flex_fact": "Kerala's robust primary healthcare infrastructure enabled early detection and decentralised treatment.",
         "source": "GoK COVID Dashboard / WHO Data",
-        "question_ml": "Karunya Arogya Suraksha Padhathi (KASP) എന്താണ്?",
+        "question_ml": "e-Health Kerala പ്ലാറ്റ്ഫോമിലൂടെ ലഭ്യമാക്കിയ സേവനം?",
         "options_ml": [
-          "ആരോഗ്യ ഇൻഷുറൻസ് പദ്ധതി",
-          "ആശുപത്രി നിർമ്മാണ പദ്ധതി",
-          "ഡോക്ടർ നിയമന പദ്ധതി",
-          "മരുന്ന് വിതരണ പദ്ധതി"
+          "ഓൺലൈൻ ഡോക്ടർ ബുക്കിംഗ് മാത്രം",
+          "ഡിജിറ്റൽ ഹെൽത്ത് റെക്കോർഡ്, ടെലിമെഡിസിൻ, OP ടോക്കൺ",
+          "മരുന്ന് ഡെലിവറി മാത്രം",
+          "ആശുപത്രി റേറ്റിംഗ്"
         ],
-        "flex_fact_ml": "KASP Ayushman Bharat-നൊപ്പം സംയോജിപ്പിച്ച് ₹5 ലക്ഷം വരെ സൗജന്യ ചികിത്സ — 42 ലക്ഷം+ കുടുംബങ്ങൾക്ക്."
+        "flex_fact_ml": "ഇന്ത്യയിലെ ആദ്യ സമ്പൂർണ ഡിജിറ്റൽ ആരോഗ്യ പ്ലാറ്റ്ഫോം — 3 കോടി+ രോഗി റെക്കോർഡുകൾ ഡിജിറ്റൈസ് ചെയ്തു."
       },
       {
         "id": 6,
@@ -514,14 +514,14 @@
         "historical_benchmark": "Pre-2016: PHCs had no specialist linkage",
         "flex_fact": "Aardram FHCs operate 8 AM–8 PM daily — patients can see a specialist via telemedicine from their village without travelling to district hospitals.",
         "source": "Aardram Mission Report, Health Dept Kerala",
-        "question_ml": "കേരളത്തിന്റെ മാതൃമരണ നിരക്ക് (MMR) എത്ര?",
+        "question_ml": "കേരളത്തിലെ മാതൃ മരണ നിരക്ക് (MMR) എത്ര?",
         "options_ml": [
-          "19",
+          "66",
+          "43",
           "30",
-          "46",
-          "60"
+          "19"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും കുറഞ്ഞ MMR — ദേശീയ ശരാശരിയുടെ ആറിലൊന്ന്."
+        "flex_fact_ml": "ദേശീയ ശരാശരി 97 ആയിരിക്കെ കേരളം 19 — വികസിത രാജ്യ നിലവാരം."
       },
       {
         "id": 7,
@@ -538,14 +538,14 @@
         "historical_benchmark": "India's SDG target for 2030: <25",
         "flex_fact": "Kerala achieved India's 2030 SDG child mortality target before 2020 — more than a decade ahead of the national goal.",
         "source": "SRS Bulletin, Registrar General of India",
-        "question_ml": "കേരളത്തിലെ e-Health പദ്ധതി എന്താണ്?",
+        "question_ml": "Karunya Arogya Suraksha Padhathi (KASP) എന്ന ആരോഗ്യ ഇൻഷുറൻസ് പദ്ധതിയുടെ കവറേജ്?",
         "options_ml": [
-          "ടെലിമെഡിസിൻ മാത്രം",
-          "സമ്പൂർണ്ണ ഡിജിറ്റൽ ആരോഗ്യ രേഖ സംവിധാനം",
-          "ഓൺലൈൻ മരുന്ന് വിൽപ്പന",
-          "ആശുപത്രി ബുക്കിംഗ് ആപ്പ്"
+          "₹1 ലക്ഷം",
+          "₹3 ലക്ഷം",
+          "₹5 ലക്ഷം",
+          "₹10 ലക്ഷം"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിലെ ആദ്യ സംസ്ഥാന-വ്യാപക ഡിജിറ്റൽ ഹെൽത്ത് റെക്കോർഡ് — 3 കോടി+ രോഗി രേഖകൾ ഡിജിറ്റൈസ് ചെയ്തു."
+        "flex_fact_ml": "KASP — Ayushman Bharat-ന്റെ കേരള പതിപ്പ്. 42 ലക്ഷം+ കുടുംബങ്ങൾക്ക് സൗജന്യ ചികിത്സ."
       },
       {
         "id": 8,
@@ -562,14 +562,14 @@
         "historical_benchmark": "WHO recommended: 1 per 1,000",
         "flex_fact": "Kerala's doctor density exceeds the WHO standard by 2x — and most doctors practice in the public system, unlike other high-income states.",
         "source": "National Health Profile / Kerala Health Dept",
-        "question_ml": "കേരളം Nipah വൈറസ് ബാധ എങ്ങനെ നിയന്ത്രിച്ചു?",
+        "question_ml": "COVID-19 കാലത്ത് കേരളം എന്ത് നേട്ടം കൈവരിച്ചു?",
         "options_ml": [
-          "ലോക്ക്ഡൗൺ",
-          "കോൺടാക്ട് ട്രേസിംഗ്, ഐസൊലേഷൻ",
-          "വാക്സിനേഷൻ",
-          "അവഗണിച്ചു"
+          "ഏറ്റവും കുറഞ്ഞ മരണ നിരക്ക്",
+          "ഏറ്റവും കൂടുതൽ ടെസ്റ്റുകൾ",
+          "ഏറ്റവും വേഗത്തിലുള്ള വാക്സിനേഷൻ",
+          "ലോക്ക്ഡൗൺ ഒഴിവാക്കൽ"
         ],
-        "flex_fact_ml": "WHO പ്രശംസിച്ച ദ്രുത പ്രതികരണം — ആഗോളതലത്തിൽ മാതൃകയായ Nipah നിയന്ത്രണ പ്രോട്ടോക്കോൾ."
+        "flex_fact_ml": "കേരളത്തിന്റെ COVID മരണ നിരക്ക് ദേശീയ ശരാശരിയുടെ മൂന്നിലൊന്ന് — ശക്തമായ പ്രാഥമിക ആരോഗ്യ സംവിധാനം കാരണം."
       },
       {
         "id": 9,
@@ -586,14 +586,14 @@
         "historical_benchmark": "Kerala's model originated in Calicut in 1993; massively scaled post-2016",
         "flex_fact": "Kerala's community-based palliative model has been adopted by WHO as a global template — it is volunteer-run, not doctor-dependent.",
         "source": "Institute of Palliative Medicine, Calicut / WHO Reports",
-        "question_ml": "കേരളത്തിലെ 108 ആംബുലൻസ് സേവനം എത്ര മിനിറ്റിനുള്ളിൽ എത്തുന്നു?",
+        "question_ml": "Family Health Centre-കളിൽ ലഭ്യമായ സേവനം?",
         "options_ml": [
-          "30 മിനിറ്റ്",
-          "20 മിനിറ്റ്",
-          "15 മിനിറ്റിനുള്ളിൽ",
-          "45 മിനിറ്റ്"
+          "OP മാത്രം",
+          "OP, ലാബ്, ഫാർമസി, NCD ക്ലിനിക്, പാലിയേറ്റീവ് കെയർ",
+          "IP മാത്രം",
+          "എമർജൻസി മാത്രം"
         ],
-        "flex_fact_ml": "ഗ്രാമ-നഗര വ്യത്യാസമില്ലാതെ 15 മിനിറ്റ് പ്രതികരണ സമയം — ഇന്ത്യയിലെ ഏറ്റവും മികച്ചത്."
+        "flex_fact_ml": "12 മണിക്കൂർ OP, സൗജന്യ മരുന്ന്, ലാബ് — പ്രാഥമിക ആരോഗ്യ കേന്ദ്രങ്ങളുടെ സമ്പൂർണ മാറ്റം."
       },
       {
         "id": 10,
@@ -610,14 +610,14 @@
         "historical_benchmark": "Pre-2016: Cancer screening was only at tertiary hospitals",
         "flex_fact": "Snehi identified over 2 lakh women with pre-cancerous conditions — catching cancer before it becomes fatal, saving thousands of lives at primary care cost.",
         "source": "Kerala Health Dept / Aardram Mission",
-        "question_ml": "കേരളത്തിന്റെ COVID-19 പ്രതിരോധ മാതൃക എന്തായിരുന്നു?",
+        "question_ml": "കേരളത്തിലെ പാലിയേറ്റീവ് കെയർ മോഡൽ എന്താണ്?",
         "options_ml": [
-          "ലോക്ക്ഡൗൺ മാത്രം",
-          "ടെസ്റ്റ്-ട്രേസ്-ട്രീറ്റ്",
-          "ഹെർഡ് ഇമ്മ്യൂണിറ്റി",
-          "ചികിത്സ മാത്രം"
+          "ആശുപത്രി കേന്ദ്രീകൃതം",
+          "സമൂഹ അടിസ്ഥാനം — വീട്ടിൽ പരിചരണം",
+          "സ്വകാര്യ മേഖല മാത്രം",
+          "കേന്ദ്ര സർക്കാർ പദ്ധതി"
         ],
-        "flex_fact_ml": "Break the Chain കാമ്പയിൻ, കമ്മ്യൂണിറ്റി കിച്ചൻ, ശക്തമായ കോൺടാക്ട് ട്രേസിംഗ് — ലോക ശ്രദ്ധ നേടിയ മാതൃക."
+        "flex_fact_ml": "ലോകത്തിലെ ഏറ്റവും വലിയ സമൂഹാധിഷ്ഠിത പാലിയേറ്റീവ് കെയർ ശൃംഖല — 2 ലക്ഷം+ രോഗികൾക്ക് വീട്ടിൽ സേവനം."
       },
       {
         "id": 11,
@@ -634,14 +634,14 @@
         "historical_benchmark": "Replacement level: 2.1; Kerala below replacement since 1990s",
         "flex_fact": "Kerala achieved below-replacement fertility through education and women's empowerment — not coercive family planning — decades before the rest of India.",
         "source": "NFHS-5 / SRS Data",
-        "question_ml": "കേരളത്തിൽ എത്ര പ്രാഥമിക ആരോഗ്യ കേന്ദ്രങ്ങൾ Family Health Centre-ആയി മാറ്റി?",
+        "question_ml": "കേരളത്തിന്റെ ജനന നിരക്ക് ദേശീയ ശരാശരിയുമായി താരതമ്യം ചെയ്യുമ്പോൾ?",
         "options_ml": [
-          "100",
-          "300",
-          "700+",
-          "1,000"
+          "ദേശീയ ശരാശരിക്ക് മുകളിൽ",
+          "ദേശീയ ശരാശരിക്ക് തുല്യം",
+          "ദേശീയ ശരാശരിയുടെ പകുതി",
+          "ദേശീയ ശരാശരിയുടെ ഇരട്ടി"
         ],
-        "flex_fact_ml": "Family Health Centre മാതൃക — OP, ലാബ്, ഫാർമസി, NCD ക്ലിനിക് ഒരുമിച്ച് — സമ്പൂർണ്ണ ആരോഗ്യ സേവനം."
+        "flex_fact_ml": "കേരളത്തിന്റെ TFR 1.6 — replacement level-ന് താഴെ. ഇന്ത്യയിൽ ആദ്യം ഈ നേട്ടം കൈവരിച്ച സംസ്ഥാനം."
       },
       {
         "id": 12,
@@ -658,14 +658,14 @@
         "historical_benchmark": "Kerala has maintained >99% for over a decade",
         "flex_fact": "In Kerala, home births are so rare they are a statistical anomaly — every child born is registered, vaccinated, and tracked from birth.",
         "source": "NFHS-5 / Kerala Health Statistics",
-        "question_ml": "കേരളത്തിന്റെ ആരോഗ്യ മേഖലയിലെ ആകെ ചെലവ് GDP-യുടെ എത്ര ശതമാനം?",
+        "question_ml": "AYUSH ചികിത്സാ സംവിധാനം കേരളത്തിൽ എങ്ങനെ സംയോജിപ്പിച്ചു?",
         "options_ml": [
-          "1.5%",
-          "2.5%",
-          "4%+",
-          "5.5%"
+          "പ്രത്യേക ആശുപത്രികളിൽ മാത്രം",
+          "FHC-കളിൽ ആധുനിക വൈദ്യശാസ്ത്രത്തോടൊപ്പം",
+          "നിരോധിച്ചു",
+          "സ്വകാര്യ മേഖലയ്ക്ക് കൈമാറി"
         ],
-        "flex_fact_ml": "ദേശീയ ശരാശരിയുടെ ഇരട്ടിയിലധികം ആരോഗ്യ ചെലവ് — സാർവത്രിക ആരോഗ്യ സംരക്ഷണത്തിലേക്ക്."
+        "flex_fact_ml": "ഇന്ത്യയിൽ ആദ്യമായി AYUSH-നെ പ്രാഥമിക ആരോഗ്യ സംവിധാനത്തിൽ സംയോജിപ്പിച്ച സംസ്ഥാനം."
       },
       {
         "id": 13,
@@ -682,14 +682,14 @@
         "historical_benchmark": "Pre-2016: Cardiac cath labs only at 3 government hospitals",
         "flex_fact": "A patient in a remote district like Wayanad can now receive emergency angioplasty at the district hospital — previously impossible without travelling 200 km.",
         "source": "Kerala Health Dept / Hridayam Scheme",
-        "question_ml": "കേരളത്തിന്റെ പകർച്ചവ്യാധി നിയന്ത്രണ സംവിധാനം ഏത് പേരിൽ അറിയപ്പെടുന്നു?",
+        "question_ml": "മാനസികാരോഗ്യ പരിപാലനത്തിൽ കേരളത്തിന്റെ സവിശേഷ പദ്ധതി?",
         "options_ml": [
-          "Health Guard",
-          "IDSP Kerala",
-          "Disease Sentinel",
-          "Epidemic Watch"
+          "മാനസികാരോഗ്യ ആശുപത്രികൾ പൂട്ടി",
+          "ജില്ലാ മാനസികാരോഗ്യ പരിപാടി (DMHP) വിപുലീകരിച്ചു",
+          "വിദേശ വിദഗ്ധരെ നിയമിച്ചു",
+          "മാനസികരോഗികളെ ഒഴിവാക്കി"
         ],
-        "flex_fact_ml": "Integrated Disease Surveillance — തത്സമയ നിരീക്ഷണം, ദ്രുത പ്രതികരണ സംഘം, ലാബ് ശൃംഖല."
+        "flex_fact_ml": "14 ജില്ലകളിലും DMHP — സൗജന്യ മാനസികാരോഗ്യ പരിചരണം. കേരളം ഇന്ത്യയിലെ മാനസികാരോഗ്യ മാതൃകാ സംസ്ഥാനം."
       },
       {
         "id": 14,
@@ -706,14 +706,14 @@
         "historical_benchmark": "Kerala has been above 90% since 2006",
         "flex_fact": "Kerala's immunisation chain runs to the last household via ASHA workers and Kudumbashree NHGs — making it the most robust in Asia outside Japan and South Korea.",
         "source": "NFHS-5 / Mission Indradhanush Data",
-        "question_ml": "കേരളത്തിലെ സർക്കാർ മെഡിക്കൽ കോളേജുകളുടെ എണ്ണം?",
+        "question_ml": "കേരളത്തിലെ ഡയാലിസിസ് സൗകര്യം എങ്ങനെ വിപുലീകരിച്ചു?",
         "options_ml": [
-          "5",
-          "9",
-          "14",
-          "20"
+          "സ്വകാര്യ ആശുപത്രികൾക്ക് ചുമതല",
+          "ജില്ലാ ആശുപത്രികളിൽ സൗജന്യ ഡയാലിസിസ് യൂണിറ്റുകൾ",
+          "ചികിത്സ നിർത്തി",
+          "കേന്ദ്ര സർക്കാരിന് കൈമാറി"
         ],
-        "flex_fact_ml": "ഓരോ ജില്ലയിലും സർക്കാർ മെഡിക്കൽ കോളേജ് — ഇന്ത്യയിൽ ഇത്രയും വ്യാപനമുള്ള ഏക സംസ്ഥാനം."
+        "flex_fact_ml": "Jeevaraksha — 100+ സൗജന്യ ഡയാലിസിസ് യൂണിറ്റുകൾ. ദരിദ്ര രോഗികൾക്ക് ₹0 ചെലവിൽ ഡയാലിസിസ്."
       },
       {
         "id": 15,
@@ -730,14 +730,14 @@
         "historical_benchmark": "2018 Nipah: contained in ~3 weeks",
         "flex_fact": "Kerala's rapid genome-sequencing capability — built after COVID — allowed the 2023 Nipah strain to be identified within 48 hours of suspicion, enabling surgical containment.",
         "source": "Kerala Health Dept / WHO Nipah Situation Report 2023",
-        "question_ml": "Ayushman Bharat-നൊപ്പം കേരളം ചേർത്ത അധിക ആനുകൂല്യം എന്ത്?",
+        "question_ml": "കേരളത്തിന്റെ ആരോഗ്യ മേഖലയിലെ ആകെ ചെലവ് GDP-യുടെ എത്ര ശതമാനം?",
         "options_ml": [
-          "₹2 ലക്ഷം അധികം",
-          "KASP ടോപ്-അപ്",
-          "സൗജന്യ മരുന്ന്",
-          "യാത്രാ ബത്ത"
+          "1.5%",
+          "2.5%",
+          "4%+",
+          "0.8%"
         ],
-        "flex_fact_ml": "KASP + Ayushman Bharat = ₹5 ലക്ഷം കവറേജ് — സംസ്ഥാന-കേന്ദ്ര സംയോജിത മാതൃക."
+        "flex_fact_ml": "ദേശീയ ശരാശരി 1.2% ആയിരിക്കെ കേരളം 4%+ — ഇന്ത്യയിലെ ഏറ്റവും ഉയർന്ന ആരോഗ്യ ചെലവ്."
       }
     ]
   },
@@ -772,7 +772,7 @@
           "96.2%",
           "90%"
         ],
-        "flex_fact_ml": "1991-ൽ സമ്പൂർണ്ണ സാക്ഷരത പ്രഖ്യാപിച്ച ഇന്ത്യയിലെ ആദ്യ സംസ്ഥാനം — 35 വർഷമായി ഒന്നാം സ്ഥാനം."
+        "flex_fact_ml": "1991-ൽ സമ്പൂർണ സാക്ഷരത പ്രഖ്യാപിച്ച ആദ്യ ഇന്ത്യൻ സംസ്ഥാനം — 35 വർഷമായി ഒന്നാം സ്ഥാനം."
       },
       {
         "id": 2,
@@ -789,14 +789,14 @@
         "historical_benchmark": "2016: <500 smart classrooms",
         "flex_fact": "Every government school has smart classrooms with projectors, laptops, and broadband.",
         "source": "Kerala General Education Dept",
-        "question_ml": "കേരളത്തിലെ എത്ര സർക്കാർ/എയ്ഡഡ് സ്കൂളുകൾ ഹൈടെക് ക്ലാസ്‌റൂമുകളാക്കി?",
+        "question_ml": "കേരളത്തിലെ സർക്കാർ/എയ്ഡഡ് സ്കൂളുകളിൽ ഡിജിറ്റൽ ക്ലാസ്‌റൂമുകളുള്ള ശതമാനം?",
         "options_ml": [
-          "5,000",
-          "10,000",
-          "15,000+",
-          "20,000"
+          "50%",
+          "75%",
+          "95%+",
+          "30%"
         ],
-        "flex_fact_ml": "ലോകത്തിലെ ഏറ്റവും വലിയ പൊതുവിദ്യാലയ ഡിജിറ്റൈസേഷൻ — എല്ലാ ക്ലാസ്‌റൂമുകളിലും ലാപ്‌ടോപ്, പ്രൊജക്ടർ, ഇന്റർനെറ്റ്."
+        "flex_fact_ml": "ഹൈടെക് സ്കൂൾ പദ്ധതി — 45,000+ ക്ലാസ്‌റൂമുകൾ ഡിജിറ്റൈസ് ചെയ്തു. ലാപ്‌ടോപ്, പ്രൊജക്ടർ, ഇന്റർനെറ്റ്."
       },
       {
         "id": 3,
@@ -813,14 +813,14 @@
         "historical_benchmark": "Pre-2016: Government school enrolment was declining steadily",
         "flex_fact": "Parents moved children FROM private to government schools — a national first reversing privatisation trend.",
         "source": "Kerala Education Statistics",
-        "question_ml": "Hi-Tech School പദ്ധതിയിൽ ഓരോ ക്ലാസ്‌റൂമിനും എന്തൊക്കെ ലഭിച്ചു?",
+        "question_ml": "KITE-VICTERS ചാനലിന്റെ ലക്ഷ്യം?",
         "options_ml": [
-          "പുസ്തകങ്ങൾ മാത്രം",
-          "ലാപ്‌ടോപ്, പ്രൊജക്ടർ, ഇന്റർനെറ്റ്",
-          "ടാബ്‌ലെറ്റുകൾ മാത്രം",
-          "സ്മാർട്ട് ബോർഡ് മാത്രം"
+          "വിനോദ പരിപാടികൾ",
+          "ഓൺലൈൻ ക്ലാസുകൾ എല്ലാ വിദ്യാർത്ഥികൾക്കും",
+          "അധ്യാപക പരിശീലനം മാത്രം",
+          "പരീക്ഷാ ഫലങ്ങൾ"
         ],
-        "flex_fact_ml": "ഓരോ ക്ലാസ്‌മുറിയും മൾട്ടിമീഡിയ-സജ്ജം — ഡിജിറ്റൽ ഉള്ളടക്കം, ഇന്ററാക്ടീവ് പഠനം."
+        "flex_fact_ml": "COVID കാലത്ത് 45 ലക്ഷം+ വിദ്യാർത്ഥികൾ VICTERS വഴി പഠിച്ചു — ഇന്ത്യയിലെ ഏറ്റവും വിജയകരമായ ഓൺലൈൻ വിദ്യാഭ്യാസ മാതൃക."
       },
       {
         "id": 4,
@@ -837,14 +837,14 @@
         "historical_benchmark": "Pre-2016: 0 international-standard sports schools",
         "flex_fact": "Each ISS has Olympic-standard facilities — contributing to Kerala athletes' record national performance.",
         "source": "Kerala Sports Council",
-        "question_ml": "KITE (IT@School) പദ്ധതി എന്താണ്?",
+        "question_ml": "കേരളത്തിലെ സ്കൂൾ കൊഴിഞ്ഞുപോക്ക് നിരക്ക്?",
         "options_ml": [
-          "കോഡിംഗ് പഠിപ്പിക്കൽ",
-          "വിദ്യാഭ്യാസ IT ഇൻഫ്രാ ഏജൻസി",
-          "ഓൺലൈൻ പരീക്ഷ",
-          "ടീച്ചർ ട്രെയിനിംഗ്"
+          "5%",
+          "2%",
+          "0.11%",
+          "8%"
         ],
-        "flex_fact_ml": "KITE ഇന്ത്യയിലെ ഏറ്റവും വലിയ വിദ്യാഭ്യാസ സാങ്കേതിക അടിസ്ഥാന സൗകര്യ ഏജൻസി."
+        "flex_fact_ml": "ദേശീയ ശരാശരി 3.5% ആയിരിക്കെ 0.11% — ഇന്ത്യയിലെ ഏറ്റവും കുറഞ്ഞ കൊഴിഞ്ഞുപോക്ക്."
       },
       {
         "id": 5,
@@ -861,14 +861,14 @@
         "historical_benchmark": "2016: ~36%",
         "flex_fact": "Comparable to developed nations; driven by accessible public university system.",
         "source": "AISHE Reports, Ministry of Education",
-        "question_ml": "കേരളത്തിന്റെ ഉച്ച ഭക്ഷണ പദ്ധതി എത്ര കുട്ടികൾക്ക് ഭക്ഷണം നൽകുന്നു?",
+        "question_ml": "സ്കൂളുകളിൽ ഉച്ചഭക്ഷണ പദ്ധതിയിൽ കേരളം എങ്ങനെ വ്യത്യസ്തമാണ്?",
         "options_ml": [
-          "15 ലക്ഷം",
-          "25 ലക്ഷം+",
-          "35 ലക്ഷം",
-          "45 ലക്ഷം"
+          "ഭക്ഷണം നൽകുന്നില്ല",
+          "അരി-സാമ്പാർ മാത്രം",
+          "അഞ്ച് ഘടക മെനു, മുട്ട, പഴം, പാൽ ഉൾപ്പെടെ",
+          "ബിസ്കറ്റ് മാത്രം"
         ],
-        "flex_fact_ml": "പോഷകഗുണം, വൈവിധ്യം, ശുചിത്വം — ഇന്ത്യയിലെ ഏറ്റവും മികച്ച ഉച്ചഭക്ഷണ പദ്ധതി."
+        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും പോഷകസമൃദ്ധമായ ഉച്ചഭക്ഷണ പദ്ധതി — പ്രതിദിനം 38 ലക്ഷം+ കുട്ടികൾക്ക്."
       },
       {
         "id": 6,
@@ -885,14 +885,14 @@
         "historical_benchmark": "Pre-2016: No state-level digital device programme for students",
         "flex_fact": "During COVID-19, KITE Victers ensured zero learning loss — the education TV channel broadcast classes within days of school closure, long before any other state.",
         "source": "KITE Kerala / General Education Dept",
-        "question_ml": "കേരളത്തിന്റെ സ്കൂൾ ഡ്രോപ്പ്-ഔട്ട് നിരക്ക് ദേശീയ ശരാശരിയേക്കാൾ?",
+        "question_ml": "പ്രീ-പ്രൈമറി വിദ്യാഭ്യാസത്തിൽ കേരളം എന്ത് പുതുമ കൊണ്ടുവന്നു?",
         "options_ml": [
-          "കൂടുതൽ",
-          "സമാനം",
-          "വളരെ കുറവ്",
-          "ഇരട്ടി"
+          "റദ്ദാക്കി",
+          "സർക്കാർ സ്കൂളുകളിൽ LKG-UKG ആരംഭിച്ചു",
+          "സ്വകാര്യ മേഖലയ്ക്ക് കൈമാറി",
+          "പ്രായപരിധി ഉയർത്തി"
         ],
-        "flex_fact_ml": "കേരളം 0.5%-ൽ താഴെ ഡ്രോപ്പ്-ഔട്ട് — ദേശീയ ശരാശരി 20%+."
+        "flex_fact_ml": "സർക്കാർ സ്കൂളുകളിൽ LKG-UKG — 3,000+ സ്കൂളുകളിൽ. സൗജന്യ, ഗുണമേന്മയുള്ള പ്രീ-പ്രൈമറി വിദ്യാഭ്യാസം."
       },
       {
         "id": 7,
@@ -909,14 +909,14 @@
         "historical_benchmark": "2016: <5,000 teachers with any formal ICT training",
         "flex_fact": "Every government school teacher in Kerala is now trained in blended learning — the training was designed using the national curriculum framework but executed at Kerala speed.",
         "source": "KITE / General Education Dept Annual Report",
-        "question_ml": "Samagra Shiksha Kerala (SSK) എന്താണ്?",
+        "question_ml": "സ്പെഷ്യൽ നീഡ്‌സ് കുട്ടികൾക്കുള്ള കേരളത്തിന്റെ പദ്ധതി?",
         "options_ml": [
-          "സ്വകാര്യ സ്കൂൾ പദ്ധതി",
-          "സമ്പൂർണ്ണ വിദ്യാഭ്യാസ ഏകീകൃത പദ്ധതി",
-          "പരീക്ഷാ പരിഷ്കരണം",
-          "അധ്യാപക പരിശീലനം"
+          "പ്രത്യേക സ്കൂളുകൾ മാത്രം",
+          "ഇൻക്ലൂസീവ് വിദ്യാഭ്യാസം — എല്ലാ സ്കൂളുകളിലും",
+          "വിദ്യാഭ്യാസം നിഷേധിച്ചു",
+          "ഹോം സ്കൂളിംഗ് മാത്രം"
         ],
-        "flex_fact_ml": "പ്രീ-സ്കൂൾ മുതൽ 12-ാം ക്ലാസ് വരെ ഒരു കുടക്കീഴിൽ — ഗുണനിലവാരം, തുല്യത, ഉൾച്ചേർക്കൽ."
+        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും മികച്ച ഇൻക്ലൂസീവ് വിദ്യാഭ്യാസ മാതൃക — 50,000+ സ്പെഷ്യൽ നീഡ്‌സ് കുട്ടികൾ മുഖ്യധാരാ സ്കൂളുകളിൽ."
       },
       {
         "id": 8,
@@ -933,14 +933,14 @@
         "historical_benchmark": "2016: Kerala ~2%",
         "flex_fact": "Kerala's near-zero dropout rate means virtually every child who starts schooling reaches Class X — a feat matched only by high-income countries.",
         "source": "UDISE+ / ASER Reports",
-        "question_ml": "COVID കാലത്ത് കേരളം ഓൺലൈൻ വിദ്യാഭ്യാസത്തിന് ഉപയോഗിച്ച ചാനൽ?",
+        "question_ml": "പൊതുവിദ്യാലയ സംരക്ഷണ യജ്ഞം (PVSY) എന്ന പദ്ധതിയുടെ ഫലം?",
         "options_ml": [
-          "YouTube മാത്രം",
-          "KITE VICTERS",
-          "Zoom",
-          "Google Meet"
+          "സ്കൂളുകൾ പൂട്ടി",
+          "സർക്കാർ സ്കൂൾ ചേരിക്കുന്നവരുടെ എണ്ണം വർധിച്ചു",
+          "അധ്യാപകരെ കുറച്ചു",
+          "ഫീസ് വർധിപ്പിച്ചു"
         ],
-        "flex_fact_ml": "KITE VICTERS TV ചാനൽ + ഓൺലൈൻ ക്ലാസുകൾ — 45 ലക്ഷം+ കുട്ടികൾക്ക് തടസ്സമില്ലാത്ത പഠനം."
+        "flex_fact_ml": "5 ലക്ഷം+ പുതിയ വിദ്യാർത്ഥികൾ സർക്കാർ സ്കൂളുകളിൽ — സ്വകാര്യ സ്കൂളുകളിൽ നിന്ന് തിരിച്ചുവരവ്."
       },
       {
         "id": 9,
@@ -957,14 +957,14 @@
         "historical_benchmark": "Launched 2017; expanded to all government high schools by 2022",
         "flex_fact": "Little KITEs students have won national robotics and coding competitions — these are government school children from rural Kerala defeating private school students.",
         "source": "KITE Kerala",
-        "question_ml": "കേരളത്തിലെ പൊതുവിദ്യാലയങ്ങളിലെ പ്രവേശനം 2016-ന് ശേഷം?",
+        "question_ml": "അധ്യാപക പരിശീലനത്തിൽ കേരളം എന്ത് നൂതന മാതൃക അവതരിപ്പിച്ചു?",
         "options_ml": [
-          "കുറഞ്ഞു",
-          "മാറ്റമില്ല",
-          "വൻ വർധന",
-          "പകുതിയായി"
+          "പരിശീലനം ഇല്ല",
+          "ക്ലസ്റ്റർ അടിസ്ഥാനത്തിലുള്ള തുടർ പരിശീലനം",
+          "വിദേശ പരിശീലനം മാത്രം",
+          "ഓൺലൈൻ സർട്ടിഫിക്കറ്റ് മാത്രം"
         ],
-        "flex_fact_ml": "ഹൈടെക് സ്കൂൾ + ഗുണനിലവാര മെച്ചപ്പെടുത്തൽ = 8 ലക്ഷം+ കുട്ടികൾ സ്വകാര്യ സ്കൂളിൽ നിന്ന് സർക്കാർ സ്കൂളിലേക്ക്."
+        "flex_fact_ml": "2 ലക്ഷം+ അധ്യാപകർക്ക് ഡിജിറ്റൽ പരിശീലനം — KITE വഴി ഇന്ത്യയിലെ ഏറ്റവും വലിയ അധ്യാപക ഡിജിറ്റൽ ലിറ്ററസി പ്രോഗ്രാം."
       },
       {
         "id": 10,
@@ -981,14 +981,14 @@
         "historical_benchmark": "Kerala was already above national average in 2016",
         "flex_fact": "Kerala's government school students outperform private school students in several northern states — publicly funded education beats fee-charging schools across state lines.",
         "source": "ASER Reports 2023 / KITE Assessment Data",
-        "question_ml": "കേരളത്തിൽ പ്രീ-സ്കൂൾ വിദ്യാഭ്യാസം ഏത് സ്ഥാപനങ്ങൾ വഴി?",
+        "question_ml": "സ്കൂളുകളിൽ കായിക-കലാ പ്രവർത്തനങ്ങൾക്ക് കേരളം എന്ത് ചെയ്തു?",
         "options_ml": [
-          "സ്വകാര്യ സ്കൂൾ",
-          "അംഗൻവാടി",
-          "ട്യൂഷൻ സെന്റർ",
-          "ഡേ കെയർ"
+          "റദ്ദാക്കി",
+          "കലോത്സവം, ശാസ്ത്രോത്സവം, കായികോത്സവം വിപുലീകരിച്ചു",
+          "ഒഴിവാക്കി",
+          "സ്വകാര്യ സ്ഥാപനങ്ങൾക്ക് കൈമാറി"
         ],
-        "flex_fact_ml": "33,000+ അംഗൻവാടികൾ — ഇന്ത്യയിലെ ഏറ്റവും മികച്ച ICDS ശൃംഖല."
+        "flex_fact_ml": "ലോകത്തിലെ ഏറ്റവും വലിയ സ്കൂൾ കലാമേള — 10 ലക്ഷം+ വിദ്യാർത്ഥികൾ പങ്കെടുക്കുന്നു."
       },
       {
         "id": 11,
@@ -1005,14 +1005,14 @@
         "historical_benchmark": "Pre-2016: ~30 residential schools for tribal children",
         "flex_fact": "Children from Attappady, one of the most remote and underdeveloped tribal blocks in India, are now cracking state-level entrance exams from these residential schools.",
         "source": "SC/ST Development Dept / General Education Dept Kerala",
-        "question_ml": "കേരളത്തിലെ സ്കൂളുകളിൽ ഏത് ഭാഷയിൽ STEM വിഷയങ്ങൾ പഠിപ്പിക്കുന്നു?",
+        "question_ml": "SSLC, Plus Two പരീക്ഷാ വിജയ നിരക്ക്?",
         "options_ml": [
-          "ഇംഗ്ലീഷ് മാത്രം",
-          "മലയാളം മാത്രം",
-          "ഇംഗ്ലീഷ്, മലയാളം ഇരുഭാഷയിലും",
-          "ഹിന്ദി"
+          "70%",
+          "80%",
+          "95%+",
+          "60%"
         ],
-        "flex_fact_ml": "ദ്വിഭാഷാ STEM പഠനം — മാതൃഭാഷയിലൂടെ ശാസ്ത്ര അവബോധം വളർത്തുന്നു."
+        "flex_fact_ml": "തുടർച്ചയായി 95%+ വിജയ നിരക്ക് — ഗുണനിലവാരത്തിൽ വിട്ടുവീഴ്ച ഇല്ലാതെ."
       },
       {
         "id": 12,
@@ -1029,14 +1029,14 @@
         "historical_benchmark": "2016: ~1.2 Lakh VHSE enrolments",
         "flex_fact": "Kerala's VHSE students can gain a polytechnic-equivalent qualification while still at school — bridging academic and skill-based education.",
         "source": "Kerala VHSE Directorate",
-        "question_ml": "Kerala Infrastructure and Technology for Education-ന്റെ ചുരുക്കപ്പേര്?",
+        "question_ml": "സ്കൂളുകളിലെ ഇൻഫ്രാസ്ട്രക്ചർ വികസനത്തിൽ KIIFB-യുടെ പങ്ക്?",
         "options_ml": [
-          "KITE",
-          "KIED",
-          "KEDU",
-          "KTECH"
+          "ഒരു പങ്കുമില്ല",
+          "₹5,000 കോടി+ സ്കൂൾ അടിസ്ഥാന സൗകര്യ വികസനം",
+          "സ്കൂളുകൾ പൂട്ടി",
+          "ഫീസ് ശേഖരിച്ചു"
         ],
-        "flex_fact_ml": "KITE — IT@School-ന്റെ പുനഃസംഘടന — 50,000+ ICT ലാബുകൾ, 3 ലക്ഷം+ ലാപ്‌ടോപ്പുകൾ."
+        "flex_fact_ml": "KIIFB — 16,000+ ക്ലാസ് മുറികൾ, ലാബുകൾ, ലൈബ്രറികൾ പുതുക്കിപ്പണിതു."
       },
       {
         "id": 13,
@@ -1053,14 +1053,14 @@
         "historical_benchmark": "Kerala has had GPI >1 since 2005",
         "flex_fact": "In Kerala, girls outnumber boys in secondary school — the reverse of India's gender gap. Boys are the ones who tend to drop out for employment, not girls.",
         "source": "UDISE+ / UNESCO GPI Data",
-        "question_ml": "കേരളത്തിലെ സ്കൂൾ കുട്ടികൾക്കുള്ള സൗജന്യ യൂണിഫോം പദ്ധതി?",
+        "question_ml": "ആദിവാസി-ദളിത് വിദ്യാർത്ഥികൾക്കുള്ള പ്രത്യേക പദ്ധതി?",
         "options_ml": [
-          "ഇല്ല",
-          "BPL-ക്ക് മാത്രം",
-          "എല്ലാ സർക്കാർ സ്കൂൾ കുട്ടികൾക്കും",
-          "ക്ലാസ് 1-5 മാത്രം"
+          "ഒരു പദ്ധതിയുമില്ല",
+          "മോഡൽ റസിഡൻഷ്യൽ സ്കൂളുകൾ",
+          "ഫീസ് ഇളവ് മാത്രം",
+          "സ്കോളർഷിപ്പ് മാത്രം"
         ],
-        "flex_fact_ml": "സൗജന്യ യൂണിഫോം + പാഠപുസ്തകം + ഉച്ചഭക്ഷണം — സമ്പൂർണ്ണ സൗജന്യ വിദ്യാഭ്യാസ പാക്കേജ്."
+        "flex_fact_ml": "52 മോഡൽ റസിഡൻഷ്യൽ സ്കൂളുകൾ — ആദിവാസി, ദളിത് വിദ്യാർത്ഥികൾക്ക് അന്താരാഷ്ട്ര നിലവാരത്തിലുള്ള വിദ്യാഭ്യാസം."
       },
       {
         "id": 14,
@@ -1077,14 +1077,14 @@
         "historical_benchmark": "2016: Many school libraries were non-functional stock rooms",
         "flex_fact": "Kerala has the highest per-capita public library density in Asia — and its school library network reinforces a reading culture that drives learning outcomes.",
         "source": "Kerala State Library Council / General Education Dept",
-        "question_ml": "കേരളത്തിന്റെ SSLC വിജയ ശതമാനം ഏകദേശം?",
+        "question_ml": "വിദ്യാഭ്യാസ മേഖലയിലെ കേരളത്തിന്റെ GER (Gross Enrollment Ratio)?",
         "options_ml": [
-          "75%",
           "85%",
-          "95%+",
-          "70%"
+          "92%",
+          "98%+",
+          "78%"
         ],
-        "flex_fact_ml": "തുടർച്ചയായി 95%+ വിജയം — ഗുണനിലവാരത്തോടൊപ്പം ഉയർന്ന വിജയ നിരക്ക്."
+        "flex_fact_ml": "98%+ GER — ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്നത്. ജാതി-മത-ലിംഗ ഭേദമില്ലാതെ സാർവത്രിക വിദ്യാഭ്യാസം."
       },
       {
         "id": 15,
@@ -1101,14 +1101,14 @@
         "historical_benchmark": "RTE Act mandates max 30:1",
         "flex_fact": "Kerala's student-teacher ratio in government schools is better than the RTE mandate — meaning even small rural schools get dedicated teachers, not overburdened ones.",
         "source": "UDISE+ 2024-25",
-        "question_ml": "കേരളത്തിലെ സ്പെഷ്യൽ സ്കൂളുകൾ ഏത് കുട്ടികൾക്ക് വേണ്ടിയാണ്?",
+        "question_ml": "കേരളത്തിന്റെ സ്കൂൾ വിദ്യാഭ്യാസ ബജറ്റ് വിഹിതം?",
         "options_ml": [
-          "കായിക പ്രതിഭകൾ",
-          "ഭിന്നശേഷിക്കാർ",
-          "മെറിറ്റ് വിദ്യാർത്ഥികൾ",
-          "NRI കുട്ടികൾ"
+          "GDP-യുടെ 1%",
+          "GDP-യുടെ 2%",
+          "GDP-യുടെ 3.5%+",
+          "GDP-യുടെ 0.5%"
         ],
-        "flex_fact_ml": "ഉൾച്ചേരൽ വിദ്യാഭ്യാസം — ഭിന്നശേഷി കുട്ടികൾക്ക് മുഖ്യധാരയിൽ പഠനാവസരം."
+        "flex_fact_ml": "ദേശീയ ശരാശരിയുടെ ഇരട്ടി — വിദ്യാഭ്യാസത്തിലെ നിക്ഷേപം കേരളത്തിന്റെ വികസന മാതൃകയുടെ അടിത്തറ."
       }
     ]
   },
@@ -1136,14 +1136,14 @@
         "historical_benchmark": "Pre-2016: Patchy broadband, no state-level fiber backbone",
         "flex_fact": "Kerala is the first state globally to legislate internet access as a fundamental right.",
         "source": "K-FON Project, Kerala IT Dept",
-        "question_ml": "K-FON പദ്ധതിയുടെ ലക്ഷ്യം എന്ത്?",
+        "question_ml": "K-FON (Kerala Fibre Optic Network) പദ്ധതിയുടെ ലക്ഷ്യം?",
         "options_ml": [
-          "സൗജന്യ മൊബൈൽ",
-          "ഇന്റർനെറ്റ് അവകാശമായി — സൗജന്യ ഫൈബർ",
-          "5G ടവറുകൾ",
-          "Wi-Fi ഹോട്ട്‌സ്‌പോട്ട്"
+          "സർക്കാർ ഓഫീസുകൾക്ക് മാത്രം ഇന്റർനെറ്റ്",
+          "എല്ലാ വീടുകൾക്കും സൗജന്യ/ചെലവ്കുറഞ്ഞ ഇന്റർനെറ്റ്",
+          "5G ടവറുകൾ നിർമ്മിക്കൽ",
+          "സാറ്റലൈറ്റ് ഇന്റർനെറ്റ്"
         ],
-        "flex_fact_ml": "ഇന്റർനെറ്റ് അടിസ്ഥാന അവകാശമായി പ്രഖ്യാപിച്ച ലോകത്തിലെ ആദ്യ സർക്കാർ പദ്ധതികളിലൊന്ന്."
+        "flex_fact_ml": "ഇന്റർനെറ്റ് അടിസ്ഥാന അവകാശമായി പ്രഖ്യാപിച്ച ഇന്ത്യയിലെ ആദ്യ സംസ്ഥാനം — 20 ലക്ഷം BPL കുടുംബങ്ങൾക്ക് സൗജന്യ ഇന്റർനെറ്റ്."
       },
       {
         "id": 2,
@@ -1160,14 +1160,14 @@
         "historical_benchmark": "2016: ~500 startups",
         "flex_fact": "From ~500 startups in 2016 — a 13x growth in one decade.",
         "source": "Kerala Startup Mission Data",
-        "question_ml": "K-FON-ന്റെ ഫൈബർ ഒപ്റ്റിക് ശൃംഖല എത്ര കിലോമീറ്റർ?",
+        "question_ml": "കേരളത്തിലെ IT കയറ്റുമതി 2026-ൽ എത്ര?",
         "options_ml": [
-          "10,000 km",
-          "20,000 km",
-          "30,000+ km",
-          "50,000 km"
+          "₹10,000 കോടി",
+          "₹20,000 കോടി",
+          "₹35,000+ കോടി",
+          "₹5,000 കോടി"
         ],
-        "flex_fact_ml": "30,000+ km ഫൈബർ — 20 ലക്ഷം BPL കുടുംബങ്ങൾക്ക് സൗജന്യ ഇന്റർനെറ്റ്, 30,000+ സർക്കാർ ഓഫീസുകൾ ബന്ധിപ്പിച്ചു."
+        "flex_fact_ml": "2016-ലെ ₹12,000 കോടിയിൽ നിന്ന് 3 മടങ്ങ് വളർച്ച — Tier-2 നഗരങ്ങളിൽ IT പാർക്കുകൾ വിപുലീകരിച്ചു."
       },
       {
         "id": 3,
@@ -1184,14 +1184,14 @@
         "historical_benchmark": "4x growth in one decade",
         "flex_fact": "4x growth in IT exports while keeping talent within Kerala — reversing brain drain.",
         "source": "Kerala IT Dept Annual Report",
-        "question_ml": "കേരളത്തിന്റെ IT കയറ്റുമതി 2026-ൽ ഏകദേശം എത്ര?",
+        "question_ml": "K-DISC (Kerala Development and Innovation Strategic Council) എന്ന സ്ഥാപനത്തിന്റെ ധർമ്മം?",
         "options_ml": [
-          "₹10,000 കോടി",
-          "₹20,000 കോടി",
-          "₹30,000+ കോടി",
-          "₹40,000 കോടി"
+          "റോഡ് നിർമ്മാണം",
+          "നവീകരണവും സ്റ്റാർട്ടപ്പ് പിന്തുണയും",
+          "ടൂറിസം പ്രോത്സാഹനം",
+          "ആരോഗ്യ സേവനം"
         ],
-        "flex_fact_ml": "2016-ലെ ₹12,000 കോടിയിൽ നിന്ന് ₹30,000+ കോടിയിലേക്ക് — 10 വർഷത്തിൽ 2.5 മടങ്ങ് വളർച്ച."
+        "flex_fact_ml": "K-DISC — 1,000+ സ്റ്റാർട്ടപ്പുകൾക്ക് ധനസഹായവും മാർഗനിർദേശവും. കേരളത്തെ ഇന്നവേഷൻ ഹബ്ബാക്കി."
       },
       {
         "id": 4,
@@ -1208,14 +1208,14 @@
         "historical_benchmark": "2016: ~40%",
         "flex_fact": "Highest internet density among large Indian states — enabled by K-FON and aggressive digital literacy drives.",
         "source": "TRAI Reports / K-FON Data",
-        "question_ml": "Technopark ഏത് നഗരത്തിലാണ്?",
+        "question_ml": "കേരളത്തിന്റെ ഡിജിറ്റൽ സാക്ഷരതാ നിരക്ക്?",
         "options_ml": [
-          "കൊച്ചി",
-          "തിരുവനന്തപുരം",
-          "കോഴിക്കോട്",
-          "കണ്ണൂർ"
+          "40%",
+          "55%",
+          "70%+",
+          "30%"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിലെ ആദ്യ IT പാർക്ക് — ഇപ്പോൾ ഏഷ്യയിലെ ഏറ്റവും വലിയ IT പാർക്കുകളിലൊന്ന്."
+        "flex_fact_ml": "ഡിജിറ്റൽ ലിറ്ററസി മിഷൻ — 20 ലക്ഷം+ ആളുകൾക്ക് ഡിജിറ്റൽ പരിശീലനം. ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്ന ഡിജിറ്റൽ സാക്ഷരത."
       },
       {
         "id": 5,
@@ -1232,14 +1232,14 @@
         "historical_benchmark": "2016: <100 services online",
         "flex_fact": "K-SWIFT (Single Window) reduced business clearance time from 120 days to ~15 days.",
         "source": "Kerala e-Governance Portal",
-        "question_ml": "കേരളത്തിന്റെ ഡിജിറ്റൽ സാക്ഷരതാ നിരക്ക് ഏകദേശം?",
+        "question_ml": "സ്റ്റാർട്ടപ്പ് ഇന്ത്യ റാങ്കിംഗിൽ കേരളത്തിന്റെ സ്ഥാനം?",
         "options_ml": [
-          "40%",
-          "55%",
-          "70%+",
-          "85%"
+          "Top 10",
+          "Top 5",
+          "Top 3 — Best Performer",
+          "Top 15"
         ],
-        "flex_fact_ml": "ഡിജിറ്റൽ സാക്ഷരതയിലും ഇന്ത്യയിൽ ഒന്നാം സ്ഥാനം — ദേശീയ ശരാശരിയുടെ ഇരട്ടി."
+        "flex_fact_ml": "DPIIT റാങ്കിംഗിൽ 'Best Performer' — 4,000+ രജിസ്റ്റേർഡ് സ്റ്റാർട്ടപ്പുകൾ."
       },
       {
         "id": 6,
@@ -1256,14 +1256,14 @@
         "historical_benchmark": "Pre-K-FON: BPL households had negligible broadband penetration",
         "flex_fact": "Internet access for the poorest households is free — Kerala treats connectivity as a utility like water and electricity, not a luxury.",
         "source": "K-FON Project, Kerala IT Dept",
-        "question_ml": "Kerala Startup Mission (KSUM) എത്ര സ്റ്റാർട്ടപ്പുകളെ പിന്തുണയ്ക്കുന്നു?",
+        "question_ml": "കേരള സ്റ്റാർട്ടപ്പ് മിഷന്റെ ആസ്ഥാനം?",
         "options_ml": [
-          "1,000",
-          "2,500",
-          "4,000+",
-          "6,000"
+          "ഇൻഫോപാർക്ക്",
+          "ടെക്നോപാർക്ക്",
+          "സൈബർ പാർക്ക്",
+          "കൊച്ചി സ്മാർട്ട് സിറ്റി"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും സജീവമായ സ്റ്റാർട്ടപ്പ് ഇക്കോസിസ്റ്റങ്ങളിലൊന്ന് — ഓരോ ജില്ലയിലും ഇൻകുബേറ്റർ."
+        "flex_fact_ml": "ടെക്നോപാർക്ക് — ഏഷ്യയിലെ ഏറ്റവും വലിയ IT പാർക്കുകളിലൊന്ന്. 70,000+ IT പ്രൊഫഷണലുകൾ."
       },
       {
         "id": 7,
@@ -1280,14 +1280,14 @@
         "historical_benchmark": "2016: Not in top 5",
         "flex_fact": "Kerala ranks 3rd despite having the 12th largest economy — punch-for-punch, it builds more startups per unit of GDP than almost any other state.",
         "source": "DPIIT Startup India State Rankings 2024",
-        "question_ml": "Cyberpark ഏത് ജില്ലയിലാണ്?",
+        "question_ml": "KSWAN (Kerala State Wide Area Network) എന്താണ്?",
         "options_ml": [
-          "എറണാകുളം",
-          "തിരുവനന്തപുരം",
-          "കോഴിക്കോട്",
-          "തൃശ്ശൂർ"
+          "സോഷ്യൽ മീഡിയ പ്ലാറ്റ്ഫോം",
+          "സർക്കാർ ഓഫീസുകളെ ബന്ധിപ്പിക്കുന്ന നെറ്റ്‌വർക്ക്",
+          "ടെലിവിഷൻ ചാനൽ",
+          "മൊബൈൽ ആപ്പ്"
         ],
-        "flex_fact_ml": "മലബാർ മേഖലയിലെ IT വളർച്ചയ്ക്ക് ചാലകം — Tier 2 നഗരങ്ങളിലേക്ക് IT വ്യാപനം."
+        "flex_fact_ml": "1,500+ സർക്കാർ ഓഫീസുകൾ ഹൈ-സ്പീഡ് നെറ്റ്‌വർക്കിൽ — ഇ-ഗവേണൻസിന്റെ നട്ടെല്ല്."
       },
       {
         "id": 8,
@@ -1304,14 +1304,14 @@
         "historical_benchmark": "2016: ~350 companies",
         "flex_fact": "Technopark is one of the few IT parks in India that has never had a major labour dispute — a reflection of Kerala's unique labour-capital equilibrium.",
         "source": "Technopark Thiruvananthapuram Official Data",
-        "question_ml": "കേരളത്തിന്റെ BPL കുടുംബങ്ങൾക്ക് K-FON വഴി എന്ത് ലഭിക്കുന്നു?",
+        "question_ml": "കേരളത്തിലെ IT മേഖലയിലെ ആകെ തൊഴിൽ?",
         "options_ml": [
-          "സബ്‌സിഡി ഫോൺ",
-          "സൗജന്യ ഇന്റർനെറ്റ്",
-          "സൗജന്യ ലാപ്‌ടോപ്",
-          "സൗജന്യ TV"
+          "1 ലക്ഷം",
+          "2 ലക്ഷം",
+          "3 ലക്ഷം+",
+          "50,000"
         ],
-        "flex_fact_ml": "20 ലക്ഷം BPL കുടുംബങ്ങൾക്ക് സൗജന്യ ഹൈ-സ്പീഡ് ഇന്റർനെറ്റ് — ഡിജിറ്റൽ വിഭജനം ഇല്ലാതാക്കുന്നു."
+        "flex_fact_ml": "IT/ITeS മേഖലയിൽ 3 ലക്ഷം+ നേരിട്ടുള്ള തൊഴിൽ — പരോക്ഷ തൊഴിൽ 10 ലക്ഷം+."
       },
       {
         "id": 9,
@@ -1328,14 +1328,14 @@
         "historical_benchmark": "Pre-2020: No state had an AI-specific governance strategy",
         "flex_fact": "Kerala's land survey department uses AI to detect encroachments in forest and coastal areas — satellite imagery processed by ML identifies illegal construction within hours.",
         "source": "Kerala IT Dept / Digital Kerala Vision Document",
-        "question_ml": "Smart City Kochi പദ്ധതി ഏത് മേഖലയിൽ?",
+        "question_ml": "കേരളത്തിലെ ഇ-ഗവേണൻസ് സേവനം 'Akshaya' എന്ന കേന്ദ്രങ്ങളിലൂടെ എന്ത് നേടി?",
         "options_ml": [
-          "ഫോർട്ട് കൊച്ചി",
-          "കാക്കനാട്",
-          "എടപ്പള്ളി",
-          "ആലുവ"
+          "ഒന്നും നേടിയില്ല",
+          "2,600+ കേന്ദ്രങ്ങൾ — 1,000+ സർക്കാർ സേവനങ്ങൾ ഓൺലൈനിൽ",
+          "10 കേന്ദ്രങ്ങൾ മാത്രം",
+          "കേന്ദ്രങ്ങൾ പൂട്ടി"
         ],
-        "flex_fact_ml": "Infopark Kochi-നോട് ചേർന്ന് — സിംഗപ്പൂർ-ഇന്ത്യ സംയുക്ത സംരംഭം."
+        "flex_fact_ml": "Akshaya — ലോകത്തിലെ ഏറ്റവും വലിയ ഇ-ലിറ്ററസി പ്രോജക്ട്. ഓരോ പഞ്ചായത്തിലും ഒരു കേന്ദ്രം."
       },
       {
         "id": 10,
@@ -1352,14 +1352,14 @@
         "historical_benchmark": "2016: ICTAK trained ~50,000/year",
         "flex_fact": "ICT Academy of Kerala has a higher placement rate than most private engineering colleges — its graduates are now in Google, Microsoft, and Amazon.",
         "source": "ICT Academy of Kerala Annual Report",
-        "question_ml": "കേരളം ഏത് മേഖലയിൽ AI Centre of Excellence സ്ഥാപിച്ചു?",
+        "question_ml": "Technopark Phase-III-ന്റെ വിസ്തീർണ്ണം?",
         "options_ml": [
-          "ആരോഗ്യം",
-          "കൃഷി",
-          "വിദ്യാഭ്യാസം",
-          "എല്ലാ മേഖലയിലും"
+          "50 ഏക്കർ",
+          "100 ഏക്കർ",
+          "400+ ഏക്കർ",
+          "25 ഏക്കർ"
         ],
-        "flex_fact_ml": "Digital University Kerala + AI CoE — ഇന്ത്യയിലെ ആദ്യ ഡിജിറ്റൽ സർവ്വകലാശാല."
+        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും വലിയ IT കാമ്പസുകളിലൊന്ന് — 1 ലക്ഷം+ IT ജോലികൾ സൃഷ്ടിക്കും."
       },
       {
         "id": 11,
@@ -1376,14 +1376,14 @@
         "historical_benchmark": "Pre-2022: No dedicated electronics manufacturing zone in Kerala",
         "flex_fact": "India's largest chip assembly plant by a domestic company chose Palakkad, Kerala — attracted by K-FON connectivity, skilled workforce, and zero-outage power supply.",
         "source": "Kerala IT Dept / KINFRA",
-        "question_ml": "Infopark Kochi-യിൽ എത്ര IT കമ്പനികൾ പ്രവർത്തിക്കുന്നു?",
+        "question_ml": "e-Office സംവിധാനം സർക്കാർ പ്രവർത്തനത്തിൽ എന്ത് മാറ്റം വരുത്തി?",
         "options_ml": [
-          "100",
-          "250",
-          "400+",
-          "600"
+          "ഒരു മാറ്റവുമില്ല",
+          "ഫയൽ നീക്കം ഡിജിറ്റലൈസ് ചെയ്തു — പേപ്പർലെസ് ഓഫീസ്",
+          "കൂടുതൽ പേപ്പർ ഉപയോഗം",
+          "ജീവനക്കാരെ കുറച്ചു"
         ],
-        "flex_fact_ml": "കേരളത്തിലെ ഏറ്റവും വലിയ IT ക്ലസ്റ്റർ — 70,000+ IT പ്രൊഫഷണലുകൾ."
+        "flex_fact_ml": "500+ സർക്കാർ ഓഫീസുകൾ e-Office-ൽ — ഫയൽ നീക്ക സമയം 60% കുറഞ്ഞു."
       },
       {
         "id": 12,
@@ -1400,14 +1400,14 @@
         "historical_benchmark": "2016: Not in top 10",
         "flex_fact": "Kerala improved 7 rank positions in MeitY's digital governance score in a single year — the fastest improvement by any state.",
         "source": "MeitY Digital India State Rankings",
-        "question_ml": "കേരളത്തിന്റെ e-Governance സൂചികയിൽ സ്ഥാനം?",
+        "question_ml": "കേരളത്തിലെ BPO/ITeS മേഖല ഗ്രാമപ്രദേശങ്ങളിൽ എങ്ങനെ വിപുലീകരിച്ചു?",
         "options_ml": [
-          "5-ാം",
-          "3-ാം",
-          "1-ാം",
-          "10-ാം"
+          "വിപുലീകരിച്ചില്ല",
+          "Additional Skill Acquisition Programme (ASAP) വഴി",
+          "വിദേശ കമ്പനികൾ കൊണ്ടുവന്നു",
+          "തലസ്ഥാനത്ത് മാത്രം"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും മികച്ച e-Governance — 700+ സേവനങ്ങൾ ഓൺലൈനിൽ."
+        "flex_fact_ml": "ASAP — 5 ലക്ഷം+ യുവാക്കൾക്ക് skill training. Tier-2, Tier-3 നഗരങ്ങളിൽ IT ജോലികൾ."
       },
       {
         "id": 13,
@@ -1424,14 +1424,14 @@
         "historical_benchmark": "Pre-2018: No formal e-waste policy in Kerala",
         "flex_fact": "Kerala's e-waste recycling chain is run in partnership with Kudumbashree — the same women's network that manages solid waste also handles digital waste, closing the circular economy loop.",
         "source": "Kerala IT Dept Green IT Policy / PCB Kerala",
-        "question_ml": "KSWAN (Kerala State Wide Area Network) എന്ത് ബന്ധിപ്പിക്കുന്നു?",
+        "question_ml": "Kerala IT Policy 2023-ന്റെ പ്രധാന ശ്രദ്ധ?",
         "options_ml": [
-          "സ്കൂളുകൾ",
-          "എല്ലാ സർക്കാർ ഓഫീസുകളും",
-          "ആശുപത്രികൾ",
-          "പോലീസ് സ്റ്റേഷൻ"
+          "ഹാർഡ്‌വെയർ മാത്രം",
+          "AI, Blockchain, Cybersecurity, Space Tech",
+          "ടൂറിസം ആപ്പുകൾ",
+          "ഗെയിമിംഗ്"
         ],
-        "flex_fact_ml": "1,500+ സർക്കാർ ഓഫീസുകൾ ഹൈ-സ്പീഡ് നെറ്റ്‌വർക്കിൽ — പേപ്പർലെസ് ഭരണത്തിലേക്ക്."
+        "flex_fact_ml": "ഇന്ത്യയിൽ ആദ്യമായി AI, Blockchain-ന് പ്രത്യേക പോളിസി ഫ്രെയിംവർക്ക് ഉള്ള സംസ്ഥാനം."
       },
       {
         "id": 14,
@@ -1448,14 +1448,14 @@
         "historical_benchmark": "K-DISC established 2017 — unique in India as a government innovation strategy body",
         "flex_fact": "K-DISC funded research on sustainable rubber cultivation, smart fishing, and AI-based crop advisory — connecting cutting-edge tech to Kerala's traditional livelihood sectors.",
         "source": "K-DISC Annual Report 2025",
-        "question_ml": "Digital University Kerala ഏത് നഗരത്തിലാണ്?",
+        "question_ml": "ICFOSS (International Centre for Free and Open Source Software) കേരളത്തിൽ?",
         "options_ml": [
-          "കൊച്ചി",
-          "തിരുവനന്തപുരം",
-          "കോഴിക്കോട്",
-          "തൃശ്ശൂർ"
+          "അടച്ചുപൂട്ടി",
+          "ഓപ്പൺ സോഴ്‌സ് സോഫ്റ്റ്‌വെയർ പ്രോത്സാഹിപ്പിക്കുന്ന ദേശീയ കേന്ദ്രം",
+          "സ്വകാര്യ കമ്പനി",
+          "ടെസ്റ്റിംഗ് ലാബ്"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിലെ ആദ്യ ഡിജിറ്റൽ സർവ്വകലാശാല — AI, Data Science, Cybersecurity പ്രോഗ്രാമുകൾ."
+        "flex_fact_ml": "ICFOSS — ഇന്ത്യ സർക്കാരിന്റെ FOSS കേന്ദ്രം കേരളത്തിൽ. സ്കൂളുകളിൽ Linux ഓപ്പറേറ്റിംഗ് സിസ്റ്റം ഉപയോഗം."
       },
       {
         "id": 15,
@@ -1472,14 +1472,14 @@
         "historical_benchmark": "Pre-2019: No systematic use of GeM in Kerala",
         "flex_fact": "Kerala's shift to GeM eliminated a class of middlemen in government purchasing — price discovery improved and delivery timelines dropped by 40%, validated by CAG audit.",
         "source": "Government e-Marketplace / Kerala Finance Dept",
-        "question_ml": "കേരളത്തിലെ IT മേഖലയിൽ എത്ര പേർക്ക് നേരിട്ട് തൊഴിൽ?",
+        "question_ml": "K-SWIFT (Kerala Single Window Interface for Fast & Transparent Clearance) വഴി ബിസിനസ് അനുമതി സമയം?",
         "options_ml": [
-          "50,000",
-          "1,00,000",
-          "2,00,000+",
-          "3,00,000"
+          "120 ദിവസം",
+          "90 ദിവസം",
+          "~15 ദിവസം",
+          "60 ദിവസം"
         ],
-        "flex_fact_ml": "2 ലക്ഷം+ നേരിട്ടും 5 ലക്ഷം+ പരോക്ഷമായും — Tier 2 നഗരങ്ങളിലും IT തൊഴിൽ."
+        "flex_fact_ml": "K-SWIFT — വർഷം 15,000+ clearances. ബിസിനസ് ചെയ്യൽ എളുപ്പം 8 മടങ്ങ് മെച്ചപ്പെട്ടു."
       }
     ]
   },
@@ -1507,14 +1507,14 @@
         "historical_benchmark": "Pre-2016: No off-budget infrastructure fund",
         "flex_fact": "KIIFB is a unique off-budget infrastructure financing model — no other state has replicated it at this scale.",
         "source": "KIIFB Official Reports",
-        "question_ml": "കേരളത്തിലേക്ക് 2026-ൽ എത്ര വിനോദ സഞ്ചാരികൾ വന്നു?",
+        "question_ml": "കേരളത്തിന്റെ ടൂറിസം വരുമാനം 2026-ൽ എത്ര?",
         "options_ml": [
-          "1 കോടി",
-          "1.5 കോടി",
-          "2 കോടി+",
-          "3 കോടി"
+          "₹20,000 കോടി",
+          "₹35,000 കോടി",
+          "₹50,000+ കോടി",
+          "₹15,000 കോടി"
         ],
-        "flex_fact_ml": "COVID-ക്ക് ശേഷം സമ്പൂർണ്ണ വീണ്ടെടുക്കൽ — Responsible Tourism മാതൃക ലോക ശ്രദ്ധയിൽ."
+        "flex_fact_ml": "ടൂറിസം GSDP-യുടെ 10%+ — കേരളം ഇന്ത്യയിലെ ഏറ്റവും ജനപ്രിയ ടൂറിസ്റ്റ് കേന്ദ്രം."
       },
       {
         "id": 2,
@@ -1531,14 +1531,14 @@
         "historical_benchmark": "Pre-2016: Project stuck in approvals for decades",
         "flex_fact": "30% of India's transshipment cargo goes to Colombo — Vizhinjam will recapture this.",
         "source": "Vizhinjam International Seaport Ltd",
-        "question_ml": "Responsible Tourism Initiative (RT) എന്താണ്?",
+        "question_ml": "Responsible Tourism Initiative-യുടെ ലക്ഷ്യം?",
         "options_ml": [
-          "ആഡംബര ടൂറിസം",
-          "പ്രാദേശിക സമൂഹത്തെ ടൂറിസത്തിൽ ഉൾപ്പെടുത്തൽ",
+          "ടൂറിസ്റ്റുകൾ കൂട്ടൽ മാത്രം",
+          "പ്രാദേശിക സമൂഹങ്ങൾക്ക് പ്രയോജനം ഉറപ്പാക്കൽ",
           "ഹോട്ടൽ നിർമ്മാണം",
-          "എയർപോർട്ട് വികസനം"
+          "വിമാനത്താവളം പണിയൽ"
         ],
-        "flex_fact_ml": "UN World Tourism Organisation പുരസ്കാരം — ഗ്രാമീണ സമൂഹങ്ങൾക്ക് ടൂറിസം വരുമാനം."
+        "flex_fact_ml": "RT Mission — 500+ ഗ്രാമങ്ങളിൽ ടൂറിസം, തദ്ദേശ ഉൽപ്പന്നങ്ങൾക്ക് ₹300 കോടി+ വിൽപ്പന."
       },
       {
         "id": 3,
@@ -1555,14 +1555,14 @@
         "historical_benchmark": "Pre-2016: No water-based mass transit anywhere in India",
         "flex_fact": "Connects 10 islands across Kochi's backwaters using electric hybrid boats — zero emissions.",
         "source": "Kochi Water Metro Ltd (KWML)",
-        "question_ml": "കേരളത്തിന്റെ ടൂറിസം വരുമാനം 2026-ൽ ഏകദേശം?",
+        "question_ml": "കേരളത്തിൽ എത്ര കിലോമീറ്റർ ദേശീയ-സംസ്ഥാന പാതകൾ നവീകരിച്ചു?",
         "options_ml": [
-          "₹15,000 കോടി",
-          "₹25,000 കോടി",
-          "₹40,000+ കോടി",
-          "₹50,000 കോടി"
+          "5,000 km",
+          "10,000 km",
+          "20,000+ km",
+          "2,000 km"
         ],
-        "flex_fact_ml": "GDP-യുടെ 10%+ ടൂറിസത്തിൽ നിന്ന് — ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്ന ടൂറിസം GDP ശതമാനം."
+        "flex_fact_ml": "KIIFB, NABARD ഫണ്ടിംഗിൽ റോഡ് ശൃംഖല വിപുലീകരിച്ചു — യാത്രാ സമയം 40% കുറഞ്ഞു."
       },
       {
         "id": 4,
@@ -1579,14 +1579,14 @@
         "historical_benchmark": "Pre-2016: RT pilots in Kumarakom only",
         "flex_fact": "Kerala's Responsible Tourism model has been adopted as a UNWTO best practice — community gets tourism dividends directly.",
         "source": "Kerala Tourism / UNWTO Reports",
-        "question_ml": "Kerala Tourism-ന്റെ പ്രശസ്ത ടാഗ്‌ലൈൻ?",
+        "question_ml": "Caravan Tourism എന്ന പുതിയ ടൂറിസം മോഡൽ?",
         "options_ml": [
-          "Incredible Kerala",
-          "God's Own Country",
-          "Beautiful Kerala",
-          "Green Paradise"
+          "ബസ് ടൂർ",
+          "ചക്രവാഹനത്തിൽ യാത്ര ചെയ്ത് ടൂറിസം",
+          "ബോട്ട് ടൂർ",
+          "ട്രെയിൻ ടൂർ"
         ],
-        "flex_fact_ml": "God's Own Country — ലോകത്തിലെ ഏറ്റവും വിജയകരമായ ടൂറിസം ബ്രാൻഡിംഗുകളിലൊന്ന്."
+        "flex_fact_ml": "ഇന്ത്യയിൽ ആദ്യമായി Caravan Tourism നയം — 100+ caravan parks, വനമേഖലകളിലും കടൽത്തീരത്തും."
       },
       {
         "id": 5,
@@ -1603,14 +1603,14 @@
         "historical_benchmark": "No other state has ever co-funded a National Highway",
         "flex_fact": "Kerala volunteered to co-fund to accelerate the 6-lane expansion — unprecedented in India.",
         "source": "Kerala PWD / NHAI",
-        "question_ml": "Caravan Tourism കേരളത്തിൽ ആരംഭിച്ചത് എന്ന്?",
+        "question_ml": "Vyttila Mobility Hub എന്താണ്?",
         "options_ml": [
-          "2015",
-          "2018",
-          "2021",
-          "2023"
+          "വിമാനത്താവളം",
+          "ഇന്റഗ്രേറ്റഡ് ട്രാൻസ്‌പോർട്ട് ഹബ്",
+          "IT പാർക്ക്",
+          "ഷോപ്പിംഗ് മാൾ"
         ],
-        "flex_fact_ml": "COVID-ക്ക് ശേഷം സുരക്ഷിത ടൂറിസം ബദലായി — 500+ രജിസ്റ്റേഡ് കാരവാനുകൾ."
+        "flex_fact_ml": "ഇന്ത്യയിലെ ആദ്യ ഇന്റഗ്രേറ്റഡ് മൊബിലിറ്റി ഹബ് — ബസ്, മെട്രോ, വാട്ടർ ട്രാൻസ്‌പോർട്ട് ഒരിടത്ത്."
       },
       {
         "id": 6,
@@ -1627,14 +1627,14 @@
         "historical_benchmark": "Pre-KIIFB: Road upgrades were limited to central grants",
         "flex_fact": "KIIFB's road programme was so extensive it changed Kerala's drainage pattern — the roads are built with one-in-a-hundred-year flood drainage capacity, a lesson from 2018.",
         "source": "KIIFB Annual Report 2025 / Kerala PWD",
-        "question_ml": "കേരളത്തിലെ ദേശീയ പാത വികസനം 2016-ന് ശേഷം?",
+        "question_ml": "കേരളത്തിന്റെ പാലം നിർമ്മാണ പദ്ധതിയിൽ എത്ര പാലങ്ങൾ പൂർത്തിയാക്കി?",
         "options_ml": [
-          "500 km",
-          "1,000 km",
-          "1,500+ km",
-          "2,500 km"
+          "100",
+          "300+",
+          "500+",
+          "50"
         ],
-        "flex_fact_ml": "ദേശീയ പാത വികസനം 2 മടങ്ങ് ത്വരിതപ്പെടുത്തി — 4/6 ലെയ്ൻ നവീകരണം."
+        "flex_fact_ml": "KIIFB വഴി 500+ പാലങ്ങൾ — ഗ്രാമീണ ബന്ധം ശക്തമാക്കി. സ്കൂൾ, ആശുപത്രി ലഭ്യത മെച്ചപ്പെട്ടു."
       },
       {
         "id": 7,
@@ -1651,14 +1651,14 @@
         "historical_benchmark": "Phase 1 commissioned 2024 after decades of delays",
         "flex_fact": "A single ship docking at Vizhinjam can carry goods that would take 3,000 truck trips — the port will redirect India's largest container volumes away from Colombo.",
         "source": "Vizhinjam International Seaport Ltd",
-        "question_ml": "Jatayu Earth's Centre ഏത് ജില്ലയിലാണ്?",
+        "question_ml": "Medical Tourism-ൽ കേരളത്തിന്റെ നേട്ടം?",
         "options_ml": [
-          "ഇടുക്കി",
-          "കൊല്ലം",
-          "വയനാട്",
-          "ആലപ്പുഴ"
+          "കുറഞ്ഞ നിലവാരം",
+          "ഇന്ത്യയിലെ ഏറ്റവും മികച്ച Medical Tourism ലക്ഷ്യസ്ഥാനം",
+          "Medical Tourism ഇല്ല",
+          "ചെന്നൈയ്ക്ക് പിന്നിൽ"
         ],
-        "flex_fact_ml": "ലോകത്തിലെ ഏറ്റവും വലിയ പക്ഷി ശിൽപം — Adventure Tourism-ന്റെ കേന്ദ്രം."
+        "flex_fact_ml": "വർഷം 5 ലക്ഷം+ വിദേശ രോഗികൾ — ആയുർവേദം + ആധുനിക ചികിത്സ."
       },
       {
         "id": 8,
@@ -1675,14 +1675,14 @@
         "historical_benchmark": "Pre-2023: Island residents depended on irregular private boat services",
         "flex_fact": "Island communities like Bolgatty and Mulavukad that were effectively cut off from Kochi's economy now have Metro-standard connectivity — real estate and employment access transformed.",
         "source": "Kochi Water Metro Ltd (KWML)",
-        "question_ml": "Kochi-Mangalore Industrial Corridor പദ്ധതി എന്ത്?",
+        "question_ml": "Hill Highway പദ്ധതി എന്താണ്?",
         "options_ml": [
-          "റെയിൽവേ",
-          "വ്യവസായ ഇടനാഴി",
-          "ജലപാത",
-          "എയർ കാർഗോ"
+          "സമതല റോഡ്",
+          "മലയോര ജില്ലകളെ ബന്ധിപ്പിക്കുന്ന 740 km ഹൈവേ",
+          "കടൽത്തീര റോഡ്",
+          "എക്സ്പ്രസ് വേ"
         ],
-        "flex_fact_ml": "കേരളത്തിന്റെ വ്യവസായ-ടൂറിസം സംയോജിത വികസന പദ്ധതി."
+        "flex_fact_ml": "740 km Hill Highway — കാസർഗോഡ് മുതൽ തിരുവനന്തപുരം വരെ മലയോരം ചുറ്റി."
       },
       {
         "id": 9,
@@ -1699,14 +1699,14 @@
         "historical_benchmark": "Pre-2020: Coastal connectivity depended entirely on NH-66",
         "flex_fact": "The proposed coastal highway would cut travel time from Thiruvananthapuram to Kozhikode to under 5 hours — currently 9 hours by road.",
         "source": "KIIFB / Kerala PWD DPR Documents",
-        "question_ml": "കേരളത്തിൽ എത്ര വിമാനത്താവളങ്ങൾ ഉണ്ട്?",
+        "question_ml": "കേരള ടൂറിസത്തിന്റെ 'God's Own Country' ബ്രാൻഡ് ഏത് വർഷം ആരംഭിച്ചു?",
         "options_ml": [
-          "2",
-          "3",
-          "4",
-          "5"
+          "1999",
+          "2005",
+          "2010",
+          "2016"
         ],
-        "flex_fact_ml": "തിരുവനന്തപുരം, കൊച്ചി, കോഴിക്കോട്, കണ്ണൂർ — 4 അന്താരാഷ്ട്ര വിമാനത്താവളങ്ങൾ."
+        "flex_fact_ml": "ലോകത്തിലെ ഏറ്റവും വിജയകരമായ ടൂറിസം ബ്രാൻഡുകളിലൊന്ന് — 25+ വർഷം."
       },
       {
         "id": 10,
@@ -1723,14 +1723,14 @@
         "historical_benchmark": "2016: ~500 RT units in pilot districts",
         "flex_fact": "A Kerala fishing village's RT unit allows tourists to go night-fishing, share the catch, and eat with the family — the fisherman earns more from one tourist night than from 3 days at sea.",
         "source": "Kerala Tourism / Responsible Tourism Mission",
-        "question_ml": "കേരളത്തിന്റെ ബീച്ച് ടൂറിസം കേന്ദ്രം ഏത്?",
+        "question_ml": "Coastal Highway (Coastal Erosion Prevention)-ന്റെ നീളം?",
         "options_ml": [
-          "കോവളം",
-          "ചെറായി",
-          "വർക്കല",
-          "എല്ലാം"
+          "200 km",
+          "350 km",
+          "590+ km",
+          "100 km"
         ],
-        "flex_fact_ml": "കോവളം, വർക്കല, മറാരി, ചെറായി — Blue Flag ബീച്ചുകൾ ഉൾപ്പെടെ."
+        "flex_fact_ml": "590 km കടൽത്തീര ഹൈവേ — കടലാക്രമണ സംരക്ഷണവും ടൂറിസം വികസനവും."
       },
       {
         "id": 11,
@@ -1747,14 +1747,14 @@
         "historical_benchmark": "2016: ~4,000 registered homestays",
         "flex_fact": "Kerala's homestay boom created 60,000+ direct jobs for ordinary families — tourism revenue distributed to households, not just resorts.",
         "source": "Kerala Tourism Dept / Classification Data",
-        "question_ml": "Rebuild Kerala Initiative (RKI) എന്ത്?",
+        "question_ml": "Backwater Tourism-ൽ ഹൗസ്‌ബോട്ടുകളുടെ എണ്ണം?",
         "options_ml": [
-          "ടൂറിസം പ്രമോഷൻ",
-          "2018 പ്രളയ ശേഷ പുനർനിർമ്മാണം",
-          "പാലം നിർമ്മാണം",
-          "IT വികസനം"
+          "200",
+          "500",
+          "900+",
+          "100"
         ],
-        "flex_fact_ml": "₹30,000+ കോടി പുനർനിർമ്മാണ പദ്ധതി — Build Back Better തത്വത്തിൽ."
+        "flex_fact_ml": "ആലപ്പുഴ — ലോകത്തിലെ ഏറ്റവും മനോഹരമായ ഉൾനാടൻ ജലയാത്ര ലക്ഷ്യസ്ഥാനം."
       },
       {
         "id": 12,
@@ -1771,14 +1771,14 @@
         "historical_benchmark": "2016: ~₹9,000 Cr foreign tourism revenue",
         "flex_fact": "Despite being 1/3rd the size of Rajasthan, Kerala earns more foreign tourism revenue — proof that high-value, low-footprint tourism outperforms mass tourism.",
         "source": "India Tourism Statistics / Kerala Tourism",
-        "question_ml": "കേരളത്തിന്റെ ആദ്യ Greenfield Airport ഏത്?",
+        "question_ml": "KIIFB വഴി നിർമ്മിച്ച വലിയ പാലങ്ങളിൽ ഏതാണ് ശ്രദ്ധേയം?",
         "options_ml": [
-          "കൊച്ചി",
-          "കണ്ണൂർ",
-          "കോഴിക്കോട്",
-          "തിരുവനന്തപുരം"
+          "വൈപ്പിൻ പാലം",
+          "കോഴിക്കോട് ബൈപാസ്",
+          "ചെങ്ങന്നൂർ ബൈപാസ്",
+          "തോട്ടപ്പള്ളി പാലം"
         ],
-        "flex_fact_ml": "കണ്ണൂർ International Airport — മലബാർ ടൂറിസത്തിന്റെ ഗേറ്റ്‌വേ."
+        "flex_fact_ml": "KIIFB — ₹50,000 കോടി+ അടിസ്ഥാന സൗകര്യ വികസനം. റോഡ്, പാലം, കെട്ടിടം എല്ലാം."
       },
       {
         "id": 13,
@@ -1795,14 +1795,14 @@
         "historical_benchmark": "Pre-KIIFB: Educational infrastructure upgrades took decades in government budget cycles",
         "flex_fact": "KIIFB built new classrooms, labs, and auditoriums for government colleges at private-sector speed — a student entering Class 1 in 2017 graduated from a transformed school in 2026.",
         "source": "KIIFB Official Reports",
-        "question_ml": "കേരളത്തിൽ എത്ര Backwater ടൂറിസം ഡെസ്റ്റിനേഷനുകൾ?",
+        "question_ml": "Heritage Tourism-ൽ കേരളം എത്ര UNESCO സൈറ്റുകൾ?",
         "options_ml": [
-          "5",
-          "10+",
+          "0",
+          "1",
           "3",
-          "15"
+          "5"
         ],
-        "flex_fact_ml": "ആലപ്പുഴ, കുമരകം, അഷ്ടമുടി — ലോക പ്രശസ്ത ഹൗസ്‌ബോട്ട് അനുഭവം."
+        "flex_fact_ml": "Western Ghats UNESCO World Heritage Site — ജൈവവൈവിധ്യത്തിന്റെ ആഗോള ഹോട്ട്‌സ്പോട്ട്."
       },
       {
         "id": 14,
@@ -1819,14 +1819,14 @@
         "historical_benchmark": "Pre-2020: No real-time bridge monitoring in Kerala",
         "flex_fact": "After the 2018 floods damaged 10,000+ bridges, Kerala deployed IoT sensors that alert engineers when vibration, stress, or water level crosses safety thresholds — bridges now call for help before they fail.",
         "source": "Kerala PWD / KIIFB Smart Infrastructure Report",
-        "question_ml": "കേരളത്തിന്റെ PWD റോഡുകളുടെ ആകെ നീളം?",
+        "question_ml": "PWD (Public Works Department)-യുടെ e-Tender സംവിധാനം?",
         "options_ml": [
-          "10,000 km",
-          "18,000 km",
-          "25,000+ km",
-          "35,000 km"
+          "ഓഫ്‌ലൈൻ ടെൻഡർ",
+          "100% ഓൺലൈൻ e-Tendering — സുതാര്യത ഉറപ്പാക്കൽ",
+          "ടെൻഡർ ഇല്ല",
+          "മൗഖിക ടെൻഡർ"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്ന റോഡ് സാന്ദ്രത — ചതുരശ്ര കിലോമീറ്ററിന് 5.5+ km."
+        "flex_fact_ml": "100% e-Tendering — അഴിമതി കുറഞ്ഞു, സുതാര്യത വർധിച്ചു."
       },
       {
         "id": 15,
@@ -1843,14 +1843,14 @@
         "historical_benchmark": "2016: ~25 international airlines",
         "flex_fact": "More non-resident Keralites live abroad than any comparable region — the airports serve a diaspora of 3 million who remit ₹2 Lakh Cr annually, making international air connectivity a lifeline, not a luxury.",
         "source": "AAI / Kerala Airport Data 2026",
-        "question_ml": "Eco-Tourism കേരളത്തിൽ ഏത് വകുപ്പ് കൈകാര്യം ചെയ്യുന്നു?",
+        "question_ml": "Eco-Tourism-ൽ കേരളത്തിന്റെ സവിശേഷ മോഡൽ?",
         "options_ml": [
-          "ടൂറിസം",
-          "വനം",
-          "ടൂറിസം + വനം",
-          "LSGD"
+          "വനം വെട്ടൽ",
+          "സമൂഹ അടിസ്ഥാന ഇക്കോ-ടൂറിസം",
+          "ഹോട്ടൽ നിർമ്മാണം വനത്തിൽ",
+          "ടൂറിസം നിരോധനം"
         ],
-        "flex_fact_ml": "Thenmala, Gavi, Konni — ഇന്ത്യയിലെ ആദ്യ Eco-Tourism പദ്ധതികൾ."
+        "flex_fact_ml": "Community-based Eco-Tourism — ആദിവാസി സമൂഹങ്ങൾ നേരിട്ട് വരുമാനം നേടുന്നു. 150+ ഇക്കോ-ടൂറിസം കേന്ദ്രങ്ങൾ."
       }
     ]
   },
@@ -1878,14 +1878,14 @@
         "historical_benchmark": "2016: ~40 Lakh members",
         "flex_fact": "Kudumbashree operates at neighbourhood level — every 10–20 households have a unit.",
         "source": "Kudumbashree Mission Data",
-        "question_ml": "കേരളത്തിന്റെ ഉന്നത വിദ്യാഭ്യാസ Gross Enrolment Ratio (GER)?",
+        "question_ml": "കേരളത്തിലെ ഉന്നത വിദ്യാഭ്യാസ GER എത്ര?",
         "options_ml": [
           "25%",
           "35%",
           "40%+",
-          "50%"
+          "20%"
         ],
-        "flex_fact_ml": "ദേശീയ ശരാശരി 27%-ൽ നിൽക്കുമ്പോൾ കേരളം 40%+ — ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്നത്."
+        "flex_fact_ml": "ദേശീയ ശരാശരി 28% ആയിരിക്കെ കേരളം 40%+ — ഏറ്റവും ഉയർന്ന ഉന്നത വിദ്യാഭ്യാസ ചേരിക്കൽ."
       },
       {
         "id": 2,
@@ -1902,14 +1902,14 @@
         "historical_benchmark": "2016: 16 universities",
         "flex_fact": "Including specialised universities for Arts, Science, Sanskrit, Fisheries, Agriculture, Technology, and Ayurveda.",
         "source": "UGC / Kerala Higher Education Dept",
-        "question_ml": "കേരളത്തിൽ എത്ര സർവ്വകലാശാലകൾ ഉണ്ട്?",
+        "question_ml": "കേരളത്തിൽ എത്ര സർവകലാശാലകൾ?",
         "options_ml": [
           "8",
-          "14",
-          "20+",
-          "25"
+          "12",
+          "17+",
+          "5"
         ],
-        "flex_fact_ml": "സാങ്കേതിക, ആരോഗ്യ, ഡിജിറ്റൽ, മത്സ്യബന്ധന, സംസ്‌കൃത സർവ്വകലാശാലകൾ ഉൾപ്പെടെ."
+        "flex_fact_ml": "17+ സർവകലാശാലകൾ — ഡിജിറ്റൽ ലൈബ്രറി, സ്മാർട്ട് ക്ലാസ്‌റൂം, ഓൺലൈൻ വിദ്യാഭ്യാസ സൗകര്യം."
       },
       {
         "id": 3,
@@ -1926,14 +1926,14 @@
         "historical_benchmark": "Pre-2016: ₹600/month",
         "flex_fact": "233% increase in one decade — the highest state pension in India.",
         "source": "Kerala Finance Dept Budget Documents",
-        "question_ml": "കേരളത്തിന്റെ സാമൂഹ്യ സുരക്ഷാ പെൻഷൻ എത്ര പേർക്ക് ലഭിക്കുന്നു?",
+        "question_ml": "SC/ST വിദ്യാർത്ഥികൾക്കുള്ള Post-Matric Scholarship-ന്റെ കവറേജ്?",
         "options_ml": [
-          "20 ലക്ഷം",
-          "35 ലക്ഷം",
-          "50 ലക്ഷം+",
-          "60 ലക്ഷം"
+          "ട്യൂഷൻ ഫീ മാത്രം",
+          "ട്യൂഷൻ + ഹോസ്റ്റൽ + പുസ്തകം + ലാപ്ടോപ്",
+          "₹1,000 പ്രതിമാസം",
+          "ഫീസ് ഇളവ് മാത്രം"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും വിപുലമായ സാമൂഹ്യ സുരക്ഷാ ശൃംഖല — 50 ലക്ഷം+ ഗുണഭോക്താക്കൾ."
+        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും സമഗ്രമായ SC/ST സ്കോളർഷിപ്പ് — ലാപ്ടോപ്, കോച്ചിംഗ് ഉൾപ്പെടെ."
       },
       {
         "id": 4,
@@ -1950,14 +1950,14 @@
         "historical_benchmark": "Pre-2016: No state-wide subsidised meal network",
         "flex_fact": "1,000+ Subhiksha outlets ensure no one goes hungry — a larger menu than comparable schemes.",
         "source": "Kerala Civil Supplies Dept",
-        "question_ml": "Transgender Policy നടപ്പാക്കിയ ഇന്ത്യയിലെ ആദ്യ സംസ്ഥാനം?",
+        "question_ml": "സാമൂഹ്യ നീതി വകുപ്പിന്റെ Snehapoorvam പദ്ധതി?",
         "options_ml": [
-          "തമിഴ്‌നാട്",
-          "കേരളം",
-          "മഹാരാഷ്ട്ര",
-          "കർണാടക"
+          "വയോജന പരിപാലനം",
+          "അനാഥ/ഏകാംഗ കുടുംബ കുട്ടികൾക്ക് സ്കോളർഷിപ്പ്",
+          "ഭവന നിർമ്മാണം",
+          "വിവാഹ ധനസഹായം"
         ],
-        "flex_fact_ml": "2015-ൽ Transgender Policy — സൗജന്യ SRS, ID, വിദ്യാഭ്യാസം, തൊഴിൽ സംവരണം."
+        "flex_fact_ml": "50,000+ കുട്ടികൾക്ക് പ്രതിമാസ ധനസഹായം — വിദ്യാഭ്യാസം ഉപേക്ഷിക്കാതിരിക്കാൻ."
       },
       {
         "id": 5,
@@ -1974,14 +1974,14 @@
         "historical_benchmark": "UDF tenure 2011–16: ~1.2 Lakh",
         "flex_fact": "Doubled the rate of government job creation while simultaneously expanding the startup ecosystem.",
         "source": "Kerala PSC Annual Reports",
-        "question_ml": "കേരളത്തിന്റെ Snehapoorvam പദ്ധതി ആർക്ക് വേണ്ടി?",
+        "question_ml": "Transgender Policy ഉള്ള ഇന്ത്യയിലെ ആദ്യ സംസ്ഥാനം?",
         "options_ml": [
-          "വിധവകൾ",
-          "അനാഥ കുട്ടികൾ",
-          "വയോജനങ്ങൾ",
-          "ഭിന്നശേഷിക്കാർ"
+          "തമിഴ്‌നാട്",
+          "കേരളം",
+          "മഹാരാഷ്ട്ര",
+          "ദില്ലി"
         ],
-        "flex_fact_ml": "അനാഥരും ദുർബല കുടുംബങ്ങളിലെയും കുട്ടികൾക്ക് വിദ്യാഭ്യാസ ധനസഹായം."
+        "flex_fact_ml": "2015-ൽ ട്രാൻസ്ജെൻഡർ പോളിസി — സർക്കാർ ജോലി, വിദ്യാഭ്യാസം, ആരോഗ്യം എല്ലാം ഉൾക്കൊള്ളിച്ചു."
       },
       {
         "id": 6,
@@ -1998,14 +1998,14 @@
         "historical_benchmark": "2016: ~1,400 colleges",
         "flex_fact": "Kerala has more colleges per capita than most European countries — accessibility to higher education is effectively universal for anyone who finishes school.",
         "source": "AISHE 2024 / Kerala Higher Education Dept",
-        "question_ml": "കേരളത്തിന്റെ സാമൂഹ്യ സുരക്ഷാ പെൻഷൻ തുക മാസം?",
+        "question_ml": "NAAC Accreditation ഉള്ള കേരള കോളേജുകളുടെ ശതമാനം?",
         "options_ml": [
-          "₹500",
-          "₹1,000",
-          "₹1,600",
-          "₹2,000"
+          "30%",
+          "50%",
+          "75%+",
+          "20%"
         ],
-        "flex_fact_ml": "₹1,600/മാസം — ഇന്ത്യയിലെ ഏറ്റവും ഉയർന്ന സംസ്ഥാന പെൻഷൻ തുകകളിലൊന്ന്."
+        "flex_fact_ml": "ദേശീയ ശരാശരിയുടെ 3 മടങ്ങ് — ഗുണനിലവാര ഉറപ്പ് ഉന്നത വിദ്യാഭ്യാസത്തിൽ."
       },
       {
         "id": 7,
@@ -2022,14 +2022,14 @@
         "historical_benchmark": "2016: ~2 Lakh enterprises",
         "flex_fact": "Kudumbashree enterprises span catering, construction (HOPE units), IT data entry, and agricultural collectives — the network has collectively turned over more than ₹5,000 Cr.",
         "source": "Kudumbashree Mission Data 2025",
-        "question_ml": "കേരളത്തിലെ സ്വകാര്യ സർവ്വകലാശാലകളുടെ എണ്ണം?",
+        "question_ml": "വയോജന പരിപാലനത്തിൽ കേരളത്തിന്റെ മാതൃക?",
         "options_ml": [
-          "5",
-          "10",
-          "15+",
-          "20"
+          "ഒരു പദ്ധതിയുമില്ല",
+          "Vayomithram — 60+ വയസ്സുള്ളവർക്ക് സൗജന്യ ആരോഗ്യ-സാമൂഹ്യ സേവനം",
+          "വൃദ്ധസദനം മാത്രം",
+          "കേന്ദ്ര പദ്ധതി മാത്രം"
         ],
-        "flex_fact_ml": "സ്വകാര്യ-സർക്കാർ സർവ്വകലാശാലാ ശൃംഖല — ഗുണനിലവാര നിയന്ത്രണത്തോടെ."
+        "flex_fact_ml": "Vayomithram — 14 ജില്ലകളിലും. ഫോൺ ചെയ്താൽ വീട്ടിൽ ഡോക്ടർ, മരുന്ന്, കൗൺസിലിംഗ്."
       },
       {
         "id": 8,
@@ -2046,14 +2046,14 @@
         "historical_benchmark": "2016: ~4 Lakh SC/ST scholarship beneficiaries",
         "flex_fact": "Kerala's SC/ST scholarship covers not just tuition but living expenses — enabling first-generation learners from Wayanad's adivasi communities to study medicine in Thiruvananthapuram.",
         "source": "Kerala SC/ST Development Dept",
-        "question_ml": "കേരളത്തിന്റെ Gender Budget എന്ന ആശയം?",
+        "question_ml": "KSSM (Kerala Social Security Mission) എന്താണ്?",
         "options_ml": [
-          "സ്ത്രീകൾക്ക് മാത്രം ബജറ്റ്",
-          "ബജറ്റിന്റെ ലിംഗ വിശകലനം",
-          "പുരുഷ ബജറ്റ്",
-          "കുട്ടികളുടെ ബജറ്റ്"
+          "IT കമ്പനി",
+          "സാമൂഹ്യ സുരക്ഷാ പദ്ധതികൾ നടപ്പാക്കൽ ഏജൻസി",
+          "ബാങ്ക്",
+          "പോലീസ് സേന"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിൽ ഏറ്റവും വിപുലമായ Gender Budget — ആകെ ബജറ്റിന്റെ 15%+."
+        "flex_fact_ml": "KSSM — വികലാംഗർ, വയോജനങ്ങൾ, മാനസിക രോഗികൾ — 5 ലക്ഷം+ ഗുണഭോക്താക്കൾ."
       },
       {
         "id": 9,
@@ -2070,14 +2070,14 @@
         "historical_benchmark": "Pre-2016: No specific scheme for daily wage workers' children",
         "flex_fact": "A child whose parent earns ₹400/day can now study engineering or medicine with the state paying fees, hostel, and maintenance — Vidyadhanam breaks the inter-generational poverty cycle.",
         "source": "Kerala Higher Education Dept / Finance Dept",
-        "question_ml": "KASE (Kerala Academy for Skills Excellence) എന്ത്?",
+        "question_ml": "Skill Development-ൽ ASAP (Additional Skill Acquisition Programme)?",
         "options_ml": [
-          "IT കമ്പനി",
-          "നൈപുണ്യ വികസന ഏജൻസി",
-          "സ്പോർട്സ് അക്കാദമി",
-          "കലാ അക്കാദമി"
+          "കൃഷി പരിശീലനം",
+          "ഉന്നത വിദ്യാഭ്യാസത്തിനൊപ്പം സ്കിൽ ട്രെയിനിംഗ്",
+          "ഓൺലൈൻ ഗെയിമിംഗ്",
+          "ഡ്രൈവിംഗ് പരിശീലനം"
         ],
-        "flex_fact_ml": "അന്താരാഷ്ട്ര നിലവാരത്തിൽ തൊഴിൽ പരിശീലനം — യുവാക്കളെ ആഗോള തൊഴിൽ വിപണിക്ക് സജ്ജമാക്കുന്നു."
+        "flex_fact_ml": "5 ലക്ഷം+ യുവാക്കൾക്ക് industry-ready skills — 200+ കോളേജുകളിൽ ASAP community skill parks."
       },
       {
         "id": 10,
@@ -2094,14 +2094,14 @@
         "historical_benchmark": "2016: ~800 ST students passing Plus Two with first class",
         "flex_fact": "The 4x increase in tribal first-class students in a decade is directly linked to residential schooling, Kudumbashree's community support network, and targeted coaching camps.",
         "source": "Kerala Board of Higher Secondary Education / ST Dept",
-        "question_ml": "കേരളത്തിലെ She Lodge-കൾ ആർക്ക് വേണ്ടി?",
+        "question_ml": "Women's Commission-ന്റെ ശക്തിപ്പെടുത്തൽ?",
         "options_ml": [
-          "ടൂറിസ്റ്റുകൾ",
-          "ജോലിക്കാരായ സ്ത്രീകൾ",
-          "വിദ്യാർത്ഥിനികൾ",
-          "B, C രണ്ടും"
+          "നിർത്തലാക്കി",
+          "Online complaint portal + Jagrata Samiti എല്ലാ പഞ്ചായത്തിലും",
+          "പേരിന് മാത്രം",
+          "കേന്ദ്ര കമ്മീഷനിൽ ലയിപ്പിച്ചു"
         ],
-        "flex_fact_ml": "ജോലിക്കും പഠനത്തിനും പോകുന്ന സ്ത്രീകൾക്ക് സുരക്ഷിത താമസ സൗകര്യം."
+        "flex_fact_ml": "She-Box, One Stop Centre — 1000+ പഞ്ചായത്തുകളിൽ Jagrata Samiti. സ്ത്രീ സുരക്ഷ ശക്തമാക്കി."
       },
       {
         "id": 11,
@@ -2118,14 +2118,14 @@
         "historical_benchmark": "ASAP launched 2012; scaled 3x post-2016",
         "flex_fact": "ASAP is embedded in college timetables — students gain certification during their degree without additional years. 72% of ASAP graduates get jobs within 6 months of graduation.",
         "source": "ASAP Kerala Annual Report",
-        "question_ml": "കേരളത്തിന്റെ Women Wall ഏത് വർഷം?",
+        "question_ml": "Research & Innovation-ൽ കേരള സർവകലാശാലകളുടെ NIRF റാങ്കിംഗ്?",
         "options_ml": [
-          "2017",
-          "2019",
-          "2020",
-          "2022"
+          "Top 100-ൽ ഒന്നുമില്ല",
+          "Top 100-ൽ 5+ സർവകലാശാലകൾ",
+          "അവസാന സ്ഥാനം",
+          "റാങ്കിംഗ് ബാധകമല്ല"
         ],
-        "flex_fact_ml": "620 km നീളമുള്ള Women Wall — 55 ലക്ഷം സ്ത്രീകൾ പങ്കെടുത്ത ചരിത്ര സംഭവം."
+        "flex_fact_ml": "CUSAT, Kerala University, Calicut University — NIRF Top 100-ൽ. ഗവേഷണ ഔട്ട്‌പുട്ട് 3 മടങ്ങ് വർധിച്ചു."
       },
       {
         "id": 12,
@@ -2142,14 +2142,14 @@
         "historical_benchmark": "2016: ~40 Lakh beneficiaries at ₹600/month",
         "flex_fact": "Over 15% of Kerala's entire population receives a monthly social security pension — one of the highest social protection coverage rates of any sub-national government globally.",
         "source": "Kerala Finance Dept / Social Justice Dept",
-        "question_ml": "Higher Education-ൽ സ്ത്രീ-പുരുഷ അനുപാതം?",
+        "question_ml": "ഭിന്നശേഷി വ്യക്തികൾക്കുള്ള Barrier-Free Kerala?",
         "options_ml": [
-          "40:60",
-          "50:50",
-          "55:45 സ്ത്രീ-അധികം",
-          "60:40 സ്ത്രീ-അധികം"
+          "ഒരു പദ്ധതിയുമില്ല",
+          "എല്ലാ സർക്കാർ കെട്ടിടങ്ങളും Accessible",
+          "ഭിന്നശേഷിക്കാരെ ഒഴിവാക്കി",
+          "സ്വകാര്യ മേഖലയ്ക്ക് മാത്രം"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിൽ ഉന്നത വിദ്യാഭ്യാസത്തിൽ സ്ത്രീകൾ പുരുഷന്മാരെ മറികടക്കുന്ന ഏക സംസ്ഥാനം."
+        "flex_fact_ml": "Barrier-Free Kerala — റാമ്പ്, ലിഫ്റ്റ്, ടോയ്‌ലറ്റ് — 5,000+ സർക്കാർ കെട്ടിടങ്ങൾ accessible."
       },
       {
         "id": 13,
@@ -2166,14 +2166,14 @@
         "historical_benchmark": "2019: 4 women MPs from Kerala",
         "flex_fact": "Kerala's share of women MPs (30%) is more than double the national average — the highest among large states, reflecting decades of investment in women's education and political participation.",
         "source": "Election Commission of India 2024",
-        "question_ml": "കേരളത്തിൽ PhD ഗവേഷണ ഫെല്ലോഷിപ്പ് എത്ര?",
+        "question_ml": "OBC/Minority സ്കോളർഷിപ്പ് വിതരണം?",
         "options_ml": [
-          "₹10,000",
-          "₹20,000",
-          "₹35,000+",
-          "₹50,000"
+          "₹10 കോടി",
+          "₹50 കോടി",
+          "₹200 കോടി+",
+          "₹5 കോടി"
         ],
-        "flex_fact_ml": "UGC നിരക്കിന് സമാനമായ സംസ്ഥാന ഫെല്ലോഷിപ്പ് — ഗവേഷണ പ്രോത്സാഹനം."
+        "flex_fact_ml": "OBC, Minority വിദ്യാർത്ഥികൾക്ക് ₹200 കോടി+ — വിദ്യാഭ്യാസ സമത്വം ഉറപ്പാക്കൽ."
       },
       {
         "id": 14,
@@ -2190,14 +2190,14 @@
         "historical_benchmark": "Pre-2015: Zero institutional support for transgender students in India",
         "flex_fact": "Kerala's Transgender Cell in universities provides stipends, hostel access, and counselling — a student who was expelled from home can now complete a degree and find employment with state backing.",
         "source": "Kerala Social Justice Dept / Transgender Justice Board",
-        "question_ml": "Mathrubhumi-Asianet ദിനപത്ര സാക്ഷരത കേരളത്തിൽ?",
+        "question_ml": "Anti-Ragging Cell-ന്റെ പ്രവർത്തനം?",
         "options_ml": [
-          "50%",
-          "70%",
-          "85%+",
-          "95%"
+          "എല്ലാ കോളേജിലും 24/7 ഹെൽപ്‌ലൈൻ + CCTV",
+          "ഒന്നുമില്ല",
+          "വർഷത്തിൽ ഒരു മീറ്റിംഗ്",
+          "പോലീസ് മാത്രം"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും ഉയർന്ന ദിനപത്ര വായന — വിദ്യാഭ്യാസ വ്യാപനത്തിന്റെ ഫലം."
+        "flex_fact_ml": "ഇന്ത്യയിൽ ഏറ്റവും കുറഞ്ഞ ragging incidents — സുരക്ഷിത കാമ്പസ് അന്തരീക്ഷം."
       },
       {
         "id": 15,
@@ -2214,14 +2214,14 @@
         "historical_benchmark": "Pre-2016: Only NGO-run old-age homes, no state-run network",
         "flex_fact": "Snehitha homes are run through Kudumbashree — women from local NHGs are trained as care workers, creating employment while caring for elderly neighbours. The care-giver and the cared-for are from the same community.",
         "source": "Kerala Social Justice Dept",
-        "question_ml": "കേരളത്തിന്റെ Inter-University Centre എത്ര?",
+        "question_ml": "Mental Health-ൽ കോളേജ് വിദ്യാർത്ഥികൾക്കുള്ള പദ്ധതി?",
         "options_ml": [
-          "2",
-          "5",
-          "8+",
-          "12"
+          "ഒന്നുമില്ല",
+          "എല്ലാ കോളേജിലും Counsellor + Student Wellness Centre",
+          "മരുന്ന് വിതരണം",
+          "ഓൺലൈൻ ക്ലാസ് മാത്രം"
         ],
-        "flex_fact_ml": "IIUCNN, IIRBS, C-DIT — സർവ്വകലാശാലകൾ തമ്മിൽ ഗവേഷണ സഹകരണം."
+        "flex_fact_ml": "ഇന്ത്യയിൽ ആദ്യമായി എല്ലാ സർക്കാർ കോളേജിലും Professional Counsellor — MHAT Act Implementation."
       }
     ]
   },
@@ -2249,14 +2249,14 @@
         "historical_benchmark": "Kerala 2015–16: ~1.1%",
         "flex_fact": "Kerala's MPI is lower than several European nations' equivalent measures.",
         "source": "NITI Aayog MPI Report 2024",
-        "question_ml": "കേരളത്തിന്റെ GSDP വളർച്ചാ നിരക്ക് 2016-26 കാലയളവിൽ ശരാശരി?",
+        "question_ml": "2026-ലെ കേരളത്തിന്റെ GSDP വളർച്ചാ നിരക്ക്?",
         "options_ml": [
           "4%",
           "6%",
           "8%+",
-          "10%"
+          "3%"
         ],
-        "flex_fact_ml": "പ്രളയം, COVID എന്നിവ ഉണ്ടായിട്ടും ശക്തമായ സാമ്പത്തിക വീണ്ടെടുക്കൽ."
+        "flex_fact_ml": "ദേശീയ ശരാശരിയെക്കാൾ ഉയർന്ന വളർച്ച — സേവന മേഖല, remittance, IT അടിസ്ഥാനം."
       },
       {
         "id": 2,
@@ -2273,14 +2273,14 @@
         "historical_benchmark": "Pre-2016 decline rate was gradual",
         "flex_fact": "Kerala achieved near-elimination while the rest of India was still halving its poverty rate.",
         "source": "NITI Aayog MPI Report 2024",
-        "question_ml": "കേരളത്തിന്റെ HDI (Human Development Index) ഇന്ത്യയിൽ?",
+        "question_ml": "KIIFB (Kerala Infrastructure Investment Fund Board) എന്താണ്?",
         "options_ml": [
-          "5-ാം",
-          "3-ാം",
-          "1-ാം",
-          "7-ാം"
+          "ബാങ്ക്",
+          "അടിസ്ഥാന സൗകര്യ ധനസഹായ സ്ഥാപനം",
+          "IT കമ്പനി",
+          "ടൂറിസം ബോർഡ്"
         ],
-        "flex_fact_ml": "തുടർച്ചയായി ഇന്ത്യയിൽ ഒന്നാം സ്ഥാനം — വികസിത രാജ്യ നിലവാരം."
+        "flex_fact_ml": "KIIFB — ₹50,000 കോടി+ അടിസ്ഥാന സൗകര്യ വികസനം. masala bonds, green bonds വഴി ധനസമാഹരണം."
       },
       {
         "id": 3,
@@ -2297,14 +2297,14 @@
         "historical_benchmark": "—",
         "flex_fact": "The gap between Kerala and Bihar on MPI is larger than the gap between Nordic countries and Sub-Saharan Africa.",
         "source": "NITI Aayog MPI Report 2024",
-        "question_ml": "Nava Keralam Mission-ന്റെ ഘടകങ്ങൾ എത്ര?",
+        "question_ml": "SDG (Sustainable Development Goals) നേട്ടത്തിൽ കേരളത്തിന്റെ NITI Aayog index?",
         "options_ml": [
-          "2",
-          "4",
-          "5",
-          "7"
+          "ആദ്യ 5-ൽ",
+          "ആദ്യ 3-ൽ",
+          "ഒന്നാം സ്ഥാനം",
+          "പത്താം സ്ഥാനം"
         ],
-        "flex_fact_ml": "ആരോഗ്യം, വിദ്യാഭ്യാസം, ഭവനം, ഡിജിറ്റൽ — 4 മിഷനുകൾ ഒരു കുടക്കീഴിൽ."
+        "flex_fact_ml": "NITI Aayog SDG Index-ൽ ഒന്നാം സ്ഥാനം — 17 ലക്ഷ്യങ്ങളിലും മികച്ച പ്രകടനം."
       },
       {
         "id": 4,
@@ -2321,14 +2321,14 @@
         "historical_benchmark": "2016: Top 5",
         "flex_fact": "Kerala's per capita income is nearly 2x the national average.",
         "source": "MoSPI / CSO Data",
-        "question_ml": "കേരളത്തിന്റെ പ്രതിശീർഷ വരുമാനം ദേശീയ ശരാശരിയേക്കാൾ?",
+        "question_ml": "Per Capita Income-ൽ കേരളം ഇന്ത്യയിൽ?",
         "options_ml": [
-          "കുറവ്",
-          "സമാനം",
-          "1.5 മടങ്ങ്",
-          "2 മടങ്ങ്+"
+          "ഏറ്റവും കുറവ്",
+          "ശരാശരി",
+          "ഏറ്റവും ഉയർന്ന സംസ്ഥാനങ്ങളിൽ ഒന്ന്",
+          "പത്താം സ്ഥാനം"
         ],
-        "flex_fact_ml": "ദേശീയ ശരാശരിയുടെ ഇരട്ടി — NRI പണമയക്കലും സേവന മേഖലയും ചേർന്ന്."
+        "flex_fact_ml": "Per Capita Income ₹2.5 ലക്ഷം+ — ദേശീയ ശരാശരിയുടെ ഇരട്ടിയിലധികം."
       },
       {
         "id": 5,
@@ -2345,14 +2345,14 @@
         "historical_benchmark": "Declining every Finance Commission",
         "flex_fact": "Kerala is a net contributor to India's tax pool — subsidises other states while borrowing for its own development.",
         "source": "Finance Commission Reports",
-        "question_ml": "Knowledge Economy Mission എന്ത്?",
+        "question_ml": "Kerala State Planning Board-ന്റെ കാഴ്ചപ്പാട് രേഖ?",
         "options_ml": [
-          "IT മാത്രം",
-          "അറിവധിഷ്ഠിത സമ്പദ്‌വ്യവസ്ഥ",
-          "കൃഷി",
-          "ടൂറിസം"
+          "Kerala 2020",
+          "Kerala 2030",
+          "Nava Keralam",
+          "Smart Kerala"
         ],
-        "flex_fact_ml": "കേരളത്തെ Knowledge Economy-ആക്കി മാറ്റാനുള്ള ദീർഘകാല പദ്ധതി."
+        "flex_fact_ml": "Nava Keralam — അറിവ് സമ്പദ്‌വ്യവസ്ഥ, ഹരിത വികസനം, സാമൂഹ്യ നീതി — മൂന്ന് തൂണുകൾ."
       },
       {
         "id": 6,
@@ -2369,14 +2369,14 @@
         "historical_benchmark": "2016: Kerala HDI ~0.77",
         "flex_fact": "Kerala's HDI exceeds countries like Brazil, Mexico, and Sri Lanka — a GSDP 20x smaller than Germany produces human outcomes comparable to it.",
         "source": "UNDP Human Development Report / NITI Aayog",
-        "question_ml": "കേരളത്തിന്റെ ദാരിദ്ര്യ നിരക്ക് ഏകദേശം?",
+        "question_ml": "Pravasi Welfare Board-ന്റെ ലക്ഷ്യം?",
         "options_ml": [
-          "15%",
-          "10%",
-          "5%-ൽ താഴെ",
-          "20%"
+          "വിദേശ യാത്ര സൗകര്യം",
+          "പ്രവാസി കേരളീയരുടെ ക്ഷേമം — ഇൻഷുറൻസ്, പെൻഷൻ",
+          "വിദേശ നയം",
+          "കുടിയേറ്റ നിയന്ത്രണം"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും കുറഞ്ഞ ദാരിദ്ര്യ നിരക്ക് — NITI Aayog MPI സൂചിക."
+        "flex_fact_ml": "35 ലക്ഷം+ പ്രവാസി അംഗങ്ങൾ — NORKA-ROOTS വഴി പുനരധിവാസം, ധനസഹായം."
       },
       {
         "id": 7,
@@ -2393,14 +2393,14 @@
         "historical_benchmark": "2016: ~63% services",
         "flex_fact": "Kerala's services-dominated economy — health, education, IT, tourism, finance — is more structurally similar to Singapore or Ireland than to Indian neighbouring states.",
         "source": "Kerala State Planning Board Economic Review",
-        "question_ml": "Young Entrepreneurs Programme ആർക്ക്?",
+        "question_ml": "Kerala Knowledge Economy Mission-ന്റെ ശ്രദ്ധ?",
         "options_ml": [
-          "40+ വയസ്",
-          "18-35 വയസ്",
-          "55+ വയസ്",
-          "കുട്ടികൾ"
+          "കൃഷി",
+          "AI, Data Science, Deep Tech — ഉന്നത skill development",
+          "ടൂറിസം",
+          "വ്യവസായം"
         ],
-        "flex_fact_ml": "യുവ സംരംഭകത്വ പ്രോത്സാഹനം — KSIDC, KINFRA വഴി പിന്തുണ."
+        "flex_fact_ml": "5 ലക്ഷം യുവാക്കൾക്ക് AI/Data Science training — ₹1,000 കോടി Knowledge Economy Mission."
       },
       {
         "id": 8,
@@ -2417,14 +2417,14 @@
         "historical_benchmark": "2016: ~₹1.2 Lakh Cr",
         "flex_fact": "NRK remittances to Kerala alone exceed India's total defence budget — a single state's diaspora transfers more money home than most countries receive in foreign investment.",
         "source": "RBI Remittances Data / Kerala Economic Review",
-        "question_ml": "കേരളത്തിന്റെ Remittance Economy-യുടെ പങ്ക്?",
+        "question_ml": "HDI (Human Development Index)-ൽ കേരളം ഇന്ത്യയിൽ?",
         "options_ml": [
-          "GSDP-യുടെ 10%",
-          "GSDP-യുടെ 20%",
-          "GSDP-യുടെ 35%+",
-          "GSDP-യുടെ 50%"
+          "മൂന്നാം സ്ഥാനം",
+          "രണ്ടാം സ്ഥാനം",
+          "ഒന്നാം സ്ഥാനം",
+          "അഞ്ചാം സ്ഥാനം"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും വലിയ NRI പണമയക്കൽ — ₹1.5 ലക്ഷം കോടി+ വാർഷികം."
+        "flex_fact_ml": "1990 മുതൽ ഒന്നാം സ്ഥാനം — ആരോഗ്യം, വിദ്യാഭ്യാസം, വരുമാനം — മൂന്നിലും മുന്നിൽ."
       },
       {
         "id": 9,
@@ -2441,14 +2441,14 @@
         "historical_benchmark": "2016: ~₹1.4 Lakh per capita",
         "flex_fact": "Kerala's per capita income growth has outpaced the national average for 5 consecutive years — driven by IT, services, and remittances rather than resource extraction.",
         "source": "MoSPI / Kerala State Planning Board",
-        "question_ml": "KIIFB (Kerala Infrastructure Investment Fund Board) എന്ത്?",
+        "question_ml": "Local Self-Government Plan Allocation ശതമാനം?",
         "options_ml": [
-          "ബാങ്ക്",
-          "അടിസ്ഥാന സൗകര്യ ധനസഹായ ബോർഡ്",
-          "IT കമ്പനി",
-          "റിയൽ എസ്റ്റേറ്റ്"
+          "10%",
+          "20%",
+          "30%+",
+          "5%"
         ],
-        "flex_fact_ml": "Masala Bonds ഉൾപ്പെടെ നൂതന ധനസമാഹരണം — ₹50,000+ കോടി അടിസ്ഥാന സൗകര്യ നിക്ഷേപം."
+        "flex_fact_ml": "30%+ plan outlay — ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്ന വികേന്ദ്രീകരണം."
       },
       {
         "id": 10,
@@ -2465,14 +2465,14 @@
         "historical_benchmark": "Kerala has consistently had lower inequality than the national average",
         "flex_fact": "Kerala has a higher per capita income than the national average AND lower inequality — disproving the claim that growth requires inequality. It is one of the few places where both improve together.",
         "source": "NSSO / NITI Aayog Inequality Reports",
-        "question_ml": "കേരളത്തിന്റെ സേവന മേഖല GDP-യിൽ എത്ര ശതമാനം?",
+        "question_ml": "Kerala Infrastructure Fund Management-ന്റെ Masala Bond?",
         "options_ml": [
-          "40%",
-          "50%",
-          "60%+",
-          "70%"
+          "₹500 കോടി",
+          "₹1,000 കോടി",
+          "₹2,150+ കോടി",
+          "₹100 കോടി"
         ],
-        "flex_fact_ml": "സേവന മേഖല-മുൻനിര സമ്പദ്‌വ്യവസ്ഥ — IT, ആരോഗ്യം, വിദ്യാഭ്യാസം, ടൂറിസം."
+        "flex_fact_ml": "ഇന്ത്യയിൽ ആദ്യ State-level Masala Bond — London Stock Exchange-ൽ ലിസ്റ്റ് ചെയ്തു."
       },
       {
         "id": 11,
@@ -2489,14 +2489,14 @@
         "historical_benchmark": "Kerala has ranked 1st in SDG Index 3 consecutive times",
         "flex_fact": "Kerala leads India in 11 of 17 SDG categories — including zero hunger, good health, quality education, gender equality, and reduced inequalities.",
         "source": "NITI Aayog SDG India Index 2023–24",
-        "question_ml": "Expenditure Review Committee-യുടെ ലക്ഷ്യം?",
+        "question_ml": "കേരളത്തിന്റെ Poverty Rate ദേശീയ ശരാശരിയുമായി?",
         "options_ml": [
-          "നികുതി വർധന",
-          "ചെലവ് കാര്യക്ഷമത",
-          "വായ്പ എടുക്കൽ",
-          "സ്വകാര്യവൽക്കരണം"
+          "ദേശീയ ശരാശരിക്ക് മുകളിൽ",
+          "ദേശീയ ശരാശരിക്ക് തുല്യം",
+          "ദേശീയ ശരാശരിയുടെ പകുതിയിൽ താഴെ",
+          "ഏറ്റവും ഉയർന്നത്"
         ],
-        "flex_fact_ml": "സർക്കാർ ചെലവ് ഓഡിറ്റ്, അനാവശ്യ ചെലവ് ഒഴിവാക്കൽ — ധനവിവേകം."
+        "flex_fact_ml": "0.7% extreme poverty — ദേശീയ ശരാശരി 5%+. ഇന്ത്യയിലെ ഏറ്റവും കുറഞ്ഞ ദാരിദ്ര്യം."
       },
       {
         "id": 12,
@@ -2513,14 +2513,14 @@
         "historical_benchmark": "Each successive FC has reduced Kerala's tax share",
         "flex_fact": "The 15th Finance Commission used 2011 Census data — which penalises Kerala for having successfully controlled population growth. Kerala is being punished for achieving SDGs.",
         "source": "15th Finance Commission Report / Kerala Memorandum to FC",
-        "question_ml": "കേരളത്തിന്റെ Gini Coefficient (അസമത്വ സൂചിക)?",
+        "question_ml": "Gender Budget-ൽ കേരളം?",
         "options_ml": [
-          "0.45",
-          "0.38",
-          "0.32",
-          "0.25"
+          "Gender Budget ഇല്ല",
+          "ബജറ്റിന്റെ 15%+",
+          "ബജറ്റിന്റെ 5%",
+          "കേന്ദ്ര അനുപാതം മാത്രം"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും കുറഞ്ഞ അസമത്വം — വിദ്യാഭ്യാസവും സാമൂഹ്യ സുരക്ഷയും ചേർന്ന ഫലം."
+        "flex_fact_ml": "ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്ന Gender Budget — സ്ത്രീ ശാക്തീകരണത്തിന് ₹15,000 കോടി+."
       },
       {
         "id": 13,
@@ -2537,14 +2537,14 @@
         "historical_benchmark": "2016–17 Budget: ~₹1.06 Lakh Cr",
         "flex_fact": "Kerala more than doubled its budget size in a decade while maintaining one of the highest quality of public spending — the money spent actually reaches people.",
         "source": "Kerala State Budget 2025–26",
-        "question_ml": "13-ാം പഞ്ചവത്സര പദ്ധതി കേരളത്തിൽ ഊന്നൽ നൽകുന്നത്?",
+        "question_ml": "Rebuild Kerala Initiative (RKI) എന്ന ദുരന്തശേഷ പുനർനിർമ്മാണ പദ്ധതി?",
         "options_ml": [
-          "വ്യവസായം",
-          "ഡിജിറ്റൽ സമ്പദ്‌വ്യവസ്ഥ",
-          "കൃഷി",
-          "എല്ലാം ചേർന്ന സമ്പൂർണ്ണ വികസനം"
+          "₹5,000 കോടി",
+          "₹10,000 കോടി",
+          "₹30,000 കോടി+",
+          "₹1,000 കോടി"
         ],
-        "flex_fact_ml": "സമ്പൂർണ്ണ വികസനം — സുസ്ഥിരത, ഉൾച്ചേരൽ, ഡിജിറ്റൽ പരിവർത്തനം."
+        "flex_fact_ml": "World Bank, ADB സഹായത്തോടെ — resilient infrastructure, ജല സംരക്ഷണം, കാലാവസ്ഥാ അനുകൂലനം."
       },
       {
         "id": 14,
@@ -2561,14 +2561,14 @@
         "historical_benchmark": "2016–17: ~₹40,000 Cr own tax revenue",
         "flex_fact": "Kerala's GST revenue growth rate has been among the top 5 in India — driven by formalisation of the economy, digital transactions, and the IT sector.",
         "source": "Kerala Finance Dept Budget Documents",
-        "question_ml": "Kerala Development Innovation Strategic Council (K-DISC)?",
+        "question_ml": "Gini Coefficient (അസമത്വ സൂചിക)-ൽ കേരളം?",
         "options_ml": [
-          "കൃഷി ഏജൻസി",
-          "നൂതന ആശയ-ഗവേഷണ ബോഡി",
-          "IT കമ്പനി",
-          "ബാങ്ക്"
+          "ഏറ്റവും ഉയർന്ന അസമത്വം",
+          "ശരാശരി",
+          "ഇന്ത്യയിലെ ഏറ്റവും കുറഞ്ഞ അസമത്വം",
+          "ഡാറ്റ ലഭ്യമല്ല"
         ],
-        "flex_fact_ml": "സർക്കാരിന്റെ Innovation Think Tank — നയ രൂപീകരണത്തിൽ ശാസ്ത്ര-സാങ്കേതിക ഉപദേശം."
+        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും തുല്യ സമൂഹം — Gini Coefficient 0.31 (ദേശീയ 0.35+)."
       },
       {
         "id": 15,
@@ -2585,14 +2585,14 @@
         "historical_benchmark": "No state had issued international infrastructure bonds before KIIFB in 2019",
         "flex_fact": "KIIFB raised ₹2,150 Cr via masala bonds on the London Stock Exchange in 2019 — Kerala became the first Indian state to tap global capital markets for infrastructure, at a coupon rate of 9.72%.",
         "source": "KIIFB / London Stock Exchange Records 2019",
-        "question_ml": "കേരളത്തിന്റെ Economic Review ആരാണ് തയ്യാറാക്കുന്നത്?",
+        "question_ml": "കേരള സമ്പദ്‌വ്യവസ്ഥയിലെ Service Sector-ന്റെ പങ്ക്?",
         "options_ml": [
-          "RBI",
-          "സംസ്ഥാന ആസൂത്രണ ബോർഡ്",
-          "NITI Aayog",
-          "ധനമന്ത്രാലയം"
+          "30%",
+          "45%",
+          "65%+",
+          "20%"
         ],
-        "flex_fact_ml": "വാർഷിക Economic Review — കേരള സമ്പദ്‌വ്യവസ്ഥയുടെ സമഗ്ര ആരോഗ്യ പരിശോധന."
+        "flex_fact_ml": "65%+ GSDP — IT, ടൂറിസം, ആരോഗ്യം, വിദ്യാഭ്യാസം. സേവന മേഖലാ അധിഷ്ഠിത സമ്പദ്‌വ്യവസ്ഥ."
       }
     ]
   },
@@ -2620,14 +2620,14 @@
         "historical_benchmark": "Pre-2018: No major floods since 1924",
         "flex_fact": "Kerala rebuilt each time without a central 'special package' — self-financed via Rebuild Kerala Initiative.",
         "source": "KSDMA / Rebuild Kerala Initiative",
-        "question_ml": "കേരളത്തിൽ RR (Revenue Recovery) നടപടികൾ ഡിജിറ്റൈസ് ചെയ്തത് എന്ന്?",
+        "question_ml": "Smart Village Office-കളുടെ എണ്ണം?",
         "options_ml": [
-          "2010",
-          "2016",
-          "2019",
-          "2022"
+          "100",
+          "300",
+          "500+",
+          "50"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിലെ ആദ്യ സമ്പൂർണ്ണ ഡിജിറ്റൽ റവന്യൂ സംവിധാനങ്ങളിലൊന്ന്."
+        "flex_fact_ml": "ഡിജിറ്റൈസ്ഡ് Village Offices — ജനങ്ങൾക്ക് 30+ സേവനങ്ങൾ ഒരു കുടക്കീഴിൽ."
       },
       {
         "id": 2,
@@ -2644,14 +2644,14 @@
         "historical_benchmark": "—",
         "flex_fact": "Kerala received less than 8% of damage cost from the Centre — rebuilt through its own fiscal engineering.",
         "source": "Post Disaster Needs Assessment (PDNA), UN",
-        "question_ml": "കേരളത്തിലെ ഭൂരേഖകൾ ഡിജിറ്റൈസ് ചെയ്ത പദ്ധതി?",
+        "question_ml": "Revenue Recovery-യിൽ ഡിജിറ്റൈസേഷന്റെ ഫലം?",
         "options_ml": [
-          "E-Land",
-          "DILRMP",
-          "ReLIS",
-          "E-Rekha"
+          "മാറ്റമില്ല",
+          "നികുതി പിരിവ് 40% മെച്ചപ്പെട്ടു",
+          "നികുതി റദ്ദാക്കി",
+          "പിരിവ് കുറഞ്ഞു"
         ],
-        "flex_fact_ml": "1.5 കോടി+ ഭൂരേഖകൾ ഡിജിറ്റൈസ് — ഓൺലൈനിൽ ഭൂമി രേഖകൾ."
+        "flex_fact_ml": "ഡിജിറ്റൽ നികുതി പിരിവ് — സുതാര്യത, വേഗത. ₹5,000 കോടി+ അധിക വരുമാനം."
       },
       {
         "id": 3,
@@ -2668,14 +2668,14 @@
         "historical_benchmark": "No precedent for civilian maritime rescue at this scale",
         "flex_fact": "Kerala's fishing community launched the largest civilian rescue operation in Indian history — pure community solidarity.",
         "source": "KSDMA Flood Report 2018",
-        "question_ml": "കേരളത്തിൽ എത്ര ചേരി നിവാസികൾക്ക് ഭവന ഉടമസ്ഥത ലഭിച്ചു?",
+        "question_ml": "LIFE Mission ഫ്ലാറ്റ് പദ്ധതിയിൽ എത്ര ഫ്ലാറ്റുകൾ?",
         "options_ml": [
-          "50,000",
-          "1,00,000",
-          "2,00,000+",
-          "3,00,000"
+          "5,000",
+          "10,000",
+          "15,000+",
+          "2,000"
         ],
-        "flex_fact_ml": "ചേരി-മുക്ത കേരളം ലക്ഷ്യം — LIFE Mission + റവന്യൂ വകുപ്പ് സംയുക്ത ശ്രമം."
+        "flex_fact_ml": "ഭൂരഹിതർക്ക് ഫ്ലാറ്റ് — 4 നിലകൾ, ലിഫ്റ്റ്, community hall. നഗരങ്ങളിൽ അന്തസ്സുള്ള പാർപ്പിടം."
       },
       {
         "id": 4,
@@ -2692,14 +2692,14 @@
         "historical_benchmark": "Pre-2016: Manual records, massive fraud potential",
         "flex_fact": "Kerala's ReLIS links revenue maps, mutation records, and ownership data — land fraud significantly reduced.",
         "source": "Kerala Revenue Dept / ReLIS Portal",
-        "question_ml": "Smart Village Initiative ഏത് വകുപ്പ് നടപ്പാക്കുന്നു?",
+        "question_ml": "RR (Revenue Recovery) IT System-ന്റെ പേര്?",
         "options_ml": [
-          "IT",
-          "റവന്യൂ",
-          "LSGD",
-          "ഭവന നിർമ്മാണം"
+          "e-Revenue",
+          "SUGAMA",
+          "ReLIS",
+          "DigiTax"
         ],
-        "flex_fact_ml": "ഗ്രാമ ഓഫീസുകൾ ഡിജിറ്റൈസ് — സർട്ടിഫിക്കറ്റ്, ഭൂരേഖ ഓൺലൈൻ."
+        "flex_fact_ml": "ReLIS (Revenue Land Information System) — ഭൂമി രേഖകൾ ഡിജിറ്റൈസ്, thandaper online."
       },
       {
         "id": 5,
@@ -2716,14 +2716,14 @@
         "historical_benchmark": "—",
         "flex_fact": "Township-model rehabilitation with community input — not just houses, but integrated livelihood restoration.",
         "source": "Wayanad Rehabilitation Authority",
-        "question_ml": "കേരളത്തിൽ ഭൂനികുതി ഓൺലൈൻ അടയ്ക്കാൻ കഴിയുമോ?",
+        "question_ml": "ദുരന്ത നിവാരണ ഫണ്ട് വിതരണ സമയം?",
         "options_ml": [
-          "ഇല്ല",
-          "നഗരങ്ങളിൽ മാത്രം",
-          "എല്ലായിടത്തും",
-          "ചില ജില്ലകളിൽ"
+          "6 മാസം",
+          "3 മാസം",
+          "72 മണിക്കൂർ",
+          "1 വർഷം"
         ],
-        "flex_fact_ml": "E-Payment + Mobile App — ഭൂനികുതി, സർട്ടിഫിക്കറ്റ് എല്ലാം മൊബൈലിൽ."
+        "flex_fact_ml": "72 മണിക്കൂറിൽ ദുരിതാശ്വാസം — DBT വഴി ബാങ്ക് അക്കൗണ്ടിൽ നേരിട്ട്."
       },
       {
         "id": 6,
@@ -2740,14 +2740,14 @@
         "historical_benchmark": "Pre-2018: No state post-disaster reconstruction framework",
         "flex_fact": "RKI is the only state-designed multi-disaster recovery framework in India — conceived, funded, and executed without a national template.",
         "source": "Rebuild Kerala Initiative Progress Report 2023",
-        "question_ml": "2018, 2019 പ്രളയ ശേഷം എത്ര കുടുംബങ്ങൾക്ക് ഭവനം നൽകി?",
+        "question_ml": "ഭൂമി രജിസ്ട്രേഷൻ ഓൺലൈൻ ആക്കിയ സംവിധാനം?",
         "options_ml": [
-          "10,000",
-          "25,000",
-          "50,000+",
-          "1,00,000"
+          "PEARL",
+          "e-Registration",
+          "RILIS",
+          "DigiLand"
         ],
-        "flex_fact_ml": "പ്രളയ ദുരിതാശ്വാസ ഭവന പദ്ധതി — 6 മാസത്തിനുള്ളിൽ 50,000+ വീടുകൾ."
+        "flex_fact_ml": "PEARL — 100% ഓൺലൈൻ ഭൂമി രജിസ്ട്രേഷൻ. കാത്തിരിപ്പ് സമയം 80% കുറഞ്ഞു."
       },
       {
         "id": 7,
@@ -2764,14 +2764,14 @@
         "historical_benchmark": "Gadgil Committee (2011) first classified zones; revised by Kasturirangan Panel",
         "flex_fact": "Revenue dept is at the centre of ESA notification — balancing tribal habitation rights, forest protection, and disaster vulnerability in one of India's most contested land-use conflicts.",
         "source": "MoEF&CC / Kerala Revenue Dept ESA Files",
-        "question_ml": "കേരളത്തിലെ Village Office-കളുടെ ആകെ എണ്ണം?",
+        "question_ml": "Disaster Management-ൽ KSDMA-യുടെ പങ്ക്?",
         "options_ml": [
-          "500",
-          "1,000",
-          "1,500+",
-          "2,000"
+          "ഒരു പങ്കുമില്ല",
+          "സമഗ്ര ദുരന്ത മുൻകരുതൽ, പ്രതികരണം, പുനർനിർമ്മാണം",
+          "പ്രളയ കണക്കെടുപ്പ് മാത്രം",
+          "കേന്ദ്രത്തിന് റിപ്പോർട്ട് ചെയ്യൽ"
         ],
-        "flex_fact_ml": "1,666 Village Office — ഇന്ത്യയിലെ ഏറ്റവും സാന്ദ്രമായ റവന്യൂ ഭരണ ശൃംഖല."
+        "flex_fact_ml": "KSDMA — 2018, 2019, 2021 പ്രളയങ്ങളിൽ ലോകോത്തര ദുരന്ത പ്രതികരണ മാതൃക."
       },
       {
         "id": 8,
@@ -2788,14 +2788,14 @@
         "historical_benchmark": "The operation was spontaneous — fishermen self-organised within hours of flood peak",
         "flex_fact": "The fishermen's rescue became a Harvard Kennedy School case study in community-led disaster response — referenced by UNDP as a model.",
         "source": "KSDMA Flood Report 2018 / Harvard Kennedy School Case Study",
-        "question_ml": "Pattayam (ഭൂമി പട്ടയം) ഡിജിറ്റൽ ആയി നൽകുന്ന പദ്ധതി?",
+        "question_ml": "Housing Loan Subsidy — PMAY + LIFE?",
         "options_ml": [
-          "E-Pattayam",
-          "Digi-Land",
-          "Smart Pattayam",
-          "E-Title"
+          "₹1 ലക്ഷം",
+          "₹2.5 ലക്ഷം",
+          "₹4 ലക്ഷം+",
+          "₹50,000"
         ],
-        "flex_fact_ml": "ഡിജിറ്റൽ പട്ടയം — ഭൂ ഉടമസ്ഥത തർക്കങ്ങൾ കുറയ്ക്കുന്നു."
+        "flex_fact_ml": "PMAY + LIFE = ₹4 ലക്ഷം+ subsidy. ദരിദ്ര കുടുംബങ്ങൾക്ക് സ്വന്തം വീട് യാഥാർഥ്യം."
       },
       {
         "id": 9,
@@ -2812,14 +2812,14 @@
         "historical_benchmark": "Pre-2018 floods: No integrated multi-district early warning",
         "flex_fact": "Post-2018, Kerala built one of India's most granular district-level warning networks — integrating IMD, CWC, and real-time dam sensor data into a single dashboard.",
         "source": "KSDMA / Kerala State Emergency Operations Centre",
-        "question_ml": "കേരളത്തിലെ ഭൂപരിഷ്കരണം ഏത് ദശകത്തിൽ?",
+        "question_ml": "Survey & Land Records Modernization?",
         "options_ml": [
-          "1950-കൾ",
-          "1960-70-കൾ",
-          "1980-കൾ",
-          "1990-കൾ"
+          "പഴയ രീതി തുടരുന്നു",
+          "ഡ്രോൺ survey + digital mapping",
+          "Survey നിർത്തി",
+          "GPS മാത്രം"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും വിജയകരമായ ഭൂപരിഷ്കരണം — കുടിയാന്മാർക്ക് ഭൂ ഉടമസ്ഥത."
+        "flex_fact_ml": "ഡ്രോൺ survey — 1 കോടി+ ഭൂമി രേഖകൾ ഡിജിറ്റൈസ്. തർക്കങ്ങൾ 50% കുറഞ്ഞു."
       },
       {
         "id": 10,
@@ -2836,14 +2836,14 @@
         "historical_benchmark": "Pre-2016: Thousands of fishing community homes in legal limbo for decades",
         "flex_fact": "Kerala is the only state that mapped CRZ boundaries at village level and proactively regularised fishing community homes — ending decades of legal uncertainty for coastal families.",
         "source": "Kerala Coastal Zone Management Authority / Revenue Dept",
-        "question_ml": "കേരളത്തിൽ Natural Disaster-ക്ക് റവന്യൂ വകുപ്പിന്റെ പങ്ക്?",
+        "question_ml": "Revenue Department-ന്റെ സേവന ചരിത്രം?",
         "options_ml": [
-          "ഇല്ല",
-          "ദുരന്ത നിവാരണ ഏകോപനം",
-          "പുനർനിർമ്മാണം മാത്രം",
-          "ധനസഹായം മാത്രം"
+          "ഒരു നൂറ്റാണ്ട്",
+          "175+ വർഷം",
+          "50 വർഷം",
+          "200+ വർഷം"
         ],
-        "flex_fact_ml": "District Collector (റവന്യൂ) — ദുരന്ത നിവാരണ അതോറിറ്റി ചെയർമാൻ."
+        "flex_fact_ml": "ബ്രിട്ടീഷ് കാലം മുതലുള്ള Revenue Administration — ഇപ്പോൾ പൂർണ ഡിജിറ്റൽ."
       },
       {
         "id": 11,
@@ -2860,14 +2860,14 @@
         "historical_benchmark": "2018 flood rehab: Homes provided; amenities came later in phases",
         "flex_fact": "Purnanagar township was designed with beneficiary consultation — residents chose plot sizes, community spaces, and livelihood zones. First such co-designed disaster township in India.",
         "source": "Wayanad Rehabilitation Authority / Kerala Revenue Dept",
-        "question_ml": "SilverLine (Semi High-Speed Rail) പദ്ധതി ഏത് വകുപ്പിന് കീഴിൽ?",
+        "question_ml": "Rehabilitation-ൽ Kerala Model?",
         "options_ml": [
-          "റെയിൽവേ",
-          "PWD",
-          "റവന്യൂ (ഭൂമി ഏറ്റെടുക്കൽ)",
-          "ഗതാഗതം"
+          "പുനരധിവാസം ഇല്ല",
+          "Owner-driven reconstruction — ഗുണഭോക്താവ് തന്നെ വീട് നിർമ്മിക്കുന്നു",
+          "Contractor-driven",
+          "Temporary shelter മാത്രം"
         ],
-        "flex_fact_ml": "ഭൂമി ഏറ്റെടുക്കൽ റവന്യൂ വകുപ്പ് — SilverLine-ന് 1,200+ km ഭൂമി."
+        "flex_fact_ml": "Owner-driven — ഗുണഭോക്താവിന്റെ ഇഷ്ടാനുസരണം വീട് ഡിസൈൻ. LIFE Mission-ന്റെ മാതൃക."
       },
       {
         "id": 12,
@@ -2884,14 +2884,14 @@
         "historical_benchmark": "Pre-2016: Manual thandaper records, high mutation delays",
         "flex_fact": "ReLIS integrates cadastral maps with ownership records for the first time — enabling instant mutation, subdivision, and encumbrance certificates online. Land fraud cases declined by over 60%.",
         "source": "Kerala Revenue Dept / ReLIS Portal Annual Report",
-        "question_ml": "കേരളത്തിലെ Devaswom ഭൂമി ഭരണം ഏത് വകുപ്പ്?",
+        "question_ml": "Flood Mapping, Early Warning System?",
         "options_ml": [
-          "മതം",
-          "റവന്യൂ",
-          "Devaswom Board",
-          "LSGD"
+          "ലഭ്യമല്ല",
+          "KSDMA + ISRO + IMD — AI-based Early Warning",
+          "Manual observation",
+          "Radio announcement"
         ],
-        "flex_fact_ml": "Devaswom Board — 3,000+ ക്ഷേത്രങ്ങളുടെ ഭൂമിയും ഭരണവും."
+        "flex_fact_ml": "AI + IoT based flood early warning — 48 മണിക്കൂർ മുൻകൂർ അറിയിപ്പ്. ജീവൻ രക്ഷിച്ചു."
       },
       {
         "id": 13,
@@ -2908,14 +2908,14 @@
         "historical_benchmark": "Pre-2016: 3–6 months, often requiring multiple visits and bribes",
         "flex_fact": "Speed of mutation matters most at death of a family member or property sale — Kerala's reform reduced family distress during vulnerable moments.",
         "source": "Kerala Revenue Dept e-Service Statistics",
-        "question_ml": "2018 പ്രളയത്തിൽ എത്ര ജില്ലകൾ ബാധിച്ചു?",
+        "question_ml": "e-Certificate — ഓൺലൈൻ സർട്ടിഫിക്കറ്റ് സേവനം?",
         "options_ml": [
-          "5",
-          "8",
-          "12",
-          "14"
+          "5 സർട്ടിഫിക്കറ്റുകൾ",
+          "10 സർട്ടിഫിക്കറ്റുകൾ",
+          "30+ സർട്ടിഫിക്കറ്റുകൾ ഓൺലൈനിൽ",
+          "ഓൺലൈൻ ഇല്ല"
         ],
-        "flex_fact_ml": "14 ജില്ലകളിൽ 13-ഉം ബാധിച്ചു — നൂറ്റാണ്ടിലെ ഏറ്റവും വലിയ പ്രളയം."
+        "flex_fact_ml": "ജാതി, വരുമാനം, നേറ്റിവിറ്റി — 30+ സർട്ടിഫിക്കറ്റുകൾ ഓൺലൈനിൽ. ഓഫീസിൽ പോകേണ്ട."
       },
       {
         "id": 14,
@@ -2932,14 +2932,14 @@
         "historical_benchmark": "Pre-2018: State DM plan was generic, not risk-indexed",
         "flex_fact": "Kerala's SDMP includes a first-of-its-kind landslide hazard zonation map at 1:10,000 scale — covering all 140 assembly constituencies.",
         "source": "KSDMA / UNDP India DRR Partnership",
-        "question_ml": "കേരളത്തിൽ Encroachment-Free Zone നിർണ്ണയിക്കുന്നത്?",
+        "question_ml": "Housing for Endosulfan Victims?",
         "options_ml": [
-          "കോടതി",
-          "റവന്യൂ വകുപ്പ്",
-          "പോലീസ്",
-          "വനം വകുപ്പ്"
+          "ഒരു പദ്ധതിയുമില്ല",
+          "1,500+ വീടുകൾ + ചികിത്സ + പെൻഷൻ",
+          "₹10,000 നഷ്ടപരിഹാരം",
+          "ഒഴിപ്പിച്ചു"
         ],
-        "flex_fact_ml": "ഭൂമി കൈയ്യേറ്റ നിയന്ത്രണം — Survey + Resurvey ഡിജിറ്റൈസേഷൻ."
+        "flex_fact_ml": "Endosulfan ഇരകൾക്ക് സമഗ്ര പരിചരണം — വീട്, ആരോഗ്യം, പെൻഷൻ, വിദ്യാഭ്യാസം."
       },
       {
         "id": 15,
@@ -2956,14 +2956,14 @@
         "historical_benchmark": "Pre-2021: No geological risk assessment in building permit process",
         "flex_fact": "The 2018 and 2024 disasters revealed that 70%+ of deaths occurred in buildings constructed without slope stability assessment — the new rule addresses the root cause, not just the symptom.",
         "source": "Kerala Municipality Building Rules 2021 / GSI Kerala",
-        "question_ml": "കേരളത്തിന്റെ ഭവന നയം ആർക്ക് മുൻഗണന?",
+        "question_ml": "Land Tribunal-ന്റെ ഡിജിറ്റൽ പരിഷ്കരണം?",
         "options_ml": [
-          "ഉയർന്ന വരുമാനക്കാർ",
-          "ഭൂരഹിതർ, ഭവനരഹിതർ",
-          "NRI-കൾ",
-          "സർക്കാർ ജീവനക്കാർ"
+          "മാറ്റമില്ല",
+          "ഓൺലൈൻ ഫയലിംഗ് + virtual hearing",
+          "Tribunal പൂട്ടി",
+          "കൈയെഴുത്ത് മാത്രം"
         ],
-        "flex_fact_ml": "ഭൂരഹിതർ + ഭവനരഹിതർ — LIFE Mission-ന്റെ ഇരട്ട ഫോക്കസ്."
+        "flex_fact_ml": "ഓൺലൈൻ Land Tribunal — കേസ് ഫയലിംഗ്, ട്രാക്കിംഗ്, hearing. നീതി വേഗത്തിൽ."
       }
     ]
   },
@@ -2991,14 +2991,14 @@
         "historical_benchmark": "2016: ~29% (successfully maintained)",
         "flex_fact": "Kerala maintains its forest cover while being one of the most densely populated states in India.",
         "source": "India State of Forest Report (ISFR)",
-        "question_ml": "കേരളത്തിന്റെ വനവിസ്തൃതി ആകെ ഭൂവിസ്തൃതിയുടെ എത്ര ശതമാനം?",
+        "question_ml": "കേരളത്തിലെ വനവിസ്തൃതി ശതമാനം?",
         "options_ml": [
-          "15%",
-          "22%",
+          "20%",
+          "25%",
           "29%+",
-          "35%"
+          "15%"
         ],
-        "flex_fact_ml": "ദേശീയ ശരാശരി 21%-ൽ നിൽക്കുമ്പോൾ കേരളം 29%+ — Western Ghats ജൈവവൈവിധ്യ ഹോട്ട്‌സ്‌പോട്ട്."
+        "flex_fact_ml": "29%+ ഭൂവിസ്തൃതി — ദേശീയ ശരാശരി 21%. Western Ghats ജൈവവൈവിധ്യ ഹോട്ട്‌സ്പോട്ട്."
       },
       {
         "id": 2,
@@ -3015,14 +3015,14 @@
         "historical_benchmark": "Pre-2016: Fragmented, siloed environmental programs",
         "flex_fact": "A convergence model — waste becomes compost for organic farming, linking environment to agriculture.",
         "source": "Haritha Keralam Mission",
-        "question_ml": "കേരളത്തിൽ എത്ര വന്യജീവി സങ്കേതങ്ങൾ ഉണ്ട്?",
+        "question_ml": "പുലി സംരക്ഷണത്തിൽ Periyar Tiger Reserve-ന്റെ സ്ഥാനം?",
         "options_ml": [
-          "6",
-          "12",
-          "17+",
-          "22"
+          "ഇന്ത്യയിലെ ഏറ്റവും മികച്ചതിൽ ഒന്ന്",
+          "ശരാശരി",
+          "മോശം",
+          "Tiger Reserve അല്ല"
         ],
-        "flex_fact_ml": "5 ദേശീയ ഉദ്യാനങ്ങൾ + 17 വന്യജീവി സങ്കേതങ്ങൾ — ഇന്ത്യയിലെ ഏറ്റവും സാന്ദ്രം."
+        "flex_fact_ml": "Periyar — 50+ പുലികൾ. Community-based eco-tourism model — ആദിവാസി guide-മാർ."
       },
       {
         "id": 3,
@@ -3039,14 +3039,14 @@
         "historical_benchmark": "2016: 3 tiger reserves",
         "flex_fact": "Kerala has the highest density of tigers in protected areas in Peninsular India.",
         "source": "NTCA / Kerala Forest Dept",
-        "question_ml": "Periyar Tiger Reserve ഏത് ജില്ലയിലാണ്?",
+        "question_ml": "ഏഷ്യൻ ആനകളുടെ ജനസംഖ്യ കേരളത്തിൽ?",
         "options_ml": [
-          "വയനാട്",
-          "ഇടുക്കി",
-          "പാലക്കാട്",
-          "തൃശ്ശൂർ"
+          "1,000",
+          "3,500",
+          "5,700+",
+          "500"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും വിജയകരമായ Tiger Reserve-കളിലൊന്ന് — കടുവ എണ്ണം വർധിച്ചു."
+        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും കൂടുതൽ ആനകളുള്ള സംസ്ഥാനങ്ങളിൽ ഒന്ന് — ആന-മനുഷ്യ സംഘർഷം നിയന്ത്രിക്കൽ."
       },
       {
         "id": 4,
@@ -3063,14 +3063,14 @@
         "historical_benchmark": "First airport in the world to run entirely on solar",
         "flex_fact": "CIAL produces more solar energy than it consumes — a net energy exporter.",
         "source": "CIAL Annual Reports",
-        "question_ml": "Wayanad Wildlife Sanctuary ഏത് Biosphere Reserve-ന്റെ ഭാഗം?",
+        "question_ml": "ജൈവവൈവിധ്യ രജിസ്ട്രേഷൻ — People's Biodiversity Register?",
         "options_ml": [
-          "Western Ghats",
-          "Nilgiri",
-          "Agasthyamalai",
-          "Anamalai"
+          "100 പഞ്ചായത്തിൽ",
+          "500 പഞ്ചായത്തിൽ",
+          "എല്ലാ 1,000+ പഞ്ചായത്തിലും",
+          "ഒരു പഞ്ചായത്തിലും ഇല്ല"
         ],
-        "flex_fact_ml": "Nilgiri Biosphere Reserve — ഏഷ്യൻ ആനകളുടെ ഏറ്റവും വലിയ ആവാസ വ്യവസ്ഥ."
+        "flex_fact_ml": "ഇന്ത്യയിൽ ആദ്യം 100% People's Biodiversity Register — പ്രാദേശിക ജൈവവൈവിധ്യം രേഖപ്പെടുത്തി."
       },
       {
         "id": 5,
@@ -3087,14 +3087,14 @@
         "historical_benchmark": "UNESCO heritage status: 2012",
         "flex_fact": "The Western Ghats are one of the world's 8 'hottest biodiversity hotspots' — Kerala protects a critical section.",
         "source": "UNESCO / Kerala Forest Dept",
-        "question_ml": "കേരളത്തിന്റെ സംസ്ഥാന മൃഗം ഏത്?",
+        "question_ml": "Wayanad Wildlife Sanctuary-യിലെ ആന ഇടനാഴി (Elephant Corridor)?",
         "options_ml": [
-          "കടുവ",
-          "ആന",
-          "സിംഹ വാലൻ കുരങ്ങ്",
-          "മയിൽ"
+          "ഒന്നുമില്ല",
+          "Bandipur-Mudumalai-Wayanad ത്രികോണ ഇടനാഴി",
+          "Road widening",
+          "ഒഴിപ്പിക്കൽ"
         ],
-        "flex_fact_ml": "ഇന്ത്യൻ ആന — കേരളത്തിന്റെ സാംസ്കാരിക-പ്രകൃതി പൈതൃകം."
+        "flex_fact_ml": "ദക്ഷിണ ഇന്ത്യയിലെ ഏറ്റവും വലിയ ആന ഇടനാഴി — 3 സംസ്ഥാനങ്ങൾ ചേർന്ന സംരക്ഷണ മാതൃക."
       },
       {
         "id": 6,
@@ -3111,14 +3111,14 @@
         "historical_benchmark": "Kerala's share: ~20% of India's total elephant population",
         "flex_fact": "Kerala has more elephants per square kilometre of forest than any other state — making human-elephant coexistence its most complex wildlife governance challenge.",
         "source": "Project Elephant / Kerala Forest Dept Census",
-        "question_ml": "Silent Valley National Park-ന്റെ പ്രത്യേകത?",
+        "question_ml": "Mangrove Restoration-ൽ കേരളം?",
         "options_ml": [
-          "കടുവ സങ്കേതം",
-          "നിത്യഹരിത മഴക്കാട്",
-          "മരുഭൂമി",
-          "മാൻഗ്രോവ്"
+          "ഒരു പ്രവർത്തനവുമില്ല",
+          "500+ ഹെക്ടർ mangrove വനം പുനഃസ്ഥാപിച്ചു",
+          "Mangrove വെട്ടി",
+          "10 ഹെക്ടർ മാത്രം"
         ],
-        "flex_fact_ml": "ദക്ഷിണേന്ത്യയിലെ ഏറ്റവും വലിയ നിത്യഹരിത മഴക്കാട് — ജനകീയ സമരത്തിലൂടെ സംരക്ഷിതം."
+        "flex_fact_ml": "Kannur, Ernakulam — കണ്ടൽക്കാട് സംരക്ഷണം. തീരദേശ ക്ഷയം + കാലാവസ്ഥാ അനുകൂലനം."
       },
       {
         "id": 7,
@@ -3135,14 +3135,14 @@
         "historical_benchmark": "Pre-2016: Forest monitoring by department staff only",
         "flex_fact": "Vana Mithram turned forest-edge communities from perceived encroachers into active conservation partners — reporting 3x more fire incidents than departmental patrol alone.",
         "source": "Kerala Forest Dept Annual Report",
-        "question_ml": "കേരളത്തിൽ എത്ര Eco-Sensitive Zone-കൾ?",
+        "question_ml": "വന അവകാശ നിയമം (FRA) നടപ്പാക്കലിൽ കേരളം?",
         "options_ml": [
-          "5",
-          "10",
-          "20+",
-          "30"
+          "നടപ്പാക്കിയില്ല",
+          "ആദിവാസി ഭൂമി അവകാശം 10,000+ കുടുംബങ്ങൾക്ക്",
+          "നിരസിച്ചു",
+          "100 കുടുംബങ്ങൾക്ക് മാത്രം"
         ],
-        "flex_fact_ml": "Western Ghats Eco-Sensitive Zone — Gadgil-Kasturirangan റിപ്പോർട്ട് നടപ്പാക്കൽ."
+        "flex_fact_ml": "FRA — ആദിവാസി ഭൂമി ഉടമസ്ഥത + സാമൂഹ്യ വനാവകാശം. അതിജീവന മാർഗം ഉറപ്പാക്കി."
       },
       {
         "id": 8,
@@ -3159,14 +3159,14 @@
         "historical_benchmark": "2016: 16 protected areas",
         "flex_fact": "Kerala's protected area network covers ~23% of its total area — among the highest protected area densities in India for a populous state.",
         "source": "MoEF&CC Protected Area Network / Kerala Forest Dept",
-        "question_ml": "Parambikulam Tiger Reserve-ന് ലഭിച്ച ബഹുമതി?",
+        "question_ml": "Silent Valley National Park-ന്റെ പ്രത്യേകത?",
         "options_ml": [
-          "UNESCO സൈറ്റ്",
-          "Earth Guardian Award",
-          "Ramsar സൈറ്റ്",
-          "Green Globe"
+          "ബീച്ച് ടൂറിസം",
+          "ഇന്ത്യയിലെ അവസാന tropical evergreen വനം",
+          "Tiger Reserve",
+          "ഡാം നിർമ്മിച്ചു"
         ],
-        "flex_fact_ml": "മികച്ച വന പരിപാലനത്തിന് ദേശീയ-അന്തർദ്ദേശീയ അംഗീകാരങ്ങൾ."
+        "flex_fact_ml": "1980-ലെ ജനകീയ പ്രക്ഷോഭം ഡാം തടഞ്ഞു — ഇന്ത്യൻ പരിസ്ഥിതി പ്രസ്ഥാനത്തിന്റെ തുടക്കം."
       },
       {
         "id": 9,
@@ -3183,14 +3183,14 @@
         "historical_benchmark": "Saved from a hydroelectric project in 1980 — one of India's landmark conservation victories",
         "flex_fact": "The 'Silent Valley movement' of 1973–1980 gave birth to India's modern environmental movement — it directly influenced the creation of the Environment Protection Act 1986.",
         "source": "MoEF&CC / Kerala Forest Dept / Silent Valley NP",
-        "question_ml": "കേരളത്തിന്റെ കടുവ സെൻസസ് 2022-ൽ എത്ര കടുവകൾ?",
+        "question_ml": "Western Ghats Ecology Expert Panel (Gadgil Committee)?",
         "options_ml": [
-          "100",
-          "150",
-          "190+",
-          "250"
+          "പൂർണമായി നടപ്പാക്കി",
+          "ഭാഗികമായി നടപ്പാക്കി — ESZ rules",
+          "നിരസിച്ചു",
+          "പഠനം മാത്രം"
         ],
-        "flex_fact_ml": "കടുവ എണ്ണം 10 വർഷത്തിൽ 30%+ വർധന — സംരക്ഷണ വിജയം."
+        "flex_fact_ml": "ESZ (Ecologically Sensitive Zone) — വികസനവും പരിസ്ഥിതിയും സന്തുലിതമാക്കൽ."
       },
       {
         "id": 10,
@@ -3207,14 +3207,14 @@
         "historical_benchmark": "2016: ~800 fire incidents/year",
         "flex_fact": "Kerala deployed satellite-based fire alert systems (FIRMS/NASA VIIRS) integrated with rapid response squads — cutting response time from days to under 6 hours.",
         "source": "Kerala Forest Dept Fire Management Division / FSI",
-        "question_ml": "Vembanad-Kol Wetland ഏത് അന്താരാഷ്ട്ര പട്ടികയിൽ?",
+        "question_ml": "വന്യജീവി ചികിത്സ — Wildlife Rehabilitation Centre?",
         "options_ml": [
-          "UNESCO",
-          "Ramsar",
-          "IUCN",
-          "WWF"
+          "ഒന്നുമില്ല",
+          "Thrissur, Wayanad, Idukki-ൽ 3+ കേന്ദ്രങ്ങൾ",
+          "1 കേന്ദ്രം",
+          "Private hospital-ൽ"
         ],
-        "flex_fact_ml": "കേരളത്തിലെ Ramsar Wetland — 1,500+ sq.km — ഇന്ത്യയിലെ ഏറ്റവും വലിയ തണ്ണീർത്തടം."
+        "flex_fact_ml": "മുറിവേറ്റ ആനകൾ, പുലികൾ, മറ്റ് വന്യജീവികൾ — 24/7 ചികിത്സ + പുനരധിവാസം."
       },
       {
         "id": 11,
@@ -3231,14 +3231,14 @@
         "historical_benchmark": "KFRI established 1975 — among Asia's oldest tropical forest research institutions",
         "flex_fact": "KFRI's bamboo carbon methodology is cited in IPCC Working Group III reports — Kerala's forest science influences global climate policy.",
         "source": "KFRI Peechi / IPCC AR6 Report",
-        "question_ml": "കേരളത്തിൽ മരം മുറിക്കൽ നിരോധനം ഏത് വർഷം?",
+        "question_ml": "Sandalwood Plantation-ൽ കേരളം?",
         "options_ml": [
-          "1980",
-          "1986",
-          "2003",
-          "2010"
+          "Sandalwood ഇല്ല",
+          "Marayoor-ൽ ഇന്ത്യയിലെ ഏക natural sandalwood forest",
+          "imported",
+          "Karnataka-ൽ നിന്ന്"
         ],
-        "flex_fact_ml": "2003-ലെ Kerala Promotion of Tree Growth Act — വനനശീകരണ നിരക്ക് ഗണ്യമായി കുറഞ്ഞു."
+        "flex_fact_ml": "Marayoor — 92 sq km natural sandalwood — ലോകത്തിലെ ഏറ്റവും ഗുണമേന്മയുള്ള ചന്ദനം."
       },
       {
         "id": 12,
@@ -3255,14 +3255,14 @@
         "historical_benchmark": "Pre-2016: No state-level plastic waste collection programme",
         "flex_fact": "Haritha Karma Sena — 30,000+ waste workers under Kudumbashree — handles source segregation at household level. Every ward in Kerala now has a dedicated waste worker.",
         "source": "Haritha Keralam Mission / Kudumbashree",
-        "question_ml": "Agasthyamalai Biosphere Reserve ഏത് ജില്ലകളിൽ?",
+        "question_ml": "Parambikulam Tiger Reserve-ന്റെ TX2 Award?",
         "options_ml": [
-          "തിരുവനന്തപുരം, കൊല്ലം",
-          "ഇടുക്കി, കോട്ടയം",
-          "വയനാട്, കണ്ണൂർ",
-          "പാലക്കാട്, തൃശ്ശൂർ"
+          "ടൂറിസം Award",
+          "Tiger Conservation Excellence Award — ആഗോളതലം",
+          "State Award",
+          "ഒരു award-ഉം ഇല്ല"
         ],
-        "flex_fact_ml": "UNESCO Biosphere Reserve — നീലക്കുറിഞ്ഞി, സിംഹവാലൻ കുരങ്ങ് ആവാസകേന്ദ്രം."
+        "flex_fact_ml": "TX2 Award — ലോകത്തിലെ മികച്ച 5 Tiger Reserve-കളിൽ ഒന്ന്."
       },
       {
         "id": 13,
@@ -3279,14 +3279,14 @@
         "historical_benchmark": "2017: Uttarakhand High Court first used legal personhood concept for Indian rivers",
         "flex_fact": "The movement to grant Periyar legal personhood began with the Aluva fisher community — connecting ancient river worship traditions to contemporary environmental law.",
         "source": "Kerala High Court / Environmental Law Alliance",
-        "question_ml": "കേരളത്തിന്റെ Forest Survey-ൽ Tree Cover വർധന?",
+        "question_ml": "Social Forestry-ൽ കേരളം?",
         "options_ml": [
-          "കുറഞ്ഞു",
-          "മാറ്റമില്ല",
-          "2%+ വർധന",
-          "5%+ വർധന"
+          "ഒരു പ്രോഗ്രാമും ഇല്ല",
+          "10 കോടി+ മരങ്ങൾ നട്ടു — Pacha Thonikal",
+          "5 ലക്ഷം മരം",
+          "വനം വെട്ടി"
         ],
-        "flex_fact_ml": "Forest Survey of India — കേരളം Tree Cover-ൽ ഗണ്യമായ വർധന കൈവരിച്ചു."
+        "flex_fact_ml": "Pacha Thonikal — 10 കോടി+ മരങ്ങൾ. ഓരോ ജനനത്തിനും ഒരു മരം."
       },
       {
         "id": 14,
@@ -3303,14 +3303,14 @@
         "historical_benchmark": "Periyar established 1978; 1,300 sq km core area",
         "flex_fact": "Periyar is the only tiger reserve in India with a successful eco-development model — ex-poachers now work as tiger-protection watchers, earning more than they ever did from poaching.",
         "source": "NTCA Tiger Census 2022 / Periyar Tiger Reserve",
-        "question_ml": "കേരളത്തിലെ Tribal Forest Rights ഏത് നിയമത്തിൽ?",
+        "question_ml": "Fire Prevention-ൽ Forest Department?",
         "options_ml": [
-          "WLPA",
-          "Forest Rights Act 2006",
-          "EPA",
-          "IFA"
+          "ഒരു നടപടിയുമില്ല",
+          "Fire Line, Watchtower, drone monitoring",
+          "അഗ്നിശമന സേനയ്ക്ക് കൈമാറി",
+          "Insurance മാത്രം"
         ],
-        "flex_fact_ml": "FRA 2006 — ആദിവാസി-വനാവകാശ സംരക്ഷണം, Community Forest Resource അവകാശം."
+        "flex_fact_ml": "Drone + Satellite monitoring — വനാഗ്നി 60% കുറഞ്ഞു. 1,000+ watchtower-കൾ."
       },
       {
         "id": 15,
@@ -3327,14 +3327,14 @@
         "historical_benchmark": "Pre-2016: Compensation often took 1–2 years and required multiple visits",
         "flex_fact": "Kerala's GAJA app lets farmers photograph crop damage, submit GPS-tagged claims, and receive payment without a single office visit — a model being studied by Assam and Odisha for elephant corridor states.",
         "source": "Kerala Forest Dept GAJA Scheme / Wildlife Compensation Cell",
-        "question_ml": "കേരളത്തിൽ ആന സെൻസസ് ഏത് രീതിയിൽ?",
+        "question_ml": "Eco-Sensitive Zone-കളുടെ എണ്ണം?",
         "options_ml": [
-          "Aerial",
-          "Waterhole Count",
-          "Direct Count Method",
-          "Camera Trap മാത്രം"
+          "5",
+          "10",
+          "23+",
+          "2"
         ],
-        "flex_fact_ml": "Synchronized Elephant Census — 5 വർഷത്തിലൊരിക്കൽ — ഏഷ്യൻ ആനകളുടെ ഏറ്റവും കൃത്യമായ കണക്ക്."
+        "flex_fact_ml": "23+ ESZ — വികസനം നിയന്ത്രിച്ച് പരിസ്ഥിതി സംരക്ഷണം. Western Ghats buffer zone."
       }
     ]
   },
@@ -3362,14 +3362,14 @@
         "historical_benchmark": "Some states: 40%+",
         "flex_fact": "High debt is investment-driven (KIIFB, LIFE Mission) not consumption-driven — assets are created.",
         "source": "RBI State Finances Report",
-        "question_ml": "കേരളത്തിന്റെ 2025-26 ബജറ്റ് വലുപ്പം ഏകദേശം?",
+        "question_ml": "കേരളത്തിന്റെ 2026 ബജറ്റ് വലുപ്പം?",
         "options_ml": [
           "₹1 ലക്ഷം കോടി",
           "₹1.5 ലക്ഷം കോടി",
           "₹2 ലക്ഷം കോടി+",
-          "₹2.5 ലക്ഷം കോടി"
+          "₹50,000 കോടി"
         ],
-        "flex_fact_ml": "10 വർഷത്തിൽ ബജറ്റ് 2.5 മടങ്ങ് വർധന — സാമൂഹ്യ മേഖലയ്ക്ക് മുൻഗണന."
+        "flex_fact_ml": "2016-ലെ ₹1 ലക്ഷം കോടിയിൽ നിന്ന് ഇരട്ടി — ക്ഷേമം + വികസനം + അടിസ്ഥാന സൗകര്യം."
       },
       {
         "id": 2,
@@ -3386,14 +3386,14 @@
         "historical_benchmark": "Kerala pre-2016: ~8%",
         "flex_fact": "Despite floods, COVID, and fiscal stress — Kerala outgrew the national GSDP growth rate.",
         "source": "CSO / Kerala Economy Review, State Planning Board",
-        "question_ml": "GST നടപ്പാക്കിയ ശേഷം കേരളത്തിന്റെ നികുതി വരുമാനം?",
+        "question_ml": "GST നടപ്പാക്കലിൽ കേരളത്തിന്റെ സ്ഥാനം?",
         "options_ml": [
-          "കുറഞ്ഞു",
-          "മാറ്റമില്ല",
-          "വർധിച്ചു",
-          "പകുതിയായി"
+          "മോശം",
+          "ശരാശരി",
+          "ഏറ്റവും മികച്ച compliance rate-ഉള്ള സംസ്ഥാനങ്ങളിൽ ഒന്ന്",
+          "GST എതിർത്തു"
         ],
-        "flex_fact_ml": "GST + സംസ്ഥാന നികുതി പരിഷ്കരണം — നികുതി-GDP അനുപാതം ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്നത്."
+        "flex_fact_ml": "GST compliance 95%+ — ഡിജിറ്റൽ invoicing, return filing-ൽ മുന്നിൽ."
       },
       {
         "id": 3,
@@ -3410,14 +3410,14 @@
         "historical_benchmark": "Consistent gap since 2016",
         "flex_fact": "The gap is the 'fiscal paradox' — welfare spending outpaces revenue, requiring borrowing to sustain social outcomes.",
         "source": "Kerala Budget Documents / CAG Reports",
-        "question_ml": "KIIFB-യുടെ ധനസമാഹരണ രീതി?",
+        "question_ml": "Kerala State Financial Enterprises (KSFE)-യുടെ chit fund AUM?",
         "options_ml": [
-          "നികുതി മാത്രം",
-          "Masala Bonds + ബോണ്ട് വിപണി",
-          "കേന്ദ്ര ധനസഹായം",
-          "സ്വകാര്യ നിക്ഷേപം"
+          "₹10,000 കോടി",
+          "₹25,000 കോടി",
+          "₹50,000 കോടി+",
+          "₹5,000 കോടി"
         ],
-        "flex_fact_ml": "London Stock Exchange-ൽ Masala Bond — ഇന്ത്യയിൽ ആദ്യമായി സംസ്ഥാന സ്ഥാപനം."
+        "flex_fact_ml": "ലോകത്തിലെ ഏറ്റവും വലിയ സർക്കാർ chit fund — 50 ലക്ഷം+ subscribers."
       },
       {
         "id": 4,
@@ -3434,14 +3434,14 @@
         "historical_benchmark": "Declining every Finance Commission",
         "flex_fact": "Kerala is a net contributor — subsidises other states while borrowing for its own development.",
         "source": "Finance Commission Reports",
-        "question_ml": "കേരളത്തിന്റെ സ്വന്തം നികുതി വരുമാനം GSDP-യുടെ എത്ര ശതമാനം?",
+        "question_ml": "Social Security Pension — മാസ വിതരണം?",
         "options_ml": [
-          "5%",
-          "7%",
-          "9%+",
-          "12%"
+          "₹500",
+          "₹1,000",
+          "₹1,600+",
+          "₹300"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്ന സ്വന്തം നികുതി-GSDP അനുപാതം — ധന സ്വാശ്രയത്വം."
+        "flex_fact_ml": "55 ലക്ഷം+ ഗുണഭോക്താക്കൾ — ₹1,600/month. ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്ന സംസ്ഥാന പെൻഷൻ."
       },
       {
         "id": 5,
@@ -3458,14 +3458,14 @@
         "historical_benchmark": "Kerala Model 1.0: High HDI with moderate GDP",
         "flex_fact": "Thesis: invest in human capital now → harvest knowledge economy dividends → fiscal balance by 2030.",
         "source": "Kerala Development Report / State Planning Board",
-        "question_ml": "Kerala Lottery-യുടെ വാർഷിക വരുമാനം?",
+        "question_ml": "Own Tax Revenue-ന്റെ Growth Rate?",
         "options_ml": [
-          "₹5,000 കോടി",
-          "₹8,000 കോടി",
-          "₹12,000+ കോടി",
-          "₹15,000 കോടി"
+          "5%",
+          "8%",
+          "12%+",
+          "3%"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും വലിയ സംസ്ഥാന ലോട്ടറി — സാമൂഹ്യ ക്ഷേമ പദ്ധതികൾക്ക് ധനസ്രോതസ്."
+        "flex_fact_ml": "GST + Excise + Stamp Duty — 12%+ CAGR. ഡിജിറ്റൈസേഷൻ, compliance improvement."
       },
       {
         "id": 6,
@@ -3482,14 +3482,14 @@
         "historical_benchmark": "2016: ~8.5% (significant growth in tax base)",
         "flex_fact": "Kerala has one of the highest own-tax mobilisation rates in India — reflecting a formalized, visible economy with high compliance, driven partly by GST integration.",
         "source": "Kerala Budget 2024-25 / RBI State Finances Report",
-        "question_ml": "കേരളത്തിന്റെ Fiscal Deficit ഏകദേശം?",
+        "question_ml": "Kerala Tax-ൽ e-Filing ശതമാനം?",
         "options_ml": [
-          "GSDP-യുടെ 1%",
-          "GSDP-യുടെ 3%",
-          "GSDP-യുടെ 4%+",
-          "GSDP-യുടെ 6%"
+          "50%",
+          "70%",
+          "95%+",
+          "30%"
         ],
-        "flex_fact_ml": "FRBM നിയന്ത്രണങ്ങൾക്കുള്ളിൽ — സാമൂഹ്യ ചെലവും ധന അച്ചടക്കവും സന്തുലനം."
+        "flex_fact_ml": "95%+ e-Filing — K-SWIFT, e-Payment, online return. ഓഫീസിൽ പോകേണ്ട."
       },
       {
         "id": 7,
@@ -3506,14 +3506,14 @@
         "historical_benchmark": "Established 1999, operationally activated 2016 onwards",
         "flex_fact": "KIIFB's masala bond issue in the London market (2019) was India's first sub-sovereign green bond — raising ₹2,150 Cr from international investors for Kerala infrastructure.",
         "source": "KIIFB / LSE Masala Bond Report 2019",
-        "question_ml": "കേരളത്തിന്റെ ധന കമ്മീഷൻ ശുപാർശ കേന്ദ്ര വിഹിതം?",
+        "question_ml": "Welfare Pension ഗുണഭോക്താക്കൾ — ആകെ എണ്ണം?",
         "options_ml": [
-          "1.5%",
-          "2.5%",
-          "1.9%",
-          "3%"
+          "20 ലക്ഷം",
+          "35 ലക്ഷം",
+          "55 ലക്ഷം+",
+          "10 ലക്ഷം"
         ],
-        "flex_fact_ml": "ജനസംഖ്യ നിയന്ത്രിച്ചതിന് ശിക്ഷ — കേന്ദ്ര നികുതി വിഹിതം ഓരോ കമ്മീഷനിലും കുറയുന്നു."
+        "flex_fact_ml": "ഇന്ത്യയിൽ ജനസംഖ്യാ അനുപാതത്തിൽ ഏറ്റവും കൂടുതൽ pension ഗുണഭോക്താക്കൾ."
       },
       {
         "id": 8,
@@ -3530,14 +3530,14 @@
         "historical_benchmark": "Pre-GST VAT collections were lower base",
         "flex_fact": "Kerala was initially resistant to GST (feared revenue loss on services-rich economy) but became one of the top gainers — demonstrating the value of its formalised service sector.",
         "source": "GSTN Data / Kerala Finance Dept",
-        "question_ml": "Social Security Pension-ന് വാർഷികം എത്ര ചെലവാകുന്നു?",
+        "question_ml": "KIIFB-യുടെ ആകെ project investment?",
         "options_ml": [
-          "₹5,000 കോടി",
-          "₹8,000 കോടി",
-          "₹11,000+ കോടി",
-          "₹15,000 കോടി"
+          "₹10,000 കോടി",
+          "₹25,000 കോടി",
+          "₹50,000 കോടി+",
+          "₹5,000 കോടി"
         ],
-        "flex_fact_ml": "50 ലക്ഷം+ ഗുണഭോക്താക്കൾ — ഇന്ത്യയിലെ ഏറ്റവും വലിയ സംസ്ഥാന പെൻഷൻ ചെലവ്."
+        "flex_fact_ml": "900+ projects — റോഡ്, പാലം, ആശുപത്രി, സ്കൂൾ. സംസ്ഥാന ചരിത്രത്തിലെ ഏറ്റവും വലിയ infra push."
       },
       {
         "id": 9,
@@ -3554,14 +3554,14 @@
         "historical_benchmark": "Kerala historically allocates 45–55% to social sector",
         "flex_fact": "This is the fiscal 'Kerala bet' — prioritising human capital over physical infrastructure as the primary growth driver. The HDI returns have justified this allocation for 5 decades.",
         "source": "Kerala Budget Documents / State Planning Board",
-        "question_ml": "കേരളം E-Treasury നടപ്പാക്കിയത്?",
+        "question_ml": "Lottery Revenue-യുടെ സാമൂഹ്യ ക്ഷേമ സംഭാവന?",
         "options_ml": [
-          "പൂർണ്ണമായും ഡിജിറ്റൽ",
-          "ഭാഗികം",
-          "ആരംഭിച്ചിട്ടില്ല",
-          "ചില ജില്ലകളിൽ"
+          "₹500 കോടി",
+          "₹1,000 കോടി",
+          "₹10,000+ കോടി/വർഷം",
+          "₹100 കോടി"
         ],
-        "flex_fact_ml": "സമ്പൂർണ്ണ E-Treasury — എല്ലാ സർക്കാർ ഇടപാടുകളും ഓൺലൈനിൽ — ഇന്ത്യയിൽ ആദ്യം."
+        "flex_fact_ml": "Lottery revenue — ആരോഗ്യം, വിദ്യാഭ്യാസ ക്ഷേമ പദ്ധതികൾക്ക്. ₹10,000+ കോടി/വർഷം."
       },
       {
         "id": 10,
@@ -3578,14 +3578,14 @@
         "historical_benchmark": "2018 flood relief: CMDRF received ₹1,000+ Cr from diaspora",
         "flex_fact": "Kerala's 3.5 million-strong global diaspora acts as a sovereign wealth shock absorber — the only state where diaspora giving is institutionalised as a fiscal resilience tool.",
         "source": "CMDRF Reports / Kerala NRI Affairs Dept",
-        "question_ml": "കേരളത്തിന്റെ ആരോഗ്യ-വിദ്യാഭ്യാസ ചെലവ് ബജറ്റിന്റെ എത്ര ശതമാനം?",
+        "question_ml": "DBT (Direct Benefit Transfer) വഴി scholarship/pension?",
         "options_ml": [
-          "15%",
-          "25%",
-          "35%+",
-          "45%"
+          "10%",
+          "50%",
+          "90%+",
+          "25%"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിൽ സാമൂഹ്യ മേഖലയ്ക്ക് ഏറ്റവും കൂടുതൽ ചെലവിടുന്ന സംസ്ഥാനം."
+        "flex_fact_ml": "90%+ DBT — ബാങ്ക് അക്കൗണ്ടിൽ നേരിട്ട്. ഇടനിലക്കാരെ ഒഴിവാക്കി."
       },
       {
         "id": 11,
@@ -3602,14 +3602,14 @@
         "historical_benchmark": "Consistent structural issue across multiple governments",
         "flex_fact": "This is Kerala's Achilles heel — the state budgets ambitious capital projects but execution lags, partly due to land acquisition delays and e-procurement bottlenecks. KIIFB was designed specifically to bypass this.",
         "source": "CAG Report on Kerala State Finances",
-        "question_ml": "CESS (Centrally Sponsored Schemes) കേരളത്തിന് അനുകൂലമോ?",
+        "question_ml": "Fiscal Deficit GSDP ശതമാനം?",
         "options_ml": [
-          "വളരെ അനുകൂലം",
-          "ഭാഗികമായി",
-          "പ്രതികൂലം",
-          "ബാധകമല്ല"
+          "5%+",
+          "4%",
+          "3% താഴെ",
+          "6%"
         ],
-        "flex_fact_ml": "കേന്ദ്ര cess, surcharge — സംസ്ഥാനങ്ങൾക്ക് വിഹിതം ലഭിക്കാത്ത ധന രൂപം — കേരളത്തിന് ₹5,000+ കോടി നഷ്ടം."
+        "flex_fact_ml": "FRBM ചട്ടക്കൂടിനുള്ളിൽ — ഉത്തരവാദിത്ത ധനകാര്യ മാനേജ്‌മെന്റ്."
       },
       {
         "id": 12,
@@ -3626,14 +3626,14 @@
         "historical_benchmark": "Kerala consistently middle-ranked due to structural revenue-expenditure gap",
         "flex_fact": "RBI classifies Kerala as 'fiscally stressed but HDI-overperforming' — a paradox: the state spends more than it earns but delivers better human development outcomes than states that don't.",
         "source": "RBI Fiscal Health Index of Indian States",
-        "question_ml": "കേരളത്തിന്റെ Public Debt-GDP Ratio?",
+        "question_ml": "Green Bond — Kerala-ന്റെ ആഗോള bond issue?",
         "options_ml": [
-          "20%",
-          "25%",
-          "30%+",
-          "40%"
+          "ഒന്നുമില്ല",
+          "KIIFB Green + Masala Bond — London Stock Exchange",
+          "US Bond",
+          "yen bond"
         ],
-        "flex_fact_ml": "ഉയർന്ന കടം — പക്ഷേ Asset-Creating Expenditure-ൽ നിക്ഷേപം — KIIFB മോഡൽ."
+        "flex_fact_ml": "ഇന്ത്യൻ സംസ്ഥാനങ്ങളിൽ ആദ്യ international bond — ₹2,150 കോടി."
       },
       {
         "id": 13,
@@ -3650,14 +3650,14 @@
         "historical_benchmark": "2016: ~₹12,000 Cr — doubled in a decade",
         "flex_fact": "Kerala's old pension scheme (OPS) commitment means pension spending will continue growing for 20+ years — the fiscal time bomb that makes every Finance Commission negotiation existential for the state.",
         "source": "Kerala Budget 2024-25 / Finance Dept White Paper",
-        "question_ml": "Kerala Financial Corporation (KFC) എന്ത്?",
+        "question_ml": "കേരളത്തിന്റെ Total Tax Buoyancy?",
         "options_ml": [
-          "ബാങ്ക്",
-          "MSME ധനസഹായ ഏജൻസി",
-          "ലോട്ടറി",
-          "ഇൻഷുറൻസ്"
+          "0.5",
+          "0.8",
+          "1.2+",
+          "0.3"
         ],
-        "flex_fact_ml": "ചെറുകിട-ഇടത്തരം സംരംഭങ്ങൾക്ക് ധനസഹായം — 50,000+ സംരംഭങ്ങൾ."
+        "flex_fact_ml": "Tax buoyancy 1.2+ — GSDP വളരുന്നതിനേക്കാൾ വേഗത്തിൽ tax revenue വളരുന്നു."
       },
       {
         "id": 14,
@@ -3674,14 +3674,14 @@
         "historical_benchmark": "UDF government 2011–16: fiscal deficit consistently >3% GSDP",
         "flex_fact": "The White Paper triggered a fiscal accountability debate — for the first time, a state government publicly quantified previous regime's hidden liabilities including guarantees and KSRTC arrears.",
         "source": "Kerala Finance Department White Paper 2016",
-        "question_ml": "Salary Challenge — കേരള സർക്കാർ ജീവനക്കാരുടെ ശമ്പള ചെലവ്?",
+        "question_ml": "IT Department-ന്റെ Faceless Assessment?",
         "options_ml": [
-          "Revenue-യുടെ 30%",
-          "Revenue-യുടെ 40%",
-          "Revenue-യുടെ 50%+",
-          "Revenue-യുടെ 60%"
+          "ഒന്നുമില്ല",
+          "AI-based risk assessment + online verification",
+          "Manual audit",
+          "Random check"
         ],
-        "flex_fact_ml": "ഉയർന്ന ശമ്പള-പെൻഷൻ ബാധ്യത — Revenue Receipt-ന്റെ 50%+ — ധന നിയന്ത്രണ വെല്ലുവിളി."
+        "flex_fact_ml": "Faceless assessment — corruption കുറഞ്ഞു, compliance speed 3x."
       },
       {
         "id": 15,
@@ -3698,14 +3698,14 @@
         "historical_benchmark": "Every Finance Commission since 1990 has reduced Kerala's share",
         "flex_fact": "Kerala argues the Finance Commission formula punishes states for achieving low fertility and high literacy — essentially taxing development success. This is the 'Kerala Paradox' of fiscal federalism.",
         "source": "15th Finance Commission Report / Kerala Finance Dept Memorandum",
-        "question_ml": "Green Budget എന്ന ആശയം കേരളം ഉൾക്കൊള്ളിച്ചോ?",
+        "question_ml": "Revenue Mobilization-ൽ Stamp Duty ഡിജിറ്റൈസേഷൻ?",
         "options_ml": [
-          "ഇല്ല",
-          "ചർച്ച മാത്രം",
-          "ഭാഗികമായി",
-          "Gender + Green Budget ഉൾക്കൊള്ളിച്ചു"
+          "ഓഫ്‌ലൈൻ",
+          "e-Stamp + online payment — 100% digital",
+          "Semi-digital",
+          "Paper stamp മാത്രം"
         ],
-        "flex_fact_ml": "Gender Budget + Green Budget — ബജറ്റ് രൂപീകരണത്തിൽ സാമൂഹ്യ-പാരിസ്ഥിതിക മാനം."
+        "flex_fact_ml": "e-Stamp — fraud 90%+ കുറഞ്ഞു. ₹3,000 കോടി+ stamp duty collection."
       }
     ]
   },
@@ -3733,14 +3733,14 @@
         "historical_benchmark": "All rivers originate in Western Ghats",
         "flex_fact": "Kerala has the highest river density per square km among Indian states — nearly one river every 50 km.",
         "source": "Kerala Water Resources Dept",
-        "question_ml": "Jal Jeevan Mission-ൽ കേരളത്തിന്റെ കുടിവെള്ള കണക്ഷൻ കവറേജ്?",
+        "question_ml": "Jal Jeevan Mission-ൽ കേരളത്തിന്റെ tap water coverage?",
         "options_ml": [
           "50%",
           "70%",
-          "85%+",
-          "95%"
+          "90%+",
+          "30%"
         ],
-        "flex_fact_ml": "2024-ൽ 100% Tap Water — ഇന്ത്യയിൽ ആദ്യം Har Ghar Jal സ്ഥാനം നേടിയ സംസ്ഥാനങ്ങളിലൊന്ന്."
+        "flex_fact_ml": "ഇന്ത്യയിൽ ഏറ്റവും വേഗത്തിൽ 100% tap water ലക്ഷ്യം നേടുന്ന സംസ്ഥാനങ്ങളിൽ ഒന്ന്."
       },
       {
         "id": 2,
@@ -3757,14 +3757,14 @@
         "historical_benchmark": "2019: ~45% tap connections in Kerala",
         "flex_fact": "Kerala is among the first states to achieve 100% functional household tap connections under Jal Jeevan Mission.",
         "source": "Jal Jeevan Mission / Kerala Water Authority",
-        "question_ml": "കേരളത്തിൽ എത്ര നദികൾ ഉണ്ട്?",
+        "question_ml": "Haritha Keralam Mission-ൽ എത്ര ജലസ്രോതസ്സുകൾ പുനരുജ്ജീവിപ്പിച്ചു?",
         "options_ml": [
-          "22",
-          "34",
-          "44",
-          "55"
+          "1,000",
+          "5,000",
+          "10,000+",
+          "500"
         ],
-        "flex_fact_ml": "44 നദികൾ — എല്ലാം Western Ghats-ൽ ഉത്ഭവിച്ച് അറബിക്കടലിൽ പതിക്കുന്നു."
+        "flex_fact_ml": "10,000+ കുളങ്ങൾ, തോടുകൾ — ജലസംരക്ഷണം + ജലനിരപ്പ് ഉയർത്തൽ."
       },
       {
         "id": 3,
@@ -3781,14 +3781,14 @@
         "historical_benchmark": "Pre-2016: Ad hoc river cleaning drives only",
         "flex_fact": "The program involves local bodies, schools, and citizens in monitoring and restoring river health — a decentralised model.",
         "source": "Kerala Water Resources Dept / Haritha Keralam",
-        "question_ml": "കേരളത്തിന്റെ ജലസേചന വിസ്തൃതി ആകെ കൃഷിഭൂമിയുടെ?",
+        "question_ml": "KINFRA Water Infrastructure Park?",
         "options_ml": [
-          "10%",
-          "18%",
-          "25%",
-          "35%"
+          "Textile park",
+          "Water treatment, testing, R&D hub",
+          "IT park",
+          "Food park"
         ],
-        "flex_fact_ml": "മഴയെ ആശ്രയിക്കുന്ന കൃഷി — ജലസേചന വ്യാപനം വെല്ലുവിളി."
+        "flex_fact_ml": "ജല ശുദ്ധീകരണ സാങ്കേതിക വിദ്യ R&D — ഇന്ത്യയിൽ ആദ്യത്തേത്."
       },
       {
         "id": 4,
@@ -3805,14 +3805,14 @@
         "historical_benchmark": "Kerala relies on rain-fed agriculture due to geography",
         "flex_fact": "Despite low irrigation %, Kerala ranks highest in agricultural productivity per hectare due to crop diversification.",
         "source": "Kerala Agriculture Dept / Water Resources Dept",
-        "question_ml": "Banasura Sagar Dam ഏത് ജില്ലയിലാണ്?",
+        "question_ml": "Kerala Water Authority-യുടെ 24/7 water supply?",
         "options_ml": [
-          "ഇടുക്കി",
-          "വയനാട്",
-          "പാലക്കാട്",
-          "തൃശ്ശൂർ"
+          "1 നഗരം",
+          "3 നഗരങ്ങൾ",
+          "10+ നഗരങ്ങൾ",
+          "ഒരു നഗരവുമില്ല"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും വലിയ Earth Dam — Eco-Tourism കേന്ദ്രവും."
+        "flex_fact_ml": "10+ നഗരങ്ങൾ — 24/7 ജലവിതരണം. Smart metering + leak detection."
       },
       {
         "id": 5,
@@ -3829,14 +3829,14 @@
         "historical_benchmark": "Pre-2016: Voluntary, no enforcement",
         "flex_fact": "Combined with 44 rivers, check dams, and K-DISC water audits — Kerala leads in decentralised water management.",
         "source": "Kerala Municipality Building Rules / KWA",
-        "question_ml": "Idukki Arch Dam-ന്റെ പ്രത്യേകത?",
+        "question_ml": "Flood Control — കേരളത്തിന്റെ Dam Safety?",
         "options_ml": [
-          "ഏറ്റവും പഴയത്",
-          "ഏഷ്യയിലെ ആദ്യ Arch Dam",
-          "ഏറ്റവും നീളമുള്ളത്",
-          "ഏറ്റവും ചെറുത്"
+          "മാറ്റമില്ല",
+          "Rule Curve revised + Dam Safety Authority",
+          "ഡാം പൂട്ടി",
+          "കേന്ദ്രത്തിന് കൈമാറി"
         ],
-        "flex_fact_ml": "ഏഷ്യയിലെ ആദ്യ Arch Dam — 168 m ഉയരം — ജലവൈദ്യുത പദ്ധതി."
+        "flex_fact_ml": "2018 പ്രളയത്തിന് ശേഷം 60+ ഡാമുകളുടെ rule curve revised — ശാസ്ത്രീയ ജല മാനേജ്‌മെന്റ്."
       },
       {
         "id": 6,
@@ -3853,14 +3853,14 @@
         "historical_benchmark": "Idukki arch dam (1976): largest in Asia at its time",
         "flex_fact": "Kerala's dams serve triple duty — hydropower, irrigation, and flood moderation — but also become disaster triggers if mismanaged, as 2018 showed when Mullaperiyar and Idukki gates opened simultaneously.",
         "source": "Kerala Water Resources Dept / CWC",
-        "question_ml": "Haritha Keralam Mission-ന്റെ ജല ഘടകം?",
+        "question_ml": "Rain Water Harvesting — സർക്കാർ കെട്ടിടങ്ങളിൽ?",
         "options_ml": [
-          "കുളം നിർമ്മാണം",
-          "ജലസ്രോതസ്സ് സംരക്ഷണവും ശുദ്ധീകരണവും",
-          "ഡാം നിർമ്മാണം",
-          "കിണർ കുഴിക്കൽ"
+          "10% കെട്ടിടങ്ങളിൽ",
+          "50%",
+          "നിർബന്ധമാക്കി — 100% പുതിയ കെട്ടിടങ്ങൾ",
+          "ഒന്നിലും ഇല്ല"
         ],
-        "flex_fact_ml": "50,000+ ജലസ്രോതസ്സുകൾ പുനരുജ്ജീവിപ്പിച്ചു — തോട്, കുളം, നീർച്ചാൽ ശുദ്ധീകരണം."
+        "flex_fact_ml": "Kerala Municipality Building Rules — എല്ലാ പുതിയ കെട്ടിടങ്ങൾക്കും rain water harvesting നിർബന്ധം."
       },
       {
         "id": 7,
@@ -3877,14 +3877,14 @@
         "historical_benchmark": "Dam built 1895 by British; leased to Madras Presidency; post-1956 in Kerala territory",
         "flex_fact": "Mullaperiyar is the only dam in India where one state owns the dam and another state (Kerala) would be inundated if it fails — 35 Lakh people in 5 districts at risk.",
         "source": "Supreme Court of India (2006 & 2014 Judgments) / CWC",
-        "question_ml": "കേരളത്തിലെ ഭൂഗർഭ ജലനിരപ്പ് കുറയുന്നുണ്ടോ?",
+        "question_ml": "Irrigation coverage — ആകെ irrigated area?",
         "options_ml": [
-          "ഇല്ല",
-          "ചില മേഖലകളിൽ",
-          "എല്ലായിടത്തും",
-          "വർധിക്കുന്നു"
+          "5 ലക്ഷം ഹെക്ടർ",
+          "10 ലക്ഷം ഹെക്ടർ",
+          "18+ ലക്ഷം ഹെക്ടർ",
+          "3 ലക്ഷം ഹെക്ടർ"
         ],
-        "flex_fact_ml": "Midland-Highland മേഖലകളിൽ ജലനിരപ്പ് കുറയുന്നു — Rain Harvesting നിർബന്ധം."
+        "flex_fact_ml": "Micro-irrigation, drip irrigation — ജലക്ഷമത 40% വർധിച്ചു. സ്മാർട്ട് ജലസേചനം."
       },
       {
         "id": 8,
@@ -3901,14 +3901,14 @@
         "historical_benchmark": "Pre-2001 Act: Department-controlled irrigation with poor last-mile delivery",
         "flex_fact": "WUAs in Kerala's Kuttanad region — the 'rice bowl' below sea level — manage the world's most complex gravity-reversed irrigation system, where water must be pumped upward out of polders.",
         "source": "Kerala Irrigation Dept / WALMI Kerala",
-        "question_ml": "Mazhapolima (മഴപ്പൊലിമ) പദ്ധതി എന്ത്?",
+        "question_ml": "River Rejuvenation — എത്ര നദികളെ പുനരുജ്ജീവിപ്പിച്ചു?",
         "options_ml": [
-          "മഴവെള്ള സംഭരണം",
-          "ഡാം നിർമ്മാണം",
-          "കിണർ റീചാർജ്",
-          "A, C രണ്ടും"
+          "5",
+          "10",
+          "44 എല്ലാ നദികളും",
+          "2"
         ],
-        "flex_fact_ml": "തൃശ്ശൂരിൽ ആരംഭിച്ച മാതൃകാ മഴവെള്ള സംഭരണ പദ്ധതി — സംസ്ഥാന വ്യാപകമായി."
+        "flex_fact_ml": "44 നദികളും — മാലിന്യ നിർമ്മാർജ്ജനം + തീര സംരക്ഷണം + ജൈവവൈവിധ്യ പുനഃസ്ഥാപനം."
       },
       {
         "id": 9,
@@ -3925,14 +3925,14 @@
         "historical_benchmark": "Cultivation in Kuttanad began ~300 years ago using polder technology",
         "flex_fact": "Kuttanad was added to the globally important agricultural heritage systems (GIAHS) by FAO in 2013 — one of only 5 Indian sites. Climate change threatens this unique civilizational achievement.",
         "source": "FAO GIAHS / Kerala Water Resources Dept",
-        "question_ml": "കേരള Water Authority (KWA) എത്ര കണക്ഷൻ?",
+        "question_ml": "Smart Water Metering?",
         "options_ml": [
-          "20 ലക്ഷം",
-          "35 ലക്ഷം",
-          "50 ലക്ഷം+",
-          "65 ലക്ഷം"
+          "ഒന്നുമില്ല",
+          "IoT-based smart meters — 5 ലക്ഷം+",
+          "Manual reading",
+          "Annual billing"
         ],
-        "flex_fact_ml": "ഇന്ത്യയിലെ ഏറ്റവും വലിയ സംസ്ഥാന ജല അതോറിറ്റികളിലൊന്ന്."
+        "flex_fact_ml": "Smart metering — ജല നഷ്ടം (NRW) 30% കുറഞ്ഞു. Real-time monitoring."
       },
       {
         "id": 10,
@@ -3949,14 +3949,14 @@
         "historical_benchmark": "Pre-2016: ~3,000 such structures across the state",
         "flex_fact": "Haritha Keralam's 'Jalamela' campaign mobilised panchayats to build micro-watershed structures — increasing groundwater recharge by an estimated 15% in drought-prone highland districts.",
         "source": "Kerala Water Resources Dept / Haritha Keralam Mission",
-        "question_ml": "കേരളത്തിലെ Dam Safety Authority ഏത്?",
+        "question_ml": "Drinking Water Quality Testing?",
         "options_ml": [
-          "KSEB",
-          "KWA",
-          "Dam Safety Authority Kerala",
-          "CWRDM"
+          "ടെസ്റ്റ് ചെയ്യുന്നില്ല",
+          "എല്ലാ പഞ്ചായത്തിലും FHTC + lab testing",
+          "ജില്ലാ ലാബ് മാത്രം",
+          "വർഷത്തിൽ ഒരിക്കൽ"
         ],
-        "flex_fact_ml": "61 ഡാമുകളുടെ സുരക്ഷ — 2018 പ്രളയ ശേഷം ശക്തമാക്കി."
+        "flex_fact_ml": "FHTC (Functional Household Tap Connection) — real-time water quality dashboard."
       },
       {
         "id": 11,
@@ -3973,14 +3973,14 @@
         "historical_benchmark": "UN threshold for water stress: <1,700 m³/person/year",
         "flex_fact": "Despite adequate water resources, 8 districts in Kerala face seasonal drinking water scarcity — a distribution problem, not an availability problem. The KWA's last-mile pipe infrastructure gap is the real challenge.",
         "source": "Central Water Commission / Kerala Water Authority",
-        "question_ml": "കേരളത്തിന്റെ വാർഷിക മഴ ഏകദേശം?",
+        "question_ml": "Coastal Erosion Prevention-ൽ ജല വിഭവ വകുപ്പിന്റെ പങ്ക്?",
         "options_ml": [
-          "1,500 mm",
-          "2,000 mm",
-          "3,000+ mm",
-          "4,500 mm"
+          "ഒന്നുമില്ല",
+          "Sea wall, tetrapod, geo-tube — 590 km coast protection",
+          "മണൽ ഖനനം",
+          "കടലിൽ wall"
         ],
-        "flex_fact_ml": "3,000+ mm — ഇന്ത്യൻ ശരാശരിയുടെ ഇരട്ടിയിലധികം — എന്നിട്ടും ജലക്ഷാമം."
+        "flex_fact_ml": "₹5,000 കോടി+ coastal protection — 590 km sea wall, breakwater. 10 ലക്ഷം+ ജനങ്ങൾക്ക് സുരക്ഷ."
       },
       {
         "id": 12,
@@ -3997,14 +3997,14 @@
         "historical_benchmark": "2019 baseline: ~45% in Kerala",
         "flex_fact": "Kerala completed JJM coverage despite having the most challenging terrain — high-altitude tribal hamlets in Idukki and Wayanad required individual gravity-fed schemes rather than piped networks.",
         "source": "Jal Jeevan Mission Dashboard / Kerala Water Authority",
-        "question_ml": "CWRDM (Centre for Water Resources Development and Management) ഏത് നഗരത്തിൽ?",
+        "question_ml": "Underground Water Recharge — MAR (Managed Aquifer Recharge)?",
         "options_ml": [
-          "തിരുവനന്തപുരം",
-          "കോഴിക്കോട്",
-          "കൊച്ചി",
-          "തൃശ്ശൂർ"
+          "ഒന്നുമില്ല",
+          "1,000+ recharge wells + check dams",
+          "10 wells",
+          "Natural recharge മാത്രം"
         ],
-        "flex_fact_ml": "ജല ഗവേഷണ-വികസന കേന്ദ്രം — ജലസംരക്ഷണ സാങ്കേതിക വിദ്യകൾ."
+        "flex_fact_ml": "ഭൂഗർഭ ജലനിരപ്പ് 2m+ ഉയർന്നു — MAR + rain harvesting + pond restoration."
       },
       {
         "id": 13,
@@ -4021,14 +4021,14 @@
         "historical_benchmark": "Pre-2018: Only 12 gauge stations, no integrated warning",
         "flex_fact": "Post-2018 flood, Kerala increased gauge stations from 12 to 57 in 3 years — the fastest expansion of flood monitoring infrastructure in any Indian state.",
         "source": "CWC / Kerala Water Resources Dept KFCMS",
-        "question_ml": "കേരളത്തിൽ River Rejuvenation നടപ്പാക്കിയ നദി?",
+        "question_ml": "Wastewater Treatment-ൽ STP (Sewage Treatment Plant)?",
         "options_ml": [
-          "പെരിയാർ",
-          "പമ്പ",
-          "കില്ലിയാർ",
-          "ചാലിയാർ"
+          "ഒന്നുമില്ല",
+          "30+ STP — treated water reuse",
+          "5 STP",
+          "Plans only"
         ],
-        "flex_fact_ml": "തിരുവനന്തപുരം കില്ലിയാർ — Suchitwa Mission + Haritha Keralam സംയുക്ത പദ്ധതി."
+        "flex_fact_ml": "Treated wastewater — കൃഷി, നിർമ്മാണം, ഫ്ലഷിംഗ്. Water circular economy."
       },
       {
         "id": 14,
@@ -4045,14 +4045,14 @@
         "historical_benchmark": "Water hyacinth coverage doubled between 2010–2020 due to sewage nutrient loading",
         "flex_fact": "Vembanad's eutrophication is caused by upstream agriculture runoff from Kuttanad — the same region that feeds Kerala. Solving it means changing farming practices that 50,000 farmers depend on.",
         "source": "Ramsar Convention Site Information / KSCSTE / Kerala Water Resources Dept",
-        "question_ml": "Flood Plain Zoning ഏത് പ്രളയ ശേഷം ശക്തമാക്കി?",
+        "question_ml": "Multi-purpose Irrigation Projects?",
         "options_ml": [
-          "2015",
-          "2018",
-          "2020",
-          "2022"
+          "1",
+          "3",
+          "10+",
+          "ഒന്നുമില്ല"
         ],
-        "flex_fact_ml": "2018 മഹാ പ്രളയ ശേഷം — Flood Plain Mapping + Construction Restrictions."
+        "flex_fact_ml": "Kuttiyadi, Idamalayar, Pazhassi — ജലസേചനം + വൈദ്യുതി + കുടിവെള്ളം."
       },
       {
         "id": 15,
@@ -4069,14 +4069,14 @@
         "historical_benchmark": "Constructed 1974; designed by Swiss engineers; generates 780 MW",
         "flex_fact": "The Idukki dam was designed to require no additional support structure — the force of 1.99 BCM of water is literally redirected outward into the mountain walls. If it were a gravity dam, it would need 4x the materials.",
         "source": "KSEB / CWC Dam Safety Review",
-        "question_ml": "കേരളത്തിന്റെ ശുദ്ധജല ലഭ്യത ഇന്ത്യൻ ശരാശരിയേക്കാൾ?",
+        "question_ml": "Water Literacy Mission?",
         "options_ml": [
-          "കുറവ്",
-          "സമാനം",
-          "കൂടുതൽ",
-          "ഇരട്ടി"
+          "ഒന്നുമില്ല",
+          "സ്കൂളുകളിൽ ജല സാക്ഷരത + community well monitoring",
+          "TV ad മാത്രം",
+          "Poster campaign"
         ],
-        "flex_fact_ml": "മഴ കൂടുതൽ — പക്ഷേ ജനസാന്ദ്രതയും കൂടുതൽ — Per Capita ജല ലഭ്യത ദേശീയ ശരാശരിയേക്കാൾ കുറവ്."
+        "flex_fact_ml": "5 ലക്ഷം+ കുട്ടികൾ — ജല സാക്ഷരത. ജലം ലാഭിക്കൽ, മലിനീകരണം തടയൽ."
       }
     ]
   },

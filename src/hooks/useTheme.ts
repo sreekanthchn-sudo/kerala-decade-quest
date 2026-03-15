@@ -7,14 +7,13 @@ type Theme = 'dark' | 'light';
 const STORAGE_KEY = 'kerala-decade-quest-theme';
 
 export function useTheme() {
-  const [theme, setThemeState] = useState<Theme>('dark');
+  const [theme, setThemeState] = useState<Theme>('light');
 
   useEffect(() => {
     const saved = localStorage.getItem(STORAGE_KEY) as Theme | null;
-    if (saved) {
-      setThemeState(saved);
-      document.documentElement.setAttribute('data-theme', saved);
-    }
+    const initial = saved || 'light';
+    setThemeState(initial);
+    document.documentElement.setAttribute('data-theme', initial);
   }, []);
 
   const setTheme = useCallback((t: Theme) => {

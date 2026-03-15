@@ -1,26 +1,39 @@
 @import "tailwindcss";
 
+/* ═══════════════════════════════════════════
+   LIGHT THEME (DEFAULT) — Bright Kerala Green
+   ═══════════════════════════════════════════ */
 :root {
-  --kl-bg: #040f08;
-  --kl-bg-alt: #081a10;
-  --kl-card: rgba(12, 35, 22, 0.55);
-  --kl-card-solid: #0c2316;
-  --kl-card-hover: rgba(18, 48, 32, 0.65);
-  --kl-glass: rgba(255, 255, 255, 0.03);
-  --kl-glass-border: rgba(255, 255, 255, 0.06);
+  --kl-bg: #f0f8f4;
+  --kl-bg-alt: #e4f2ea;
+  --kl-card: rgba(255, 255, 255, 0.85);
+  --kl-card-solid: #ffffff;
+  --kl-card-hover: rgba(255, 255, 255, 0.95);
+  --kl-glass: rgba(255, 255, 255, 0.7);
+  --kl-glass-border: rgba(0, 137, 94, 0.12);
   --kl-green: #00895e;
-  --kl-green-light: #00e88a;
-  --kl-green-glow: rgba(0, 232, 138, 0.15);
-  --kl-teal: #00c9a7;
-  --kl-gold: #f0c35e;
+  --kl-green-light: #007a52;
+  --kl-green-glow: rgba(0, 137, 94, 0.12);
+  --kl-teal: #008f7a;
+  --kl-gold: #c4850a;
   --kl-gold-dim: #9a7a30;
-  --kl-text: #eaf5ef;
-  --kl-text-dim: #5e8a6e;
-  --kl-text-bright: #ffffff;
-  --kl-border: rgba(0, 232, 138, 0.07);
-  --kl-border-hover: rgba(0, 232, 138, 0.2);
+  --kl-text: #0f2a1a;
+  --kl-text-dim: #4d7a5e;
+  --kl-text-bright: #071a0e;
+  --kl-border: rgba(0, 137, 94, 0.1);
+  --kl-border-hover: rgba(0, 137, 94, 0.25);
   --foreground: var(--kl-text);
   --background: var(--kl-bg);
+  --kl-correct: #007a52;
+  --kl-incorrect: #dc2626;
+  --kl-national-bar-start: #94a3b8;
+  --kl-national-bar-end: #cbd5e1;
+  --kl-bar-track: rgba(0, 137, 94, 0.06);
+  --kl-national-track: rgba(0, 0, 0, 0.04);
+  --kl-flex-fact-bg: rgba(0, 137, 94, 0.06);
+  --kl-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --kl-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --kl-shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
 @theme inline {
@@ -29,56 +42,53 @@
   --font-sans: var(--font-manjari);
 }
 
+html {
+  scroll-behavior: smooth;
+  font-size: 18px; /* Base size bump for larger fonts */
+}
+
 body {
   background: var(--kl-bg);
   color: var(--kl-text);
   font-family: var(--font-manjari), Arial, Helvetica, sans-serif;
   -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
-}
-
-html {
-  scroll-behavior: smooth;
+  line-height: 1.6;
 }
 
 /* ─── Hero gradient backgrounds ─── */
 .bg-kerala-hero {
   background:
-    radial-gradient(ellipse at 15% -10%, rgba(0, 232, 138, 0.12) 0%, transparent 55%),
-    radial-gradient(ellipse at 85% 20%, rgba(0, 201, 167, 0.08) 0%, transparent 45%),
-    radial-gradient(ellipse at 50% 100%, rgba(240, 195, 94, 0.06) 0%, transparent 50%),
-    radial-gradient(circle at 30% 60%, rgba(0, 137, 94, 0.05) 0%, transparent 40%),
-    var(--kl-bg);
+    radial-gradient(ellipse at 20% -15%, rgba(0, 180, 110, 0.12) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 15%, rgba(0, 143, 122, 0.08) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 100%, rgba(196, 133, 10, 0.06) 0%, transparent 50%),
+    linear-gradient(175deg, #f0f8f4 0%, #e4f2ea 40%, #f5f9f7 100%);
 }
 
 .bg-kerala-quiz {
   background:
-    radial-gradient(ellipse at 50% -30%, rgba(0, 232, 138, 0.1) 0%, transparent 55%),
-    radial-gradient(ellipse at -10% 70%, rgba(0, 201, 167, 0.06) 0%, transparent 40%),
-    radial-gradient(ellipse at 100% 90%, rgba(240, 195, 94, 0.04) 0%, transparent 35%),
-    var(--kl-bg);
+    radial-gradient(ellipse at 50% -20%, rgba(0, 180, 110, 0.1) 0%, transparent 55%),
+    radial-gradient(ellipse at -10% 70%, rgba(0, 143, 122, 0.05) 0%, transparent 40%),
+    linear-gradient(175deg, #f0f8f4 0%, #eaf5ef 60%, #f5f9f7 100%);
 }
 
-/* ─── Glassmorphism card ─── */
+/* ─── Glassmorphism card — Light ─── */
 .glass-card {
   background: var(--kl-card);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--kl-glass-border);
   box-shadow:
-    0 4px 24px rgba(0, 0, 0, 0.3),
-    0 1px 2px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+    var(--kl-shadow-md),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 .glass-card-light {
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--kl-flex-fact-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow:
-    0 2px 16px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(0, 137, 94, 0.08);
+  box-shadow: var(--kl-shadow-sm);
 }
 
 /* ─── Gradient border wrapper ─── */
@@ -95,10 +105,10 @@ html {
   padding: 1px;
   background: linear-gradient(
     135deg,
-    rgba(0, 232, 138, 0.2),
-    rgba(0, 201, 167, 0.1),
-    rgba(240, 195, 94, 0.12),
-    rgba(0, 232, 138, 0.05)
+    rgba(0, 137, 94, 0.25),
+    rgba(0, 143, 122, 0.15),
+    rgba(196, 133, 10, 0.18),
+    rgba(0, 137, 94, 0.08)
   );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -124,11 +134,11 @@ html {
   padding: 1px;
   background: conic-gradient(
     from var(--border-angle, 0deg),
-    rgba(0, 232, 138, 0.3),
+    rgba(0, 137, 94, 0.35),
     transparent 30%,
-    rgba(240, 195, 94, 0.2),
+    rgba(196, 133, 10, 0.25),
     transparent 60%,
-    rgba(0, 201, 167, 0.25),
+    rgba(0, 143, 122, 0.3),
     transparent 90%
   );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -144,9 +154,9 @@ html {
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.025;
+  opacity: 0.045;
   background-image:
-    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5c0 0-8 10-8 20s8 20 8 20 8-10 8-20S30 5 30 5z' fill='none' stroke='%2300e88a' stroke-width='0.5'/%3E%3Cpath d='M5 30c0 0 10-8 20-8s20 8 20 8-10 8-20 8S5 30 5 30z' fill='none' stroke='%2300e88a' stroke-width='0.5'/%3E%3C/svg%3E");
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5c0 0-8 10-8 20s8 20 8 20 8-10 8-20S30 5 30 5z' fill='none' stroke='%23007a52' stroke-width='0.6'/%3E%3Cpath d='M5 30c0 0 10-8 20-8s20 8 20 8-10 8-20 8S5 30 5 30z' fill='none' stroke='%23007a52' stroke-width='0.6'/%3E%3C/svg%3E");
   background-size: 60px 60px;
 }
 
@@ -161,10 +171,8 @@ html {
 
 .particle {
   position: absolute;
-  width: 3px;
-  height: 3px;
   border-radius: 50%;
-  background: var(--kl-green-light);
+  background: var(--kl-green);
   opacity: 0;
   animation: float-particle var(--duration, 12s) var(--delay, 0s) infinite ease-in-out;
 }
@@ -175,11 +183,11 @@ html {
     transform: translateY(100vh) scale(0);
   }
   10% {
-    opacity: var(--max-opacity, 0.3);
+    opacity: var(--max-opacity, 0.2);
     transform: translateY(80vh) scale(1);
   }
   90% {
-    opacity: var(--max-opacity, 0.3);
+    opacity: var(--max-opacity, 0.2);
     transform: translateY(10vh) scale(0.8);
   }
   100% {
@@ -190,14 +198,14 @@ html {
 
 /* ─── Gradient text ─── */
 .gradient-text {
-  background: linear-gradient(135deg, #00e88a 0%, #00c9a7 40%, #f0c35e 100%);
+  background: linear-gradient(135deg, #007a52 0%, #008f7a 35%, #c4850a 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-text-green {
-  background: linear-gradient(135deg, #00e88a 0%, #00c9a7 100%);
+  background: linear-gradient(135deg, #007a52 0%, #00a67a 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -216,21 +224,21 @@ html {
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, transparent, var(--kl-green-light), var(--kl-gold), var(--kl-teal), transparent);
-  opacity: 0.35;
+  background: linear-gradient(90deg, transparent, #00895e, #c4850a, #008f7a, transparent);
+  opacity: 0.4;
 }
 
 /* ─── Ministry card ─── */
 .ministry-card {
   position: relative;
-  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ministry-card:hover,
 .ministry-card:active {
   background: var(--kl-card-hover) !important;
-  transform: translateY(-1px);
-  box-shadow: 0 8px 32px rgba(0, 232, 138, 0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0, 137, 94, 0.12), 0 2px 8px rgba(0,0,0,0.06);
 }
 
 .ministry-card::before {
@@ -241,15 +249,15 @@ html {
   padding: 1px;
   background: linear-gradient(
     135deg,
-    rgba(0, 232, 138, 0.18),
+    rgba(0, 137, 94, 0.22),
     transparent 50%,
-    rgba(240, 195, 94, 0.1)
+    rgba(196, 133, 10, 0.15)
   );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   opacity: 0;
-  transition: opacity 0.35s;
+  transition: opacity 0.3s;
   pointer-events: none;
 }
 
@@ -269,7 +277,7 @@ html {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(0, 232, 138, 0.05), transparent);
+  background: linear-gradient(135deg, rgba(0, 137, 94, 0.04), transparent);
   opacity: 0;
   transition: opacity 0.25s;
 }
@@ -290,16 +298,16 @@ html {
 .score-ring::after {
   content: '';
   position: absolute;
-  inset: -8px;
+  inset: -10px;
   border-radius: 50%;
   background: conic-gradient(
     from 0deg,
-    rgba(0, 232, 138, 0.15),
-    rgba(0, 201, 167, 0.1),
-    rgba(240, 195, 94, 0.08),
+    rgba(0, 137, 94, 0.12),
+    rgba(0, 143, 122, 0.08),
+    rgba(196, 133, 10, 0.06),
     transparent
   );
-  filter: blur(12px);
+  filter: blur(14px);
   z-index: -1;
 }
 
@@ -325,7 +333,7 @@ html {
 }
 
 /* ─── Scrollbar ─── */
-::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--kl-green); border-radius: 2px; }
 
@@ -336,15 +344,15 @@ html {
 }
 
 .shimmer {
-  background: linear-gradient(90deg, transparent 25%, rgba(0,232,138,0.04) 50%, transparent 75%);
+  background: linear-gradient(90deg, transparent 25%, rgba(0,137,94,0.06) 50%, transparent 75%);
   background-size: 200% 100%;
   animation: shimmer 2.5s infinite;
 }
 
 /* ─── Score pulse ─── */
 @keyframes pulse-green {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 232, 138, 0.35); }
-  50% { box-shadow: 0 0 0 10px rgba(0, 232, 138, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 137, 94, 0.3); }
+  50% { box-shadow: 0 0 0 12px rgba(0, 137, 94, 0); }
 }
 
 .pulse-correct {
@@ -356,27 +364,32 @@ html {
   position: relative;
   overflow: hidden;
   transition: all 0.3s;
+  box-shadow: 0 4px 16px rgba(0, 137, 94, 0.25);
 }
 
 .glow-btn::before {
   content: '';
   position: absolute;
   inset: -2px;
-  background: linear-gradient(135deg, var(--kl-green-light), var(--kl-teal), var(--kl-gold));
+  background: linear-gradient(135deg, #00a67a, #008f7a, #c4850a);
   border-radius: inherit;
   z-index: -1;
-  opacity: 0.5;
-  filter: blur(8px);
+  opacity: 0.4;
+  filter: blur(10px);
   transition: opacity 0.3s;
 }
 
 .glow-btn:hover::before {
-  opacity: 0.8;
+  opacity: 0.7;
+}
+
+.glow-btn:active {
+  transform: scale(0.98);
 }
 
 /* ─── Gradient progress bar ─── */
 .progress-gradient {
-  background: linear-gradient(90deg, #005a3a, #00e88a, #00c9a7);
+  background: linear-gradient(90deg, #007a52, #00a67a, #00c9a7);
   background-size: 200% 100%;
   animation: shimmer 3s infinite;
 }
@@ -384,98 +397,11 @@ html {
 /* ─── Icon float animation ─── */
 @keyframes icon-float {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
+  50% { transform: translateY(-5px); }
 }
 
 .icon-float {
   animation: icon-float 3s ease-in-out infinite;
-}
-
-/* ─── Light mode ─── */
-[data-theme="light"] {
-  --kl-bg: #f4f9f6;
-  --kl-bg-alt: #e8f2ec;
-  --kl-card: rgba(255, 255, 255, 0.75);
-  --kl-card-solid: #ffffff;
-  --kl-card-hover: rgba(255, 255, 255, 0.9);
-  --kl-glass: rgba(255, 255, 255, 0.6);
-  --kl-glass-border: rgba(0, 137, 94, 0.12);
-  --kl-green: #00895e;
-  --kl-green-light: #007a52;
-  --kl-green-glow: rgba(0, 137, 94, 0.1);
-  --kl-teal: #008f7a;
-  --kl-gold: #c9960a;
-  --kl-gold-dim: #9a7a30;
-  --kl-text: #1a3a28;
-  --kl-text-dim: #5e7a68;
-  --kl-text-bright: #0a1f14;
-  --kl-border: rgba(0, 137, 94, 0.1);
-  --kl-border-hover: rgba(0, 137, 94, 0.25);
-  --foreground: var(--kl-text);
-  --background: var(--kl-bg);
-}
-
-[data-theme="light"] .bg-kerala-hero {
-  background:
-    radial-gradient(ellipse at 15% -10%, rgba(0, 137, 94, 0.08) 0%, transparent 55%),
-    radial-gradient(ellipse at 85% 20%, rgba(0, 143, 122, 0.06) 0%, transparent 45%),
-    radial-gradient(ellipse at 50% 100%, rgba(201, 150, 10, 0.05) 0%, transparent 50%),
-    var(--kl-bg);
-}
-
-[data-theme="light"] .bg-kerala-quiz {
-  background:
-    radial-gradient(ellipse at 50% -30%, rgba(0, 137, 94, 0.07) 0%, transparent 55%),
-    radial-gradient(ellipse at -10% 70%, rgba(0, 143, 122, 0.04) 0%, transparent 40%),
-    var(--kl-bg);
-}
-
-[data-theme="light"] .glass-card {
-  background: var(--kl-card);
-  box-shadow:
-    0 4px 20px rgba(0, 0, 0, 0.06),
-    0 1px 3px rgba(0, 0, 0, 0.04),
-    inset 0 1px 0 rgba(255, 255, 255, 0.8);
-}
-
-[data-theme="light"] .glass-card-light {
-  background: rgba(0, 137, 94, 0.04);
-  border: 1px solid rgba(0, 137, 94, 0.08);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-}
-
-[data-theme="light"] .gradient-text {
-  background: linear-gradient(135deg, #007a52 0%, #008f7a 40%, #c9960a 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-[data-theme="light"] .gradient-text-green {
-  background: linear-gradient(135deg, #007a52 0%, #008f7a 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-[data-theme="light"] .leaf-pattern {
-  opacity: 0.04;
-  background-image:
-    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5c0 0-8 10-8 20s8 20 8 20 8-10 8-20S30 5 30 5z' fill='none' stroke='%23007a52' stroke-width='0.5'/%3E%3Cpath d='M5 30c0 0 10-8 20-8s20 8 20 8-10 8-20 8S5 30 5 30z' fill='none' stroke='%23007a52' stroke-width='0.5'/%3E%3C/svg%3E");
-}
-
-[data-theme="light"] .particle {
-  background: var(--kl-green);
-}
-
-[data-theme="light"] .ministry-card:hover,
-[data-theme="light"] .ministry-card:active {
-  box-shadow: 0 8px 32px rgba(0, 137, 94, 0.1);
-}
-
-[data-theme="light"] .progress-gradient {
-  background: linear-gradient(90deg, #007a52, #00c9a7, #00895e);
-  background-size: 200% 100%;
 }
 
 /* ─── Timer ring ─── */
@@ -502,4 +428,107 @@ html {
 
 .streak-fade {
   animation: streak-fade 0.8s ease-out 1.5s forwards;
+}
+
+/* ═══════════════════════════════════════
+   DARK THEME
+   ═══════════════════════════════════════ */
+[data-theme="dark"] {
+  --kl-bg: #040f08;
+  --kl-bg-alt: #081a10;
+  --kl-card: rgba(12, 35, 22, 0.55);
+  --kl-card-solid: #0c2316;
+  --kl-card-hover: rgba(18, 48, 32, 0.65);
+  --kl-glass: rgba(255, 255, 255, 0.03);
+  --kl-glass-border: rgba(255, 255, 255, 0.06);
+  --kl-green: #00895e;
+  --kl-green-light: #00e88a;
+  --kl-green-glow: rgba(0, 232, 138, 0.15);
+  --kl-teal: #00c9a7;
+  --kl-gold: #f0c35e;
+  --kl-gold-dim: #9a7a30;
+  --kl-text: #eaf5ef;
+  --kl-text-dim: #5e8a6e;
+  --kl-text-bright: #ffffff;
+  --kl-border: rgba(0, 232, 138, 0.07);
+  --kl-border-hover: rgba(0, 232, 138, 0.2);
+  --foreground: var(--kl-text);
+  --background: var(--kl-bg);
+  --kl-correct: #00e88a;
+  --kl-incorrect: #ef4444;
+  --kl-national-bar-start: #2a2a2a;
+  --kl-national-bar-end: #555555;
+  --kl-bar-track: rgba(0,232,138,0.04);
+  --kl-national-track: rgba(255,255,255,0.02);
+  --kl-flex-fact-bg: rgba(255, 255, 255, 0.03);
+  --kl-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --kl-shadow-md: 0 4px 24px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+  --kl-shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .bg-kerala-hero {
+  background:
+    radial-gradient(ellipse at 15% -10%, rgba(0, 232, 138, 0.12) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 20%, rgba(0, 201, 167, 0.08) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 100%, rgba(240, 195, 94, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 30% 60%, rgba(0, 137, 94, 0.05) 0%, transparent 40%),
+    var(--kl-bg);
+}
+
+[data-theme="dark"] .bg-kerala-quiz {
+  background:
+    radial-gradient(ellipse at 50% -30%, rgba(0, 232, 138, 0.1) 0%, transparent 55%),
+    radial-gradient(ellipse at -10% 70%, rgba(0, 201, 167, 0.06) 0%, transparent 40%),
+    radial-gradient(ellipse at 100% 90%, rgba(240, 195, 94, 0.04) 0%, transparent 35%),
+    var(--kl-bg);
+}
+
+[data-theme="dark"] .glass-card {
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.3),
+    0 1px 2px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+[data-theme="dark"] .glass-card-light {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .gradient-text {
+  background: linear-gradient(135deg, #00e88a 0%, #00c9a7 40%, #f0c35e 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme="dark"] .gradient-text-green {
+  background: linear-gradient(135deg, #00e88a 0%, #00c9a7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme="dark"] .leaf-pattern {
+  opacity: 0.025;
+  background-image:
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5c0 0-8 10-8 20s8 20 8 20 8-10 8-20S30 5 30 5z' fill='none' stroke='%2300e88a' stroke-width='0.5'/%3E%3Cpath d='M5 30c0 0 10-8 20-8s20 8 20 8-10 8-20 8S5 30 5 30z' fill='none' stroke='%2300e88a' stroke-width='0.5'/%3E%3C/svg%3E");
+}
+
+[data-theme="dark"] .particle {
+  background: var(--kl-green-light);
+}
+
+[data-theme="dark"] .ministry-card:hover,
+[data-theme="dark"] .ministry-card:active {
+  box-shadow: 0 8px 32px rgba(0, 232, 138, 0.08);
+}
+
+[data-theme="dark"] .progress-gradient {
+  background: linear-gradient(90deg, #005a3a, #00e88a, #00c9a7);
+  background-size: 200% 100%;
+}
+
+[data-theme="dark"] .glow-btn {
+  box-shadow: 0 4px 20px rgba(0, 232, 138, 0.2);
 }
