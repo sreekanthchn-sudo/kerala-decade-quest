@@ -1,21 +1,43 @@
 'use client';
 
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback, useMemo, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight, RotateCcw, Share2, ChevronRight, Trophy, Sparkles } from 'lucide-react';
+import {
+  ArrowLeft, ArrowRight, RotateCcw, Share2, ChevronRight, Trophy,
+  Sparkles, Timer, Volume2, VolumeX, Sun, Moon, Flame,
+} from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import CompareOMeter from '@/components/CompareOMeter';
 import Particles from '@/components/Particles';
 import Confetti from '@/components/Confetti';
+import { useProgress } from '@/hooks/useProgress';
+import { useSound } from '@/hooks/useSound';
+import { useTheme } from '@/hooks/useTheme';
 import modulesData from '@/data/decade_records.json';
-import type { Module } from '@/types';
+import type { Module, Question } from '@/types';
 
 const modules = modulesData as Module[];
+const TIMER_SECONDS = 30;
+
+/** Fisher-Yates shuffle — returns a new array */
+function shuffleArray<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
 
 export default function QuizClient({ slug }: { slug: string }) {
   const modIndex = modules.findIndex((m) => m.slug === slug);
   const mod = modules[modIndex];
   const nextMod = modules[modIndex + 1] || modules[0];
+
+  // Shuffle questions once on mount
+  const [shuffledQuestions] = useState<Question[]>(() =>
+    mod ? shuffleArray(mod.questions) : []
+  );
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
@@ -23,11 +45,21 @@ export default function QuizClient({ slug }: { slug: string }) {
   const [showResult, setShowResult] = useState(false);
   const [finished, setFinished] = useState(false);
   const [lang, setLang] = useState<'en' | 'ml'>('en');
+  const [timerEnabled, setTimerEnabled] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(TIMER_SECONDS);
+  const [streak, setStreak] = useState(0);
+  const [showStreak, setShowStreak] = useState(false);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  const question = mod?.questions[currentIndex];
+  const { saveModuleScore } = useProgress();
+  const { playCorrect, playIncorrect, playClick, playStreak: playStreakSound, playComplete, muted, setMuted } = useSound();
+  const { theme, toggleTheme, isDark } = useTheme();
+
+  const question = shuffledQuestions[currentIndex];
   const isCorrect = selectedOption === question?.answer;
   const isMl = lang === 'ml';
 
+  // Get text in current language with fallback
   const q = useMemo(() => {
     if (!question) return { text: '', options: [] as string[], flexFact: '' };
     return {
@@ -37,26 +69,84 @@ export default function QuizClient({ slug }: { slug: string }) {
     };
   }, [question, isMl]);
 
+  // Timer logic
+  useEffect(() => {
+    if (!timerEnabled || selectedOption !== null || finished) return;
+    setTimeLeft(TIMER_SECONDS);
+    timerRef.current = setInterval(() => {
+      setTimeLeft((t) => {
+        if (t <= 1) {
+          // Time's up — auto-select wrong
+          clearInterval(timerRef.current!);
+          setSelectedOption(-1); // -1 means timed out
+          setShowResult(true);
+          setStreak(0);
+          playIncorrect();
+          return 0;
+        }
+        return t - 1;
+      });
+    }, 1000);
+    return () => { if (timerRef.current) clearInterval(timerRef.current); };
+  }, [currentIndex, timerEnabled, selectedOption, finished, playIncorrect]);
+
+  const triggerHaptic = useCallback((pattern: number | number[]) => {
+    if (typeof navigator !== 'undefined' && navigator.vibrate) {
+      navigator.vibrate(pattern);
+    }
+  }, []);
+
   const handleSelect = useCallback(
     (idx: number) => {
       if (selectedOption !== null || !question) return;
+      if (timerRef.current) clearInterval(timerRef.current);
       setSelectedOption(idx);
       setShowResult(true);
-      if (idx === question.answer) setScore((s) => s + 1);
+      playClick();
+
+      if (idx === question.answer) {
+        setScore((s) => s + 1);
+        setStreak((s) => {
+          const newStreak = s + 1;
+          if (newStreak >= 3) {
+            setShowStreak(true);
+            playStreakSound();
+            triggerHaptic([50, 30, 50, 30, 100]);
+            setTimeout(() => setShowStreak(false), 2500);
+          } else {
+            triggerHaptic(30);
+          }
+          return newStreak;
+        });
+        playCorrect();
+      } else {
+        setStreak(0);
+        playIncorrect();
+        triggerHaptic([100, 50, 100]);
+      }
     },
-    [selectedOption, question]
+    [selectedOption, question, playClick, playCorrect, playIncorrect, playStreakSound, triggerHaptic]
   );
 
   const handleNext = useCallback(() => {
     if (!mod) return;
-    if (currentIndex < mod.questions.length - 1) {
+    if (currentIndex < shuffledQuestions.length - 1) {
       setCurrentIndex((i) => i + 1);
       setSelectedOption(null);
       setShowResult(false);
     } else {
       setFinished(true);
+      saveModuleScore(slug, score + (isCorrect ? 0 : 0), shuffledQuestions.length);
+      playComplete();
     }
-  }, [currentIndex, mod]);
+  }, [currentIndex, mod, shuffledQuestions.length, slug, score, isCorrect, saveModuleScore, playComplete]);
+
+  // Save score when finished
+  useEffect(() => {
+    if (finished && mod) {
+      saveModuleScore(slug, score, shuffledQuestions.length);
+    }
+  }, [finished, slug, score, shuffledQuestions.length, mod, saveModuleScore]);
 
   const handleRestart = useCallback(() => {
     setCurrentIndex(0);
@@ -64,16 +154,18 @@ export default function QuizClient({ slug }: { slug: string }) {
     setShowResult(false);
     setScore(0);
     setFinished(false);
+    setStreak(0);
+    setTimeLeft(TIMER_SECONDS);
   }, []);
 
   const shareText = useMemo(() => {
     if (!mod) return '';
-    const pct = Math.round((score / mod.questions.length) * 100);
+    const pct = Math.round((score / shuffledQuestions.length) * 100);
     if (isMl) {
-      return `ഞാൻ ${mod.title_ml} ക്വിസിൽ ${score}/${mod.questions.length} (${pct}%) നേടി! 🌴\n\nകേരള ദശക ക്വസ്റ്റ് — നിങ്ങളും പരീക്ഷിക്കൂ: `;
+      return `ഞാൻ ${mod.title_ml} ക്വിസിൽ ${score}/${shuffledQuestions.length} (${pct}%) നേടി! 🌴\n\nകേരള ദശക ക്വസ്റ്റ് — നിങ്ങളും പരീക്ഷിക്കൂ: `;
     }
-    return `I scored ${score}/${mod.questions.length} (${pct}%) on ${mod.title} in Kerala Decade Quest! 🌴\n\nTest your knowledge: `;
-  }, [mod, score, isMl]);
+    return `I scored ${score}/${shuffledQuestions.length} (${pct}%) on ${mod.title} in Kerala Decade Quest! 🌴\n\nTest your knowledge: `;
+  }, [mod, score, shuffledQuestions.length, isMl]);
 
   const handleShare = useCallback(async () => {
     const url = typeof window !== 'undefined' ? window.location.origin : '';
@@ -101,7 +193,7 @@ export default function QuizClient({ slug }: { slug: string }) {
 
   // ─── Results Screen ───
   if (finished) {
-    const pct = Math.round((score / mod.questions.length) * 100);
+    const pct = Math.round((score / shuffledQuestions.length) * 100);
     const emoji = pct >= 80 ? '🏆' : pct >= 60 ? '👏' : '📚';
     const showConfetti = pct >= 80;
 
@@ -132,7 +224,7 @@ export default function QuizClient({ slug }: { slug: string }) {
                     style={{ border: 'none' }}
                   >
                     <span className="text-3xl font-black gradient-text">{score}</span>
-                    <span className="text-xs font-medium" style={{ color: 'var(--kl-text-dim)' }}>/ {mod.questions.length}</span>
+                    <span className="text-xs font-medium" style={{ color: 'var(--kl-text-dim)' }}>/ {shuffledQuestions.length}</span>
                   </div>
                 </div>
               </div>
@@ -210,8 +302,9 @@ export default function QuizClient({ slug }: { slug: string }) {
   }
 
   // ─── Quiz Screen ───
-  const progress = ((currentIndex + 1) / mod.questions.length) * 100;
+  const progress = ((currentIndex + 1) / shuffledQuestions.length) * 100;
   const optionLetters = ['A', 'B', 'C', 'D'];
+  const timedOut = selectedOption === -1;
 
   return (
     <main className="min-h-screen bg-kerala-quiz relative">
@@ -229,13 +322,38 @@ export default function QuizClient({ slug }: { slug: string }) {
             <ArrowLeft className="w-4 h-4" />
             {isMl ? 'മടങ്ങുക' : 'Back'}
           </Link>
-          <button
-            onClick={() => setLang(lang === 'en' ? 'ml' : 'en')}
-            className="glass-card px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all active:scale-95"
-            style={{ color: 'var(--kl-gold)' }}
-          >
-            {isMl ? 'English' : 'മലയാളം'}
-          </button>
+          <div className="flex items-center gap-2">
+            {/* Theme toggle */}
+            <button
+              onClick={toggleTheme}
+              className="glass-card p-1.5 rounded-full transition-all active:scale-90"
+            >
+              {isDark ? <Sun className="w-3.5 h-3.5" style={{ color: 'var(--kl-gold)' }} /> : <Moon className="w-3.5 h-3.5" style={{ color: 'var(--kl-text-dim)' }} />}
+            </button>
+            {/* Sound toggle */}
+            <button
+              onClick={() => setMuted(!muted)}
+              className="glass-card p-1.5 rounded-full transition-all active:scale-90"
+            >
+              {muted ? <VolumeX className="w-3.5 h-3.5" style={{ color: 'var(--kl-text-dim)' }} /> : <Volume2 className="w-3.5 h-3.5" style={{ color: 'var(--kl-green-light)' }} />}
+            </button>
+            {/* Timer toggle */}
+            <button
+              onClick={() => setTimerEnabled(!timerEnabled)}
+              className="glass-card p-1.5 rounded-full transition-all active:scale-90"
+              title={timerEnabled ? 'Disable timer' : 'Enable timer'}
+            >
+              <Timer className="w-3.5 h-3.5" style={{ color: timerEnabled ? 'var(--kl-gold)' : 'var(--kl-text-dim)' }} />
+            </button>
+            {/* Language toggle */}
+            <button
+              onClick={() => setLang(lang === 'en' ? 'ml' : 'en')}
+              className="glass-card px-3 py-1.5 rounded-full text-xs font-semibold transition-all active:scale-95"
+              style={{ color: 'var(--kl-gold)' }}
+            >
+              {isMl ? 'EN' : 'ML'}
+            </button>
+          </div>
         </div>
 
         {/* Ministry header — glass card with animated border */}
@@ -245,7 +363,7 @@ export default function QuizClient({ slug }: { slug: string }) {
               className="shrink-0 w-1.5 h-10 rounded-full"
               style={{ background: `linear-gradient(180deg, ${mod.color}, ${mod.color}40)` }}
             />
-            <div>
+            <div className="flex-1">
               <h1 className="text-base font-bold" style={{ color: 'var(--kl-text)' }}>
                 {isMl ? mod.title_ml : mod.title}
               </h1>
@@ -253,6 +371,29 @@ export default function QuizClient({ slug }: { slug: string }) {
                 {isMl ? mod.title : mod.title_ml}
               </p>
             </div>
+            {/* Timer display */}
+            {timerEnabled && selectedOption === null && (
+              <div className="shrink-0 relative w-10 h-10">
+                <svg className="w-10 h-10 -rotate-90" viewBox="0 0 40 40">
+                  <circle cx="20" cy="20" r="18" fill="none" stroke="var(--kl-glass-border)" strokeWidth="2" />
+                  <circle
+                    cx="20" cy="20" r="18" fill="none"
+                    stroke={timeLeft <= 10 ? '#ef4444' : timeLeft <= 20 ? 'var(--kl-gold)' : 'var(--kl-green-light)'}
+                    strokeWidth="2"
+                    strokeDasharray="113"
+                    strokeDashoffset={113 - (timeLeft / TIMER_SECONDS) * 113}
+                    strokeLinecap="round"
+                    style={{ transition: 'stroke-dashoffset 1s linear, stroke 0.3s' }}
+                  />
+                </svg>
+                <span
+                  className="absolute inset-0 flex items-center justify-center text-xs font-bold"
+                  style={{ color: timeLeft <= 10 ? '#ef4444' : 'var(--kl-text)' }}
+                >
+                  {timeLeft}
+                </span>
+              </div>
+            )}
           </div>
 
           {/* Progress bar */}
@@ -265,15 +406,35 @@ export default function QuizClient({ slug }: { slug: string }) {
               />
             </div>
             <span className="text-xs font-bold shrink-0" style={{ color: mod.color }}>
-              {currentIndex + 1}/{mod.questions.length}
+              {currentIndex + 1}/{shuffledQuestions.length}
             </span>
           </div>
         </div>
 
-        {/* Score pill */}
-        <div className="flex justify-end mb-4">
-          <div
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full glass-card"
+        {/* Score pill + Streak */}
+        <div className="flex items-center justify-between mb-4">
+          {/* Streak indicator */}
+          <AnimatePresence>
+            {showStreak && streak >= 3 && (
+              <motion.div
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ opacity: 0, y: -20 }}
+                className="streak-pop flex items-center gap-1 px-3 py-1.5 rounded-full"
+                style={{
+                  background: 'linear-gradient(135deg, rgba(255,150,0,0.15), rgba(255,80,0,0.1))',
+                  border: '1px solid rgba(255,150,0,0.2)',
+                }}
+              >
+                <Flame className="w-3.5 h-3.5" style={{ color: '#ff9600' }} />
+                <span className="text-xs font-bold" style={{ color: '#ff9600' }}>
+                  {streak} {isMl ? 'തുടർച്ച!' : 'streak!'}
+                </span>
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          <div className="ml-auto flex items-center gap-1.5 px-3 py-1.5 rounded-full glass-card"
             style={{ boxShadow: `0 0 12px rgba(0, 232, 138, 0.08)` }}
           >
             <Trophy className="w-3 h-3" style={{ color: 'var(--kl-green-light)' }} />
@@ -310,10 +471,10 @@ export default function QuizClient({ slug }: { slug: string }) {
                   if (idx === question!.answer) {
                     bg = 'rgba(0, 232, 138, 0.1)';
                     borderColor = 'rgba(0, 232, 138, 0.3)';
-                    textColor = '#00e88a';
-                    letterColor = '#00e88a';
+                    textColor = isDark ? '#00e88a' : '#007a52';
+                    letterColor = textColor;
                     extraClass = 'pulse-correct';
-                    shadow = '0 0 20px rgba(0, 232, 138, 0.1)';
+                    shadow = `0 0 20px rgba(0, 232, 138, 0.1)`;
                   } else if (idx === selectedOption) {
                     bg = 'rgba(239, 68, 68, 0.08)';
                     borderColor = 'rgba(239, 68, 68, 0.25)';
@@ -342,10 +503,7 @@ export default function QuizClient({ slug }: { slug: string }) {
                   >
                     <span
                       className="inline-flex items-center justify-center w-5 h-5 rounded-md text-[10px] font-bold mr-2"
-                      style={{
-                        background: `${letterColor}10`,
-                        color: letterColor,
-                      }}
+                      style={{ background: `${letterColor}10`, color: letterColor }}
                     >
                       {optionLetters[idx]}
                     </span>
@@ -354,6 +512,18 @@ export default function QuizClient({ slug }: { slug: string }) {
                 );
               })}
             </div>
+
+            {/* Timed out message */}
+            {timedOut && (
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="text-center text-xs mt-3 font-medium"
+                style={{ color: '#ef4444' }}
+              >
+                {isMl ? '⏰ സമയം കഴിഞ്ഞു!' : '⏰ Time\'s up!'}
+              </motion.p>
+            )}
 
             {/* Compare-o-Meter + Next */}
             {showResult && (
@@ -365,7 +535,7 @@ export default function QuizClient({ slug }: { slug: string }) {
                   nationalStat={question!.national_average}
                   flexFact={q.flexFact}
                   source={question!.source}
-                  isCorrect={isCorrect}
+                  isCorrect={!timedOut && isCorrect}
                   isMl={isMl}
                 />
 
@@ -379,7 +549,7 @@ export default function QuizClient({ slug }: { slug: string }) {
                     background: `linear-gradient(135deg, ${mod.color}, ${mod.color}cc)`,
                   }}
                 >
-                  {currentIndex < mod.questions.length - 1
+                  {currentIndex < shuffledQuestions.length - 1
                     ? <>{isMl ? 'അടുത്ത ചോദ്യം' : 'Next Question'} <ArrowRight className="w-4 h-4" /></>
                     : <>{isMl ? 'ഫലം കാണുക' : 'See Results'} <ArrowRight className="w-4 h-4" /></>
                   }

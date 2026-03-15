@@ -6,10 +6,12 @@ import {
   Home, HeartPulse, GraduationCap, Wifi, Building2, BookOpen,
   TrendingDown, Landmark, Leaf, Coins, Droplets, Zap, Bus,
   UtensilsCrossed, PawPrint, Wheat, Users, Gavel, Anchor, Fish, Dumbbell,
-  Search, ChevronRight, MapPin, Sparkles,
+  Search, ChevronRight, MapPin, Sparkles, CheckCircle2, Sun, Moon,
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Particles from '@/components/Particles';
+import { useProgress } from '@/hooks/useProgress';
+import { useTheme } from '@/hooks/useTheme';
 import modulesData from '@/data/decade_records.json';
 import type { Module } from '@/types';
 
@@ -24,6 +26,8 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string; style?:
 export default function HomePage() {
   const [search, setSearch] = useState('');
   const [lang, setLang] = useState<'en' | 'ml'>('en');
+  const { progress, getModuleProgress, completedCount } = useProgress();
+  const { isDark, toggleTheme } = useTheme();
 
   const filtered = modules.filter(
     (m) =>
@@ -48,8 +52,14 @@ export default function HomePage() {
           transition={{ duration: 0.6 }}
           className="mb-8"
         >
-          {/* Language toggle */}
-          <div className="flex justify-end mb-5">
+          {/* Top controls */}
+          <div className="flex justify-end gap-2 mb-5">
+            <button
+              onClick={toggleTheme}
+              className="glass-card p-2 rounded-full transition-all active:scale-90"
+            >
+              {isDark ? <Sun className="w-4 h-4" style={{ color: 'var(--kl-gold)' }} /> : <Moon className="w-4 h-4" style={{ color: 'var(--kl-text-dim)' }} />}
+            </button>
             <button
               onClick={() => setLang(lang === 'en' ? 'ml' : 'en')}
               className="glass-card px-4 py-1.5 rounded-full text-xs font-semibold transition-all active:scale-95"
@@ -61,7 +71,6 @@ export default function HomePage() {
 
           {/* Hero section */}
           <div className="text-center mb-7">
-            {/* Decorative emblem */}
             <motion.div
               className="flex justify-center mb-5"
               initial={{ scale: 0.8, opacity: 0 }}
@@ -73,9 +82,7 @@ export default function HomePage() {
                   className="absolute inset-0 rounded-2xl blur-xl opacity-40"
                   style={{ background: 'linear-gradient(135deg, var(--kl-green-light), var(--kl-teal))' }}
                 />
-                <div
-                  className="relative w-16 h-16 rounded-2xl flex items-center justify-center glass-card gradient-border"
-                >
+                <div className="relative w-16 h-16 rounded-2xl flex items-center justify-center glass-card gradient-border">
                   <MapPin className="w-7 h-7" style={{ color: 'var(--kl-green-light)' }} />
                 </div>
               </div>
@@ -117,13 +124,49 @@ export default function HomePage() {
               </p>
             </div>
           </motion.div>
+
+          {/* Progress overview — only show if user has started playing */}
+          {completedCount > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+              className="glass-card gradient-border rounded-2xl p-4 mb-6"
+            >
+              <div className="flex items-center justify-between mb-3">
+                <p className="text-xs font-semibold" style={{ color: 'var(--kl-text-dim)' }}>
+                  {isMl ? 'നിങ്ങളുടെ പുരോഗതി' : 'Your Progress'}
+                </p>
+                <p className="text-xs font-bold gradient-text-green">
+                  {completedCount}/21 {isMl ? 'പൂർത്തിയാക്കി' : 'completed'}
+                </p>
+              </div>
+              {/* Progress bar */}
+              <div className="h-2 rounded-full overflow-hidden" style={{ background: 'rgba(255,255,255,0.04)' }}>
+                <motion.div
+                  className="h-full rounded-full progress-gradient"
+                  initial={{ width: 0 }}
+                  animate={{ width: `${(completedCount / 21) * 100}%` }}
+                  transition={{ duration: 0.8, ease: 'easeOut' }}
+                />
+              </div>
+              <div className="flex items-center justify-between mt-2">
+                <p className="text-[10px]" style={{ color: 'var(--kl-text-dim)' }}>
+                  {isMl ? 'മൊത്തം സ്കോർ' : 'Total best score'}
+                </p>
+                <p className="text-xs font-bold" style={{ color: 'var(--kl-gold)' }}>
+                  {progress.totalScore}/{totalQ}
+                </p>
+              </div>
+            </motion.div>
+          )}
         </motion.header>
 
-        {/* Search — glass style */}
+        {/* Search */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
+          transition={{ delay: 0.45 }}
           className="relative mb-5"
         >
           <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4" style={{ color: 'var(--kl-text-dim)' }} />
@@ -141,17 +184,19 @@ export default function HomePage() {
         <div className="space-y-2.5">
           {filtered.map((mod, idx) => {
             const Icon = ICON_MAP[mod.icon] || Home;
+            const mp = getModuleProgress(mod.slug);
+            const isCompleted = !!mp;
+            const bestPct = mp ? Math.round((mp.bestScore / mp.totalQuestions) * 100) : 0;
+
             return (
               <motion.div
                 key={mod.slug}
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.45 + idx * 0.035, duration: 0.35 }}
+                transition={{ delay: 0.5 + idx * 0.035, duration: 0.35 }}
               >
                 <Link href={`/quiz/${mod.slug}`}>
-                  <div
-                    className="ministry-card glass-card flex items-center gap-3.5 p-4 rounded-2xl"
-                  >
+                  <div className="ministry-card glass-card flex items-center gap-3.5 p-4 rounded-2xl">
                     {/* Icon with glow */}
                     <div className="shrink-0 relative">
                       <div
@@ -171,26 +216,48 @@ export default function HomePage() {
 
                     {/* Text */}
                     <div className="flex-1 min-w-0">
-                      <h3 className="font-bold text-sm truncate" style={{ color: 'var(--kl-text)' }}>
-                        {isMl ? mod.title_ml : mod.title}
-                      </h3>
+                      <div className="flex items-center gap-1.5">
+                        <h3 className="font-bold text-sm truncate" style={{ color: 'var(--kl-text)' }}>
+                          {isMl ? mod.title_ml : mod.title}
+                        </h3>
+                        {isCompleted && (
+                          <CheckCircle2 className="w-3.5 h-3.5 shrink-0" style={{ color: bestPct >= 80 ? 'var(--kl-gold)' : 'var(--kl-green-light)' }} />
+                        )}
+                      </div>
                       <p className="text-xs truncate mt-0.5" style={{ color: 'var(--kl-text-dim)' }}>
                         {isMl ? mod.title : mod.title_ml}
                       </p>
                     </div>
 
-                    {/* Right side */}
+                    {/* Right side — score badge or question count */}
                     <div className="shrink-0 flex items-center gap-2">
-                      <span
-                        className="text-[10px] font-bold px-2 py-1 rounded-lg"
-                        style={{
-                          background: `${mod.color}12`,
-                          color: mod.color,
-                          border: `1px solid ${mod.color}18`,
-                        }}
-                      >
-                        {mod.questions.length}
-                      </span>
+                      {isCompleted ? (
+                        <span
+                          className="text-[10px] font-bold px-2 py-1 rounded-lg"
+                          style={{
+                            background: bestPct >= 80
+                              ? 'rgba(240,195,94,0.12)'
+                              : bestPct >= 60
+                              ? 'rgba(0,232,138,0.1)'
+                              : `${mod.color}12`,
+                            color: bestPct >= 80 ? 'var(--kl-gold)' : bestPct >= 60 ? 'var(--kl-green-light)' : mod.color,
+                            border: `1px solid ${bestPct >= 80 ? 'rgba(240,195,94,0.2)' : bestPct >= 60 ? 'rgba(0,232,138,0.15)' : mod.color + '18'}`,
+                          }}
+                        >
+                          {mp.bestScore}/{mp.totalQuestions}
+                        </span>
+                      ) : (
+                        <span
+                          className="text-[10px] font-bold px-2 py-1 rounded-lg"
+                          style={{
+                            background: `${mod.color}12`,
+                            color: mod.color,
+                            border: `1px solid ${mod.color}18`,
+                          }}
+                        >
+                          {mod.questions.length}
+                        </span>
+                      )}
                       <ChevronRight className="w-4 h-4" style={{ color: 'var(--kl-text-dim)' }} />
                     </div>
                   </div>
