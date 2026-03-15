@@ -10,6 +10,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import CompareOMeter from '@/components/CompareOMeter';
 import Particles from '@/components/Particles';
 import Confetti from '@/components/Confetti';
+import MinistryBackground from '@/components/MinistryBackground';
 import { useProgress } from '@/hooks/useProgress';
 import { useSound } from '@/hooks/useSound';
 import { useTheme } from '@/hooks/useTheme';
@@ -198,7 +199,8 @@ export default function QuizClient({ slug }: { slug: string }) {
     const showConfetti = pct >= 80;
 
     return (
-      <main className="min-h-screen bg-kerala-quiz relative">
+      <main className="min-h-screen relative overflow-hidden">
+        <MinistryBackground slug={slug} color={mod.color} />
         <div className="leaf-pattern" />
         <Particles />
         {showConfetti && <Confetti count={50} />}
@@ -307,7 +309,8 @@ export default function QuizClient({ slug }: { slug: string }) {
   const timedOut = selectedOption === -1;
 
   return (
-    <main className="min-h-screen bg-kerala-quiz relative">
+    <main className="min-h-screen relative overflow-hidden">
+      <MinistryBackground slug={slug} color={mod.color} />
       <div className="leaf-pattern" />
       <Particles />
 
