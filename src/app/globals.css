@@ -414,6 +414,214 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
+/* ─── Achievement Ticker / Marquee ─── */
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-wrapper {
+  overflow: hidden;
+  background: linear-gradient(90deg, #059669, #0d9488);
+  white-space: nowrap;
+}
+
+.ticker-content {
+  display: inline-block;
+  animation: ticker-scroll 30s linear infinite;
+  padding: 8px 0;
+}
+
+.ticker-content:hover {
+  animation-play-state: paused;
+}
+
+.ticker-item {
+  display: inline-block;
+  padding: 0 2rem;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.ticker-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  vertical-align: middle;
+}
+
+/* ─── Kerala Map SVG Draw Animation ─── */
+@keyframes draw-kerala {
+  0% { stroke-dashoffset: 1200; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.kerala-map-svg {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  animation: draw-kerala 2.5s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes map-glow {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(255,255,255,0.3)); }
+  50% { filter: drop-shadow(0 0 12px rgba(255,255,255,0.6)); }
+}
+
+.kerala-map-glow {
+  animation: map-glow 3s ease-in-out infinite;
+  animation-delay: 2.8s;
+}
+
+/* ─── Category Tab Pills ─── */
+.category-tab {
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  border: 1px solid var(--kl-border);
+  background: var(--kl-bg);
+  color: var(--kl-text-dim);
+  cursor: pointer;
+}
+
+.category-tab:hover {
+  border-color: var(--kl-border-hover);
+  color: var(--kl-text);
+}
+
+.category-tab.active {
+  background: #059669;
+  color: white;
+  border-color: #059669;
+  box-shadow: 0 2px 8px rgba(5,150,105,0.3);
+}
+
+/* ─── Achievement Counter Cards ─── */
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .achievement-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+}
+
+.achievement-card {
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  border: 1px solid rgba(5, 150, 105, 0.1);
+  border-radius: 16px;
+  padding: 20px 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--kl-shadow-md);
+}
+
+.achievement-card .achievement-value {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #059669;
+  line-height: 1.2;
+}
+
+.achievement-card .achievement-label {
+  font-size: 0.7rem;
+  color: var(--kl-text-dim);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.achievement-card .achievement-emoji {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* ─── Featured Question Card ─── */
+.featured-question-card {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 50%, #fff7ed 100%);
+  border: 1px solid rgba(217, 119, 6, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.featured-question-card:hover {
+  box-shadow: 0 4px 20px rgba(217, 119, 6, 0.12);
+}
+
+.featured-question-header {
+  background: linear-gradient(135deg, #d97706, #f59e0b);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ─── Social proof pulse ─── */
+@keyframes social-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.social-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+  animation: social-pulse 2s ease-in-out infinite;
+}
+
+/* ─── CTA Button ─── */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(5, 150, 105, 0.35);
+  border: none;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(5, 150, 105, 0.45);
+}
+
+.cta-btn:active {
+  transform: scale(0.97);
+}
+
+/* ─── Category scrollbar ─── */
+.category-scroll {
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.category-scroll::-webkit-scrollbar { display: none; }
+
 /* ═══════════════════════════════════════
    DARK THEME
    ═══════════════════════════════════════ */
@@ -518,4 +726,43 @@ body {
 
 [data-theme="dark"] .ministry-bg-overlay {
   background: linear-gradient(180deg, rgba(10,15,13,0.6) 0%, rgba(10,15,13,0.95) 100%) !important;
+}
+
+[data-theme="dark"] .ticker-wrapper {
+  background: linear-gradient(90deg, #064e3b, #115e59);
+}
+
+[data-theme="dark"] .category-tab {
+  background: var(--kl-card);
+  border-color: var(--kl-glass-border);
+  color: var(--kl-text-dim);
+}
+
+[data-theme="dark"] .category-tab.active {
+  background: #10b981;
+  border-color: #10b981;
+  color: #0a0f0d;
+}
+
+[data-theme="dark"] .achievement-card {
+  background: linear-gradient(135deg, rgba(16,185,129,0.08) 0%, rgba(13,148,136,0.06) 100%);
+  border-color: rgba(255,255,255,0.06);
+}
+
+[data-theme="dark"] .achievement-card .achievement-value {
+  color: #34d399;
+}
+
+[data-theme="dark"] .featured-question-card {
+  background: linear-gradient(135deg, rgba(217,119,6,0.08) 0%, rgba(245,158,11,0.06) 100%);
+  border-color: rgba(255,255,255,0.06);
+}
+
+[data-theme="dark"] .featured-question-header {
+  background: linear-gradient(135deg, #92400e, #b45309);
+}
+
+[data-theme="dark"] .cta-btn {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
 }
