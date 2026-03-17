@@ -163,9 +163,9 @@ export default function QuizClient({ slug }: { slug: string }) {
     if (!mod) return '';
     const pct = Math.round((score / shuffledQuestions.length) * 100);
     if (isMl) {
-      return `ഞാൻ ${mod.title_ml} ക്വിസിൽ ${score}/${shuffledQuestions.length} (${pct}%) നേടി! 🌴\n\nകേരള ദശക ക്വസ്റ്റ് — നിങ്ങളും പരീക്ഷിക്കൂ: `;
+      return `ഞാൻ ${mod.title_ml} ക്വിസിൽ ${score}/${shuffledQuestions.length} (${pct}%) നേടി! 🌴\n\nനവകേരള ക്വിസ് — നിങ്ങളും പരീക്ഷിക്കൂ: `;
     }
-    return `I scored ${score}/${shuffledQuestions.length} (${pct}%) on ${mod.title} in Kerala Decade Quest! 🌴\n\nTest your knowledge: `;
+    return `I scored ${score}/${shuffledQuestions.length} (${pct}%) on ${mod.title} in Navakerala Quiz! 🌴\n\nTest your knowledge: `;
   }, [mod, score, shuffledQuestions.length, isMl]);
 
   const handleShare = useCallback(async () => {
@@ -174,7 +174,7 @@ export default function QuizClient({ slug }: { slug: string }) {
 
     if (navigator.share) {
       try {
-        await navigator.share({ title: 'Kerala Decade Quest', text });
+        await navigator.share({ title: 'നവകേരള ക്വിസ്', text });
       } catch { /* user cancelled */ }
     } else {
       window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');

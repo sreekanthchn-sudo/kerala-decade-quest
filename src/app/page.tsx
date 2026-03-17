@@ -429,7 +429,7 @@ export default function HomePage() {
               transition={{ delay: 0.25 }}
               className="text-3xl md:text-5xl font-black text-white tracking-tight"
             >
-              {isMl ? '\u0D15\u0D47\u0D30\u0D33 \u0D26\u0D36\u0D15 \u0D15\u0D4D\u0D35\u0D38\u0D4D\u0D31\u0D4D\u0D31\u0D4D' : 'Kerala Decade Quest'}
+              {isMl ? 'നവകേരള ക്വിസ്' : 'Navakerala Quiz'}
             </motion.h1>
 
             <motion.p
@@ -447,7 +447,7 @@ export default function HomePage() {
               transition={{ delay: 0.35 }}
               className="text-sm md:text-base text-white/60 mt-2"
             >
-              {isMl ? '\u0D12\u0D30\u0D41 \u0D26\u0D36\u0D15\u0D24\u0D4D\u0D24\u0D3F\u0D28\u0D4D\u0D31\u0D46 \u0D2D\u0D30\u0D23 \u0D28\u0D47\u0D1F\u0D4D\u0D1F\u0D19\u0D4D\u0D19\u0D33\u0D4D' : '10 Years of Governance Achievements'}
+              {isMl ? 'അടുത്തറിയാം കഴിഞ്ഞ ഒരു ദശകത്തിന്റെ നേട്ടങ്ങൾ!' : 'Discover a Decade of Achievements!'}
             </motion.p>
 
             {/* Stats pills */}
