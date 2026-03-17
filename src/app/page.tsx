@@ -122,90 +122,68 @@ function KeralaMapBulbLogo() {
         style={{ filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.2))' }}
       />
 
-      {/* Kerala map as filament inside the bulb */}
-      <motion.path
-        d="M108 35
-           C106 40, 110 46, 107 52
-           C104 58, 108 64, 105 70
-           C102 76, 106 82, 103 88
-           C100 94, 104 100, 101 106
-           C98 112, 102 118, 99 124
-           C96 130, 100 136, 97 142
-           C94 148, 98 154, 95 160
-           C92 165, 88 168, 85 172
-           C82 176, 80 178, 82 180
-           C84 182, 88 180, 92 176
-           C96 172, 100 166, 104 160
-           C108 154, 112 148, 114 142
-           C116 136, 118 130, 116 124
-           C114 118, 116 112, 114 106
-           C112 100, 114 94, 112 88
-           C110 82, 112 76, 113 70
-           C114 64, 112 58, 111 52
-           C110 46, 111 40, 110 35
-           C109 32, 108 33, 108 35Z"
-        stroke="#fbbf24"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-        filter="url(#glowFilter)"
-        initial={{ pathLength: 0, opacity: 0 }}
-        animate={{ pathLength: 1, opacity: 1 }}
-        transition={{ duration: 2.5, delay: 1, ease: 'easeInOut' }}
-      />
-
-      {/* Filament glow pulse */}
-      <motion.path
-        d="M108 35
-           C106 40, 110 46, 107 52
-           C104 58, 108 64, 105 70
-           C102 76, 106 82, 103 88
-           C100 94, 104 100, 101 106
-           C98 112, 102 118, 99 124
-           C96 130, 100 136, 97 142
-           C94 148, 98 154, 95 160
-           C92 165, 88 168, 85 172
-           C82 176, 80 178, 82 180
-           C84 182, 88 180, 92 176
-           C96 172, 100 166, 104 160
-           C108 154, 112 148, 114 142
-           C116 136, 118 130, 116 124
-           C114 118, 116 112, 114 106
-           C112 100, 114 94, 112 88
-           C110 82, 112 76, 113 70
-           C114 64, 112 58, 111 52
-           C110 46, 111 40, 110 35
-           C109 32, 108 33, 108 35Z"
-        stroke="#fbbf24"
-        strokeWidth="4"
-        strokeLinecap="round"
-        fill="none"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: [0, 0.4, 0] }}
-        transition={{ duration: 2, repeat: Infinity, delay: 3.5, ease: 'easeInOut' }}
-        style={{ filter: 'blur(3px)' }}
-      />
-
-      {/* City dots on the Kerala filament */}
-      {[
-        { cx: 107, cy: 52, label: 'Kannur' },
-        { cx: 103, cy: 88, label: 'Kozhikode' },
-        { cx: 99, cy: 124, label: 'Kochi' },
-        { cx: 85, cy: 172, label: 'Trivandrum' },
-      ].map((city, i) => (
-        <motion.circle
-          key={city.label}
-          cx={city.cx}
-          cy={city.cy}
-          r="3"
-          fill="#fbbf24"
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: 3 + i * 0.2, duration: 0.4 }}
-          style={{ filter: 'drop-shadow(0 0 4px rgba(251,191,36,0.8))' }}
-        />
-      ))}
+      {/* Accurate Kerala map as filament inside the bulb */}
+      {(() => {
+        const keralaPath = "M13.3,0.0 L14.5,2.8 L12.2,5.8 L14.9,6.5 L14.4,7.9 L18.7,7.3 L18.5,12.8 L22.0,12.1 L22.3,9.0 L25.0,11.2 L28.8,11.1 L29.9,12.4 L28.1,15.4 L29.7,17.1 L33.9,16.3 L34.1,20.7 L36.1,22.5 L41.5,17.6 L46.6,20.2 L40.9,23.4 L42.0,26.9 L44.3,27.0 L44.4,29.1 L47.4,29.7 L47.6,33.0 L51.1,31.9 L52.2,29.5 L55.4,29.1 L56.2,32.7 L53.1,34.2 L50.6,33.6 L50.5,38.0 L56.1,42.1 L54.9,44.6 L57.0,48.8 L55.9,50.1 L62.3,50.1 L71.7,63.6 L77.6,64.4 L79.9,69.3 L84.3,68.6 L85.8,72.5 L93.7,71.2 L93.5,73.9 L96.8,78.1 L96.9,80.9 L101.9,84.6 L114.1,86.3 L125.1,81.5 L126.0,94.3 L132.8,92.2 L134.5,93.2 L136.2,98.6 L141.6,98.2 L147.9,105.5 L155.2,103.2 L156.4,106.8 L154.1,108.4 L157.9,115.2 L152.5,116.3 L151.6,119.2 L148.0,120.7 L147.3,119.7 L144.3,122.1 L141.5,119.3 L137.0,122.1 L138.7,125.7 L138.5,132.6 L142.3,131.1 L146.6,134.1 L147.9,132.7 L153.6,135.7 L155.6,135.2 L155.4,137.0 L159.4,140.4 L165.6,142.4 L165.5,143.8 L168.4,143.3 L167.5,148.1 L168.6,149.3 L166.0,152.3 L159.2,155.5 L158.4,159.1 L159.9,160.5 L163.4,158.2 L177.0,159.9 L184.4,155.3 L187.2,157.6 L186.8,160.0 L183.6,161.9 L183.8,164.0 L188.6,166.3 L188.1,169.1 L189.5,170.9 L188.4,173.7 L191.5,175.2 L194.0,174.2 L190.4,176.0 L185.4,175.3 L179.6,186.0 L188.0,190.3 L196.6,192.2 L199.3,195.8 L198.9,197.7 L203.7,198.4 L204.6,201.3 L203.2,207.7 L200.4,210.9 L202.1,215.5 L195.4,215.8 L195.7,219.0 L197.8,219.9 L195.6,236.9 L198.9,242.4 L196.9,248.9 L198.8,250.7 L201.4,249.4 L201.2,251.7 L205.5,255.9 L207.8,255.4 L212.1,257.5 L218.9,253.6 L218.4,251.2 L220.2,249.8 L231.3,243.7 L237.3,244.3 L236.5,247.7 L240.1,252.9 L239.8,256.3 L242.1,255.9 L243.2,257.6 L241.1,266.4 L237.6,266.5 L233.9,269.1 L240.0,276.3 L239.2,278.3 L241.3,281.9 L235.6,288.9 L235.1,291.7 L237.6,293.4 L236.1,296.9 L238.6,299.5 L236.2,300.3 L236.0,306.2 L234.2,306.8 L234.4,309.7 L230.4,317.8 L234.8,317.9 L237.5,321.1 L240.8,321.8 L245.7,319.0 L247.8,322.0 L249.4,318.8 L250.4,319.5 L248.9,322.6 L250.4,325.7 L252.4,327.4 L254.0,326.6 L255.0,328.6 L253.2,333.2 L250.5,333.3 L248.8,335.2 L246.5,345.5 L243.8,345.6 L243.7,348.2 L242.0,349.2 L242.1,357.5 L239.0,360.4 L240.6,364.0 L235.0,369.5 L233.6,374.7 L230.8,374.7 L228.6,377.2 L233.5,383.7 L233.5,386.8 L235.9,386.6 L236.1,389.1 L239.6,391.9 L240.2,395.2 L237.0,400.8 L233.8,402.3 L233.2,404.9 L231.0,404.6 L234.6,412.9 L242.1,424.1 L240.4,428.3 L234.2,429.1 L236.6,434.6 L234.5,434.9 L231.0,440.7 L229.1,440.6 L229.2,443.9 L231.1,443.3 L231.6,447.2 L227.8,446.2 L223.7,450.1 L212.0,441.2 L210.8,437.9 L180.9,400.2 L174.0,392.4 L168.6,389.4 L164.4,375.2 L148.0,339.0 L138.0,282.3 L133.9,274.3 L123.5,240.8 L118.0,229.8 L119.5,231.3 L117.7,227.0 L119.2,226.6 L120.6,228.3 L120.3,225.7 L117.8,222.7 L118.5,225.9 L117.0,228.6 L103.9,199.0 L98.9,173.9 L94.7,163.8 L96.0,162.4 L93.8,162.0 L87.7,143.5 L83.7,136.9 L75.8,131.5 L67.9,108.5 L66.6,108.7 L61.1,102.4 L59.5,102.6 L52.5,93.4 L49.5,93.8 L45.8,89.3 L44.6,85.1 L48.8,86.3 L45.6,81.9 L42.5,80.3 L43.3,84.0 L37.3,76.9 L34.1,78.8 L22.7,50.3 L12.8,30.0 L11.7,30.2 L0.0,3.4 L2.2,3.9 L13.3,0.0 Z";
+        // Scale: fit 255x450 map into bulb interior (~100x155px), centered
+        const sc = 0.34;
+        const tx = 55;
+        const ty = 28;
+        const mapTransform = `translate(${tx}, ${ty}) scale(${sc})`;
+        // City positions in original 255x450 coordinate space
+        const cities = [
+          { cx: 51, cy: 92, label: 'Kannur' },
+          { cx: 91, cy: 154, label: 'Kozhikode' },
+          { cx: 142, cy: 282, label: 'Kochi' },
+          { cx: 208, cy: 427, label: 'Trivandrum' },
+        ];
+        return (
+          <>
+            <motion.g transform={mapTransform}>
+              <motion.path
+                d={keralaPath}
+                stroke="#fbbf24"
+                strokeWidth={2 / sc}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                fill="none"
+                filter="url(#glowFilter)"
+                initial={{ pathLength: 0, opacity: 0 }}
+                animate={{ pathLength: 1, opacity: 1 }}
+                transition={{ duration: 2.5, delay: 1, ease: 'easeInOut' }}
+              />
+            </motion.g>
+            {/* Glow pulse on Kerala map */}
+            <motion.g transform={mapTransform}>
+              <motion.path
+                d={keralaPath}
+                stroke="#fbbf24"
+                strokeWidth={5 / sc}
+                strokeLinecap="round"
+                fill="none"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: [0, 0.3, 0] }}
+                transition={{ duration: 2, repeat: Infinity, delay: 3.5, ease: 'easeInOut' }}
+                style={{ filter: 'blur(4px)' }}
+              />
+            </motion.g>
+            {/* City dots — positions transformed to global coords */}
+            {cities.map((city, i) => (
+              <motion.circle
+                key={city.label}
+                cx={tx + city.cx * sc}
+                cy={ty + city.cy * sc}
+                r="3.5"
+                fill="#fbbf24"
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ delay: 3 + i * 0.2, duration: 0.4 }}
+                style={{ filter: 'drop-shadow(0 0 4px rgba(251,191,36,0.8))' }}
+              />
+            ))}
+          </>
+        );
+      })()}
 
       {/* Bulb screw base */}
       <motion.g
