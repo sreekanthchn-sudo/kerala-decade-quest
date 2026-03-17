@@ -7,7 +7,6 @@ import {
   Sparkles, Timer, Volume2, VolumeX, Sun, Moon, Flame,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import CompareOMeter from '@/components/CompareOMeter';
 import Particles from '@/components/Particles';
 import Confetti from '@/components/Confetti';
 import MinistryBackground from '@/components/MinistryBackground';
@@ -331,49 +330,68 @@ export default function QuizClient({ slug }: { slug: string }) {
   const timedOut = selectedOption === -1;
 
   return (
-    <main className="min-h-screen relative overflow-hidden">
+    <main className="h-[100dvh] relative overflow-hidden flex flex-col">
       <MinistryBackground slug={slug} color={mod.color} />
       <div className="leaf-pattern" />
-      <Particles />
 
-      <div className="relative z-10 max-w-lg mx-auto px-4 py-6">
-        {/* Top bar */}
-        <div className="flex items-center justify-between mb-5">
+      <div className="relative z-10 flex-1 flex flex-col max-w-lg mx-auto w-full px-4 pt-3 pb-0">
+        {/* Compact top bar — back + score + controls */}
+        <div className="flex items-center justify-between mb-2 shrink-0">
           <Link
             href="/"
-            className="flex items-center gap-1.5 text-sm active:opacity-70 transition-opacity"
+            className="flex items-center gap-1 active:opacity-70 transition-opacity"
             style={{ color: 'var(--kl-text-dim)' }}
           >
             <ArrowLeft className="w-4 h-4" />
-            {isMl ? 'മടങ്ങുക' : 'Back'}
           </Link>
-          <div className="flex items-center gap-2">
-            {/* Theme toggle */}
-            <button
-              onClick={toggleTheme}
-              className="glass-card p-1.5 rounded-full transition-all active:scale-90"
-            >
-              {isDark ? <Sun className="w-3.5 h-3.5" style={{ color: 'var(--kl-gold)' }} /> : <Moon className="w-3.5 h-3.5" style={{ color: 'var(--kl-text-dim)' }} />}
-            </button>
-            {/* Sound toggle */}
-            <button
-              onClick={() => setMuted(!muted)}
-              className="glass-card p-1.5 rounded-full transition-all active:scale-90"
-            >
-              {muted ? <VolumeX className="w-3.5 h-3.5" style={{ color: 'var(--kl-text-dim)' }} /> : <Volume2 className="w-3.5 h-3.5" style={{ color: 'var(--kl-green-light)' }} />}
-            </button>
-            {/* Timer toggle */}
-            <button
-              onClick={() => setTimerEnabled(!timerEnabled)}
-              className="glass-card p-1.5 rounded-full transition-all active:scale-90"
-              title={timerEnabled ? 'Disable timer' : 'Enable timer'}
-            >
-              <Timer className="w-3.5 h-3.5" style={{ color: timerEnabled ? 'var(--kl-gold)' : 'var(--kl-text-dim)' }} />
-            </button>
-            {/* Language toggle */}
+
+          {/* Center: ministry name + progress */}
+          <div className="flex-1 mx-3 min-w-0">
+            <p className="text-xs font-semibold truncate text-center" style={{ color: 'var(--kl-text)' }}>
+              {isMl ? mod.title_ml : mod.title}
+            </p>
+            <div className="flex items-center gap-2 mt-1">
+              <div className="flex-1 h-1 rounded-full overflow-hidden" style={{ background: 'rgba(255,255,255,0.06)' }}>
+                <motion.div
+                  className="h-full rounded-full progress-gradient"
+                  animate={{ width: `${progress}%` }}
+                  transition={{ duration: 0.4, ease: 'easeOut' }}
+                />
+              </div>
+              <span className="text-[10px] font-bold shrink-0" style={{ color: mod.color }}>
+                {currentIndex + 1}/{shuffledQuestions.length}
+              </span>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-1.5 shrink-0">
+            {/* Score pill */}
+            <div className="flex items-center gap-1 px-2 py-1 rounded-full glass-card">
+              <Trophy className="w-3 h-3" style={{ color: 'var(--kl-green-light)' }} />
+              <span className="text-xs font-black gradient-text-green">{score}</span>
+            </div>
+            {/* Timer */}
+            {timerEnabled && selectedOption === null && (
+              <div className="relative w-8 h-8 shrink-0">
+                <svg className="w-8 h-8 -rotate-90" viewBox="0 0 40 40">
+                  <circle cx="20" cy="20" r="18" fill="none" stroke="var(--kl-glass-border)" strokeWidth="2" />
+                  <circle
+                    cx="20" cy="20" r="18" fill="none"
+                    stroke={timeLeft <= 10 ? '#ef4444' : timeLeft <= 20 ? 'var(--kl-gold)' : 'var(--kl-green-light)'}
+                    strokeWidth="2" strokeDasharray="113"
+                    strokeDashoffset={113 - (timeLeft / TIMER_SECONDS) * 113}
+                    strokeLinecap="round"
+                    style={{ transition: 'stroke-dashoffset 1s linear, stroke 0.3s' }}
+                  />
+                </svg>
+                <span className="absolute inset-0 flex items-center justify-center text-[10px] font-bold"
+                  style={{ color: timeLeft <= 10 ? '#ef4444' : 'var(--kl-text)' }}>{timeLeft}</span>
+              </div>
+            )}
+            {/* Lang toggle */}
             <button
               onClick={() => setLang(lang === 'en' ? 'ml' : 'en')}
-              className="glass-card px-3 py-1.5 rounded-full text-xs font-semibold transition-all active:scale-95"
+              className="glass-card px-2 py-1 rounded-full text-[10px] font-bold transition-all active:scale-95"
               style={{ color: 'var(--kl-gold)' }}
             >
               {isMl ? 'EN' : 'ML'}
@@ -381,209 +399,177 @@ export default function QuizClient({ slug }: { slug: string }) {
           </div>
         </div>
 
-        {/* Ministry header — glass card with animated border */}
-        <div className="glass-card animated-border p-4 rounded-2xl mb-6">
-          <div className="flex items-center gap-3">
-            <div
-              className="shrink-0 w-1.5 h-10 rounded-full"
-              style={{ background: `linear-gradient(180deg, ${mod.color}, ${mod.color}40)` }}
-            />
-            <div className="flex-1">
-              <h1 className="text-base font-bold" style={{ color: 'var(--kl-text)' }}>
-                {isMl ? mod.title_ml : mod.title}
-              </h1>
-              <p className="text-xs" style={{ color: 'var(--kl-text-dim)' }}>
-                {isMl ? mod.title : mod.title_ml}
-              </p>
-            </div>
-            {/* Timer display */}
-            {timerEnabled && selectedOption === null && (
-              <div className="shrink-0 relative w-10 h-10">
-                <svg className="w-10 h-10 -rotate-90" viewBox="0 0 40 40">
-                  <circle cx="20" cy="20" r="18" fill="none" stroke="var(--kl-glass-border)" strokeWidth="2" />
-                  <circle
-                    cx="20" cy="20" r="18" fill="none"
-                    stroke={timeLeft <= 10 ? '#ef4444' : timeLeft <= 20 ? 'var(--kl-gold)' : 'var(--kl-green-light)'}
-                    strokeWidth="2"
-                    strokeDasharray="113"
-                    strokeDashoffset={113 - (timeLeft / TIMER_SECONDS) * 113}
-                    strokeLinecap="round"
-                    style={{ transition: 'stroke-dashoffset 1s linear, stroke 0.3s' }}
-                  />
-                </svg>
-                <span
-                  className="absolute inset-0 flex items-center justify-center text-xs font-bold"
-                  style={{ color: timeLeft <= 10 ? '#ef4444' : 'var(--kl-text)' }}
-                >
-                  {timeLeft}
-                </span>
-              </div>
-            )}
-          </div>
-
-          {/* Progress bar */}
-          <div className="mt-3 flex items-center gap-3">
-            <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ background: 'rgba(255,255,255,0.04)' }}>
-              <motion.div
-                className="h-full rounded-full progress-gradient"
-                animate={{ width: `${progress}%` }}
-                transition={{ duration: 0.4, ease: 'easeOut' }}
-              />
-            </div>
-            <span className="text-xs font-bold shrink-0" style={{ color: mod.color }}>
-              {currentIndex + 1}/{shuffledQuestions.length}
-            </span>
-          </div>
-        </div>
-
-        {/* Score pill + Streak */}
-        <div className="flex items-center justify-between mb-4">
-          {/* Streak indicator */}
-          <AnimatePresence>
-            {showStreak && streak >= 3 && (
-              <motion.div
-                initial={{ scale: 0, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                exit={{ opacity: 0, y: -20 }}
-                className="streak-pop flex items-center gap-1 px-3 py-1.5 rounded-full"
-                style={{
-                  background: 'linear-gradient(135deg, rgba(255,150,0,0.15), rgba(255,80,0,0.1))',
-                  border: '1px solid rgba(255,150,0,0.2)',
-                }}
-              >
-                <Flame className="w-3.5 h-3.5" style={{ color: '#ff9600' }} />
-                <span className="text-xs font-bold" style={{ color: '#ff9600' }}>
-                  {streak} {isMl ? 'തുടർച്ച!' : 'streak!'}
-                </span>
-              </motion.div>
-            )}
-          </AnimatePresence>
-
-          <div className="ml-auto flex items-center gap-1.5 px-3 py-1.5 rounded-full glass-card"
-            style={{ boxShadow: `0 0 12px rgba(0, 232, 138, 0.08)` }}
-          >
-            <Trophy className="w-3 h-3" style={{ color: 'var(--kl-green-light)' }} />
-            <span className="text-xs font-black gradient-text-green">{score}</span>
-          </div>
-        </div>
-
-        {/* Question + Options */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentIndex}
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -20 }}
-            transition={{ duration: 0.25 }}
-          >
-            <h3
-              className="text-base font-semibold leading-relaxed mb-6"
-              style={{ color: 'var(--kl-text-bright)' }}
+        {/* Streak indicator — floating */}
+        <AnimatePresence>
+          {showStreak && streak >= 3 && (
+            <motion.div
+              initial={{ scale: 0, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ opacity: 0, y: -20 }}
+              className="absolute top-12 left-1/2 -translate-x-1/2 z-50 flex items-center gap-1 px-3 py-1.5 rounded-full"
+              style={{
+                background: 'linear-gradient(135deg, rgba(255,150,0,0.2), rgba(255,80,0,0.15))',
+                border: '1px solid rgba(255,150,0,0.3)',
+              }}
             >
-              {q.text}
-            </h3>
+              <Flame className="w-3.5 h-3.5" style={{ color: '#ff9600' }} />
+              <span className="text-xs font-bold" style={{ color: '#ff9600' }}>
+                {streak} {isMl ? 'തുടർച്ച!' : 'streak!'}
+              </span>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
-            <div className="space-y-2.5">
-              {q.options.map((option, idx) => {
-                let bg = 'var(--kl-card)';
-                let borderColor = 'var(--kl-glass-border)';
-                let textColor = 'var(--kl-text)';
-                let letterColor = 'var(--kl-text-dim)';
-                let extraClass = 'option-btn';
-                let shadow = 'none';
-
-                if (selectedOption !== null) {
-                  if (idx === question!.answer) {
-                    bg = 'rgba(0, 232, 138, 0.1)';
-                    borderColor = 'rgba(0, 232, 138, 0.3)';
-                    textColor = isDark ? '#00e88a' : '#007a52';
-                    letterColor = textColor;
-                    extraClass = 'pulse-correct';
-                    shadow = `0 0 20px rgba(0, 232, 138, 0.1)`;
-                  } else if (idx === selectedOption) {
-                    bg = 'rgba(239, 68, 68, 0.08)';
-                    borderColor = 'rgba(239, 68, 68, 0.25)';
-                    textColor = '#ef4444';
-                    letterColor = '#ef4444';
-                  } else {
-                    textColor = 'var(--kl-text-dim)';
-                    bg = 'rgba(255,255,255,0.01)';
-                  }
-                }
-
-                return (
-                  <motion.button
-                    key={idx}
-                    whileTap={selectedOption === null ? { scale: 0.98 } : {}}
-                    onClick={() => handleSelect(idx)}
-                    disabled={selectedOption !== null}
-                    className={`w-full text-left px-4 py-3.5 rounded-xl text-sm transition-all ${extraClass}`}
-                    style={{
-                      background: bg,
-                      border: `1px solid ${borderColor}`,
-                      color: textColor,
-                      boxShadow: shadow,
-                      backdropFilter: 'blur(8px)',
-                    }}
-                  >
-                    <span
-                      className="inline-flex items-center justify-center w-5 h-5 rounded-md text-[10px] font-bold mr-2"
-                      style={{ background: `${letterColor}10`, color: letterColor }}
-                    >
-                      {optionLetters[idx]}
-                    </span>
-                    {option}
-                  </motion.button>
-                );
-              })}
-            </div>
-
-            {/* Timed out message */}
-            {timedOut && (
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="text-center text-xs mt-3 font-medium"
-                style={{ color: '#ef4444' }}
+        {/* Question + Options — fills remaining space */}
+        <div className="flex-1 flex flex-col min-h-0">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentIndex}
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -20 }}
+              transition={{ duration: 0.25 }}
+              className="flex-1 flex flex-col"
+            >
+              {/* Question text — large, accessible font */}
+              <h3
+                className="text-lg font-semibold leading-relaxed mb-4 shrink-0"
+                style={{ color: 'var(--kl-text-bright)' }}
               >
-                {isMl ? '⏰ സമയം കഴിഞ്ഞു!' : '⏰ Time\'s up!'}
-              </motion.p>
-            )}
+                {q.text}
+              </h3>
 
-            {/* Compare-o-Meter + Next */}
-            {showResult && (
-              <>
-                <CompareOMeter
-                  keralaLabel={isMl ? 'കേരളം 2026' : 'Kerala 2026'}
-                  keralaStat={question!.kerala_stat_2026}
-                  nationalLabel={isMl ? 'ദേശീയ ശരാശരി' : 'National / Benchmark'}
-                  nationalStat={question!.national_average}
-                  flexFact={q.flexFact}
-                  source={question!.source}
-                  isCorrect={!timedOut && isCorrect}
-                  isMl={isMl}
-                />
+              {/* Options */}
+              <div className="space-y-2 flex-1">
+                {q.options.map((option, idx) => {
+                  const isAnswer = idx === question!.answer;
+                  const isSelected = idx === selectedOption;
+                  const answered = selectedOption !== null;
+                  // After answering: hide options that are neither selected nor correct
+                  const shouldCollapse = answered && !isAnswer && !isSelected;
 
-                <motion.button
-                  initial={{ opacity: 0, y: 10 }}
+                  let bg = 'var(--kl-card)';
+                  let borderColor = 'var(--kl-glass-border)';
+                  let textColor = 'var(--kl-text)';
+                  let letterBg = 'var(--kl-text-dim)';
+                  let shadow = 'none';
+                  let icon = '';
+
+                  if (answered) {
+                    if (isAnswer) {
+                      bg = 'rgba(0, 232, 138, 0.12)';
+                      borderColor = 'rgba(0, 232, 138, 0.35)';
+                      textColor = isDark ? '#00e88a' : '#007a52';
+                      letterBg = textColor;
+                      shadow = '0 0 20px rgba(0, 232, 138, 0.1)';
+                      icon = '✓';
+                    } else if (isSelected) {
+                      bg = 'rgba(239, 68, 68, 0.1)';
+                      borderColor = 'rgba(239, 68, 68, 0.3)';
+                      textColor = '#ef4444';
+                      letterBg = '#ef4444';
+                      icon = '✗';
+                    }
+                  }
+
+                  return (
+                    <motion.button
+                      key={idx}
+                      layout
+                      animate={shouldCollapse
+                        ? { opacity: 0, height: 0, marginBottom: 0, paddingTop: 0, paddingBottom: 0, overflow: 'hidden' }
+                        : { opacity: 1, height: 'auto' }
+                      }
+                      transition={{ duration: 0.3, ease: 'easeInOut' }}
+                      whileTap={!answered ? { scale: 0.98 } : {}}
+                      onClick={() => handleSelect(idx)}
+                      disabled={answered}
+                      className="w-full text-left px-4 py-3.5 rounded-xl text-base transition-all"
+                      style={{
+                        background: bg,
+                        border: `1px solid ${borderColor}`,
+                        color: textColor,
+                        boxShadow: shadow,
+                        backdropFilter: 'blur(8px)',
+                        fontSize: '1rem',
+                      }}
+                    >
+                      <span
+                        className="inline-flex items-center justify-center w-6 h-6 rounded-md text-xs font-bold mr-2.5 align-middle"
+                        style={{ background: `${letterBg}15`, color: letterBg }}
+                      >
+                        {icon || optionLetters[idx]}
+                      </span>
+                      {option}
+                    </motion.button>
+                  );
+                })}
+              </div>
+
+              {/* Timed out message */}
+              {timedOut && (
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="text-center text-sm mt-2 font-medium"
+                  style={{ color: '#ef4444' }}
+                >
+                  {isMl ? 'സമയം കഴിഞ്ഞു!' : 'Time\'s up!'}
+                </motion.p>
+              )}
+
+              {/* Inline compact feedback — replaces CompareOMeter */}
+              {showResult && (
+                <motion.div
+                  initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3 }}
-                  onClick={handleNext}
-                  className="mt-5 w-full glow-btn flex items-center justify-center gap-2 px-5 py-4 rounded-xl font-semibold text-sm text-white"
+                  transition={{ delay: 0.25 }}
+                  className="mt-3 p-3 rounded-xl shrink-0"
                   style={{
-                    background: `linear-gradient(135deg, ${mod.color}, ${mod.color}cc)`,
+                    background: 'rgba(255,255,255,0.03)',
+                    border: '1px solid rgba(255,255,255,0.06)',
                   }}
                 >
-                  {currentIndex < shuffledQuestions.length - 1
-                    ? <>{isMl ? 'അടുത്ത ചോദ്യം' : 'Next Question'} <ArrowRight className="w-4 h-4" /></>
-                    : <>{isMl ? 'ഫലം കാണുക' : 'See Results'} <ArrowRight className="w-4 h-4" /></>
-                  }
-                </motion.button>
-              </>
-            )}
-          </motion.div>
-        </AnimatePresence>
+                  <p className="text-sm leading-relaxed" style={{ color: 'var(--kl-green-light)' }}>
+                    {q.flexFact}
+                  </p>
+                  <p className="text-[10px] mt-1.5" style={{ color: 'var(--kl-text-dim)', opacity: 0.5 }}>
+                    {question!.source}
+                  </p>
+                </motion.div>
+              )}
+            </motion.div>
+          </AnimatePresence>
+        </div>
       </div>
+
+      {/* Fixed bottom "Next" button — always visible after answering */}
+      <AnimatePresence>
+        {showResult && (
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 30 }}
+            transition={{ delay: 0.15, duration: 0.3 }}
+            className="relative z-20 shrink-0 px-4 pb-4 pt-2 max-w-lg mx-auto w-full"
+            style={{ background: 'linear-gradient(to top, var(--kl-bg) 60%, transparent)' }}
+          >
+            <button
+              onClick={handleNext}
+              className="w-full glow-btn flex items-center justify-center gap-2 px-5 py-4 rounded-xl font-bold text-base text-white active:scale-[0.98] transition-transform"
+              style={{
+                background: `linear-gradient(135deg, ${mod.color}, ${mod.color}cc)`,
+                minHeight: '56px',
+              }}
+            >
+              {currentIndex < shuffledQuestions.length - 1
+                ? <>{isMl ? 'അടുത്ത ചോദ്യം' : 'Next Question'} <ArrowRight className="w-5 h-5" /></>
+                : <>{isMl ? 'ഫലം കാണുക' : 'See Results'} <ArrowRight className="w-5 h-5" /></>
+              }
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </main>
   );
 }
