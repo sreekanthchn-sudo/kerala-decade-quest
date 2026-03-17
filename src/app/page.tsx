@@ -149,12 +149,12 @@ function AchievementCounters({ isMl }: { isMl: boolean }) {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: '-50px' });
 
-  const houses = useCountUp(300000, 2000, isInView);
+  const houses = useCountUp(500000, 2000, isInView);
   const budget = useCountUp(233, 2000, isInView);
   const literacy = useCountUp(962, 2000, isInView);
 
   const formatHouses = (n: number) => {
-    if (n >= 300000) return '3,00,000+';
+    if (n >= 500000) return '5,00,000+';
     const lakh = Math.floor(n / 100000);
     const rest = n % 100000;
     if (lakh > 0) return `${lakh},${String(rest).padStart(5, '0')}`;
