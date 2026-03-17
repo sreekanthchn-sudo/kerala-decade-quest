@@ -9,10 +9,10 @@ const manjari = Manjari({
 });
 
 export const metadata: Metadata = {
-  title: "Kerala Decade Quest (2016–2026)",
+  title: "കേരള ദശക ക്വസ്റ്റ് (2016–2026)",
   description:
-    "Kerala's 10-year governance quiz — 21 ministries, compare Kerala vs National benchmarks.",
-  keywords: ["Kerala", "governance", "quiz", "development", "LIFE Mission", "KIIFB"],
+    "കേരളത്തിന്റെ 10 വർഷത്തെ ഭരണ നേട്ടങ്ങൾ — 21 വകുപ്പുകൾ, 315 ചോദ്യങ്ങൾ",
+  keywords: ["കേരളം", "ഭരണം", "ക്വിസ്", "വികസനം", "LIFE Mission", "KIIFB"],
 };
 
 export const viewport = {
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ml">
       <body className={`${manjari.variable} antialiased`}>
         {children}
       </body>

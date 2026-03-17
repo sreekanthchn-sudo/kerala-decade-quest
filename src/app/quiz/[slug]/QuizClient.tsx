@@ -45,7 +45,7 @@ export default function QuizClient({ slug }: { slug: string }) {
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [finished, setFinished] = useState(false);
-  const [lang, setLang] = useState<'en' | 'ml'>('en');
+  const [lang, setLang] = useState<'en' | 'ml'>('ml');
   const [timerEnabled, setTimerEnabled] = useState(false);
   const [timeLeft, setTimeLeft] = useState(TIMER_SECONDS);
   const [streak, setStreak] = useState(0);

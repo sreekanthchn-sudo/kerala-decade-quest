@@ -340,7 +340,7 @@ function QuestionOfTheDay({ isMl }: { isMl: boolean }) {
    ═══════════════════════════════════════ */
 export default function HomePage() {
   const [search, setSearch] = useState('');
-  const [lang, setLang] = useState<'en' | 'ml'>('en');
+  const [lang, setLang] = useState<'en' | 'ml'>('ml');
   const [activeCategory, setActiveCategory] = useState('all');
   const { progress, getModuleProgress, completedCount } = useProgress();
   const { isDark, toggleTheme } = useTheme();
@@ -438,7 +438,7 @@ export default function HomePage() {
               transition={{ delay: 0.3 }}
               className="text-lg md:text-xl text-white/80 mt-1 font-medium"
             >
-              2016 \u2014 2026
+              2016 — 2026
             </motion.p>
 
             <motion.p
