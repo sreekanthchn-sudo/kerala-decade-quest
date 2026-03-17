@@ -11,6 +11,7 @@ import CompareOMeter from '@/components/CompareOMeter';
 import Particles from '@/components/Particles';
 import Confetti from '@/components/Confetti';
 import MinistryBackground from '@/components/MinistryBackground';
+import ScoreCard from '@/components/ScoreCard';
 import { useProgress } from '@/hooks/useProgress';
 import { useSound } from '@/hooks/useSound';
 import { useTheme } from '@/hooks/useTheme';
@@ -50,6 +51,7 @@ export default function QuizClient({ slug }: { slug: string }) {
   const [timeLeft, setTimeLeft] = useState(TIMER_SECONDS);
   const [streak, setStreak] = useState(0);
   const [showStreak, setShowStreak] = useState(false);
+  const [showScoreCard, setShowScoreCard] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const { saveModuleScore } = useProgress();
@@ -257,6 +259,15 @@ export default function QuizClient({ slug }: { slug: string }) {
                 {isMl ? 'സ്കോർ ഷെയർ ചെയ്യുക' : 'Share Score'}
               </button>
 
+              <button
+                onClick={() => setShowScoreCard(true)}
+                className="glow-btn flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-semibold text-sm text-white"
+                style={{ background: `linear-gradient(135deg, ${mod.color}, ${mod.color}cc)` }}
+              >
+                <Trophy className="w-4 h-4" />
+                {isMl ? 'സര്‍ട്ടിഫിക്കറ്റ് ഡൗണ്‍ലോഡ്' : 'Download Certificate'}
+              </button>
+
               <div className="flex gap-3">
                 <button
                   onClick={handleRestart}
@@ -299,6 +310,17 @@ export default function QuizClient({ slug }: { slug: string }) {
             </div>
           </motion.div>
         </div>
+
+        {showScoreCard && (
+          <ScoreCard
+            mod={mod}
+            score={score}
+            total={shuffledQuestions.length}
+            questions={shuffledQuestions}
+            lang={lang}
+            onClose={() => setShowScoreCard(false)}
+          />
+        )}
       </main>
     );
   }
