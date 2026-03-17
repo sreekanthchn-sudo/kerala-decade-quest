@@ -66,6 +66,8 @@ function useCountUp(target: number, duration: number, inView: boolean) {
 }
 
 /* ─── Kerala Map as Quiz Bulb Logo ─── */
+const KERALA_PATH = "M13.3,0.0 L14.5,2.8 L12.2,5.8 L14.9,6.5 L14.4,7.9 L18.7,7.3 L18.5,12.8 L22.0,12.1 L22.3,9.0 L25.0,11.2 L28.8,11.1 L29.9,12.4 L28.1,15.4 L29.7,17.1 L33.9,16.3 L34.1,20.7 L36.1,22.5 L41.5,17.6 L46.6,20.2 L40.9,23.4 L42.0,26.9 L44.3,27.0 L44.4,29.1 L47.4,29.7 L47.6,33.0 L51.1,31.9 L52.2,29.5 L55.4,29.1 L56.2,32.7 L53.1,34.2 L50.6,33.6 L50.5,38.0 L56.1,42.1 L54.9,44.6 L57.0,48.8 L55.9,50.1 L62.3,50.1 L71.7,63.6 L77.6,64.4 L79.9,69.3 L84.3,68.6 L85.8,72.5 L93.7,71.2 L93.5,73.9 L96.8,78.1 L96.9,80.9 L101.9,84.6 L114.1,86.3 L125.1,81.5 L126.0,94.3 L132.8,92.2 L134.5,93.2 L136.2,98.6 L141.6,98.2 L147.9,105.5 L155.2,103.2 L156.4,106.8 L154.1,108.4 L157.9,115.2 L152.5,116.3 L151.6,119.2 L148.0,120.7 L147.3,119.7 L144.3,122.1 L141.5,119.3 L137.0,122.1 L138.7,125.7 L138.5,132.6 L142.3,131.1 L146.6,134.1 L147.9,132.7 L153.6,135.7 L155.6,135.2 L155.4,137.0 L159.4,140.4 L165.6,142.4 L165.5,143.8 L168.4,143.3 L167.5,148.1 L168.6,149.3 L166.0,152.3 L159.2,155.5 L158.4,159.1 L159.9,160.5 L163.4,158.2 L177.0,159.9 L184.4,155.3 L187.2,157.6 L186.8,160.0 L183.6,161.9 L183.8,164.0 L188.6,166.3 L188.1,169.1 L189.5,170.9 L188.4,173.7 L191.5,175.2 L194.0,174.2 L190.4,176.0 L185.4,175.3 L179.6,186.0 L188.0,190.3 L196.6,192.2 L199.3,195.8 L198.9,197.7 L203.7,198.4 L204.6,201.3 L203.2,207.7 L200.4,210.9 L202.1,215.5 L195.4,215.8 L195.7,219.0 L197.8,219.9 L195.6,236.9 L198.9,242.4 L196.9,248.9 L198.8,250.7 L201.4,249.4 L201.2,251.7 L205.5,255.9 L207.8,255.4 L212.1,257.5 L218.9,253.6 L218.4,251.2 L220.2,249.8 L231.3,243.7 L237.3,244.3 L236.5,247.7 L240.1,252.9 L239.8,256.3 L242.1,255.9 L243.2,257.6 L241.1,266.4 L237.6,266.5 L233.9,269.1 L240.0,276.3 L239.2,278.3 L241.3,281.9 L235.6,288.9 L235.1,291.7 L237.6,293.4 L236.1,296.9 L238.6,299.5 L236.2,300.3 L236.0,306.2 L234.2,306.8 L234.4,309.7 L230.4,317.8 L234.8,317.9 L237.5,321.1 L240.8,321.8 L245.7,319.0 L247.8,322.0 L249.4,318.8 L250.4,319.5 L248.9,322.6 L250.4,325.7 L252.4,327.4 L254.0,326.6 L255.0,328.6 L253.2,333.2 L250.5,333.3 L248.8,335.2 L246.5,345.5 L243.8,345.6 L243.7,348.2 L242.0,349.2 L242.1,357.5 L239.0,360.4 L240.6,364.0 L235.0,369.5 L233.6,374.7 L230.8,374.7 L228.6,377.2 L233.5,383.7 L233.5,386.8 L235.9,386.6 L236.1,389.1 L239.6,391.9 L240.2,395.2 L237.0,400.8 L233.8,402.3 L233.2,404.9 L231.0,404.6 L234.6,412.9 L242.1,424.1 L240.4,428.3 L234.2,429.1 L236.6,434.6 L234.5,434.9 L231.0,440.7 L229.1,440.6 L229.2,443.9 L231.1,443.3 L231.6,447.2 L227.8,446.2 L223.7,450.1 L212.0,441.2 L210.8,437.9 L180.9,400.2 L174.0,392.4 L168.6,389.4 L164.4,375.2 L148.0,339.0 L138.0,282.3 L133.9,274.3 L123.5,240.8 L118.0,229.8 L119.5,231.3 L117.7,227.0 L119.2,226.6 L120.6,228.3 L120.3,225.7 L117.8,222.7 L118.5,225.9 L117.0,228.6 L103.9,199.0 L98.9,173.9 L94.7,163.8 L96.0,162.4 L93.8,162.0 L87.7,143.5 L83.7,136.9 L75.8,131.5 L67.9,108.5 L66.6,108.7 L61.1,102.4 L59.5,102.6 L52.5,93.4 L49.5,93.8 L45.8,89.3 L44.6,85.1 L48.8,86.3 L45.6,81.9 L42.5,80.3 L43.3,84.0 L37.3,76.9 L34.1,78.8 L22.7,50.3 L12.8,30.0 L11.7,30.2 L0.0,3.4 L2.2,3.9 L13.3,0.0 Z";
+
 function KeralaMapBulbLogo() {
   return (
     <svg
@@ -75,12 +77,8 @@ function KeralaMapBulbLogo() {
       xmlns="http://www.w3.org/2000/svg"
     >
       <defs>
-        <linearGradient id="bulbGlow" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#fbbf24" stopOpacity="0.4" />
-          <stop offset="100%" stopColor="#f59e0b" stopOpacity="0" />
-        </linearGradient>
         <radialGradient id="innerGlow" cx="50%" cy="40%" r="50%">
-          <stop offset="0%" stopColor="#fbbf24" stopOpacity="0.25" />
+          <stop offset="0%" stopColor="#fbbf24" stopOpacity="0.2" />
           <stop offset="100%" stopColor="#fbbf24" stopOpacity="0" />
         </radialGradient>
         <filter id="glowFilter">
@@ -92,25 +90,18 @@ function KeralaMapBulbLogo() {
         </filter>
       </defs>
 
-      {/* Outer glow aura */}
+      {/* Soft glow behind bulb */}
       <motion.ellipse
-        cx="100" cy="110" rx="72" ry="90"
+        cx="100" cy="110" rx="70" ry="85"
         fill="url(#innerGlow)"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: [0.3, 0.6, 0.3], scale: [0.95, 1.05, 0.95] }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: [0.3, 0.5, 0.3] }}
         transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
       />
 
       {/* Bulb glass outline */}
       <motion.path
-        d="M100 12
-           C62 12, 32 50, 32 95
-           C32 130, 50 155, 68 175
-           C72 180, 74 190, 74 198
-           L126 198
-           C126 190, 128 180, 132 175
-           C150 155, 168 130, 168 95
-           C168 50, 138 12, 100 12Z"
+        d="M100 12 C62 12, 32 50, 32 95 C32 130, 50 155, 68 175 C72 180, 74 190, 74 198 L126 198 C126 190, 128 180, 132 175 C150 155, 168 130, 168 95 C168 50, 138 12, 100 12Z"
         stroke="white"
         strokeWidth="2.5"
         strokeLinecap="round"
@@ -119,93 +110,37 @@ function KeralaMapBulbLogo() {
         initial={{ pathLength: 0, opacity: 0 }}
         animate={{ pathLength: 1, opacity: 0.9 }}
         transition={{ duration: 1.8, ease: 'easeInOut' }}
-        style={{ filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.2))' }}
+        style={{ filter: 'drop-shadow(0 0 8px rgba(255,255,255,0.15))' }}
       />
 
-      {/* Kerala map silhouette — narrow elongated strip, NNW→SSE tilt */}
-      <defs>
-        <linearGradient id="keralaFill" x1="0.3" y1="0" x2="0.7" y2="1">
-          <stop offset="0%" stopColor="#fbbf24" stopOpacity="0.3" />
-          <stop offset="50%" stopColor="#f59e0b" stopOpacity="0.45" />
-          <stop offset="100%" stopColor="#fbbf24" stopOpacity="0.2" />
-        </linearGradient>
-      </defs>
-      {(() => {
-        /* Kerala map — recognizable shape for logo
-           Western coast: gentle S-curve (smooth, Arabian Sea)
-           Eastern boundary: Wayanad bulge (north), Palakkad Gap indent (upper-mid),
-           Idukki bulge (mid), narrows south. Southern tip curves southeast. */
-        const keralaD = `
-          M110 28
-          C108 33, 106 38, 103 44
-          C100 50, 97 56, 94 63
-          C91 70, 89 76, 87 82
-          C85 88, 83 94, 82 100
-          C80 106, 79 112, 78 118
-          C77 124, 78 130, 79 136
-          C80 142, 82 148, 84 154
-          C86 160, 87 165, 89 170
-          C91 175, 92 178, 94 181
-          C96 183, 98 184, 100 182
-          C102 179, 105 174, 107 169
-          C109 163, 111 158, 112 152
-          C114 146, 115 140, 118 134
-          C121 128, 124 122, 126 116
-          C128 110, 127 105, 124 100
-          C120 96, 116 93, 113 90
-          C116 87, 121 82, 126 76
-          C130 70, 131 64, 129 58
-          C127 52, 124 46, 121 42
-          C118 37, 115 33, 112 30
-          C111 28, 110 28, 110 28Z`;
-        return (
-          <>
-            <motion.path
-              d={keralaD}
-              fill="url(#keralaFill)"
-              stroke="#fbbf24"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              filter="url(#glowFilter)"
-              initial={{ pathLength: 0, opacity: 0, fillOpacity: 0 }}
-              animate={{ pathLength: 1, opacity: 1, fillOpacity: 1 }}
-              transition={{ duration: 2.5, delay: 1, ease: 'easeInOut' }}
-            />
-            {/* Glow pulse */}
-            <motion.path
-              d={keralaD}
-              stroke="#fbbf24"
-              strokeWidth="6"
-              strokeLinecap="round"
-              fill="none"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: [0, 0.35, 0] }}
-              transition={{ duration: 2.5, repeat: Infinity, delay: 3.5, ease: 'easeInOut' }}
-              style={{ filter: 'blur(5px)' }}
-            />
-            {/* City dots along coast */}
-            {[
-              { cx: 101, cy: 48, label: 'Kannur' },
-              { cx: 89, cy: 78, label: 'Kozhikode' },
-              { cx: 76, cy: 118, label: 'Kochi' },
-              { cx: 90, cy: 176, label: 'Trivandrum' },
-            ].map((city, i) => (
-              <motion.circle
-                key={city.label}
-                cx={city.cx}
-                cy={city.cy}
-                r="3"
-                fill="#fbbf24"
-                initial={{ scale: 0, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ delay: 3 + i * 0.25, duration: 0.4 }}
-                style={{ filter: 'drop-shadow(0 0 5px rgba(251,191,36,0.9))' }}
-              />
-            ))}
-          </>
-        );
-      })()}
+      {/* Real Kerala map (GeoJSON) — filled silhouette as filament */}
+      {/* Original viewBox: 0 0 255 450 → scaled to fit bulb interior */}
+      <g transform="translate(55, 25) scale(0.355)">
+        <motion.path
+          d={KERALA_PATH}
+          fill="#fbbf24"
+          fillOpacity="0.6"
+          stroke="#fbbf24"
+          strokeWidth="3"
+          strokeLinejoin="round"
+          filter="url(#glowFilter)"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5, delay: 1.2, ease: 'easeOut' }}
+        />
+        {/* Glow pulse on map */}
+        <motion.path
+          d={KERALA_PATH}
+          fill="none"
+          stroke="#fbbf24"
+          strokeWidth="8"
+          strokeLinejoin="round"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: [0, 0.3, 0] }}
+          transition={{ duration: 2.5, repeat: Infinity, delay: 3, ease: 'easeInOut' }}
+          style={{ filter: 'blur(6px)' }}
+        />
+      </g>
 
       {/* Bulb screw base */}
       <motion.g
@@ -214,21 +149,20 @@ function KeralaMapBulbLogo() {
         transition={{ delay: 1.5, duration: 0.5 }}
       >
         <rect x="74" y="198" width="52" height="6" rx="1" fill="white" fillOpacity="0.7" />
-        <rect x="76" y="206" width="48" height="5" rx="1" fill="white" fillOpacity="0.55" />
-        <rect x="78" y="213" width="44" height="5" rx="1" fill="white" fillOpacity="0.4" />
-        <rect x="80" y="220" width="40" height="5" rx="1" fill="white" fillOpacity="0.3" />
-        {/* Screw base bottom tip */}
-        <path d="M84 225 L100 236 L116 225" fill="none" stroke="white" strokeWidth="1.5" strokeOpacity="0.3" strokeLinecap="round" />
+        <rect x="76" y="206" width="48" height="5" rx="1" fill="white" fillOpacity="0.5" />
+        <rect x="78" y="213" width="44" height="5" rx="1" fill="white" fillOpacity="0.35" />
+        <rect x="80" y="220" width="40" height="5" rx="1" fill="white" fillOpacity="0.25" />
+        <path d="M84 225 L100 236 L116 225" fill="none" stroke="white" strokeWidth="1.5" strokeOpacity="0.25" strokeLinecap="round" />
       </motion.g>
 
-      {/* Light rays emanating from bulb */}
+      {/* Light rays */}
       {[
-        { x1: 30, y1: 50, x2: 18, y2: 40 },
-        { x1: 22, y1: 95, x2: 8, y2: 95 },
-        { x1: 30, y1: 140, x2: 18, y2: 150 },
-        { x1: 170, y1: 50, x2: 182, y2: 40 },
-        { x1: 178, y1: 95, x2: 192, y2: 95 },
-        { x1: 170, y1: 140, x2: 182, y2: 150 },
+        { x1: 28, y1: 50, x2: 16, y2: 42 },
+        { x1: 20, y1: 95, x2: 6, y2: 95 },
+        { x1: 28, y1: 140, x2: 16, y2: 148 },
+        { x1: 172, y1: 50, x2: 184, y2: 42 },
+        { x1: 180, y1: 95, x2: 194, y2: 95 },
+        { x1: 172, y1: 140, x2: 184, y2: 148 },
       ].map((ray, i) => (
         <motion.line
           key={i}
@@ -236,9 +170,9 @@ function KeralaMapBulbLogo() {
           stroke="#fbbf24"
           strokeWidth="2"
           strokeLinecap="round"
-          initial={{ opacity: 0, pathLength: 0 }}
-          animate={{ opacity: [0, 0.6, 0], pathLength: 1 }}
-          transition={{ delay: 3.5 + i * 0.15, duration: 1.5, repeat: Infinity, repeatDelay: 2 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: [0, 0.5, 0] }}
+          transition={{ delay: 3 + i * 0.15, duration: 1.5, repeat: Infinity, repeatDelay: 2 }}
         />
       ))}
     </svg>
