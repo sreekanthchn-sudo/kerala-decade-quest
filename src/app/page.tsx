@@ -65,32 +65,134 @@ function useCountUp(target: number, duration: number, inView: boolean) {
   return count;
 }
 
-/* ─── Kerala Map SVG with stroke-dasharray draw animation ─── */
-function KeralaMapSVG() {
+/* ─── Kerala Map as Quiz Bulb Logo ─── */
+function KeralaMapBulbLogo() {
   return (
     <svg
-      viewBox="0 0 120 300"
-      className="w-16 h-28 md:w-20 md:h-36"
+      viewBox="0 0 200 280"
+      className="w-24 h-36 md:w-32 md:h-44"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
+      <defs>
+        <linearGradient id="bulbGlow" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#fbbf24" stopOpacity="0.4" />
+          <stop offset="100%" stopColor="#f59e0b" stopOpacity="0" />
+        </linearGradient>
+        <radialGradient id="innerGlow" cx="50%" cy="40%" r="50%">
+          <stop offset="0%" stopColor="#fbbf24" stopOpacity="0.25" />
+          <stop offset="100%" stopColor="#fbbf24" stopOpacity="0" />
+        </radialGradient>
+        <filter id="glowFilter">
+          <feGaussianBlur stdDeviation="3" result="blur" />
+          <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
+
+      {/* Outer glow aura */}
+      <motion.ellipse
+        cx="100" cy="110" rx="72" ry="90"
+        fill="url(#innerGlow)"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: [0.3, 0.6, 0.3], scale: [0.95, 1.05, 0.95] }}
+        transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+      />
+
+      {/* Bulb glass outline */}
       <motion.path
-        d="M75 8 C72 12, 78 18, 74 24 C70 30, 76 36, 72 42 C68 48, 74 54, 70 60 C66 66, 72 72, 68 78 C64 84, 70 90, 66 96 C62 102, 68 108, 64 114 C60 120, 66 126, 62 132 C58 138, 64 144, 60 150 C56 156, 62 162, 58 168 C54 174, 60 180, 56 186 C52 192, 58 198, 54 204 C50 210, 56 216, 52 222 C48 228, 54 234, 50 240 C46 246, 52 252, 48 258 C44 264, 40 268, 36 272 C32 276, 28 278, 30 282 C32 286, 38 284, 42 280 C46 276, 52 272, 56 268 C60 264, 64 258, 68 252 C72 246, 76 240, 78 234 C80 228, 82 222, 84 216 C86 210, 88 204, 86 198 C84 192, 86 186, 84 180 C82 174, 84 168, 82 162 C80 156, 82 150, 80 144 C78 138, 80 132, 78 126 C76 120, 78 114, 80 108 C82 102, 80 96, 82 90 C84 84, 82 78, 84 72 C86 66, 84 60, 82 54 C80 48, 82 42, 80 36 C78 30, 80 24, 78 18 C76 12, 77 8, 75 8Z"
+        d="M100 12
+           C62 12, 32 50, 32 95
+           C32 130, 50 155, 68 175
+           C72 180, 74 190, 74 198
+           L126 198
+           C126 190, 128 180, 132 175
+           C150 155, 168 130, 168 95
+           C168 50, 138 12, 100 12Z"
         stroke="white"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+        initial={{ pathLength: 0, opacity: 0 }}
+        animate={{ pathLength: 1, opacity: 0.9 }}
+        transition={{ duration: 1.8, ease: 'easeInOut' }}
+        style={{ filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.2))' }}
+      />
+
+      {/* Kerala map as filament inside the bulb */}
+      <motion.path
+        d="M108 35
+           C106 40, 110 46, 107 52
+           C104 58, 108 64, 105 70
+           C102 76, 106 82, 103 88
+           C100 94, 104 100, 101 106
+           C98 112, 102 118, 99 124
+           C96 130, 100 136, 97 142
+           C94 148, 98 154, 95 160
+           C92 165, 88 168, 85 172
+           C82 176, 80 178, 82 180
+           C84 182, 88 180, 92 176
+           C96 172, 100 166, 104 160
+           C108 154, 112 148, 114 142
+           C116 136, 118 130, 116 124
+           C114 118, 116 112, 114 106
+           C112 100, 114 94, 112 88
+           C110 82, 112 76, 113 70
+           C114 64, 112 58, 111 52
+           C110 46, 111 40, 110 35
+           C109 32, 108 33, 108 35Z"
+        stroke="#fbbf24"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
+        fill="none"
+        filter="url(#glowFilter)"
         initial={{ pathLength: 0, opacity: 0 }}
         animate={{ pathLength: 1, opacity: 1 }}
-        transition={{ duration: 2.5, ease: 'easeInOut' }}
-        style={{ filter: 'drop-shadow(0 0 8px rgba(255,255,255,0.3))' }}
+        transition={{ duration: 2.5, delay: 1, ease: 'easeInOut' }}
       />
-      {/* Highlight dots for major cities */}
+
+      {/* Filament glow pulse */}
+      <motion.path
+        d="M108 35
+           C106 40, 110 46, 107 52
+           C104 58, 108 64, 105 70
+           C102 76, 106 82, 103 88
+           C100 94, 104 100, 101 106
+           C98 112, 102 118, 99 124
+           C96 130, 100 136, 97 142
+           C94 148, 98 154, 95 160
+           C92 165, 88 168, 85 172
+           C82 176, 80 178, 82 180
+           C84 182, 88 180, 92 176
+           C96 172, 100 166, 104 160
+           C108 154, 112 148, 114 142
+           C116 136, 118 130, 116 124
+           C114 118, 116 112, 114 106
+           C112 100, 114 94, 112 88
+           C110 82, 112 76, 113 70
+           C114 64, 112 58, 111 52
+           C110 46, 111 40, 110 35
+           C109 32, 108 33, 108 35Z"
+        stroke="#fbbf24"
+        strokeWidth="4"
+        strokeLinecap="round"
+        fill="none"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: [0, 0.4, 0] }}
+        transition={{ duration: 2, repeat: Infinity, delay: 3.5, ease: 'easeInOut' }}
+        style={{ filter: 'blur(3px)' }}
+      />
+
+      {/* City dots on the Kerala filament */}
       {[
-        { cx: 76, cy: 30, label: 'Kannur' },
-        { cx: 74, cy: 50, label: 'Kozhikode' },
-        { cx: 72, cy: 72, label: 'Kochi' },
-        { cx: 56, cy: 200, label: 'Trivandrum' },
+        { cx: 107, cy: 52, label: 'Kannur' },
+        { cx: 103, cy: 88, label: 'Kozhikode' },
+        { cx: 99, cy: 124, label: 'Kochi' },
+        { cx: 85, cy: 172, label: 'Trivandrum' },
       ].map((city, i) => (
         <motion.circle
           key={city.label}
@@ -100,7 +202,43 @@ function KeralaMapSVG() {
           fill="#fbbf24"
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: 2 + i * 0.2, duration: 0.4 }}
+          transition={{ delay: 3 + i * 0.2, duration: 0.4 }}
+          style={{ filter: 'drop-shadow(0 0 4px rgba(251,191,36,0.8))' }}
+        />
+      ))}
+
+      {/* Bulb screw base */}
+      <motion.g
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 0.5 }}
+      >
+        <rect x="74" y="198" width="52" height="6" rx="1" fill="white" fillOpacity="0.7" />
+        <rect x="76" y="206" width="48" height="5" rx="1" fill="white" fillOpacity="0.55" />
+        <rect x="78" y="213" width="44" height="5" rx="1" fill="white" fillOpacity="0.4" />
+        <rect x="80" y="220" width="40" height="5" rx="1" fill="white" fillOpacity="0.3" />
+        {/* Screw base bottom tip */}
+        <path d="M84 225 L100 236 L116 225" fill="none" stroke="white" strokeWidth="1.5" strokeOpacity="0.3" strokeLinecap="round" />
+      </motion.g>
+
+      {/* Light rays emanating from bulb */}
+      {[
+        { x1: 30, y1: 50, x2: 18, y2: 40 },
+        { x1: 22, y1: 95, x2: 8, y2: 95 },
+        { x1: 30, y1: 140, x2: 18, y2: 150 },
+        { x1: 170, y1: 50, x2: 182, y2: 40 },
+        { x1: 178, y1: 95, x2: 192, y2: 95 },
+        { x1: 170, y1: 140, x2: 182, y2: 150 },
+      ].map((ray, i) => (
+        <motion.line
+          key={i}
+          x1={ray.x1} y1={ray.y1} x2={ray.x2} y2={ray.y2}
+          stroke="#fbbf24"
+          strokeWidth="2"
+          strokeLinecap="round"
+          initial={{ opacity: 0, pathLength: 0 }}
+          animate={{ opacity: [0, 0.6, 0], pathLength: 1 }}
+          transition={{ delay: 3.5 + i * 0.15, duration: 1.5, repeat: Infinity, repeatDelay: 2 }}
         />
       ))}
     </svg>
@@ -419,7 +557,7 @@ export default function HomePage() {
               transition={{ delay: 0.15, duration: 0.5 }}
             >
               <div className="icon-float">
-                <KeralaMapSVG />
+                <KeralaMapBulbLogo />
               </div>
             </motion.div>
 
