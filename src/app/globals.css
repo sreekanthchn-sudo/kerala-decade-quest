@@ -893,7 +893,7 @@ body {
   display: flex;
   align-items: center;
   width: max-content;
-  animation: home-achievement-marquee-scroll 44s linear infinite;
+  animation: home-achievement-marquee-scroll 50s linear infinite;
 }
 
 .home-achievement-marquee__item {
