@@ -203,23 +203,15 @@ export default function HomePage() {
           className={`mx-auto max-w-2xl px-1 text-center ${finished ? 'mb-1.5 sm:mb-2' : 'mb-6 sm:mb-8'}`}
         >
           <h1
+            lang="en"
             className={`font-black leading-[1.05] tracking-tight drop-shadow-[0_4px_28px_rgba(0,0,0,0.55)] ${
               finished
                 ? 'text-[clamp(1.15rem,3.8vw,1.55rem)]'
                 : 'text-[clamp(1.65rem,5.5vw,2.85rem)]'
             }`}
           >
-            {isMl ? (
-              <>
-                <span className="text-white">നോ-</span>
-                <span className="text-[#ffcc00]">കേരളം</span>
-              </>
-            ) : (
-              <>
-                <span className="text-white">KNOW-</span>
-                <span className="text-[#ffcc00]">KERALAM</span>
-              </>
-            )}
+            <span className="text-white">KNOW-</span>
+            <span className="text-[#ffcc00]">KERALAM</span>
           </h1>
           <p
             className={

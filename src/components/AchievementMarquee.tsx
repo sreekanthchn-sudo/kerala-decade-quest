@@ -2,6 +2,7 @@
 
 /** Headlines for the home-page ticker — Kerala decade themes (2016–2026). */
 const ACHIEVEMENTS_EN = [
+  'KNOW-KERALAM.',
   'KIIFB momentum.',
   'NH 66 corridor development.',
   'Vizhinjam port.',
@@ -11,6 +12,7 @@ const ACHIEVEMENTS_EN = [
 ];
 
 const ACHIEVEMENTS_ML = [
+  'KNOW-KERALAM — നോ-കേരളം.',
   'കിഫ്ബി കുതിപ്പ്.',
   'ദേശീയപാത 66 വികസനം.',
   'വിഴിഞ്ഞം പോർട്ട്.',
