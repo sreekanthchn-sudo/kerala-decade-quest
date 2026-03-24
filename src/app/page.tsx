@@ -10,6 +10,7 @@ import type { Module, Question } from '@/types';
 import ScoreGauge from '@/components/ScoreGauge';
 import CategoryDropdown from '@/components/CategoryDropdown';
 import { getCategoryBilingualLabel } from '@/utils/categoryLabels';
+import { publicAsset } from '@/lib/publicAsset';
 
 function shuffleArray<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -121,7 +122,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[#0a0a0a]" />
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/unwatermarked_Gemini_Generated_Image_rkus9trkus9trkus_1_pbfyyl.webp"
+          src={publicAsset('/unwatermarked_Gemini_Generated_Image_rkus9trkus9trkus_1_pbfyyl.webp')}
           alt=""
           className="absolute inset-0 h-full w-full object-cover object-center opacity-[0.32] saturate-[0.85]"
           loading="eager"
@@ -149,7 +150,7 @@ export default function HomePage() {
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/knowkeralam.png"
+                src={publicAsset('/knowkeralam.png')}
                 alt="KNOW-KERALAM"
                 width={640}
                 height={320}
