@@ -157,13 +157,13 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
               className="text-lg font-bold"
               style={{ color: 'var(--kl-text, #fff)' }}
             >
-              {isMl ? 'സര്‍ട്ടിഫിക്കറ്റ് ഡൗണ്‍ലോഡ് ചെയ്യുക' : 'Download Certificate'}
+              {isMl ? 'സർട്ടിഫിക്കറ്റ് ഡൗൺലോഡ് ചെയ്യുക' : 'Download Certificate'}
             </h3>
             <p
               className="text-sm"
               style={{ color: 'var(--kl-text-dim, #999)' }}
             >
-              {isMl ? 'നിങ്ങളുടെ പേര് നല്‍കുക' : 'Enter your name for the certificate'}
+              {isMl ? 'നിങ്ങളുടെ പേര് നൽകുക' : 'Enter your name for the certificate'}
             </p>
           </div>
 
@@ -220,7 +220,7 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
             style={{ borderColor: `${baseColor} transparent ${baseColor} ${baseColor}` }}
           />
           <p className="text-sm" style={{ color: 'var(--kl-text-dim, #999)' }}>
-            {isMl ? 'സര്‍ട്ടിഫിക്കറ്റ് സൃഷ്ടിക്കുന്നു...' : 'Generating certificate...'}
+            {isMl ? 'സർട്ടിഫിക്കറ്റ് സൃഷ്ടിക്കുന്നു...' : 'Generating certificate...'}
           </p>
         </div>
       )}
@@ -253,7 +253,7 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
                 background: `linear-gradient(135deg, ${baseColor}, ${baseColor}cc)`,
               }}
             >
-              {isMl ? 'ഷെയര്‍ / ഡൗണ്‍ലോഡ്' : 'Share / Download'}
+              {isMl ? 'ഷെയർ / ഡൗൺലോഡ്' : 'Share / Download'}
             </button>
           </div>
         </div>
@@ -381,7 +381,7 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
                     marginBottom: '8px',
                   }}
                 >
-                  {'\u0D28\u0D35\u0D15\u0D47\u0D30\u0D33 \u0D15\u0D4D\u0D35\u0D3F\u0D38\u0D4D'}
+                  {'നവകേരള ക്വിസ്'}
                 </h1>
                 <p
                   style={{
@@ -416,7 +416,7 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
                   fontWeight: 500,
                 }}
               >
-                {'\u0D05\u0D31\u0D3F\u0D2F\u0D3E\u0D02 \u0D15\u0D47\u0D30\u0D33\u0D24\u0D4D\u0D24\u0D46.... \u0D05\u0D31\u0D3F\u0D2F\u0D3E\u0D02 \u0D15\u0D34\u0D3F\u0D1E\u0D4D\u0D1E \u0D2A\u0D24\u0D4D\u0D24\u0D41 \u0D35\u0D7C\u0D37\u0D02'}
+                {'അറിയാം കേരളത്തെ.... അറിയാം കഴിഞ്ഞ പത്ത് വർഷം'}
               </p>
 
               {/* Player name */}

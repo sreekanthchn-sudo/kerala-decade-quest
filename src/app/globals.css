@@ -70,7 +70,9 @@ html {
 body {
   background: var(--kl-bg);
   color: var(--kl-text);
-  font-family: var(--font-manjari), Arial, Helvetica, sans-serif;
+  font-family: var(--font-manjari), "Noto Sans Malayalam", "Nirmala UI", Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1, "liga" 1, "clig" 1;
   -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
   line-height: 1.65;

@@ -13,9 +13,10 @@ import Particles from '@/components/Particles';
 import { useProgress } from '@/hooks/useProgress';
 import { useTheme } from '@/hooks/useTheme';
 import modulesData from '@/data/decade_records.json';
+import { sanitizeDeepMalayalam } from '@/utils/malayalamText';
 import type { Module } from '@/types';
 
-const modules = modulesData as Module[];
+const modules = sanitizeDeepMalayalam(modulesData as Module[]);
 
 const ICON_MAP: Record<string, React.ComponentType<{ className?: string; style?: React.CSSProperties }>> = {
   Home, HeartPulse, GraduationCap, Wifi, Building2, BookOpen,
@@ -36,7 +37,7 @@ const CATEGORIES: Category[] = [
   { key: 'all', label: 'All', label_ml: 'എല്ലാം', emoji: '', slugs: [] },
   { key: 'infra', label: 'Infrastructure', label_ml: 'അടിസ്ഥാന സൗകര്യം', emoji: '\u{1F3D7}\uFE0F', slugs: ['public-works', 'transport', 'ports', 'power'] },
   { key: 'social', label: 'Social Welfare', label_ml: 'സാമൂഹിക ക്ഷേമം', emoji: '\u{1F3E5}', slugs: ['health', 'education', 'sc-st-development', 'higher-education'] },
-  { key: 'economy', label: 'Economy', label_ml: 'സമ്പദ്\u200Cവ്യവസ്ഥ', emoji: '\u{1F4B0}', slugs: ['finance', 'planning', 'it-electronics', 'industries'] },
+  { key: 'economy', label: 'Economy', label_ml: 'സമ്പദ്വ്യവസ്ഥ', emoji: '\u{1F4B0}', slugs: ['finance', 'planning', 'it-electronics', 'industries'] },
   { key: 'environment', label: 'Environment', label_ml: 'പരിസ്ഥിതി', emoji: '\u{1F33F}', slugs: ['forest-wildlife', 'water-resources', 'agriculture'] },
   { key: 'governance', label: 'Governance', label_ml: 'ഭരണം', emoji: '\u{1F3AF}', slugs: ['lsgd', 'revenue', 'food-civil-supplies', 'cooperation'] },
   { key: 'culture', label: 'Culture & Sports', label_ml: 'സംസ്കാരം & കായികം', emoji: '\u{1F3C5}', slugs: ['sports-youth', 'fisheries', 'animal-husbandry'] },
@@ -200,15 +201,22 @@ function MarqueeTicker({ isMl }: { isMl: boolean }) {
   const repeatedItems = [...items, ...items];
 
   return (
-    <div className="overflow-hidden whitespace-nowrap" style={{ background: 'rgba(0,0,0,0.2)' }}>
+    <div
+      className="overflow-hidden whitespace-nowrap"
+      style={{ background: 'color-mix(in srgb, var(--kl-green) 14%, transparent)' }}
+    >
       <motion.div
         className="inline-flex gap-8 py-2 px-4"
         animate={{ x: ['0%', '-50%'] }}
         transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
       >
         {repeatedItems.map((item, i) => (
-          <span key={i} className="text-xs md:text-sm font-medium text-white/80 inline-flex items-center gap-2">
-            <span className="text-amber-300">&#9670;</span> {item}
+          <span
+            key={i}
+            className="text-xs md:text-sm font-semibold inline-flex items-center gap-2"
+            style={{ color: 'var(--kl-text)' }}
+          >
+            <span style={{ color: 'var(--kl-gold)' }}>&#9670;</span> {item}
           </span>
         ))}
       </motion.div>
@@ -322,10 +330,16 @@ function QuestionOfTheDay({ isMl }: { isMl: boolean }) {
           <Trophy className="w-5 h-5 md:w-6 md:h-6 text-white" />
         </div>
         <div className="flex-1 min-w-0">
-          <p className="text-xs font-bold uppercase tracking-wider" style={{ color: 'var(--kl-green)' }}>
+          <p
+            className={`text-xs font-bold ${isMl ? 'normal-case tracking-normal' : 'uppercase tracking-wider'}`}
+            style={{ color: 'var(--kl-green)' }}
+          >
             {isMl ? 'ഇന്നത്തെ ചോദ്യം' : 'Question of the Day'}
           </p>
-          <p className="text-sm md:text-base font-semibold truncate mt-0.5" style={{ color: 'var(--kl-text)' }}>
+          <p
+            className={`text-sm md:text-base font-semibold mt-0.5 ${isMl ? 'whitespace-normal wrap-break-word leading-relaxed' : 'truncate'}`}
+            style={{ color: 'var(--kl-text)' }}
+          >
             {questionText}
           </p>
         </div>
@@ -348,7 +362,10 @@ function QuestionOfTheDay({ isMl }: { isMl: boolean }) {
             className="overflow-hidden"
           >
             <div className="px-4 md:px-5 pb-4 md:pb-5 space-y-2">
-              <p className="text-sm font-medium mb-3" style={{ color: 'var(--kl-text)' }}>
+              <p
+                className={`text-sm font-medium mb-3 ${isMl ? 'leading-relaxed wrap-break-word' : ''}`}
+                style={{ color: 'var(--kl-text)' }}
+              >
                 {questionText}
               </p>
               {options.map((opt, i) => {
@@ -477,7 +494,7 @@ export default function HomePage() {
               onClick={() => setLang(lang === 'en' ? 'ml' : 'en')}
               className="stat-pill px-4 py-2 rounded-full text-xs font-bold text-white transition-all active:scale-95"
             >
-              {isMl ? 'English' : '\u0D2E\u0D32\u0D2F\u0D3E\u0D33\u0D02'}
+              {isMl ? 'English' : 'മലയാളം'}
             </button>
           </div>
 
@@ -530,13 +547,15 @@ export default function HomePage() {
               className="flex justify-center gap-3 md:gap-5 mt-7 md:mt-9"
             >
               {[
-                { value: '21', label: isMl ? '\u0D2E\u0D28\u0D4D\u0D24\u0D4D\u0D30\u0D3E\u0D32\u0D2F\u0D19\u0D4D\u0D19\u0D33\u0D4D' : 'Ministries', color: 'text-emerald-200' },
-                { value: String(totalQ), label: isMl ? '\u0D1A\u0D4B\u0D26\u0D4D\u0D2F\u0D19\u0D4D\u0D19\u0D33\u0D4D' : 'Questions', color: 'text-amber-300' },
-                { value: '10', label: isMl ? '\u0D35\u0D7C\u0D37\u0D19\u0D4D\u0D19\u0D33\u0D4D' : 'Years', color: 'text-white' },
+                { value: '21', label: isMl ? 'മന്ത്രാലയങ്ങൾ' : 'Ministries', color: 'text-emerald-200' },
+                { value: String(totalQ), label: isMl ? 'ചോദ്യങ്ങൾ' : 'Questions', color: 'text-amber-300' },
+                { value: '10', label: isMl ? 'വർഷങ്ങൾ' : 'Years', color: 'text-white' },
               ].map((stat) => (
                 <div key={stat.label} className="stat-pill px-5 py-3 md:px-7 md:py-4 rounded-2xl text-center min-w-[90px]">
                   <p className={`text-2xl md:text-3xl font-black ${stat.color}`}>{stat.value}</p>
-                  <p className="text-[10px] md:text-xs uppercase tracking-widest text-white/50 mt-0.5">{stat.label}</p>
+                  <p className={`text-[10px] md:text-xs text-white/50 mt-0.5 ${isMl ? 'tracking-normal normal-case' : 'uppercase tracking-widest'}`}>
+                    {stat.label}
+                  </p>
                 </div>
               ))}
             </motion.div>
@@ -553,7 +572,7 @@ export default function HomePage() {
                 className="glow-btn inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-sm md:text-base font-bold text-white"
                 style={{ background: 'linear-gradient(135deg, #d97706, #f59e0b)' }}
               >
-                {isMl ? '\u0D28\u0D3F\u0D19\u0D4D\u0D19\u0D33\u0D4D\u0D15\u0D4D\u0D15\u0D4D \u0D15\u0D47\u0D30\u0D33\u0D24\u0D4D\u0D24\u0D46 \u0D0E\u0D24\u0D4D\u0D30 \u0D05\u0D31\u0D3F\u0D2F\u0D3E\u0D02?' : 'How well do you know Kerala?'}
+                {isMl ? 'നിങ്ങൾക്ക് കേരളത്തെ എത്ര അറിയാം?' : 'How well do you know Kerala?'}
                 <ArrowDown className="w-4 h-4 animate-bounce" />
               </button>
             </motion.div>
@@ -566,7 +585,7 @@ export default function HomePage() {
               className="text-xs text-white/40 mt-4"
             >
               {isMl
-                ? '10,000+ \u0D15\u0D47\u0D30\u0D33\u0D40\u0D2F\u0D7C \u0D07\u0D24\u0D3F\u0D28\u0D15\u0D02 \u0D2A\u0D19\u0D4D\u0D15\u0D46\u0D1F\u0D41\u0D24\u0D4D\u0D24\u0D41!'
+                ? '10,000+ കേരളീയർ ഇതിനകം പങ്കെടുത്തു!'
                 : 'Join 10,000+ Keralites testing their knowledge!'}
             </motion.p>
           </div>
@@ -595,10 +614,10 @@ export default function HomePage() {
           >
             <div className="flex items-center justify-between mb-3">
               <p className="text-sm font-semibold" style={{ color: 'var(--kl-text-dim)' }}>
-                {isMl ? '\u0D28\u0D3F\u0D19\u0D4D\u0D19\u0D33\u0D41\u0D1F\u0D46 \u0D2A\u0D41\u0D30\u0D4B\u0D17\u0D24\u0D3F' : 'Your Progress'}
+                {isMl ? 'നിങ്ങളുടെ പുരോഗതി' : 'Your Progress'}
               </p>
               <p className="text-sm font-bold gradient-text-green">
-                {completedCount}/21 {isMl ? '\u0D2A\u0D42\u0D7C\u0D24\u0D4D\u0D24\u0D3F\u0D2F\u0D3E\u0D15\u0D4D\u0D15\u0D3F' : 'completed'}
+                {completedCount}/21 {isMl ? 'പൂർത്തിയാക്കി' : 'completed'}
               </p>
             </div>
             <div className="h-2.5 rounded-full overflow-hidden" style={{ background: 'var(--kl-bar-track)' }}>
@@ -611,7 +630,7 @@ export default function HomePage() {
             </div>
             <div className="flex items-center justify-between mt-2.5">
               <p className="text-xs" style={{ color: 'var(--kl-text-dim)' }}>
-                {isMl ? '\u0D2E\u0D4A\u0D24\u0D4D\u0D24\u0D02 \u0D38\u0D4D\u0D15\u0D4B\u0D7C' : 'Total best score'}
+                {isMl ? 'മൊത്തം സ്കോർ' : 'Total best score'}
               </p>
               <p className="text-sm font-bold" style={{ color: 'var(--kl-gold)' }}>
                 {progress.totalScore}/{totalQ}
@@ -654,7 +673,7 @@ export default function HomePage() {
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5" style={{ color: 'var(--kl-text-dim)' }} />
           <input
             type="text"
-            placeholder={isMl ? '\u0D2E\u0D28\u0D4D\u0D24\u0D4D\u0D30\u0D3E\u0D32\u0D2F\u0D19\u0D4D\u0D19\u0D33\u0D4D \u0D24\u0D3F\u0D30\u0D2F\u0D41\u0D15...' : 'Search ministries...'}
+            placeholder={isMl ? 'മന്ത്രാലയങ്ങൾ തിരയുക...' : 'Search ministries...'}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="w-full pl-12 pr-4 py-3.5 rounded-2xl text-sm outline-none glass-card focus:ring-2 focus:ring-emerald-500/30"
@@ -695,7 +714,10 @@ export default function HomePage() {
                     {/* Text */}
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-1.5">
-                        <h3 className="font-bold text-[15px] md:text-base truncate" style={{ color: 'var(--kl-text)' }}>
+                        <h3
+                          className={`font-bold text-[15px] md:text-base ${isMl ? 'leading-relaxed whitespace-normal wrap-break-word' : 'truncate'}`}
+                          style={{ color: 'var(--kl-text)' }}
+                        >
                           {isMl ? mod.title_ml : mod.title}
                         </h3>
                         {isCompleted && (
@@ -705,7 +727,10 @@ export default function HomePage() {
                           />
                         )}
                       </div>
-                      <p className="text-xs truncate mt-0.5" style={{ color: 'var(--kl-text-dim)' }}>
+                      <p
+                        className={`text-xs mt-0.5 ${isMl ? 'leading-relaxed whitespace-normal wrap-break-word' : 'truncate'}`}
+                        style={{ color: 'var(--kl-text-dim)' }}
+                      >
                         {isMl ? mod.title : mod.title_ml}
                       </p>
                     </div>
@@ -746,7 +771,7 @@ export default function HomePage() {
           <div className="text-center py-16">
             <Search className="w-10 h-10 mx-auto mb-4" style={{ color: 'var(--kl-text-dim)' }} />
             <p className="text-sm" style={{ color: 'var(--kl-text-dim)' }}>
-              {isMl ? `"${search}" \u0D15\u0D23\u0D4D\u0D1F\u0D46\u0D24\u0D4D\u0D24\u0D3F\u0D2F\u0D3F\u0D32\u0D4D\u0D32` : `No ministries found for "${search}"`}
+              {isMl ? `"${search}" കണ്ടെത്തിയില്ല` : `No ministries found for "${search}"`}
             </p>
           </div>
         )}
@@ -761,12 +786,12 @@ export default function HomePage() {
             <Sparkles className="w-3.5 h-3.5" style={{ color: '#d97706' }} />
             <p className="text-xs font-medium" style={{ color: 'var(--kl-text-dim)' }}>
               {isMl
-                ? '\u0D21\u0D3E\u0D31\u0D4D\u0D31: \u0D28\u0D40\u0D24\u0D3F \u0D06\u0D2F\u0D4B\u0D17\u0D4D, \u0D06\u0D7C\u0D2C\u0D3F\u0D10, \u0D15\u0D47\u0D30\u0D33 \u0D06\u0D38\u0D42\u0D24\u0D4D\u0D30\u0D23 \u0D2C\u0D4B\u0D7C\u0D21\u0D4D'
+                ? 'ഡാറ്റ: നീതി ആയോഗ്, ആർബിഐ, കേരള ആസൂത്രണ ബോർഡ്'
                 : 'Data: NITI Aayog, RBI, Kerala Planning Board'}
             </p>
           </div>
           <p className="text-[11px]" style={{ color: 'var(--kl-text-dim)', opacity: 0.5 }}>
-            {isMl ? '\u0D35\u0D3F\u0D26\u0D4D\u0D2F\u0D3E\u0D2D\u0D4D\u0D2F\u0D3E\u0D38 \u0D09\u0D2A\u0D15\u0D30\u0D23\u0D02 \u2014 \u0D13\u0D30\u0D4B \u0D1A\u0D4B\u0D26\u0D4D\u0D2F\u0D24\u0D4D\u0D24\u0D3F\u0D28\u0D41\u0D02 \u0D09\u0D31\u0D35\u0D3F\u0D1F\u0D02' : 'Educational tool \u2014 sources cited per question'}
+            {isMl ? 'വിദ്യാഭ്യാസ ഉപകരണം — ഓരോ ചോദ്യത്തിനും ഉറവിടം' : 'Educational tool — sources cited per question'}
           </p>
         </footer>
       </div>

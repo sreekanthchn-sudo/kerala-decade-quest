@@ -15,9 +15,10 @@ import { useProgress } from '@/hooks/useProgress';
 import { useSound } from '@/hooks/useSound';
 import { useTheme } from '@/hooks/useTheme';
 import modulesData from '@/data/decade_records.json';
+import { sanitizeDeepMalayalam } from '@/utils/malayalamText';
 import type { Module, Question } from '@/types';
 
-const modules = modulesData as Module[];
+const modules = sanitizeDeepMalayalam(modulesData as Module[]);
 const TIMER_SECONDS = 30;
 
 /** Fisher-Yates shuffle — returns a new array */
@@ -264,7 +265,7 @@ export default function QuizClient({ slug }: { slug: string }) {
                 style={{ background: `linear-gradient(135deg, ${mod.color}, ${mod.color}cc)` }}
               >
                 <Trophy className="w-4 h-4" />
-                {isMl ? 'സര്‍ട്ടിഫിക്കറ്റ് ഡൗണ്‍ലോഡ്' : 'Download Certificate'}
+                {isMl ? 'സർട്ടിഫിക്കറ്റ് ഡൗൺലോഡ്' : 'Download Certificate'}
               </button>
 
               <div className="flex gap-3">
