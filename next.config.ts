@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
 
 const isProd = process.env.NODE_ENV === "production";
+const isVercel = process.env.VERCEL === "1";
 /** Must match your GitHub repository name for username.github.io/repo/ Pages URLs. */
-const BASE_PATH = isProd ? "/kerala-decade-quest" : "";
+const BASE_PATH = isProd && !isVercel ? "/kerala-decade-quest" : "";
 
 const nextConfig: NextConfig = {
   output: "export",
