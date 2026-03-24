@@ -11,6 +11,7 @@ import ScoreGauge from '@/components/ScoreGauge';
 import CategoryDropdown from '@/components/CategoryDropdown';
 import { getCategoryBilingualLabel } from '@/utils/categoryLabels';
 import { publicAsset } from '@/lib/publicAsset';
+import AchievementMarquee from '@/components/AchievementMarquee';
 
 function shuffleArray<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -226,8 +227,8 @@ export default function HomePage() {
                 ? 'sr-only'
                 : 'mx-auto mt-3 max-w-[28rem] text-sm font-medium leading-relaxed tracking-wide text-white/88 sm:mt-3.5 sm:text-base md:text-[1.0625rem]'
             }
-          >
-            {isMl
+            >
+              {isMl
               ? 'അടുത്തറിയാം കഴിഞ്ഞ ഒരു ദശകത്തിന്റെ നേട്ടങ്ങൾ!'
               : 'Discover the achievements of the past decade!'}
           </p>
@@ -242,7 +243,7 @@ export default function HomePage() {
                 {isMl ? 'സ്വാഗതം' : 'Welcome'}
               </p>
             </div>
-          </div>
+            </div>
         )}
 
         {!finished && question && (
@@ -274,8 +275,8 @@ export default function HomePage() {
                 <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#facc15] border-2 border-black shadow-[2px_2px_0_0_#000]">
                   <Trophy className="w-4 h-4 text-black" />
                   <span className="text-sm font-black text-black tabular-nums">{score}</span>
-                </div>
-              </div>
+          </div>
+        </div>
 
               <div className="flex items-center gap-2 mb-2">
                 <div className="flex-1 h-2 rounded-full overflow-hidden border border-black/30 bg-black/50">
@@ -308,7 +309,7 @@ export default function HomePage() {
 
                   const icon = showResult && isCorrect ? '✓' : showResult && isSelected && !isCorrect ? '✗' : '';
 
-                  return (
+            return (
                     <button
                       key={index}
                       type="button"
@@ -336,12 +337,12 @@ export default function HomePage() {
                         }`}
                       >
                         {icon || optionLetters[index]}
-                      </span>
+                        </span>
                       {option}
                     </button>
-                  );
-                })}
-              </div>
+            );
+          })}
+        </div>
 
               {selectedOption !== null && (
                 <div className="mt-3 p-3 quiz-game-fact-card">
@@ -415,7 +416,7 @@ export default function HomePage() {
                   {categoryTitle}
                 </h2>
                 <p className="mx-auto mt-1 max-w-md text-pretty text-[0.8125rem] leading-snug text-white/82 sm:text-[0.9rem]">
-                  {isMl
+              {isMl
                     ? 'പര്യവേക്ഷണം തുടരൂ - കണ്ടെത്താൻ ഏറെയുണ്ട്!'
                     : 'Keep exploring - there is much more to discover!'}
                 </p>
@@ -500,6 +501,10 @@ export default function HomePage() {
         )}
         </section>
         </div>
+
+        <footer className="relative z-10 mt-auto w-full min-w-0 shrink-0 pt-7 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:pt-8">
+          <AchievementMarquee isMl={isMl} />
+        </footer>
       </div>
     </main>
   );

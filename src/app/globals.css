@@ -870,3 +870,63 @@ body {
   border-radius: 1rem;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
 }
+
+/* ─── Home: achievement marquee (footer ticker) ─── */
+.home-achievement-marquee__viewport {
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.28);
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  backdrop-filter: blur(8px);
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 6%,
+    #000 94%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(90deg, transparent 0%, #000 5%, #000 95%, transparent 100%);
+  width: 100%;
+}
+
+.home-achievement-marquee__track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: home-achievement-marquee-scroll 44s linear infinite;
+}
+
+.home-achievement-marquee__item {
+  flex-shrink: 0;
+  padding-left: clamp(1.75rem, 5vw, 3rem);
+  padding-right: clamp(1.75rem, 5vw, 3rem);
+  font-size: clamp(1.0625rem, 4.25vw, 1.375rem);
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+@keyframes home-achievement-marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-achievement-marquee__viewport {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
+  .home-achievement-marquee__track {
+    animation: none;
+    padding-inline: 0.5rem;
+  }
+}
