@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Manjari } from "next/font/google";
 import "./globals.css";
 
-const manjari = Manjari({
+const malayalamFont = Manjari({
   variable: "--font-manjari",
-  subsets: ["latin", "malayalam"],
+  subsets: ["malayalam", "latin"],
   weight: ["100", "400", "700"],
 });
 
@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ml">
-      <body className={`${manjari.variable} antialiased`}>
+      <body className={`${malayalamFont.className} ${malayalamFont.variable} antialiased`}>
         {children}
       </body>
     </html>

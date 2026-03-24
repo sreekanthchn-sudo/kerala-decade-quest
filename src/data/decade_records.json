@@ -21,7 +21,7 @@
         "options_ml": [
           "ഏറ്റവും വിലകുറഞ്ഞ പ്ലാനുകൾ",
           "സ്വന്തം ISP ലൈസൻസ് നേടിയ ആദ്യ സംസ്ഥാനം",
-          "5G നെറ്റ്‌വർക്ക്",
+          "5G നെറ്റ്വർക്ക്",
           "സാറ്റലൈറ്റ് ഇന്റർനെറ്റ്"
         ],
         "answer": 1,
@@ -245,7 +245,7 @@
         "national_average": "India GDP growth: ~7-8%",
         "historical_benchmark": "Kerala GSDP was ~₹6 trillion in 2016",
         "flex_fact": "Kerala's economy more than doubled in a decade — from ₹6 trillion to ₹13+ trillion. The 11.7% growth rate outpaces national GDP growth, driven by services, IT, and remittances.",
-        "flex_fact_ml": "കേരളത്തിന്റെ സമ്പദ്‌വ്യവസ്ഥ ഒരു ദശകത്തിൽ ₹6 ട്രില്യണിൽ നിന്ന് ₹13+ ട്രില്യണിലേക്ക് ഇരട്ടിയിലധികമായി. 11.7% വളർച്ച ദേശീയ GDP വളർച്ചയെ മറികടക്കുന്നു.",
+        "flex_fact_ml": "കേരളത്തിന്റെ സമ്പദ്വ്യവസ്ഥ ഒരു ദശകത്തിൽ ₹6 ട്രില്യണിൽ നിന്ന് ₹13+ ട്രില്യണിലേക്ക് ഇരട്ടിയിലധികമായി. 11.7% വളർച്ച ദേശീയ GDP വളർച്ചയെ മറികടക്കുന്നു.",
         "source": "Kerala Budget 2024-25 / Startup Genome"
       },
       {
@@ -259,8 +259,8 @@
           "Data centre campus"
         ],
         "options_ml": [
-          "സോഫ്റ്റ്‌വെയർ പാർക്ക്",
-          "സെമികണ്ടക്ടർ ഹാർഡ്‌വെയർ ഇലക്ട്രോണിക്സ് നിർമ്മാണ മേഖല",
+          "സോഫ്റ്റ്വെയർ പാർക്ക്",
+          "സെമികണ്ടക്ടർ ഹാർഡ്വെയർ ഇലക്ട്രോണിക്സ് നിർമ്മാണ മേഖല",
           "കോൾ സെന്റർ ഹബ്",
           "ഡാറ്റ സെന്റർ ക്യാമ്പസ്"
         ],
@@ -424,7 +424,7 @@
         "national_average": "National nominal GDP CAGR: ~10%",
         "historical_benchmark": "Kerala's GSDP grew from ₹6.5 Lakh Cr (2016-17) to ₹10-11 Lakh Cr (2023-24)",
         "flex_fact": "Despite facing back-to-back floods (2018, 2019), COVID-19, and fiscal stress — Kerala's economy outgrew the national average. Resilience, not just growth.",
-        "flex_fact_ml": "തുടർച്ചയായ പ്രളയങ്ങൾ (2018, 2019), COVID-19, ധനകാര്യ സമ്മർദ്ദം എന്നിവ ഉണ്ടായിട്ടും — കേരളത്തിന്റെ സമ്പദ്‌വ്യവസ്ഥ ദേശീയ ശരാശരിയെ മറികടന്നു.",
+        "flex_fact_ml": "തുടർച്ചയായ പ്രളയങ്ങൾ (2018, 2019), COVID-19, ധനകാര്യ സമ്മർദ്ദം എന്നിവ ഉണ്ടായിട്ടും — കേരളത്തിന്റെ സമ്പദ്വ്യവസ്ഥ ദേശീയ ശരാശരിയെ മറികടന്നു.",
         "source": "CSO / Kerala State Planning Board Economic Review"
       },
       {
@@ -478,7 +478,7 @@
       {
         "id": 20,
         "question": "The Rebuild Kerala Development Programme — launched after the 2018 floods with World Bank support — has a total outlay of approximately?",
-        "question_ml": "2018 പ്രളയത്തിന് ശേഷം ലോകബാങ്ക് പിന്തുണയോടെ ആരംഭിച്ച റീബിൽഡ് കേരള ഡെവലപ്‌മെന്റ് പ്രോഗ്രാം-ന്റെ ആകെ ചെലവ്?",
+        "question_ml": "2018 പ്രളയത്തിന് ശേഷം ലോകബാങ്ക് പിന്തുണയോടെ ആരംഭിച്ച റീബിൽഡ് കേരള ഡെവലപ്മെന്റ് പ്രോഗ്രാം-ന്റെ ആകെ ചെലവ്?",
         "options": [
           "₹5,000 Cr",
           "₹15,000 Cr",
@@ -640,7 +640,7 @@
         "national_average": "National GST CAGR: ~12%",
         "historical_benchmark": "Kerala achieved 95%+ e-filing rate for state taxes",
         "flex_fact": "Kerala's GST compliance rate exceeds 95% — among the highest in India. Tax buoyancy ratio of 1.2+ means tax revenue grows faster than the economy.",
-        "flex_fact_ml": "കേരളത്തിന്റെ GST പാലിക്കൽ നിരക്ക് 95%+ — ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്നതിൽ ഒന്ന്. നികുതി വരുമാനം സമ്പദ്‌വ്യവസ്ഥയേക്കാൾ വേഗത്തിൽ വളരുന്നു.",
+        "flex_fact_ml": "കേരളത്തിന്റെ GST പാലിക്കൽ നിരക്ക് 95%+ — ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്നതിൽ ഒന്ന്. നികുതി വരുമാനം സമ്പദ്വ്യവസ്ഥയേക്കാൾ വേഗത്തിൽ വളരുന്നു.",
         "source": "GSTN Data / Kerala Finance Department"
       },
       {
@@ -1003,7 +1003,7 @@
         "options_ml": [
           "IMF",
           "ലോകബാങ്ക്",
-          "ഏഷ്യൻ ഡെവലപ്‌മെന്റ് ബാങ്ക്",
+          "ഏഷ്യൻ ഡെവലപ്മെന്റ് ബാങ്ക്",
           "UN"
         ],
         "answer": 1,
@@ -1567,7 +1567,7 @@
       {
         "id": 64,
         "question": "Kerala's AT&C (Aggregate Technical & Commercial) losses of ~14% compare how with the national average?",
-        "question_ml": "കേരളത്തിന്റെ ~14% AT&C (അഗ്രഗേറ്റ് ടെക്നിക്കൽ & കൊമേഴ്‌ഷ്യൽ) നഷ്ടം ദേശീയ ശരാശരിയുമായി?",
+        "question_ml": "കേരളത്തിന്റെ ~14% AT&C (അഗ്രഗേറ്റ് ടെക്നിക്കൽ & കൊമേഴ്ഷ്യൽ) നഷ്ടം ദേശീയ ശരാശരിയുമായി?",
         "options": [
           "Higher than national 17%",
           "Equal to national",
@@ -1639,7 +1639,7 @@
       {
         "id": 67,
         "question": "Kerala's BPL electricity tariff of ₹1.50/unit for the first 50 units is among the lowest in India — what is the cross-subsidy source?",
-        "question_ml": "ആദ്യ 50 യൂണിറ്റിന് ₹1.50/യൂണിറ്റ് — ഇന്ത്യയിൽ ഏറ്റവും കുറഞ്ഞ BPL വൈദ്യുതി നിരക്കുകളിൽ ഒന്ന് — ക്രോസ്-സബ്‌സിഡി ഉറവിടം?",
+        "question_ml": "ആദ്യ 50 യൂണിറ്റിന് ₹1.50/യൂണിറ്റ് — ഇന്ത്യയിൽ ഏറ്റവും കുറഞ്ഞ BPL വൈദ്യുതി നിരക്കുകളിൽ ഒന്ന് — ക്രോസ്-സബ്സിഡി ഉറവിടം?",
         "options": [
           "Central government",
           "Industrial tariff at ₹7-8/unit",
@@ -2010,7 +2010,7 @@
       {
         "id": 82,
         "question": "Kerala protects how many square kilometers of the Western Ghats — one of the world's 8 'hottest biodiversity hotspots'?",
-        "question_ml": "ലോകത്തിലെ 8 'ഏറ്റവും സജീവ ജൈവവൈവിധ്യ ഹോട്ട്‌സ്‌പോട്ടുകളിൽ' ഒന്നായ പശ്ചിമഘട്ടത്തിന്റെ എത്ര ചതുരശ്ര കിലോമീറ്റർ കേരളം സംരക്ഷിക്കുന്നു?",
+        "question_ml": "ലോകത്തിലെ 8 'ഏറ്റവും സജീവ ജൈവവൈവിധ്യ ഹോട്ട്സ്പോട്ടുകളിൽ' ഒന്നായ പശ്ചിമഘട്ടത്തിന്റെ എത്ര ചതുരശ്ര കിലോമീറ്റർ കേരളം സംരക്ഷിക്കുന്നു?",
         "options": [
           "5,000+",
           "8,000+",
@@ -2028,7 +2028,7 @@
         "national_average": "Western Ghats spans 6 states — Kerala protects the most ecologically sensitive stretches",
         "historical_benchmark": "UNESCO World Heritage Site designation",
         "flex_fact": "The Western Ghats is older than the Himalayas and one of only 8 'hottest biodiversity hotspots' on Earth — Kerala protects 13,000+ sq km of this irreplaceable ecosystem.",
-        "flex_fact_ml": "പശ്ചിമഘട്ടം ഹിമാലയത്തേക്കാൾ പഴക്കമുള്ളതും ഭൂമിയിലെ 8 'ഹോട്ടസ്റ്റ് ജൈവവൈവിധ്യ ഹോട്ട്‌സ്‌പോട്ടുകളിൽ' ഒന്നുമാണ് — കേരളം ഈ അമൂല്യ ആവാസവ്യവസ്ഥയുടെ 13,000+ sq km സംരക്ഷിക്കുന്നു.",
+        "flex_fact_ml": "പശ്ചിമഘട്ടം ഹിമാലയത്തേക്കാൾ പഴക്കമുള്ളതും ഭൂമിയിലെ 8 'ഹോട്ടസ്റ്റ് ജൈവവൈവിധ്യ ഹോട്ട്സ്പോട്ടുകളിൽ' ഒന്നുമാണ് — കേരളം ഈ അമൂല്യ ആവാസവ്യവസ്ഥയുടെ 13,000+ sq km സംരക്ഷിക്കുന്നു.",
         "source": "UNESCO / IUCN"
       },
       {
@@ -2381,7 +2381,7 @@
       {
         "id": 97,
         "question": "Kerala Blasters FC in the Indian Super League has the highest average attendance in Indian football — approximately how many?",
-        "question_ml": "ISL-ൽ കേരള ബ്ലാസ്റ്റേഴ്‌സ് FC ഇന്ത്യൻ ഫുട്ബോളിൽ ഏറ്റവും ഉയർന്ന ശരാശരി ഹാജർ — ഏകദേശം?",
+        "question_ml": "ISL-ൽ കേരള ബ്ലാസ്റ്റേഴ്സ് FC ഇന്ത്യൻ ഫുട്ബോളിൽ ഏറ്റവും ഉയർന്ന ശരാശരി ഹാജർ — ഏകദേശം?",
         "options": [
           "20,000",
           "30,000",
@@ -2405,7 +2405,7 @@
       {
         "id": 98,
         "question": "How many international-standard synthetic athletic tracks does Kerala have — among the highest in India?",
-        "question_ml": "ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്നതിൽ — കേരളത്തിൽ എത്ര അന്താരാഷ്ട്ര നിലവാരത്തിലുള്ള സിന്തറ്റിക് അത്‌ലറ്റിക് ട്രാക്കുകൾ?",
+        "question_ml": "ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്നതിൽ — കേരളത്തിൽ എത്ര അന്താരാഷ്ട്ര നിലവാരത്തിലുള്ള സിന്തറ്റിക് അത്ലറ്റിക് ട്രാക്കുകൾ?",
         "options": [
           "5",
           "10",
@@ -2519,7 +2519,7 @@
         "national_average": "Most indoor stadiums in India seat 2,000-5,000",
         "historical_benchmark": "Hosted international badminton, volleyball, and basketball events",
         "flex_fact": "8,000+ seats make it India's largest indoor stadium — hosting international badminton, volleyball, basketball, and kabaddi events.",
-        "flex_fact_ml": "8,000+ ഇരിപ്പിടങ്ങൾ — ഇന്ത്യയിലെ ഏറ്റവും വലിയ ഇൻഡോർ സ്റ്റേഡിയം — അന്താരാഷ്ട്ര ബാഡ്മിന്റൺ, വോളിബോൾ, ബാസ്‌ക്കറ്റ്‌ബോൾ ഇവന്റുകൾ.",
+        "flex_fact_ml": "8,000+ ഇരിപ്പിടങ്ങൾ — ഇന്ത്യയിലെ ഏറ്റവും വലിയ ഇൻഡോർ സ്റ്റേഡിയം — അന്താരാഷ്ട്ര ബാഡ്മിന്റൺ, വോളിബോൾ, ബാസ്ക്കറ്റ്ബോൾ ഇവന്റുകൾ.",
         "source": "Kerala Sports / Rajiv Gandhi Stadium"
       },
       {
@@ -2549,7 +2549,7 @@
       {
         "id": 104,
         "question": "Kerala's volleyball and athletics teams have won how many national championship titles in the last decade?",
-        "question_ml": "കഴിഞ്ഞ ദശകത്തിൽ കേരളത്തിന്റെ വോളിബോൾ, അത്‌ലറ്റിക്സ് ടീമുകൾ എത്ര ദേശീയ ചാമ്പ്യൻഷിപ്പ് ടൈറ്റിലുകൾ നേടി?",
+        "question_ml": "കഴിഞ്ഞ ദശകത്തിൽ കേരളത്തിന്റെ വോളിബോൾ, അത്ലറ്റിക്സ് ടീമുകൾ എത്ര ദേശീയ ചാമ്പ്യൻഷിപ്പ് ടൈറ്റിലുകൾ നേടി?",
         "options": [
           "10+",
           "20+",
@@ -2567,7 +2567,7 @@
         "national_average": "Kerala consistently finishes in top 3 at National Championships",
         "historical_benchmark": "Kerala dominates Indian athletics and volleyball",
         "flex_fact": "50+ national titles — Kerala dominates Indian athletics and volleyball. The state's sports culture produces champions at a rate that belies its small size.",
-        "flex_fact_ml": "50+ ദേശീയ ടൈറ്റിലുകൾ — ഇന്ത്യൻ അത്‌ലറ്റിക്സും വോളിബോളും കേരളം ആധിപത്യം. ചെറിയ വലുപ്പത്തെ വെല്ലുന്ന നിരക്കിൽ ചാമ്പ്യന്മാരെ ഉത്പാദിപ്പിക്കുന്നു.",
+        "flex_fact_ml": "50+ ദേശീയ ടൈറ്റിലുകൾ — ഇന്ത്യൻ അത്ലറ്റിക്സും വോളിബോളും കേരളം ആധിപത്യം. ചെറിയ വലുപ്പത്തെ വെല്ലുന്ന നിരക്കിൽ ചാമ്പ്യന്മാരെ ഉത്പാദിപ്പിക്കുന്നു.",
         "source": "SAI / Kerala Sports Council"
       },
       {
@@ -2608,7 +2608,7 @@
       {
         "id": 106,
         "question": "Kochi Metro — India's first metro to formally employ transgender persons — opened in which year?",
-        "question_ml": "ട്രാൻസ്‌ജെൻഡർ വ്യക്തികളെ ഔദ്യോഗികമായി നിയമിച്ച ഇന്ത്യയിലെ ആദ്യ മെട്രോ — കൊച്ചി മെട്രോ — ഏത് വർഷം ആരംഭിച്ചു?",
+        "question_ml": "ട്രാൻസ്ജെൻഡർ വ്യക്തികളെ ഔദ്യോഗികമായി നിയമിച്ച ഇന്ത്യയിലെ ആദ്യ മെട്രോ — കൊച്ചി മെട്രോ — ഏത് വർഷം ആരംഭിച്ചു?",
         "options": [
           "2015",
           "2017",
@@ -2626,7 +2626,7 @@
         "national_average": "First metro in India with formal transgender employment policy",
         "historical_benchmark": "Built in a record ~3 years",
         "flex_fact": "Kochi Metro hired 23 transgender persons as station staff — a first for any Indian metro. BBC, Washington Post, and Harvard Business Review covered this landmark inclusion policy.",
-        "flex_fact_ml": "കൊച്ചി മെട്രോ 23 ട്രാൻസ്‌ജെൻഡർ വ്യക്തികളെ സ്റ്റേഷൻ സ്റ്റാഫായി നിയമിച്ചു — ഏതെങ്കിലും ഇന്ത്യൻ മെട്രോയ്ക്ക് ആദ്യം. BBC, Washington Post, Harvard Business Review ഈ സുപ്രധാന ഉൾപ്പെടുത്തൽ നയം റിപ്പോർട്ട് ചെയ്തു.",
+        "flex_fact_ml": "കൊച്ചി മെട്രോ 23 ട്രാൻസ്ജെൻഡർ വ്യക്തികളെ സ്റ്റേഷൻ സ്റ്റാഫായി നിയമിച്ചു — ഏതെങ്കിലും ഇന്ത്യൻ മെട്രോയ്ക്ക് ആദ്യം. BBC, Washington Post, Harvard Business Review ഈ സുപ്രധാന ഉൾപ്പെടുത്തൽ നയം റിപ്പോർട്ട് ചെയ്തു.",
         "source": "KMRL / International Media"
       },
       {
@@ -2680,7 +2680,7 @@
       {
         "id": 109,
         "question": "Vizhinjam International Seaport — India's first deep-water transshipment port — can handle vessels of how many TEU capacity?",
-        "question_ml": "ഇന്ത്യയുടെ ആദ്യ ഡീപ്-വാട്ടർ ട്രാൻസ്ഷിപ്‌മെന്റ് തുറമുഖമായ വിഴിഞ്ഞം — എത്ര TEU ശേഷിയുള്ള കപ്പലുകൾ കൈകാര്യം ചെയ്യാം?",
+        "question_ml": "ഇന്ത്യയുടെ ആദ്യ ഡീപ്-വാട്ടർ ട്രാൻസ്ഷിപ്മെന്റ് തുറമുഖമായ വിഴിഞ്ഞം — എത്ര TEU ശേഷിയുള്ള കപ്പലുകൾ കൈകാര്യം ചെയ്യാം?",
         "options": [
           "5,000 TEU",
           "10,000 TEU",
@@ -2997,7 +2997,7 @@
         "national_average": "National PDS leakage: ~14%; Kerala: near-zero",
         "historical_benchmark": "100% E-POS digitization eliminated ghost beneficiaries",
         "flex_fact": "3.5 Crore Keralites — nearly the entire population — have access to subsidized food through a PDS system with near-zero leakage. Digital verification eliminated all ghost beneficiaries.",
-        "flex_fact_ml": "3.5 കോടി മലയാളികൾ — ഏകദേശം മുഴുവൻ ജനസംഖ്യയ്ക്കും — സീറോ ലീക്കേജോടെ സബ്‌സിഡി ഭക്ഷണം ലഭ്യമാണ്. ഡിജിറ്റൽ പരിശോധന ഫാന്റം ഗുണഭോക്താക്കളെ ഇല്ലാതാക്കി.",
+        "flex_fact_ml": "3.5 കോടി മലയാളികൾ — ഏകദേശം മുഴുവൻ ജനസംഖ്യയ്ക്കും — സീറോ ലീക്കേജോടെ സബ്സിഡി ഭക്ഷണം ലഭ്യമാണ്. ഡിജിറ്റൽ പരിശോധന ഫാന്റം ഗുണഭോക്താക്കളെ ഇല്ലാതാക്കി.",
         "source": "Kerala Civil Supplies Dept"
       },
       {
@@ -3021,7 +3021,7 @@
         "national_average": "Tamil Nadu Amma Canteen: ₹5-10 (smaller portions)",
         "historical_benchmark": "Broader and more nutritious menu than comparable schemes",
         "flex_fact": "₹25 gets you a full, nutritious meal — not a token snack. 1,000+ Subhiksha outlets ensure no Keralite goes hungry, with a menu that changes daily.",
-        "flex_fact_ml": "₹25-ന് പൂർണ്ണ, പോഷകാഹാരം — ഒരു ടോക്കൺ ലഘുഭക്ഷണമല്ല. 1,000+ സുഭിക്ഷ ഔട്ട്‌ലെറ്റുകൾ ഒരു മലയാളിയും വിശന്നിരിക്കില്ലെന്ന് ഉറപ്പാക്കുന്നു.",
+        "flex_fact_ml": "₹25-ന് പൂർണ്ണ, പോഷകാഹാരം — ഒരു ടോക്കൺ ലഘുഭക്ഷണമല്ല. 1,000+ സുഭിക്ഷ ഔട്ട്ലെറ്റുകൾ ഒരു മലയാളിയും വിശന്നിരിക്കില്ലെന്ന് ഉറപ്പാക്കുന്നു.",
         "source": "Kerala Civil Supplies Dept"
       },
       {
@@ -3315,7 +3315,7 @@
       {
         "id": 135,
         "question": "Maveli Stores (Supplyco outlets) sell essential items at what discount compared to market price?",
-        "question_ml": "മാവേലി സ്റ്റോറുകൾ (Supplyco ഔട്ട്‌ലെറ്റുകൾ) അവശ്യ വസ്തുക്കൾ വിപണി വിലയേക്കാൾ എത്ര കിഴിവിൽ വിൽക്കുന്നു?",
+        "question_ml": "മാവേലി സ്റ്റോറുകൾ (Supplyco ഔട്ട്ലെറ്റുകൾ) അവശ്യ വസ്തുക്കൾ വിപണി വിലയേക്കാൾ എത്ര കിഴിവിൽ വിൽക്കുന്നു?",
         "options": [
           "5-10%",
           "10-15%",
@@ -3632,7 +3632,7 @@
         "national_average": "National nominal GDP CAGR: ~10%",
         "historical_benchmark": "GSDP grew from ₹6.5L Cr to ₹10-11L Cr",
         "flex_fact": "Back-to-back floods (2018, 2019), COVID-19, and fiscal stress — Kerala's economy still outgrew the national average. Resilience, not just growth.",
-        "flex_fact_ml": "തുടർച്ചയായ പ്രളയങ്ങൾ (2018, 2019), COVID-19, ധനകാര്യ സമ്മർദ്ദം — കേരളത്തിന്റെ സമ്പദ്‌വ്യവസ്ഥ ദേശീയ ശരാശരിയെ മറികടന്നു. പ്രതിരോധശേഷി.",
+        "flex_fact_ml": "തുടർച്ചയായ പ്രളയങ്ങൾ (2018, 2019), COVID-19, ധനകാര്യ സമ്മർദ്ദം — കേരളത്തിന്റെ സമ്പദ്വ്യവസ്ഥ ദേശീയ ശരാശരിയെ മറികടന്നു. പ്രതിരോധശേഷി.",
         "source": "CSO / Kerala Economic Review"
       },
       {
@@ -3656,7 +3656,7 @@
         "national_average": "National average: ~8%",
         "historical_benchmark": "Kerala has consistently had higher tax mobilization",
         "flex_fact": "Kerala mobilizes 25% more tax revenue relative to its economy than the national average — funding its ambitious social welfare programs through efficient tax collection.",
-        "flex_fact_ml": "കേരളം ദേശീയ ശരാശരിയേക്കാൾ 25% കൂടുതൽ നികുതി വരുമാനം സമ്പദ്‌വ്യവസ്ഥയുമായി ബന്ധപ്പെട്ട് സമാഹരിക്കുന്നു.",
+        "flex_fact_ml": "കേരളം ദേശീയ ശരാശരിയേക്കാൾ 25% കൂടുതൽ നികുതി വരുമാനം സമ്പദ്വ്യവസ്ഥയുമായി ബന്ധപ്പെട്ട് സമാഹരിക്കുന്നു.",
         "source": "GSTN / Kerala Finance Dept"
       },
       {
@@ -3913,7 +3913,7 @@
       {
         "id": 159,
         "question": "What is the name of the e-governance portal that digitized all scholarship and fee reimbursement processes in Kerala?",
-        "question_ml": "കേരളത്തിലെ എല്ലാ സ്കോളർഷിപ്പ്, ഫീസ് റീഇംബേഴ്‌സ്‌മെന്റ് പ്രക്രിയകളും ഡിജിറ്റൈസ് ചെയ്ത ഇ-ഗവേണൻസ് പോർട്ടലിന്റെ പേര്?",
+        "question_ml": "കേരളത്തിലെ എല്ലാ സ്കോളർഷിപ്പ്, ഫീസ് റീഇംബേഴ്സ്മെന്റ് പ്രക്രിയകളും ഡിജിറ്റൈസ് ചെയ്ത ഇ-ഗവേണൻസ് പോർട്ടലിന്റെ പേര്?",
         "options": [
           "Kerala Scholarships",
           "E-Grants",
@@ -4027,7 +4027,7 @@
         "national_average": "India HDI: ~0.64 (UNDP methodology applied to states)",
         "historical_benchmark": "Kerala's HDI has been India's highest since the 1990s",
         "flex_fact": "Kerala's HDI of 0.78 places it on par with countries like Brazil and Thailand — while India's national HDI ranks 132nd globally. Kerala alone would rank ~85th.",
-        "flex_fact_ml": "കേരളത്തിന്റെ 0.78 HDI ബ്രസീൽ, തായ്‌ലൻഡ് എന്നീ രാജ്യങ്ങൾക്ക് സമാനമാണ് — ഇന്ത്യ ആഗോളതലത്തിൽ 132-ാം സ്ഥാനത്ത് നിൽക്കുമ്പോൾ, കേരളം മാത്രം ~85-ാം സ്ഥാനത്ത് എത്തും.",
+        "flex_fact_ml": "കേരളത്തിന്റെ 0.78 HDI ബ്രസീൽ, തായ്ലൻഡ് എന്നീ രാജ്യങ്ങൾക്ക് സമാനമാണ് — ഇന്ത്യ ആഗോളതലത്തിൽ 132-ാം സ്ഥാനത്ത് നിൽക്കുമ്പോൾ, കേരളം മാത്രം ~85-ാം സ്ഥാനത്ത് എത്തും.",
         "source": "UNDP Human Development Report / State HDI Estimates"
       },
       {
@@ -4158,7 +4158,7 @@
         "national_average": "Kerala has moved towards egg self-sufficiency",
         "historical_benchmark": "Backyard poultry scheme boosted rural egg production",
         "flex_fact": "From 200 to 350+ Crore eggs — Kerala's poultry revolution means the state no longer imports most of its eggs from Tamil Nadu and Karnataka.",
-        "flex_fact_ml": "200-ൽ നിന്ന് 350+ കോടി മുട്ടകളിലേക്ക് — കേരളത്തിന്റെ കോഴി വിപ്ലവം തമിഴ്‌നാട്ടിൽ നിന്നും കർണാടകയിൽ നിന്നും ഭൂരിഭാഗം മുട്ടകൾ ഇറക്കുമതി ചെയ്യേണ്ടതില്ല.",
+        "flex_fact_ml": "200-ൽ നിന്ന് 350+ കോടി മുട്ടകളിലേക്ക് — കേരളത്തിന്റെ കോഴി വിപ്ലവം തമിഴ്നാട്ടിൽ നിന്നും കർണാടകയിൽ നിന്നും ഭൂരിഭാഗം മുട്ടകൾ ഇറക്കുമതി ചെയ്യേണ്ടതില്ല.",
         "source": "Kerala Animal Husbandry Dept"
       },
       {
@@ -4703,7 +4703,7 @@
       {
         "id": 191,
         "question": "How many housing complexes (apartment blocks) has LIFE Mission built specifically for landless homeless families?",
-        "question_ml": "ഭൂരഹിത ഭവനരഹിത കുടുംബങ്ങൾക്കായി LIFE Mission എത്ര ഭവന സമുച്ചയങ്ങൾ (അപ്പാർട്ട്‌മെന്റ് ബ്ലോക്കുകൾ) നിർമ്മിച്ചു?",
+        "question_ml": "ഭൂരഹിത ഭവനരഹിത കുടുംബങ്ങൾക്കായി LIFE Mission എത്ര ഭവന സമുച്ചയങ്ങൾ (അപ്പാർട്ട്മെന്റ് ബ്ലോക്കുകൾ) നിർമ്മിച്ചു?",
         "options": [
           "5",
           "10",
@@ -4721,7 +4721,7 @@
         "national_average": "No comparable state-funded landless housing complex programme",
         "historical_benchmark": "Pre-2016: No dedicated housing complex programme existed",
         "flex_fact": "For families with no land at all, LIFE Mission built multi-storey apartment complexes — providing both land and house in urban areas where individual plots are unaffordable.",
-        "flex_fact_ml": "ഭൂമിയേ ഇല്ലാത്ത കുടുംബങ്ങൾക്ക്, വ്യക്തിഗത പ്ലോട്ടുകൾ വാങ്ങാൻ കഴിയാത്ത നഗര പ്രദേശങ്ങളിൽ LIFE Mission ബഹുനില അപ്പാർട്ട്‌മെന്റ് സമുച്ചയങ്ങൾ നിർമ്മിച്ചു.",
+        "flex_fact_ml": "ഭൂമിയേ ഇല്ലാത്ത കുടുംബങ്ങൾക്ക്, വ്യക്തിഗത പ്ലോട്ടുകൾ വാങ്ങാൻ കഴിയാത്ത നഗര പ്രദേശങ്ങളിൽ LIFE Mission ബഹുനില അപ്പാർട്ട്മെന്റ് സമുച്ചയങ്ങൾ നിർമ്മിച്ചു.",
         "source": "LIFE Mission Phase Data"
       },
       {
@@ -4751,7 +4751,7 @@
       {
         "id": 193,
         "question": "How many Subhiksha Keralam community kitchen outlets operate across Kerala, providing meals at ₹25?",
-        "question_ml": "₹25-ന് ഭക്ഷണം നൽകുന്ന എത്ര സുഭിക്ഷ കേരളം കമ്മ്യൂണിറ്റി കിച്ചൻ ഔട്ട്‌ലെറ്റുകൾ കേരളത്തിൽ പ്രവർത്തിക്കുന്നു?",
+        "question_ml": "₹25-ന് ഭക്ഷണം നൽകുന്ന എത്ര സുഭിക്ഷ കേരളം കമ്മ്യൂണിറ്റി കിച്ചൻ ഔട്ട്ലെറ്റുകൾ കേരളത്തിൽ പ്രവർത്തിക്കുന്നു?",
         "options": [
           "200",
           "500",
@@ -4817,7 +4817,7 @@
         "national_average": "Most states: PSC appointments declined due to recruitment freezes",
         "historical_benchmark": "2011–2016 (UDF period): Significantly fewer PSC appointments",
         "flex_fact": "The LDF government made 2.8 lakh PSC appointments in 10 years — prioritizing merit-based government recruitment and filling long-pending vacancies across departments.",
-        "flex_fact_ml": "LDF സർക്കാർ 10 വർഷത്തിൽ 2.8 ലക്ഷം PSC നിയമനങ്ങൾ നടത്തി — മെറിറ്റ് അധിഷ്ഠിത സർക്കാർ റിക്രൂട്ട്‌മെന്റിന് മുൻഗണന.",
+        "flex_fact_ml": "LDF സർക്കാർ 10 വർഷത്തിൽ 2.8 ലക്ഷം PSC നിയമനങ്ങൾ നടത്തി — മെറിറ്റ് അധിഷ്ഠിത സർക്കാർ റിക്രൂട്ട്മെന്റിന് മുൻഗണന.",
         "source": "Kerala PSC Annual Reports / Onmanorama"
       }
     ]
@@ -4858,7 +4858,7 @@
       {
         "id": 197,
         "question": "Vizhinjam International Seaport — India's first deep-water transshipment port — has a natural depth of how many meters?",
-        "question_ml": "ഇന്ത്യയുടെ ആദ്യ ഡീപ്-വാട്ടർ ട്രാൻസ്ഷിപ്‌മെന്റ് തുറമുഖമായ വിഴിഞ്ഞം അന്താരാഷ്ട്ര തുറമുഖത്തിന്റെ സ്വാഭാവിക ആഴം എത്ര മീറ്ററാണ്?",
+        "question_ml": "ഇന്ത്യയുടെ ആദ്യ ഡീപ്-വാട്ടർ ട്രാൻസ്ഷിപ്മെന്റ് തുറമുഖമായ വിഴിഞ്ഞം അന്താരാഷ്ട്ര തുറമുഖത്തിന്റെ സ്വാഭാവിക ആഴം എത്ര മീറ്ററാണ്?",
         "options": [
           "12m",
           "16m",
@@ -4948,7 +4948,7 @@
         "national_average": "No other state has a dedicated off-budget road fund of this scale",
         "historical_benchmark": "Pre-2016: Road maintenance depended entirely on annual budget constraints",
         "flex_fact": "KIIFB allocates ~40% of its portfolio to road infrastructure — ensuring Kerala's roads are maintained regardless of annual budget pressures.",
-        "flex_fact_ml": "KIIFB അതിന്റെ പോർട്ട്‌ഫോളിയോയുടെ ~40% റോഡ് അടിസ്ഥാന സൗകര്യത്തിന് നീക്കിവയ്ക്കുന്നു — വാർഷിക ബജറ്റ് സമ്മർദ്ദങ്ങളെ അവഗണിച്ച് റോഡ് പരിപാലനം ഉറപ്പാക്കുന്നു.",
+        "flex_fact_ml": "KIIFB അതിന്റെ പോർട്ട്ഫോളിയോയുടെ ~40% റോഡ് അടിസ്ഥാന സൗകര്യത്തിന് നീക്കിവയ്ക്കുന്നു — വാർഷിക ബജറ്റ് സമ്മർദ്ദങ്ങളെ അവഗണിച്ച് റോഡ് പരിപാലനം ഉറപ്പാക്കുന്നു.",
         "source": "KIIFB Project Portfolio Reports"
       },
       {
@@ -5834,7 +5834,7 @@
         "national_average": "Among the highest SC/ST entrepreneurship support in India",
         "historical_benchmark": "Linked with KKEM and Startup Mission for mentorship",
         "flex_fact": "₹5 Lakh+ to start a business — with subsidized interest and mentorship through KKEM. Creating SC/ST entrepreneurs, not just employees.",
-        "flex_fact_ml": "₹5 ലക്ഷം+ ബിസിനസ് ആരംഭിക്കാൻ — KKEM വഴി സബ്‌സിഡി പലിശയും മെന്റർഷിപ്പും. SC/ST തൊഴിലാളികൾ മാത്രമല്ല, സംരംഭകരെ സൃഷ്ടിക്കുന്നു.",
+        "flex_fact_ml": "₹5 ലക്ഷം+ ബിസിനസ് ആരംഭിക്കാൻ — KKEM വഴി സബ്സിഡി പലിശയും മെന്റർഷിപ്പും. SC/ST തൊഴിലാളികൾ മാത്രമല്ല, സംരംഭകരെ സൃഷ്ടിക്കുന്നു.",
         "source": "Kerala SC/ST Development Dept / KSFDC"
       },
       {
@@ -6019,7 +6019,7 @@
       {
         "id": 244,
         "question": "KINFRA (Kerala Industrial Infrastructure Development Corporation) operates how many industrial parks?",
-        "question_ml": "KINFRA (കേരള ഇൻഡസ്ട്രിയൽ ഇൻഫ്രാസ്ട്രക്ചർ ഡെവലപ്‌മെന്റ് കോർപ്പറേഷൻ) എത്ര ഇൻഡസ്ട്രിയൽ പാർക്കുകൾ നടത്തുന്നു?",
+        "question_ml": "KINFRA (കേരള ഇൻഡസ്ട്രിയൽ ഇൻഫ്രാസ്ട്രക്ചർ ഡെവലപ്മെന്റ് കോർപ്പറേഷൻ) എത്ര ഇൻഡസ്ട്രിയൽ പാർക്കുകൾ നടത്തുന്നു?",
         "options": [
           "5",
           "10",
@@ -6139,7 +6139,7 @@
       {
         "id": 249,
         "question": "SIDCO (Small Industries Development Corporation) provides industrial sheds and support to how many small industries?",
-        "question_ml": "SIDCO (സ്മാൾ ഇൻഡസ്ട്രീസ് ഡെവലപ്‌മെന്റ് കോർപ്പറേഷൻ) എത്ര ചെറുകിട വ്യവസായങ്ങൾക്ക്?",
+        "question_ml": "SIDCO (സ്മാൾ ഇൻഡസ്ട്രീസ് ഡെവലപ്മെന്റ് കോർപ്പറേഷൻ) എത്ര ചെറുകിട വ്യവസായങ്ങൾക്ക്?",
         "options": [
           "500+",
           "1,000+",
@@ -6318,7 +6318,7 @@
       {
         "id": 256,
         "question": "Kerala became the first Indian state to convert ALL government school classrooms to hi-tech. How many classrooms were transformed?",
-        "question_ml": "എല്ലാ സർക്കാർ സ്കൂൾ ക്ലാസ്‌മുറികളും ഹൈ-ടെക് ആക്കിയ ആദ്യ ഇന്ത്യൻ സംസ്ഥാനം. എത്ര ക്ലാസ്‌മുറികൾ മാറ്റി?",
+        "question_ml": "എല്ലാ സർക്കാർ സ്കൂൾ ക്ലാസ്മുറികളും ഹൈ-ടെക് ആക്കിയ ആദ്യ ഇന്ത്യൻ സംസ്ഥാനം. എത്ര ക്ലാസ്മുറികൾ മാറ്റി?",
         "options": [
           "10,000",
           "25,000",
@@ -6336,7 +6336,7 @@
         "national_average": "No other state has achieved 100% hi-tech classroom coverage",
         "historical_benchmark": "Pre-2016: Most classrooms had only blackboards",
         "flex_fact": "Funded by KIIFB at ₹493.50 crore, this is the largest ICT-in-education initiative in India. Each classroom got a laptop, ceiling projector, USB speakers, and access to SAMAGRA digital portal.",
-        "flex_fact_ml": "KIIFB ₹493.50 കോടി ധനസഹായം. ഓരോ ക്ലാസ്‌മുറിക്കും ലാപ്‌ടോപ്, സീലിംഗ് പ്രൊജക്ടർ, USB സ്പീക്കറുകൾ, SAMAGRA ഡിജിറ്റൽ പോർട്ടൽ.",
+        "flex_fact_ml": "KIIFB ₹493.50 കോടി ധനസഹായം. ഓരോ ക്ലാസ്മുറിക്കും ലാപ്ടോപ്, സീലിംഗ് പ്രൊജക്ടർ, USB സ്പീക്കറുകൾ, SAMAGRA ഡിജിറ്റൽ പോർട്ടൽ.",
         "source": "KITE Kerala / NewsClick / KIIFB Reports"
       },
       {
@@ -6456,13 +6456,13 @@
         "national_average": "No comparable student tech club programme in any other state",
         "historical_benchmark": "Started as a small pilot; scaled massively post-2016",
         "flex_fact": "Little KITEs members (students aged 13-16) train in coding, hardware, cybersecurity, and 3D printing — creating a generation of digitally native citizens. Over 4 lakh students are active members.",
-        "flex_fact_ml": "13-16 വയസ്സുള്ള വിദ്യാർത്ഥികൾ കോഡിംഗ്, ഹാർഡ്‌വെയർ, സൈബർ സുരക്ഷ, 3D പ്രിന്റിംഗ് പഠിക്കുന്നു — 4 ലക്ഷം+ സജീവ അംഗങ്ങൾ.",
+        "flex_fact_ml": "13-16 വയസ്സുള്ള വിദ്യാർത്ഥികൾ കോഡിംഗ്, ഹാർഡ്വെയർ, സൈബർ സുരക്ഷ, 3D പ്രിന്റിംഗ് പഠിക്കുന്നു — 4 ലക്ഷം+ സജീവ അംഗങ്ങൾ.",
         "source": "KITE Kerala"
       },
       {
         "id": 262,
         "question": "How many teachers were trained under Kerala's ICT and hi-tech classroom programme to use digital tools?",
-        "question_ml": "ഡിജിറ്റൽ ഉപകരണങ്ങൾ ഉപയോഗിക്കാൻ ICT, ഹൈ-ടെക് ക്ലാസ്‌റൂം പദ്ധതിയിൽ എത്ര അധ്യാപകർക്ക് പരിശീലനം നൽകി?",
+        "question_ml": "ഡിജിറ്റൽ ഉപകരണങ്ങൾ ഉപയോഗിക്കാൻ ICT, ഹൈ-ടെക് ക്ലാസ്റൂം പദ്ധതിയിൽ എത്ര അധ്യാപകർക്ക് പരിശീലനം നൽകി?",
         "options": [
           "20,000",
           "50,000",
@@ -6576,7 +6576,7 @@
         "national_average": "Most states spend <₹500 Cr on school infrastructure per decade",
         "historical_benchmark": "Pre-2016: Annual education infrastructure spend was ~₹200 Cr",
         "flex_fact": "₹5,000 crore transformed 45,000 classrooms, built robotic labs, upgraded 11,257 primary schools, and trained 80,000+ teachers — the largest state investment in public education in Indian history.",
-        "flex_fact_ml": "₹5,000 കോടി — 45,000 ക്ലാസ്‌മുറികൾ, റോബോട്ടിക് ലാബുകൾ, 11,257 പ്രാഥമിക സ്കൂളുകൾ, 80,000+ അധ്യാപക പരിശീലനം — ഇന്ത്യൻ ചരിത്രത്തിലെ ഏറ്റവും വലിയ സംസ്ഥാന വിദ്യാഭ്യാസ നിക്ഷേപം.",
+        "flex_fact_ml": "₹5,000 കോടി — 45,000 ക്ലാസ്മുറികൾ, റോബോട്ടിക് ലാബുകൾ, 11,257 പ്രാഥമിക സ്കൂളുകൾ, 80,000+ അധ്യാപക പരിശീലനം — ഇന്ത്യൻ ചരിത്രത്തിലെ ഏറ്റവും വലിയ സംസ്ഥാന വിദ്യാഭ്യാസ നിക്ഷേപം.",
         "source": "Free Press Journal / Kerala Budget Documents"
       },
       {
@@ -6707,7 +6707,7 @@
         "national_average": "Kerala has the highest cooperative density per capita in India",
         "historical_benchmark": "Cooperative movement has been central to Kerala's economy since independence",
         "flex_fact": "16,000+ cooperatives — from dairy to banking to consumer stores — form the backbone of Kerala's grassroots economy. Every village has at least one cooperative.",
-        "flex_fact_ml": "16,000+ സഹകരണ സംഘങ്ങൾ — ക്ഷീരം മുതൽ ബാങ്കിംഗ്, ഉപഭോക്തൃ സ്റ്റോറുകൾ — കേരളത്തിന്റെ അടിത്തട്ട് സമ്പദ്‌വ്യവസ്ഥയുടെ നട്ടെല്ല്.",
+        "flex_fact_ml": "16,000+ സഹകരണ സംഘങ്ങൾ — ക്ഷീരം മുതൽ ബാങ്കിംഗ്, ഉപഭോക്തൃ സ്റ്റോറുകൾ — കേരളത്തിന്റെ അടിത്തട്ട് സമ്പദ്വ്യവസ്ഥയുടെ നട്ടെല്ല്.",
         "source": "Kerala Cooperative Dept"
       },
       {
@@ -6755,7 +6755,7 @@
         "national_average": "Kochi port handles 30+ million tonnes annually",
         "historical_benchmark": "Kochi has been a major trading port for 2,000+ years",
         "flex_fact": "Kochi port handles 30+ million tonnes — and with Vizhinjam coming online, Kerala will have India's first deep-water transshipment capability.",
-        "flex_fact_ml": "കൊച്ചി തുറമുഖം 30+ ദശലക്ഷം ടൺ കൈകാര്യം ചെയ്യുന്നു — വിഴിഞ്ഞം പ്രവർത്തനക്ഷമമാകുന്നതോടെ ഇന്ത്യയുടെ ആദ്യ ഡീപ്-വാട്ടർ ട്രാൻസ്ഷിപ്‌മെന്റ് ശേഷി.",
+        "flex_fact_ml": "കൊച്ചി തുറമുഖം 30+ ദശലക്ഷം ടൺ കൈകാര്യം ചെയ്യുന്നു — വിഴിഞ്ഞം പ്രവർത്തനക്ഷമമാകുന്നതോടെ ഇന്ത്യയുടെ ആദ്യ ഡീപ്-വാട്ടർ ട്രാൻസ്ഷിപ്മെന്റ് ശേഷി.",
         "source": "Kochi Port / Indian Ports Association"
       },
       {
@@ -6785,7 +6785,7 @@
       {
         "id": 275,
         "question": "Consumer cooperative stores (Consumerfed) in Kerala offer essentials at discounted prices through how many outlets?",
-        "question_ml": "ഉപഭോക്തൃ സഹകരണ സ്റ്റോറുകൾ (Consumerfed) അവശ്യ വസ്തുക്കൾ കിഴിവ് വിലയിൽ — എത്ര ഔട്ട്‌ലെറ്റുകൾ?",
+        "question_ml": "ഉപഭോക്തൃ സഹകരണ സ്റ്റോറുകൾ (Consumerfed) അവശ്യ വസ്തുക്കൾ കിഴിവ് വിലയിൽ — എത്ര ഔട്ട്ലെറ്റുകൾ?",
         "options": [
           "100+",
           "300+",
@@ -6905,7 +6905,7 @@
       {
         "id": 280,
         "question": "Kerala's cooperative credit system provides agricultural loans at what subsidized interest rate?",
-        "question_ml": "കേരളത്തിന്റെ സഹകരണ വായ്പ സംവിധാനം കാർഷിക വായ്പകൾ എത്ര സബ്‌സിഡി പലിശ നിരക്കിൽ?",
+        "question_ml": "കേരളത്തിന്റെ സഹകരണ വായ്പ സംവിധാനം കാർഷിക വായ്പകൾ എത്ര സബ്സിഡി പലിശ നിരക്കിൽ?",
         "options": [
           "7%",
           "5%",
@@ -6963,7 +6963,7 @@
         "options_ml": [
           "വ്യക്തിഗത വിപണനം",
           "വിലകൾ, ഇൻപുട്ടുകൾ, വിപണി പ്രവേശനം എന്നിവയ്ക്കുള്ള കൂട്ടായ വിലപേശൽ ശക്തി",
-          "സർക്കാർ സബ്‌സിഡികൾ മാത്രം",
+          "സർക്കാർ സബ്സിഡികൾ മാത്രം",
           "ഭൂമി ഏറ്റെടുക്കൽ"
         ],
         "answer": 1,
@@ -7479,7 +7479,7 @@
       {
         "id": 303,
         "question": "Matsyafed (Kerala State Co-operative Federation for Fisheries Development) supports how many fishermen families?",
-        "question_ml": "മത്സ്യഫെഡ് (കേരള സ്റ്റേറ്റ് കോ-ഓപ്പറേറ്റീവ് ഫെഡറേഷൻ ഫോർ ഫിഷറീസ് ഡെവലപ്‌മെന്റ്) എത്ര മത്സ്യത്തൊഴിലാളി കുടുംബങ്ങളെ?",
+        "question_ml": "മത്സ്യഫെഡ് (കേരള സ്റ്റേറ്റ് കോ-ഓപ്പറേറ്റീവ് ഫെഡറേഷൻ ഫോർ ഫിഷറീസ് ഡെവലപ്മെന്റ്) എത്ര മത്സ്യത്തൊഴിലാളി കുടുംബങ്ങളെ?",
         "options": [
           "50,000+",
           "1 Lakh+",
@@ -7569,7 +7569,7 @@
         "national_average": "Kerala has India's richest classical performing arts tradition",
         "historical_benchmark": "Koodiyattam is the oldest surviving form of Sanskrit theatre (2,000+ years)",
         "flex_fact": "Koodiyattam — the world's oldest surviving form of Sanskrit theatre at 2,000+ years — is UNESCO-recognized. Kerala preserves arts that are older than most civilizations.",
-        "flex_fact_ml": "കൂടിയാട്ടം — 2,000+ വർഷം പഴക്കമുള്ള ലോകത്തിലെ ഏറ്റവും പഴക്കമുള്ള സംസ്‌കൃത നാടക രൂപം — UNESCO അംഗീകരിച്ചു. മിക്ക നാഗരികതകളേക്കാൾ പഴക്കമുള്ള കലകൾ കേരളം സംരക്ഷിക്കുന്നു.",
+        "flex_fact_ml": "കൂടിയാട്ടം — 2,000+ വർഷം പഴക്കമുള്ള ലോകത്തിലെ ഏറ്റവും പഴക്കമുള്ള സംസ്കൃത നാടക രൂപം — UNESCO അംഗീകരിച്ചു. മിക്ക നാഗരികതകളേക്കാൾ പഴക്കമുള്ള കലകൾ കേരളം സംരക്ഷിക്കുന്നു.",
         "source": "UNESCO / Kerala Kalamandalam"
       },
       {
@@ -7695,7 +7695,7 @@
       {
         "id": 312,
         "question": "Kerala's Nehru Trophy Boat Race on Vembanad Lake features what type of boats?",
-        "question_ml": "വേമ്പനാട് കായലിലെ നെഹ്‌റു ട്രോഫി വള്ളംകളിയിൽ ഏത് തരം വള്ളങ്ങൾ?",
+        "question_ml": "വേമ്പനാട് കായലിലെ നെഹ്റു ട്രോഫി വള്ളംകളിയിൽ ഏത് തരം വള്ളങ്ങൾ?",
         "options": [
           "Motor boats",
           "Chundan Vallom (snake boats)",
@@ -7713,7 +7713,7 @@
         "national_average": "One of India's most spectacular sporting events",
         "historical_benchmark": "Started in 1952 when PM Nehru visited and was so impressed he donated a trophy",
         "flex_fact": "100+ feet long, 100+ oarsmen rowing in perfect sync — the Nehru Trophy Boat Race is one of the world's most spectacular aquatic sporting events.",
-        "flex_fact_ml": "100+ അടി നീളം, 100+ തുഴക്കാർ കൃത്യമായ താളത്തിൽ — നെഹ്‌റു ട്രോഫി വള്ളംകളി ലോകത്തിലെ ഏറ്റവും ഗംഭീരമായ ജല കായിക ഇനങ്ങളിൽ ഒന്ന്.",
+        "flex_fact_ml": "100+ അടി നീളം, 100+ തുഴക്കാർ കൃത്യമായ താളത്തിൽ — നെഹ്റു ട്രോഫി വള്ളംകളി ലോകത്തിലെ ഏറ്റവും ഗംഭീരമായ ജല കായിക ഇനങ്ങളിൽ ഒന്ന്.",
         "source": "Nehru Trophy Boat Race Society"
       },
       {
@@ -7761,7 +7761,7 @@
         "national_average": "Kerala's library movement is unique in Indian history",
         "historical_benchmark": "P.N. Panicker started the library movement in 1945",
         "flex_fact": "8,000+ libraries — more than the number of McDonald's outlets globally. Kerala's library movement, started by P.N. Panicker in 1945, created India's most literate society.",
-        "flex_fact_ml": "8,000+ ലൈബ്രറികൾ — ആഗോളതലത്തിലുള്ള McDonald's ഔട്ട്‌ലെറ്റുകളേക്കാൾ കൂടുതൽ. 1945-ൽ P.N. പണിക്കർ ആരംഭിച്ച ലൈബ്രറി പ്രസ്ഥാനം ഇന്ത്യയിലെ ഏറ്റവും സാക്ഷര സമൂഹം സൃഷ്ടിച്ചു.",
+        "flex_fact_ml": "8,000+ ലൈബ്രറികൾ — ആഗോളതലത്തിലുള്ള McDonald's ഔട്ട്ലെറ്റുകളേക്കാൾ കൂടുതൽ. 1945-ൽ P.N. പണിക്കർ ആരംഭിച്ച ലൈബ്രറി പ്രസ്ഥാനം ഇന്ത്യയിലെ ഏറ്റവും സാക്ഷര സമൂഹം സൃഷ്ടിച്ചു.",
         "source": "Kerala State Library Council"
       },
       {
