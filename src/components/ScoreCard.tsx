@@ -32,12 +32,18 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
 
   const pct = Math.round((score / total) * 100);
 
-  // Title based on score tier (English only)
   const getTitle = () => {
     if (score >= 13) return 'Kerala Development Visionary';
-    if (score >= 10) return 'Navakerala Policy Expert';
+    if (score >= 10) return 'KNOW-KERALAM Policy Expert';
     if (score >= 7) return 'Development Enthusiast';
     return 'Curious Explorer';
+  };
+
+  const getTitleMl = () => {
+    if (score >= 13) return 'കേരള വികസന ദർശകൻ';
+    if (score >= 10) return 'നോ-കേരളം നയ വിദഗ്ദ്ധൻ';
+    if (score >= 7) return 'വികസന താൽപര്യക്കാരൻ';
+    return 'ജിജ്ഞാസു പര്യവേക്ഷകൻ';
   };
 
   // Pick a random flex fact from the questions
@@ -102,7 +108,7 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
   const handleDownload = useCallback(() => {
     if (!imageUrl) return;
     const link = document.createElement('a');
-    link.download = `navakerala-quiz-${mod.slug}-certificate.png`;
+    link.download = `knowkeralam-quiz-${mod.slug}-certificate.png`;
     link.href = imageUrl;
     link.click();
   }, [imageUrl, mod.slug]);
@@ -113,11 +119,11 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
     try {
       const res = await fetch(imageUrl);
       const blob = await res.blob();
-      const file = new File([blob], 'navakerala-certificate.png', { type: 'image/png' });
+      const file = new File([blob], 'knowkeralam-certificate.png', { type: 'image/png' });
 
       if (navigator.share && navigator.canShare?.({ files: [file] })) {
         await navigator.share({
-          title: 'Navakerala Quiz Certificate',
+          title: 'KNOW-KERALAM Certificate',
           files: [file],
         });
       } else {
@@ -138,31 +144,24 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
   // Derive gradient colors from module color
   const baseColor = mod.color;
 
+  const brandYellow = '#facc15';
+
   return (
     <div
-      className="fixed inset-0 z-[9999] flex items-center justify-center"
-      style={{ background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(8px)' }}
+      className="fixed inset-0 z-[9999] flex items-center justify-center p-4 quiz-game-shell"
+      style={{ background: 'rgba(0,0,0,0.88)', backdropFilter: 'blur(10px)' }}
     >
       {/* Name Input Stage */}
       {stage === 'name' && (
-        <div
-          className="w-[90%] max-w-md p-6 rounded-2xl space-y-5"
-          style={{
-            background: 'var(--kl-card, #1a1f2e)',
-            border: '1px solid var(--kl-glass-border, rgba(255,255,255,0.1))',
-          }}
-        >
-          <div className="text-center space-y-2">
-            <h3
-              className="text-lg font-bold"
-              style={{ color: 'var(--kl-text, #fff)' }}
-            >
-              {isMl ? 'സർട്ടിഫിക്കറ്റ് ഡൗൺലോഡ് ചെയ്യുക' : 'Download Certificate'}
+        <div className="w-full max-w-md space-y-5 rounded-2xl border-[3px] border-black bg-zinc-950/95 p-6 shadow-[6px_6px_0_0_rgba(0,0,0,0.75)]">
+          <div className="space-y-2 text-center">
+            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-[#facc15]">
+              KNOW-KERALAM
+            </p>
+            <h3 className="text-lg font-black text-white">
+              {isMl ? 'സർട്ടിഫിക്കറ്റ് ഡൗൺലോഡ് ചെയ്യുക' : 'Download certificate'}
             </h3>
-            <p
-              className="text-sm"
-              style={{ color: 'var(--kl-text-dim, #999)' }}
-            >
+            <p className="text-sm leading-snug text-white/65">
               {isMl ? 'നിങ്ങളുടെ പേര് നൽകുക' : 'Enter your name for the certificate'}
             </p>
           </div>
@@ -171,15 +170,10 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
             type="text"
             value={playerName}
             onChange={(e) => setPlayerName(e.target.value)}
-            placeholder={isMl ? 'നിങ്ങളുടെ പേര്' : 'Your Name'}
+            placeholder={isMl ? 'നിങ്ങളുടെ പേര്' : 'Your name'}
             maxLength={40}
             autoFocus
-            className="w-full px-4 py-3 rounded-xl text-sm outline-none"
-            style={{
-              background: 'rgba(255,255,255,0.05)',
-              border: '1px solid rgba(255,255,255,0.15)',
-              color: 'var(--kl-text, #fff)',
-            }}
+            className="w-full rounded-xl border-2 border-black bg-black/55 px-4 py-3.5 text-sm font-semibold text-white outline-none placeholder:text-white/35 focus:ring-2 focus:ring-[#facc15] focus:ring-offset-2 focus:ring-offset-zinc-950"
             onKeyDown={(e) => {
               if (e.key === 'Enter' && playerName.trim()) generateCard();
             }}
@@ -187,39 +181,33 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
 
           <div className="flex gap-3">
             <button
+              type="button"
               onClick={onClose}
-              className="flex-1 px-4 py-3 rounded-xl text-sm font-medium"
-              style={{
-                background: 'rgba(255,255,255,0.05)',
-                border: '1px solid rgba(255,255,255,0.1)',
-                color: 'var(--kl-text-dim, #999)',
-              }}
+              className="flex-1 rounded-2xl border-2 border-white/28 bg-black/40 py-3.5 text-sm font-bold text-white/85 transition active:translate-x-px active:translate-y-px"
             >
               {isMl ? 'റദ്ദാക്കുക' : 'Cancel'}
             </button>
             <button
+              type="button"
               onClick={generateCard}
               disabled={!playerName.trim()}
-              className="flex-1 px-4 py-3 rounded-xl text-sm font-semibold text-white transition-opacity"
-              style={{
-                background: `linear-gradient(135deg, ${baseColor}, ${baseColor}cc)`,
-                opacity: playerName.trim() ? 1 : 0.4,
-              }}
+              className="quiz-game-next-btn flex-1 rounded-2xl py-3.5 text-sm font-black transition disabled:pointer-events-none disabled:opacity-40"
             >
               {isMl ? 'സൃഷ്ടിക്കുക' : 'Generate'}
             </button>
           </div>
+          <p className="text-center text-[11px] text-white/35">knowkeralam.com</p>
         </div>
       )}
 
       {/* Generating Stage */}
       {stage === 'generating' && (
-        <div className="text-center space-y-4">
+        <div className="w-full max-w-sm space-y-5 rounded-2xl border-[3px] border-black bg-zinc-950/95 px-8 py-10 text-center shadow-[6px_6px_0_0_rgba(0,0,0,0.75)]">
           <div
-            className="w-12 h-12 mx-auto rounded-full border-2 border-t-transparent animate-spin"
-            style={{ borderColor: `${baseColor} transparent ${baseColor} ${baseColor}` }}
+            className="mx-auto h-12 w-12 animate-spin rounded-full border-[3px] border-black border-t-[#facc15]"
+            style={{ borderRightColor: '#facc15', borderBottomColor: 'rgba(250,204,21,0.35)' }}
           />
-          <p className="text-sm" style={{ color: 'var(--kl-text-dim, #999)' }}>
+          <p className="text-sm font-semibold text-white/75">
             {isMl ? 'സർട്ടിഫിക്കറ്റ് സൃഷ്ടിക്കുന്നു...' : 'Generating certificate...'}
           </p>
         </div>
@@ -227,31 +215,27 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
 
       {/* Ready Stage — show preview */}
       {stage === 'ready' && imageUrl && (
-        <div className="w-[90%] max-w-sm space-y-4 text-center">
-          <img
-            src={imageUrl}
-            alt="Score Card"
-            className="w-full rounded-xl shadow-2xl"
-            style={{ maxHeight: '70vh', objectFit: 'contain' }}
-          />
+        <div className="w-full max-w-sm space-y-4 text-center">
+          <div className="overflow-hidden rounded-2xl border-[3px] border-black shadow-[6px_6px_0_0_rgba(0,0,0,0.75)]">
+            <img
+              src={imageUrl}
+              alt={isMl ? 'സ്കോർ കാർഡ്' : 'Score card'}
+              className="w-full"
+              style={{ maxHeight: '70vh', objectFit: 'contain' }}
+            />
+          </div>
           <div className="flex gap-3">
             <button
+              type="button"
               onClick={onClose}
-              className="flex-1 px-4 py-3 rounded-xl text-sm font-medium"
-              style={{
-                background: 'rgba(255,255,255,0.05)',
-                border: '1px solid rgba(255,255,255,0.1)',
-                color: 'var(--kl-text-dim, #999)',
-              }}
+              className="flex-1 rounded-2xl border-2 border-white/28 bg-black/40 py-3.5 text-sm font-bold text-white/85"
             >
               {isMl ? 'അടയ്ക്കുക' : 'Close'}
             </button>
             <button
+              type="button"
               onClick={handleShare}
-              className="flex-1 px-4 py-3 rounded-xl text-sm font-semibold text-white"
-              style={{
-                background: `linear-gradient(135deg, ${baseColor}, ${baseColor}cc)`,
-              }}
+              className="quiz-game-next-btn flex-1 py-3.5 text-sm font-black"
             >
               {isMl ? 'ഷെയർ / ഡൗൺലോഡ്' : 'Share / Download'}
             </button>
@@ -287,7 +271,7 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
               style={{
                 position: 'absolute',
                 inset: 0,
-                background: `linear-gradient(170deg, #0a1f14 0%, #122a1c 25%, ${baseColor}18 50%, #0e2218 75%, #081a10 100%)`,
+                background: `linear-gradient(165deg, #0a0a0a 0%, #111 30%, ${baseColor}14 48%, #0a0a0a 72%, #050505 100%)`,
               }}
             />
 
@@ -381,13 +365,13 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
                     marginBottom: '8px',
                   }}
                 >
-                  {'നവകേരള ക്വിസ്'}
+                  {'നോ-കേരളം'}
                 </h1>
                 <p
                   style={{
                     fontSize: '26px',
                     fontWeight: 600,
-                    color: `${baseColor}`,
+                    color: brandYellow,
                     letterSpacing: '4px',
                   }}
                 >
@@ -473,13 +457,13 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
                   <circle
                     cx="110" cy="110" r="95"
                     fill="none"
-                    stroke={baseColor}
+                    stroke={brandYellow}
                     strokeWidth="10"
                     strokeLinecap="round"
                     strokeDasharray={`${2 * Math.PI * 95}`}
                     strokeDashoffset={`${2 * Math.PI * 95 * (1 - pct / 100)}`}
                     transform="rotate(-90 110 110)"
-                    style={{ filter: `drop-shadow(0 0 8px ${baseColor}40)` }}
+                    style={{ filter: 'drop-shadow(0 0 10px rgba(250, 204, 21, 0.45))' }}
                   />
                   {/* Inner circle */}
                   <circle
@@ -513,7 +497,7 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
                     style={{
                       fontSize: '22px',
                       fontWeight: 600,
-                      color: baseColor,
+                      color: brandYellow,
                       marginTop: '4px',
                     }}
                   >
@@ -527,13 +511,13 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
                 style={{
                   fontSize: '30px',
                   fontWeight: 700,
-                  color: baseColor,
+                  color: brandYellow,
                   textAlign: 'center',
                   marginBottom: '12px',
                   letterSpacing: '1px',
                 }}
               >
-                {getTitle()}
+                {isMl ? getTitleMl() : getTitle()}
               </p>
 
               {/* Ministry name */}
@@ -564,14 +548,14 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
                 <p
                   style={{
                     fontSize: '14px',
-                    color: baseColor,
+                    color: brandYellow,
                     textTransform: 'uppercase',
                     letterSpacing: '2px',
                     marginBottom: '10px',
                     fontWeight: 600,
                   }}
                 >
-                  Did you know?
+                  {isMl ? 'അറിയാമോ?' : 'Did you know?'}
                 </p>
                 <p
                   style={{
@@ -637,7 +621,7 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
                       color: 'rgba(255,255,255,0.25)',
                     }}
                   >
-                    navakerala-quiz.github.io
+                    knowkeralam.com
                   </p>
                 </div>
               </div>

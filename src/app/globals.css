@@ -768,3 +768,105 @@ body {
   background: linear-gradient(135deg, #10b981 0%, #059669 100%);
   box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
 }
+
+/* ═══════════════════════════════════════
+   QUIZ — Game-show UI (yellow / black / white)
+   Inspired by bold MCQ template layouts
+   ═══════════════════════════════════════ */
+.quiz-game-shell {
+  --qg-yellow: #facc15;
+  --qg-yellow-dim: #ca8a04;
+  --qg-black: #0a0a0a;
+  --qg-white: #fafafa;
+  --qg-track: rgba(0, 0, 0, 0.55);
+  /* Correct-answer highlight (green, readable on dark shell) */
+  --qg-correct-bg: #bbf7d0;
+  --qg-correct-shadow: #15803d;
+}
+
+.quiz-game-scrim {
+  background: linear-gradient(
+    155deg,
+    rgba(0, 0, 0, 0.82) 0%,
+    rgba(12, 12, 14, 0.9) 42%,
+    rgba(0, 0, 0, 0.88) 100%
+  );
+}
+
+/* Contained scrim (e.g. home page quiz card) — use with absolute inset-0 */
+.quiz-game-scrim-contained {
+  background: linear-gradient(
+    155deg,
+    rgba(0, 0, 0, 0.88) 0%,
+    rgba(8, 8, 10, 0.94) 50%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+}
+
+.quiz-game-shell .leaf-pattern {
+  opacity: 0.035;
+}
+
+.quiz-game-progress-fill {
+  background: linear-gradient(90deg, var(--qg-yellow), #fde047);
+  box-shadow: 0 0 12px rgba(250, 204, 21, 0.35);
+}
+
+.quiz-game-option {
+  border-radius: 1rem;
+  border: 3px solid var(--qg-black);
+  font-weight: 700;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+  box-shadow: 4px 4px 0 0 var(--qg-black);
+}
+
+.quiz-game-option:not(:disabled):active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 0 var(--qg-black);
+}
+
+.quiz-game-option--idle {
+  background: var(--qg-yellow);
+  color: var(--qg-black);
+}
+
+.quiz-game-option--correct {
+  background: var(--qg-correct-bg) !important;
+  color: var(--qg-black) !important;
+  border-color: var(--qg-black) !important;
+  box-shadow: 4px 4px 0 0 var(--qg-correct-shadow);
+}
+
+.quiz-game-option--wrong {
+  background: rgba(248, 113, 113, 0.25) !important;
+  color: #fecaca !important;
+  border-color: #b91c1c !important;
+  box-shadow: 4px 4px 0 0 #7f1d1d;
+}
+
+.quiz-game-next-btn {
+  background: var(--qg-yellow);
+  color: var(--qg-black);
+  border: 3px solid var(--qg-black);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  box-shadow: 6px 6px 0 0 var(--qg-black);
+  border-radius: 1rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.quiz-game-next-btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 3px 3px 0 0 var(--qg-black);
+}
+
+.quiz-game-fact-card {
+  background: rgba(0, 0, 0, 0.45);
+  border: 2px solid rgba(250, 204, 21, 0.35);
+  border-radius: 1rem;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
