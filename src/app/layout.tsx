@@ -9,10 +9,10 @@ const malayalamFont = Manjari({
 });
 
 export const metadata: Metadata = {
-  title: "നവകേരള ക്വിസ് (2016–2026)",
+  title: "KNOW-KERALAM (2016–2026) · knowkeralam.com",
   description:
-    "അടുത്തറിയാം കഴിഞ്ഞ ഒരു ദശകത്തിന്റെ നേട്ടങ്ങൾ — 21 വകുപ്പുകൾ, 315 ചോദ്യങ്ങൾ",
-  keywords: ["കേരളം", "ഭരണം", "ക്വിസ്", "വികസനം", "LIFE Mission", "KIIFB"],
+    "നോ-കേരളം — അടുത്തറിയാം കഴിഞ്ഞ ഒരു ദശകത്തിന്റെ നേട്ടങ്ങൾ — 21 വകുപ്പുകൾ, 315 ചോദ്യങ്ങൾ. knowkeralam.com",
+  keywords: ["നോ-കേരളം", "KNOW-KERALAM", "knowkeralam", "കേരളം", "ഭരണം", "ക്വിസ്", "വികസനം", "LIFE Mission", "KIIFB"],
 };
 
 export const viewport = {
