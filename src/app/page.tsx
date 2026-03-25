@@ -1,17 +1,21 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import { createPortal } from 'react-dom';
 import Link from 'next/link';
-import { ArrowLeft, Moon, RotateCcw, Share2, Sun, Trophy } from 'lucide-react';
+import { ArrowLeft, RotateCcw, Share2, Trophy } from 'lucide-react';
 import modulesData from '@/data/decade_records.json';
 import { useSound } from '@/hooks/useSound';
-import { useTheme } from '@/hooks/useTheme';
 import type { Module, Question } from '@/types';
 import ScoreGauge from '@/components/ScoreGauge';
-import CategoryDropdown from '@/components/CategoryDropdown';
+import CategoryTabBar from '@/components/CategoryTabBar';
 import { getCategoryBilingualLabel } from '@/utils/categoryLabels';
 import { publicAsset } from '@/lib/publicAsset';
 import AchievementMarquee from '@/components/AchievementMarquee';
+import HomeShareScoreFrame from '@/components/HomeShareScoreFrame';
+import { buildHomeShareText, buildHomeShareTitle, type HomeShareLevel } from '@/utils/homeShare';
+import { captureHomeSharePng, downloadBlob, shareHomeScoreImageAndText } from '@/lib/shareHomeScore';
+import { QUIZ_QUESTIONS_PER_ROUND } from '@/constants/quiz';
 
 function shuffleArray<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -33,10 +37,7 @@ function sortPoolsBySlug(pools: Pool[]): Pool[] {
   return [...pools].sort((a, b) => a.slug.localeCompare(b.slug));
 }
 
-/** Department / single-topic quizzes */
-const TOTAL_QUESTIONS = 15;
-/** Home “General” mixed quiz — shorter round */
-const GENERAL_MIXED_QUESTION_COUNT = 10;
+/** Home: general mixed + each department category — same count per round */
 
 function getCategoryOrder(modules: Module[]): Module[] {
   const gen = modules.find((m) => m.slug.includes('general'));
@@ -45,11 +46,11 @@ function getCategoryOrder(modules: Module[]): Module[] {
 }
 
 /**
- * Category 0 (general quiz): `GENERAL_MIXED_QUESTION_COUNT` questions round-robin
+ * Category 0 (general quiz): `QUIZ_QUESTIONS_PER_ROUND` questions round-robin
  * across every module pool.
  */
 function buildGeneralMixedQuestions(modules: Module[]): Question[] {
-  const cap = GENERAL_MIXED_QUESTION_COUNT;
+  const cap = QUIZ_QUESTIONS_PER_ROUND;
   const pools: Pool[] = modules.map((m) => ({
     slug: m.slug,
     questions: shuffleArray(m.questions),
@@ -75,7 +76,7 @@ function buildGeneralMixedQuestions(modules: Module[]): Question[] {
 
 /** Same as buildGeneralMixedQuestions but deterministic — no Math.random(). */
 function buildGeneralMixedQuestionsDeterministic(modules: Module[]): Question[] {
-  const cap = GENERAL_MIXED_QUESTION_COUNT;
+  const cap = QUIZ_QUESTIONS_PER_ROUND;
   const pools: Pool[] = modules.map((m) => ({
     slug: m.slug,
     questions: sortQuestionsById(m.questions),
@@ -105,7 +106,7 @@ function buildQuestionsForCategory(categoryIndex: number, categoryOrder: Module[
   }
   const mod = categoryOrder[categoryIndex];
   if (!mod) return [];
-  return shuffleArray(mod.questions).slice(0, TOTAL_QUESTIONS);
+  return shuffleArray(mod.questions).slice(0, QUIZ_QUESTIONS_PER_ROUND);
 }
 
 function buildQuestionsForCategoryDeterministic(categoryIndex: number, categoryOrder: Module[]): Question[] {
@@ -114,7 +115,7 @@ function buildQuestionsForCategoryDeterministic(categoryIndex: number, categoryO
   }
   const mod = categoryOrder[categoryIndex];
   if (!mod) return [];
-  return sortQuestionsById(mod.questions).slice(0, TOTAL_QUESTIONS);
+  return sortQuestionsById(mod.questions).slice(0, QUIZ_QUESTIONS_PER_ROUND);
 }
 
 function scoreTierLine(score: number, total: number, isMl: boolean): string {
@@ -143,10 +144,29 @@ export default function HomePage() {
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
   const [lang, setLang] = useState<'ml' | 'en'>('ml');
+  const [siteOrigin, setSiteOrigin] = useState('https://knowkeralam.com');
+  const [exportFrameMounted, setExportFrameMounted] = useState(false);
   const { playCorrect, playIncorrect, playClick } = useSound();
-  const { toggleTheme, isDark } = useTheme();
+
+  useEffect(() => {
+    setSiteOrigin(window.location.origin);
+  }, []);
+
+  useEffect(() => {
+    setExportFrameMounted(true);
+  }, []);
   const question = questions[currentIndex];
   const isMl = lang === 'ml';
+
+  const selectCategory = (idx: number) => {
+    setCategoryIdx(idx);
+    setQuestions(buildQuestionsForCategory(idx, categoryOrder));
+    setFinished(false);
+    setCurrentIndex(0);
+    setSelectedOption(null);
+    setScore(0);
+    if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const questionText = (isMl && question?.question_ml) ? question.question_ml : (question?.question || '');
   const options = (isMl && question?.options_ml?.length) ? question.options_ml : (question?.options || []);
@@ -163,11 +183,70 @@ export default function HomePage() {
       ? 'പൊതു ക്വിസ് | General Quiz'
       : 'General Quiz | പൊതു ക്വിസ്';
 
-  const homeCardFrame =
-    'quiz-game-shell relative mx-auto w-full max-w-xl overflow-hidden rounded-3xl border-[3px] border-black shadow-[8px_8px_0_0_rgba(250,204,21,0.85)] ring-1 ring-[#facc15]/[0.12]';
+  const departmentCount = useMemo(
+    () => categoryOrder.filter((m) => !m.slug.includes('general')).length,
+    [categoryOrder]
+  );
+
+  const shareLevel: HomeShareLevel = useMemo(() => {
+    const first = categoryOrder[0];
+    if (first?.slug.includes('general') && categoryIdx === 0) return 'general';
+    return 'department';
+  }, [categoryOrder, categoryIdx]);
+
+  const tierLabelResult = scoreTierLine(score, questions.length, isMl);
+
+  const handleShareScore = useCallback(async () => {
+    playClick();
+    const text = buildHomeShareText({
+      isMl,
+      score,
+      total: questions.length,
+      percentage,
+      tierLabel: tierLabelResult,
+      categoryTitle,
+      siteUrl: siteOrigin,
+      level: shareLevel,
+      departmentCount,
+    });
+    const title = buildHomeShareTitle(isMl);
+    const result = await shareHomeScoreImageAndText({ title, text, url: siteOrigin });
+    if (result === 'need-fallback' && typeof window !== 'undefined') {
+      window.open(`https://wa.me/?text=${encodeURIComponent(`${text}\n\n${siteOrigin}`)}`, '_blank');
+    }
+  }, [
+    playClick,
+    isMl,
+    score,
+    questions.length,
+    percentage,
+    tierLabelResult,
+    categoryTitle,
+    siteOrigin,
+    shareLevel,
+    departmentCount,
+  ]);
+
+  const handleDownloadScoreImage = useCallback(async () => {
+    playClick();
+    const blob = await captureHomeSharePng();
+    if (blob) {
+      downloadBlob(blob, 'knowkeralam-quiz-score.png');
+    } else if (typeof window !== 'undefined') {
+      window.alert(
+        isMl
+          ? 'സ്കോർ കാർഡ് ചിത്രം ഉണ്ടാക്കാൻ കഴിഞ്ഞില്ല. ഒരു നിമിഷം കാത്ത ശേഷം വീണ്ടും ശ്രമിക്കുക.'
+          : 'Could not create the score card image. Wait a moment and try again.'
+      );
+    }
+  }, [playClick, isMl]);
+
+  /** ~576 / 672 / 768px — fills laptop widths without tiny centered column */
+  const layoutMaxWidth = 'w-full max-w-xl lg:max-w-2xl xl:max-w-3xl';
+
+  const homeCardFrame = `quiz-game-shell relative mx-auto ${layoutMaxWidth} overflow-hidden rounded-3xl border-[3px] border-black shadow-[8px_8px_0_0_rgba(250,204,21,0.85)] ring-1 ring-[#facc15]/[0.12] lg:rounded-[1.65rem] xl:rounded-[1.85rem] xl:shadow-[10px_10px_0_0_rgba(250,204,21,0.85)]`;
   /** Same frame but overflow visible so category dropdown is not clipped */
-  const homeCardFrameResults =
-    'quiz-game-shell relative z-20 mx-auto w-full max-w-xl overflow-visible rounded-3xl border-[3px] border-black shadow-[8px_8px_0_0_rgba(250,204,21,0.85)] ring-1 ring-[#facc15]/[0.12]';
+  const homeCardFrameResults = `quiz-game-shell relative z-20 mx-auto ${layoutMaxWidth} overflow-visible rounded-3xl border-[3px] border-black shadow-[8px_8px_0_0_rgba(250,204,21,0.85)] ring-1 ring-[#facc15]/[0.12] lg:rounded-[1.65rem] xl:rounded-[1.85rem] xl:shadow-[10px_10px_0_0_rgba(250,204,21,0.85)]`;
 
   return (
     <main className="relative flex min-h-dvh flex-col overflow-x-hidden bg-[#0a0a0a] quiz-game-shell text-center">
@@ -194,7 +273,7 @@ export default function HomePage() {
       <div className="relative z-10 flex w-full flex-1 flex-col">
         {/* Full-width top bar: logo top-left, controls top-right */}
         <header
-          className={`flex w-full shrink-0 items-center justify-between gap-3 px-3 pt-[max(0.5rem,env(safe-area-inset-top))] sm:px-5 ${finished ? 'pb-1.5 sm:pb-2' : 'pb-3 sm:pb-4'}`}
+          className={`flex w-full shrink-0 items-center justify-between gap-3 px-3 pt-[max(0.5rem,env(safe-area-inset-top))] sm:px-5 lg:px-8 xl:px-10 ${finished ? 'pb-1.5 sm:pb-2' : 'pb-3 sm:pb-4 lg:pb-5'}`}
         >
           <div className="min-w-0 shrink">
             <Link
@@ -211,7 +290,7 @@ export default function HomePage() {
                 className={`h-auto w-auto object-contain object-left select-none drop-shadow-[0_6px_16px_rgba(0,0,0,0.45)] ${
                   finished
                     ? 'max-h-[42px] max-w-[160px] sm:max-h-[50px] sm:max-w-[180px]'
-                    : 'max-h-[56px] max-w-[200px] sm:max-h-[68px] sm:max-w-[220px]'
+                    : 'max-h-[56px] max-w-[200px] sm:max-h-[68px] sm:max-w-[220px] lg:max-h-[80px] lg:max-w-[260px] xl:max-h-[88px] xl:max-w-[280px]'
                 }`}
                 loading="eager"
                 decoding="async"
@@ -221,21 +300,8 @@ export default function HomePage() {
           <div
             className="flex shrink-0 items-center gap-0 rounded-2xl border border-white/12 bg-zinc-950/65 p-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-sm"
             role="toolbar"
-            aria-label={isMl ? 'തീം, ഭാഷ' : 'Theme and language'}
+            aria-label={isMl ? 'ഭാഷ' : 'Language'}
           >
-            <button
-              type="button"
-              onClick={() => {
-                playClick();
-                toggleTheme();
-              }}
-              className="inline-flex size-10 shrink-0 items-center justify-center rounded-xl border-2 border-black bg-zinc-900 text-[#facc15] shadow-[2px_2px_0_0_#000] transition hover:bg-zinc-800 active:translate-x-px active:translate-y-px active:shadow-[1px_1px_0_0_#000]"
-              aria-label={isDark ? 'Light mode' : 'Dark mode'}
-              aria-pressed={isDark}
-            >
-              {isDark ? <Sun className="h-[1.15rem] w-[1.15rem]" strokeWidth={2} /> : <Moon className="h-[1.15rem] w-[1.15rem]" strokeWidth={2} />}
-            </button>
-            <div className="mx-0.5 h-7 w-px shrink-0 self-center bg-white/20" aria-hidden />
             <button
               type="button"
               onClick={() => {
@@ -250,17 +316,23 @@ export default function HomePage() {
         </header>
 
         <div
-          className={`mx-auto flex min-h-0 w-full max-w-xl flex-1 flex-col px-4 ${finished ? 'pb-3 sm:pb-4' : 'pb-2 sm:pb-3'}`}
+          className={`mx-auto flex min-h-0 w-full flex-1 flex-col px-4 pb-3 sm:pb-4 lg:px-8 lg:pb-5 xl:px-10 ${layoutMaxWidth}`}
         >
         <div
-          className={`mx-auto max-w-2xl px-1 text-center ${finished ? 'mb-1.5 sm:mb-2' : 'mb-6 sm:mb-8'}`}
+          className={`mx-auto w-full max-w-4xl px-1 text-center ${
+            finished
+              ? 'mb-1.5 sm:mb-2'
+              : question
+                ? 'mb-4 sm:mb-5 lg:mb-6'
+                : 'mb-6 sm:mb-8 lg:mb-10'
+          }`}
         >
           <h1
             lang="en"
             className={`font-black leading-[1.05] tracking-tight drop-shadow-[0_4px_28px_rgba(0,0,0,0.55)] ${
               finished
                 ? 'text-[clamp(1.15rem,3.8vw,1.55rem)]'
-                : 'text-[clamp(1.65rem,5.5vw,2.85rem)]'
+                : 'text-[clamp(1.65rem,2.8vw+0.75rem,3.85rem)] lg:tracking-tight'
             }`}
           >
             <span className="text-white">KNOW-</span>
@@ -270,7 +342,7 @@ export default function HomePage() {
             className={
               finished
                 ? 'sr-only'
-                : 'mx-auto mt-3 max-w-[28rem] text-sm font-medium leading-relaxed tracking-wide text-white/88 sm:mt-3.5 sm:text-base md:text-[1.0625rem]'
+                : 'mx-auto mt-3 max-w-md text-sm font-medium leading-relaxed tracking-wide text-white/88 sm:mt-4 sm:text-base md:mt-5 md:text-[1.0625rem] lg:max-w-3xl lg:text-lg lg:leading-relaxed xl:text-xl'
             }
             >
               {isMl
@@ -279,52 +351,70 @@ export default function HomePage() {
           </p>
         </div>
 
-        <section className={`w-full ${finished ? '-mt-0.5' : 'mt-1 sm:mt-2'}`}>
-        {!finished && !question && (
-          <div className={`${homeCardFrame} text-left`}>
-            <div className="absolute inset-0 z-0 quiz-game-scrim-contained pointer-events-none rounded-[21px]" aria-hidden />
-            <div className="relative z-10 p-6 sm:p-8">
-              <p className="text-center text-[10px] font-black tracking-[0.35em] text-[#facc15] uppercase">
-                {isMl ? 'സ്വാഗതം' : 'Welcome'}
-              </p>
-            </div>
-            </div>
-        )}
+        {/* Category tabs — above cards, not inside quiz/results shell */}
+        {finished ? (
+          <div className={`mx-auto mb-3 w-full sm:mb-4 lg:mb-5 ${layoutMaxWidth}`}>
+            <p className="mb-1.5 text-center text-[11px] font-bold leading-snug text-[#ffcc00] sm:mb-2 sm:text-xs">
+              {isMl ? 'അടുത്ത ക്വിസ് — വിഭാഗം തിരഞ്ഞെടുക്കുക' : 'Next quiz — choose a topic'}
+            </p>
+            <p className="mb-2 text-center text-[10px] leading-snug text-white/65 sm:text-[11px]">
+              {isMl
+                ? `പൊതു = ${QUIZ_QUESTIONS_PER_ROUND} ചോദ്യങ്ങൾ (എല്ലാ വിഭാഗങ്ങളിൽ നിന്നും). വകുപ്പ് = ഓരോന്നും ${QUIZ_QUESTIONS_PER_ROUND} ചോദ്യങ്ങൾ.`
+                : `General = ${QUIZ_QUESTIONS_PER_ROUND} mixed questions. Each department = ${QUIZ_QUESTIONS_PER_ROUND} questions.`}
+            </p>
+            <CategoryTabBar
+              categoryOrder={categoryOrder}
+              value={categoryIdx}
+              isMl={isMl}
+              playClick={playClick}
+              onSelect={selectCategory}
+              ariaLabel={isMl ? 'അടുത്ത ക്വിസ് വിഭാഗം' : 'Next quiz topic'}
+            />
+          </div>
+        ) : question ? (
+          <div className={`mx-auto mb-4 w-full sm:mb-5 lg:mb-6 ${layoutMaxWidth}`}>
+            <CategoryTabBar
+              categoryOrder={categoryOrder}
+              value={categoryIdx}
+              isMl={isMl}
+              playClick={playClick}
+              onSelect={selectCategory}
+              ariaLabel={isMl ? 'ക്വിസ് വിഭാഗം' : 'Quiz topic'}
+            />
+          </div>
+        ) : null}
 
+        <section className={`w-full flex-1 ${finished ? '-mt-0.5' : 'mt-0 sm:mt-1 lg:mt-2'}`}>
         {!finished && question && (
           <div className={`${homeCardFrame} text-left`}>
             <div className="absolute inset-0 z-0 quiz-game-scrim-contained pointer-events-none rounded-[21px]" aria-hidden />
-            <div className="relative z-10 p-4 sm:p-5">
-              <p className="mb-2 border-y border-[#facc15]/25 py-2.5 text-center text-base font-black leading-snug tracking-tight text-[#facc15] sm:text-lg sm:py-3">
-                {categoryTitle}
-              </p>
-
-              <div className="flex items-center justify-between mb-2">
-                <button
-                  type="button"
-                  onClick={() => {
-                    playClick();
-                    if (currentIndex > 0) {
+            <div className="relative z-10 p-4 sm:p-5 lg:p-7 xl:p-8">
+              <div className="flex items-center justify-between mb-2 lg:mb-3">
+                {currentIndex > 0 ? (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      playClick();
                       setCurrentIndex((i) => i - 1);
                       setSelectedOption(null);
-                    } else if (typeof window !== 'undefined') {
-                      window.scrollTo({ top: 0, behavior: 'smooth' });
-                    }
-                  }}
-                  className="inline-flex items-center justify-center w-9 h-9 rounded-lg text-white/90 border-2 border-white/20 bg-black/30 hover:text-[#facc15] active:scale-95 transition-all"
-                  aria-label="Go back"
-                >
-                  <ArrowLeft className="w-5 h-5" />
-                </button>
+                    }}
+                    className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border-2 border-white/20 bg-black/30 text-white/90 transition-all hover:text-[#facc15] active:scale-95"
+                    aria-label={isMl ? 'മുമ്പത്തെ ചോദ്യം' : 'Previous question'}
+                  >
+                    <ArrowLeft className="h-5 w-5" />
+                  </button>
+                ) : (
+                  <span className="inline-block h-9 w-9 shrink-0" aria-hidden />
+                )}
 
-                <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#facc15] border-2 border-black shadow-[2px_2px_0_0_#000]">
-                  <Trophy className="w-4 h-4 text-black" />
+                <div className="flex items-center gap-1.5 rounded-full border-2 border-black bg-[#facc15] px-3 py-1 shadow-[2px_2px_0_0_#000]">
+                  <Trophy className="h-4 w-4 text-black" />
                   <span className="text-sm font-black text-black tabular-nums">{score}</span>
           </div>
         </div>
 
-              <div className="flex items-center gap-2 mb-2">
-                <div className="flex-1 h-2 rounded-full overflow-hidden border border-black/30 bg-black/50">
+              <div className="flex items-center gap-2 mb-3 lg:mb-4">
+                <div className="flex-1 h-2 lg:h-2.5 rounded-full overflow-hidden border border-black/30 bg-black/50">
                   <div
                     className="h-full rounded-full quiz-game-progress-fill transition-[width] duration-300 ease-out"
                     style={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }}
@@ -335,11 +425,11 @@ export default function HomePage() {
                 </span>
               </div>
 
-              <p className="text-sm sm:text-[15px] md:text-base font-bold leading-snug text-white mb-3">
+              <p className="mb-4 text-sm font-bold leading-snug text-white sm:text-[15px] sm:leading-snug md:text-base lg:mb-5 lg:text-lg lg:leading-relaxed xl:text-xl xl:leading-snug">
                 {questionText}
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-3 lg:gap-4">
                 {options.map((option, index) => {
                   const isSelected = selectedOption === index;
                   const isCorrect = index === correctAnswer;
@@ -358,7 +448,7 @@ export default function HomePage() {
                     <button
                       key={index}
                       type="button"
-                      className={`quiz-game-option w-full text-left px-3 py-2.5 text-xs sm:text-sm leading-snug ${stateClass}`}
+                      className={`quiz-game-option w-full text-left px-3 py-2.5 text-xs leading-snug sm:py-3 sm:text-sm lg:min-h-[3.5rem] lg:px-4 lg:text-[15px] lg:leading-snug xl:text-base ${stateClass}`}
                       onClick={() => {
                         if (showResult) return;
                         playClick();
@@ -425,13 +515,66 @@ export default function HomePage() {
 
         {finished && (
           <div
-            className={`${homeCardFrameResults} bg-black/45 p-3 text-center shadow-[0_0_48px_rgba(250,204,21,0.28)] backdrop-blur-md sm:p-4`}
+            className={`${homeCardFrameResults} bg-black/45 p-3 text-center shadow-[0_0_48px_rgba(250,204,21,0.28)] backdrop-blur-md sm:p-4 lg:p-6 xl:p-7`}
           >
             <div
               className="absolute inset-0 z-0 quiz-game-scrim-contained pointer-events-none rounded-[21px]"
               aria-hidden
             />
             <div className="relative z-10 flex flex-col gap-3 px-0.5 sm:gap-3.5 sm:px-1">
+              {/* Level 0 / 1 — first: why this round + what unlocks next */}
+              <div className="rounded-2xl border border-[#facc15]/40 bg-black/50 px-3 py-3 text-left sm:px-4">
+                {shareLevel === 'general' ? (
+                  <>
+                    <p className="text-[10px] font-black uppercase tracking-[0.22em] text-[#facc15] sm:text-[11px]">
+                      {isMl ? 'ലെവൽ 0 · പൊതു റൗണ്ട് പൂർത്തിയായി' : 'Level 0 · General round complete'}
+                    </p>
+                    <p className="mt-2 text-[12px] leading-relaxed text-white/90 sm:text-[13px]">
+                      {isMl ? (
+                        <>
+                          ഇത്{' '}
+                          <strong className="font-black text-[#fde047]">പൊതു റൗണ്ട്</strong> ആണ് — എല്ലാ വിഭാഗങ്ങളിൽ നിന്നും{' '}
+                          {QUIZ_QUESTIONS_PER_ROUND} ചോദ്യങ്ങൾ. ഇനി{' '}
+                          <strong className="font-black text-[#fde047]">ലെവൽ 1</strong> ക്വിസുകൾ തുറന്നിരിക്കുന്നു:{' '}
+                          {departmentCount} വകുപ്പ് വിഭാഗങ്ങളിൽ ഓരോന്നിൽ {QUIZ_QUESTIONS_PER_ROUND} ചോദ്യങ്ങൾ. എന്തിനാണ് ഈ റൗണ്ട് പൂർത്തിയാക്കുന്നതെന്ന്
+                          ഇതിനകത്ത് തന്നെ: മുഴുവൻ സൈറ്റിലേക്കുള്ള വാതിൽ തുറക്കുന്ന ആദ്യ ചുവട്. മുകളിലെ വിഭാഗ ടാബിൽ നിന്ന്
+                          തുടർന്നുള്ള മേഖല തിരഞ്ഞെടുക്കുക.
+                        </>
+                      ) : (
+                        <>
+                          You completed the{' '}
+                          <strong className="font-black text-[#fde047]">general round</strong> ({QUIZ_QUESTIONS_PER_ROUND}{' '}
+                          mixed questions). <strong className="font-black text-[#fde047]">Level 1</strong> unlocks{' '}
+                          <strong className="text-white">{departmentCount}</strong> department topics ({QUIZ_QUESTIONS_PER_ROUND}{' '}
+                          questions each). This
+                          round opens the full journey — pick your next domain from the category tabs above.
+                        </>
+                      )}
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <p className="text-[10px] font-black uppercase tracking-[0.22em] text-[#facc15] sm:text-[11px]">
+                      {isMl ? 'ലെവൽ 1 · വകുപ്പ് ക്വിസ് പൂർത്തിയായി' : 'Level 1 · Department quiz complete'}
+                    </p>
+                    <p className="mt-2 text-[12px] leading-relaxed text-white/90 sm:text-[13px]">
+                      {isMl ? (
+                        <>
+                          ഈ വകുപ്പ് വിഭാഗം പൂർത്തിയായി. മറ്റു{' '}
+                          <strong className="font-black text-[#fde047]">ലെവൽ 1</strong> ക്വിസുകൾ മറ്റു മേഖലകളിൽ തുറന്നിരിക്കുന്നു —
+                          മുകളിലെ ടാബിൽ നിന്ന് അടുത്ത വിഭാഗം തിരഞ്ഞെടുക്കുക.
+                        </>
+                      ) : (
+                        <>
+                          You finished this <strong className="font-black text-[#fde047]">Level 1</strong> department quiz.
+                          Other topics are still open — choose another category tab above.
+                        </>
+                      )}
+                    </p>
+                  </>
+                )}
+              </div>
+
               {/* Score hero — wind / dusk hero aesthetic */}
               <div>
                 <p
@@ -448,7 +591,7 @@ export default function HomePage() {
                     score={score}
                     total={questions.length}
                     percentage={percentage}
-                    tierLabel={scoreTierLine(score, questions.length, isMl)}
+                    tierLabel={tierLabelResult}
                     isMl={isMl}
                     compact
                   />
@@ -467,62 +610,27 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <CategoryDropdown
-                categoryOrder={categoryOrder}
-                value={categoryIdx}
-                isMl={isMl}
-                label={isMl ? 'അടുത്ത ക്വിസ് — വിഭാഗം തിരഞ്ഞെടുക്കുക' : 'Next quiz — choose a topic'}
-                hint={
-                  isMl
-                    ? 'പൊതു = 10 ചോദ്യങ്ങൾ (എല്ലാ വിഭാഗങ്ങളിൽ നിന്നും). വകുപ്പ് = 15 ചോദ്യങ്ങൾ.'
-                    : 'General = 10 mixed questions. Departments = 15 questions each.'
-                }
-                playClick={playClick}
-                onSelect={(idx) => {
-                  setCategoryIdx(idx);
-                  setQuestions(buildQuestionsForCategory(idx, categoryOrder));
-                  setFinished(false);
-                  setCurrentIndex(0);
-                  setSelectedOption(null);
-                  setScore(0);
-                  if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' });
-                }}
-              />
-
               {/* Share | Download — one row */}
               <div className="grid w-full grid-cols-2 gap-2">
                 <button
                   type="button"
-                  onClick={() => {
-                    playClick();
-                    const share = isMl
-                      ? `ഞാൻ ക്വിസിൽ ${score}/${questions.length} (${percentage}%) നേടി!`
-                      : `I scored ${score}/${questions.length} (${percentage}%) on the quiz!`;
-                    if (typeof navigator !== 'undefined' && navigator.share) {
-                      navigator.share({ title: isMl ? 'ക്വിസ് സ്കോർ' : 'Quiz score', text: share }).catch(() => {});
-                    } else if (typeof window !== 'undefined') {
-                      window.open(`https://wa.me/?text=${encodeURIComponent(share)}`, '_blank');
-                    }
-                  }}
+                  onClick={() => void handleShareScore()}
                   className="quiz-game-next-btn inline-flex min-h-11 min-w-0 items-center justify-center gap-1.5 px-2 py-2.5 text-[10px] font-black leading-tight sm:min-h-12 sm:gap-2 sm:px-3 sm:text-xs"
                 >
                   <Share2 className="h-3.5 w-3.5 shrink-0 sm:h-4 sm:w-4" aria-hidden />
-                  <span className="text-center whitespace-nowrap">
-                    {isMl ? 'സ്കോർ ഷെയർ ചെയ്യുക' : 'Share score'}
+                  <span className="text-center whitespace-nowrap" title={isMl ? 'സമ്പൂർണ്ണ ടെക്സ്റ്റ് + ലഭ്യമെങ്കിൽ ചിത്രം' : 'Full text + image when supported'}>
+                    {isMl ? 'സ്കോർ ഷെയർ' : 'Share score'}
                   </span>
                 </button>
 
                 <button
                   type="button"
-                  onClick={() => {
-                    playClick();
-                    if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' });
-                  }}
+                  onClick={() => void handleDownloadScoreImage()}
                   className="inline-flex min-h-11 min-w-0 items-center justify-center gap-1.5 rounded-2xl border-[3px] border-black bg-white px-2 py-2.5 text-[10px] font-black leading-tight text-[#0a0a0a] shadow-[4px_4px_0_0_#000] transition-transform active:translate-x-0.5 active:translate-y-0.5 active:shadow-[2px_2px_0_0_#000] sm:min-h-12 sm:gap-2 sm:px-3 sm:text-xs"
                 >
                   <Trophy className="h-3.5 w-3.5 shrink-0 sm:h-4 sm:w-4" aria-hidden />
                   <span className="text-center whitespace-nowrap">
-                    {isMl ? 'സ്കോർബോർഡ് ഡൗൺലോഡ്' : 'Download scoreboard'}
+                    {isMl ? 'സ്കോർ ചിത്രം ഡൗൺലോഡ്' : 'Download score image'}
                   </span>
                 </button>
               </div>
@@ -553,9 +661,25 @@ export default function HomePage() {
         </div>
 
         {/* Full viewport width — sibling of max-w-xl, not inside px-4 */}
-        <div className="relative z-10 mt-2 w-full min-w-0 shrink-0 pb-[max(0.5rem,env(safe-area-inset-bottom))] sm:mt-3">
+        <div className="relative z-10 mt-2 w-full min-w-0 shrink-0 pb-[max(1rem,env(safe-area-inset-bottom))] sm:mt-3 md:mt-4 lg:mt-5">
           <AchievementMarquee isMl={isMl} />
         </div>
+
+        {exportFrameMounted && finished
+          ? createPortal(
+              <HomeShareScoreFrame
+                score={score}
+                total={questions.length}
+                percentage={percentage}
+                tierLabel={tierLabelResult}
+                categoryTitle={categoryTitle}
+                siteUrl={siteOrigin}
+                level={shareLevel}
+                isMl={isMl}
+              />,
+              document.body
+            )
+          : null}
       </div>
     </main>
   );

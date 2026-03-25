@@ -4,7 +4,7 @@ import { useState, useCallback, useMemo, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import {
   ArrowLeft, ArrowRight, RotateCcw, Share2, ChevronRight, Trophy,
-  Sparkles, Timer, Volume2, VolumeX, Sun, Moon, Flame,
+  Sparkles, Timer, Volume2, VolumeX, Flame,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Particles from '@/components/Particles';
@@ -17,14 +17,16 @@ import { useSound } from '@/hooks/useSound';
 import modulesData from '@/data/decade_records.json';
 import { sanitizeDeepMalayalam } from '@/utils/malayalamText';
 import type { Module, Question } from '@/types';
+import { QUIZ_QUESTIONS_PER_ROUND } from '@/constants/quiz';
 
 const modules = sanitizeDeepMalayalam(modulesData as Module[]);
 const TIMER_SECONDS = 30;
 
-function scoreTierLine(score: number, isMl: boolean): string {
-  if (score >= 13) return isMl ? 'കേരള വികസന ദർശകൻ' : 'Kerala Development Visionary';
-  if (score >= 10) return isMl ? 'നോ-കേരളം നയ വിദഗ്ദ്ധൻ' : 'KNOW-KERALAM Policy Expert';
-  if (score >= 7) return isMl ? 'വികസന താൽപര്യക്കാരൻ' : 'Development Enthusiast';
+function scoreTierLine(score: number, total: number, isMl: boolean): string {
+  const pct = total > 0 ? (score / total) * 100 : 0;
+  if (pct >= 85) return isMl ? 'കേരള വികസന ദർശകൻ' : 'Kerala Development Visionary';
+  if (pct >= 65) return isMl ? 'നോ-കേരളം നയ വിദഗ്ദ്ധൻ' : 'KNOW-KERALAM Policy Expert';
+  if (pct >= 45) return isMl ? 'വികസന താൽപര്യക്കാരൻ' : 'Development Enthusiast';
   return isMl ? 'ജിജ്ഞാസു പര്യവേക്ഷകൻ' : 'Curious Explorer';
 }
 
@@ -45,7 +47,7 @@ export default function QuizClient({ slug }: { slug: string }) {
 
   // Shuffle questions once on mount
   const [shuffledQuestions] = useState<Question[]>(() =>
-    mod ? shuffleArray(mod.questions) : []
+    mod ? shuffleArray(mod.questions).slice(0, QUIZ_QUESTIONS_PER_ROUND) : []
   );
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -234,7 +236,7 @@ export default function QuizClient({ slug }: { slug: string }) {
               score={score}
               total={shuffledQuestions.length}
               percentage={pct}
-              tierLabel={scoreTierLine(score, isMl)}
+              tierLabel={scoreTierLine(score, shuffledQuestions.length, isMl)}
               isMl={isMl}
               compact
             />

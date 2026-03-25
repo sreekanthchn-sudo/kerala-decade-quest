@@ -33,16 +33,16 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
   const pct = Math.round((score / total) * 100);
 
   const getTitle = () => {
-    if (score >= 13) return 'Kerala Development Visionary';
-    if (score >= 10) return 'KNOW-KERALAM Policy Expert';
-    if (score >= 7) return 'Development Enthusiast';
+    if (pct >= 85) return 'Kerala Development Visionary';
+    if (pct >= 65) return 'KNOW-KERALAM Policy Expert';
+    if (pct >= 45) return 'Development Enthusiast';
     return 'Curious Explorer';
   };
 
   const getTitleMl = () => {
-    if (score >= 13) return 'കേരള വികസന ദർശകൻ';
-    if (score >= 10) return 'നോ-കേരളം നയ വിദഗ്ദ്ധൻ';
-    if (score >= 7) return 'വികസന താൽപര്യക്കാരൻ';
+    if (pct >= 85) return 'കേരള വികസന ദർശകൻ';
+    if (pct >= 65) return 'നോ-കേരളം നയ വിദഗ്ദ്ധൻ';
+    if (pct >= 45) return 'വികസന താൽപര്യക്കാരൻ';
     return 'ജിജ്ഞാസു പര്യവേക്ഷകൻ';
   };
 

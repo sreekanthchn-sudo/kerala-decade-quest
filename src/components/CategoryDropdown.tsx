@@ -3,6 +3,7 @@
 import { Fragment, useEffect, useRef, useState } from 'react';
 import { Check, ChevronDown } from 'lucide-react';
 import type { Module } from '@/types';
+import { QUIZ_QUESTIONS_PER_ROUND } from '@/constants/quiz';
 import { getCategoryBilingualLabel } from '@/utils/categoryLabels';
 
 type CategoryDropdownProps = {
@@ -10,7 +11,7 @@ type CategoryDropdownProps = {
   value: number;
   isMl: boolean;
   label: string;
-  /** Short helper under the label (e.g. 10 vs 15 questions) */
+  /** Short helper under the label (questions per round) */
   hint?: string;
   playClick: () => void;
   onSelect: (index: number) => void;
@@ -121,8 +122,8 @@ export default function CategoryDropdown({
                       className="pointer-events-none border-t border-[#facc15]/25 bg-black/40 px-3 py-2 text-left text-[10px] font-black uppercase tracking-wide text-[#facc15]/90 sm:text-[11px]"
                     >
                       {isMl
-                        ? 'വകുപ്പ് ക്വിസുകൾ · ഓരോന്നിനും 15 ചോദ്യങ്ങൾ'
-                        : 'Department quizzes · 15 questions each'}
+                        ? `വകുപ്പ് ക്വിസുകൾ · ഓരോന്നിനും ${QUIZ_QUESTIONS_PER_ROUND} ചോദ്യങ്ങൾ`
+                        : `Department quizzes · ${QUIZ_QUESTIONS_PER_ROUND} questions each`}
                     </li>
                   ) : null}
                 </Fragment>
