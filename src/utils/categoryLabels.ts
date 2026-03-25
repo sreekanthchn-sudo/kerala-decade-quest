@@ -26,14 +26,26 @@ const SLUG_BILINGUAL: Record<string, { ml: string; en: string }> = {
 
 export function getCategoryBilingualLabel(mod: Module, categoryIndex: number, isMl: boolean): string {
   if (categoryIndex === 0 && mod.slug.includes('general')) {
-    return isMl
-      ? 'പൊതു ക്വിസ് (10) | General Quiz (10)'
-      : 'General Quiz (10) | പൊതു ക്വിസ് (10)';
+    return isMl ? 'പൊതു ക്വിസ് | General Quiz' : 'General Quiz | പൊതു ക്വിസ്';
   }
 
   const pair = SLUG_BILINGUAL[mod.slug];
   if (pair) {
     return isMl ? `${pair.ml} | ${pair.en}` : `${pair.en} | ${pair.ml}`;
+  }
+
+  return isMl ? mod.title_ml : mod.title;
+}
+
+/** Short label for horizontal category tabs (single language line). */
+export function getCategoryTabLabel(mod: Module, categoryIndex: number, isMl: boolean): string {
+  if (categoryIndex === 0 && mod.slug.includes('general')) {
+    return isMl ? 'പൊതു ക്വിസ്' : 'General';
+  }
+
+  const pair = SLUG_BILINGUAL[mod.slug];
+  if (pair) {
+    return isMl ? pair.ml : pair.en;
   }
 
   return isMl ? mod.title_ml : mod.title;
