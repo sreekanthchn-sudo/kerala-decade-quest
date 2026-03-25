@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Moon, RotateCcw, Share2, Sun, Trophy } from 'lucide-react';
 import modulesData from '@/data/decade_records.json';
@@ -20,6 +20,17 @@ function shuffleArray<T>(arr: T[]): T[] {
     [a[i], a[j]] = [a[j], a[i]];
   }
   return a;
+}
+
+/** Stable order for SSR + first client paint — avoids hydration mismatch from Math.random(). */
+function sortQuestionsById(questions: Question[]): Question[] {
+  return [...questions].sort((a, b) => a.id - b.id);
+}
+
+type Pool = { slug: string; questions: Question[] };
+
+function sortPoolsBySlug(pools: Pool[]): Pool[] {
+  return [...pools].sort((a, b) => a.slug.localeCompare(b.slug));
 }
 
 const TOTAL_QUESTIONS = 15;
@@ -65,6 +76,40 @@ function buildGeneralMixedQuestions(modules: Module[]): Question[] {
   return [...pickedGeneral, ...pickedOthers];
 }
 
+/** Same as buildGeneralMixedQuestions but deterministic — no Math.random(). */
+function buildGeneralMixedQuestionsDeterministic(modules: Module[]): Question[] {
+  const allQuestionsWithSlug: Pool[] = modules.map((m) => ({
+    slug: m.slug,
+    questions: sortQuestionsById(m.questions),
+  }));
+
+  const generalQuestions =
+    allQuestionsWithSlug.find((m) => m.slug.includes('general'))?.questions ?? [];
+
+  const otherModulePools = sortPoolsBySlug(
+    allQuestionsWithSlug.filter((m) => !m.slug.includes('general'))
+  );
+
+  const mixedOthers: Question[] = [];
+  let index = 0;
+  while (mixedOthers.length < TOTAL_QUESTIONS - GENERAL_FIRST_COUNT) {
+    let pickedInRound = false;
+    for (const pool of otherModulePools) {
+      if (pool.questions[index]) {
+        mixedOthers.push(pool.questions[index]);
+        pickedInRound = true;
+        if (mixedOthers.length >= TOTAL_QUESTIONS - GENERAL_FIRST_COUNT) break;
+      }
+    }
+    if (!pickedInRound) break;
+    index += 1;
+  }
+
+  const pickedGeneral = generalQuestions.slice(0, GENERAL_FIRST_COUNT);
+  const pickedOthers = mixedOthers.slice(0, TOTAL_QUESTIONS - pickedGeneral.length);
+  return [...pickedGeneral, ...pickedOthers];
+}
+
 function buildQuestionsForCategory(categoryIndex: number, categoryOrder: Module[]): Question[] {
   if (categoryIndex === 0 && categoryOrder[0]?.slug.includes('general')) {
     return buildGeneralMixedQuestions(categoryOrder);
@@ -72,6 +117,15 @@ function buildQuestionsForCategory(categoryIndex: number, categoryOrder: Module[
   const mod = categoryOrder[categoryIndex];
   if (!mod) return [];
   return shuffleArray(mod.questions).slice(0, TOTAL_QUESTIONS);
+}
+
+function buildQuestionsForCategoryDeterministic(categoryIndex: number, categoryOrder: Module[]): Question[] {
+  if (categoryIndex === 0 && categoryOrder[0]?.slug.includes('general')) {
+    return buildGeneralMixedQuestionsDeterministic(categoryOrder);
+  }
+  const mod = categoryOrder[categoryIndex];
+  if (!mod) return [];
+  return sortQuestionsById(mod.questions).slice(0, TOTAL_QUESTIONS);
 }
 
 function scoreTierLine(score: number, isMl: boolean): string {
@@ -86,8 +140,14 @@ export default function HomePage() {
   const categoryOrder = useMemo(() => getCategoryOrder(modules), [modules]);
   const [categoryIdx, setCategoryIdx] = useState(0);
   const [questions, setQuestions] = useState<Question[]>(() =>
-    buildQuestionsForCategory(0, getCategoryOrder(modulesData as Module[]))
+    buildQuestionsForCategoryDeterministic(0, getCategoryOrder(modulesData as Module[]))
   );
+
+  useEffect(() => {
+    setQuestions(buildQuestionsForCategory(0, categoryOrder));
+    // Shuffle only after hydration; deterministic initial state matches SSR (see buildQuestionsForCategoryDeterministic).
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- run once on mount
+  }, []);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [score, setScore] = useState(0);
@@ -197,7 +257,7 @@ export default function HomePage() {
         </header>
 
         <div
-          className={`mx-auto w-full max-w-xl flex-1 px-4 ${finished ? 'pb-3 sm:pb-4' : 'pb-12 sm:pb-14'}`}
+          className={`mx-auto flex min-h-0 w-full max-w-xl flex-1 flex-col px-4 ${finished ? 'pb-3 sm:pb-4' : 'pb-2 sm:pb-3'}`}
         >
         <div
           className={`mx-auto max-w-2xl px-1 text-center ${finished ? 'mb-1.5 sm:mb-2' : 'mb-6 sm:mb-8'}`}
@@ -494,9 +554,10 @@ export default function HomePage() {
         </section>
         </div>
 
-        <footer className="relative z-10 mt-auto w-full min-w-0 shrink-0 pt-7 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:pt-8">
+        {/* Full viewport width — sibling of max-w-xl, not inside px-4 */}
+        <div className="relative z-10 mt-2 w-full min-w-0 shrink-0 pb-[max(0.5rem,env(safe-area-inset-bottom))] sm:mt-3">
           <AchievementMarquee isMl={isMl} />
-        </footer>
+        </div>
       </div>
     </main>
   );
