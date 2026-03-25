@@ -33,7 +33,10 @@ function sortPoolsBySlug(pools: Pool[]): Pool[] {
   return [...pools].sort((a, b) => a.slug.localeCompare(b.slug));
 }
 
+/** Department / single-topic quizzes */
 const TOTAL_QUESTIONS = 15;
+/** Home “General” mixed quiz — shorter round */
+const GENERAL_MIXED_QUESTION_COUNT = 10;
 
 function getCategoryOrder(modules: Module[]): Module[] {
   const gen = modules.find((m) => m.slug.includes('general'));
@@ -42,10 +45,11 @@ function getCategoryOrder(modules: Module[]): Module[] {
 }
 
 /**
- * Category 0 (general quiz): 15 questions round-robin across every module pool
- * (education, health, transport, …) — not “first N from one category”.
+ * Category 0 (general quiz): `GENERAL_MIXED_QUESTION_COUNT` questions round-robin
+ * across every module pool.
  */
 function buildGeneralMixedQuestions(modules: Module[]): Question[] {
+  const cap = GENERAL_MIXED_QUESTION_COUNT;
   const pools: Pool[] = modules.map((m) => ({
     slug: m.slug,
     questions: shuffleArray(m.questions),
@@ -54,23 +58,24 @@ function buildGeneralMixedQuestions(modules: Module[]): Question[] {
 
   const mixed: Question[] = [];
   let round = 0;
-  while (mixed.length < TOTAL_QUESTIONS) {
+  while (mixed.length < cap) {
     let pickedInRound = false;
     for (const pool of order) {
       if (pool.questions[round]) {
         mixed.push(pool.questions[round]);
         pickedInRound = true;
-        if (mixed.length >= TOTAL_QUESTIONS) break;
+        if (mixed.length >= cap) break;
       }
     }
     if (!pickedInRound) break;
     round += 1;
   }
-  return mixed.slice(0, TOTAL_QUESTIONS);
+  return mixed.slice(0, cap);
 }
 
 /** Same as buildGeneralMixedQuestions but deterministic — no Math.random(). */
 function buildGeneralMixedQuestionsDeterministic(modules: Module[]): Question[] {
+  const cap = GENERAL_MIXED_QUESTION_COUNT;
   const pools: Pool[] = modules.map((m) => ({
     slug: m.slug,
     questions: sortQuestionsById(m.questions),
@@ -79,19 +84,19 @@ function buildGeneralMixedQuestionsDeterministic(modules: Module[]): Question[] 
 
   const mixed: Question[] = [];
   let round = 0;
-  while (mixed.length < TOTAL_QUESTIONS) {
+  while (mixed.length < cap) {
     let pickedInRound = false;
     for (const pool of order) {
       if (pool.questions[round]) {
         mixed.push(pool.questions[round]);
         pickedInRound = true;
-        if (mixed.length >= TOTAL_QUESTIONS) break;
+        if (mixed.length >= cap) break;
       }
     }
     if (!pickedInRound) break;
     round += 1;
   }
-  return mixed.slice(0, TOTAL_QUESTIONS);
+  return mixed.slice(0, cap);
 }
 
 function buildQuestionsForCategory(categoryIndex: number, categoryOrder: Module[]): Question[] {
@@ -112,10 +117,11 @@ function buildQuestionsForCategoryDeterministic(categoryIndex: number, categoryO
   return sortQuestionsById(mod.questions).slice(0, TOTAL_QUESTIONS);
 }
 
-function scoreTierLine(score: number, isMl: boolean): string {
-  if (score >= 13) return isMl ? 'കേരള വികസന ദർശകൻ' : 'Kerala Development Visionary';
-  if (score >= 10) return isMl ? 'നോ-കേരളം നയ വിദഗ്ദ്ധൻ' : 'KNOW-KERALAM Policy Expert';
-  if (score >= 7) return isMl ? 'വികസന താൽപര്യക്കാരൻ' : 'Development Enthusiast';
+function scoreTierLine(score: number, total: number, isMl: boolean): string {
+  const pct = total > 0 ? (score / total) * 100 : 0;
+  if (pct >= 85) return isMl ? 'കേരള വികസന ദർശകൻ' : 'Kerala Development Visionary';
+  if (pct >= 65) return isMl ? 'നോ-കേരളം നയ വിദഗ്ദ്ധൻ' : 'KNOW-KERALAM Policy Expert';
+  if (pct >= 45) return isMl ? 'വികസന താൽപര്യക്കാരൻ' : 'Development Enthusiast';
   return isMl ? 'ജിജ്ഞാസു പര്യവേക്ഷകൻ' : 'Curious Explorer';
 }
 
@@ -159,6 +165,9 @@ export default function HomePage() {
 
   const homeCardFrame =
     'quiz-game-shell relative mx-auto w-full max-w-xl overflow-hidden rounded-3xl border-[3px] border-black shadow-[8px_8px_0_0_rgba(250,204,21,0.85)] ring-1 ring-[#facc15]/[0.12]';
+  /** Same frame but overflow visible so category dropdown is not clipped */
+  const homeCardFrameResults =
+    'quiz-game-shell relative z-20 mx-auto w-full max-w-xl overflow-visible rounded-3xl border-[3px] border-black shadow-[8px_8px_0_0_rgba(250,204,21,0.85)] ring-1 ring-[#facc15]/[0.12]';
 
   return (
     <main className="relative flex min-h-dvh flex-col overflow-x-hidden bg-[#0a0a0a] quiz-game-shell text-center">
@@ -416,7 +425,7 @@ export default function HomePage() {
 
         {finished && (
           <div
-            className={`${homeCardFrame} relative bg-black/45 p-3 text-center shadow-[0_0_48px_rgba(250,204,21,0.28)] backdrop-blur-md sm:p-4`}
+            className={`${homeCardFrameResults} bg-black/45 p-3 text-center shadow-[0_0_48px_rgba(250,204,21,0.28)] backdrop-blur-md sm:p-4`}
           >
             <div
               className="absolute inset-0 z-0 quiz-game-scrim-contained pointer-events-none rounded-[21px]"
@@ -439,7 +448,7 @@ export default function HomePage() {
                     score={score}
                     total={questions.length}
                     percentage={percentage}
-                    tierLabel={scoreTierLine(score, isMl)}
+                    tierLabel={scoreTierLine(score, questions.length, isMl)}
                     isMl={isMl}
                     compact
                   />
@@ -462,7 +471,12 @@ export default function HomePage() {
                 categoryOrder={categoryOrder}
                 value={categoryIdx}
                 isMl={isMl}
-                label={isMl ? 'വിഭാഗം തിരഞ്ഞെടുക്കുക' : 'Select category'}
+                label={isMl ? 'അടുത്ത ക്വിസ് — വിഭാഗം തിരഞ്ഞെടുക്കുക' : 'Next quiz — choose a topic'}
+                hint={
+                  isMl
+                    ? 'പൊതു = 10 ചോദ്യങ്ങൾ (എല്ലാ വിഭാഗങ്ങളിൽ നിന്നും). വകുപ്പ് = 15 ചോദ്യങ്ങൾ.'
+                    : 'General = 10 mixed questions. Departments = 15 questions each.'
+                }
                 playClick={playClick}
                 onSelect={(idx) => {
                   setCategoryIdx(idx);

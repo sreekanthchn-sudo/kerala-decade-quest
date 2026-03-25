@@ -26,7 +26,9 @@ const SLUG_BILINGUAL: Record<string, { ml: string; en: string }> = {
 
 export function getCategoryBilingualLabel(mod: Module, categoryIndex: number, isMl: boolean): string {
   if (categoryIndex === 0 && mod.slug.includes('general')) {
-    return isMl ? 'പൊതു ക്വിസ് | General Quiz' : 'General Quiz | പൊതു ക്വിസ്';
+    return isMl
+      ? 'പൊതു ക്വിസ് (10) | General Quiz (10)'
+      : 'General Quiz (10) | പൊതു ക്വിസ് (10)';
   }
 
   const pair = SLUG_BILINGUAL[mod.slug];
