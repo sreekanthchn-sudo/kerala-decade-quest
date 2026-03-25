@@ -34,7 +34,6 @@ function sortPoolsBySlug(pools: Pool[]): Pool[] {
 }
 
 const TOTAL_QUESTIONS = 15;
-const GENERAL_FIRST_COUNT = 5;
 
 function getCategoryOrder(modules: Module[]): Module[] {
   const gen = modules.find((m) => m.slug.includes('general'));
@@ -42,72 +41,57 @@ function getCategoryOrder(modules: Module[]): Module[] {
   return gen ? [gen, ...rest] : [...modules];
 }
 
-/** Category 0: first 5 from general + 10 mixed round-robin from other modules */
+/**
+ * Category 0 (general quiz): 15 questions round-robin across every module pool
+ * (education, health, transport, …) — not “first N from one category”.
+ */
 function buildGeneralMixedQuestions(modules: Module[]): Question[] {
-  const allQuestionsWithSlug = modules.map((m) => ({
+  const pools: Pool[] = modules.map((m) => ({
     slug: m.slug,
     questions: shuffleArray(m.questions),
   }));
+  const order = shuffleArray([...pools]);
 
-  const generalQuestions =
-    allQuestionsWithSlug.find((m) => m.slug.includes('general'))?.questions ?? [];
-
-  const otherModulePools = shuffleArray(
-    allQuestionsWithSlug.filter((m) => !m.slug.includes('general'))
-  );
-
-  const mixedOthers: Question[] = [];
-  let index = 0;
-  while (mixedOthers.length < TOTAL_QUESTIONS - GENERAL_FIRST_COUNT) {
+  const mixed: Question[] = [];
+  let round = 0;
+  while (mixed.length < TOTAL_QUESTIONS) {
     let pickedInRound = false;
-    for (const pool of otherModulePools) {
-      if (pool.questions[index]) {
-        mixedOthers.push(pool.questions[index]);
+    for (const pool of order) {
+      if (pool.questions[round]) {
+        mixed.push(pool.questions[round]);
         pickedInRound = true;
-        if (mixedOthers.length >= TOTAL_QUESTIONS - GENERAL_FIRST_COUNT) break;
+        if (mixed.length >= TOTAL_QUESTIONS) break;
       }
     }
     if (!pickedInRound) break;
-    index += 1;
+    round += 1;
   }
-
-  const pickedGeneral = generalQuestions.slice(0, GENERAL_FIRST_COUNT);
-  const pickedOthers = mixedOthers.slice(0, TOTAL_QUESTIONS - pickedGeneral.length);
-  return [...pickedGeneral, ...pickedOthers];
+  return mixed.slice(0, TOTAL_QUESTIONS);
 }
 
 /** Same as buildGeneralMixedQuestions but deterministic — no Math.random(). */
 function buildGeneralMixedQuestionsDeterministic(modules: Module[]): Question[] {
-  const allQuestionsWithSlug: Pool[] = modules.map((m) => ({
+  const pools: Pool[] = modules.map((m) => ({
     slug: m.slug,
     questions: sortQuestionsById(m.questions),
   }));
+  const order = sortPoolsBySlug(pools);
 
-  const generalQuestions =
-    allQuestionsWithSlug.find((m) => m.slug.includes('general'))?.questions ?? [];
-
-  const otherModulePools = sortPoolsBySlug(
-    allQuestionsWithSlug.filter((m) => !m.slug.includes('general'))
-  );
-
-  const mixedOthers: Question[] = [];
-  let index = 0;
-  while (mixedOthers.length < TOTAL_QUESTIONS - GENERAL_FIRST_COUNT) {
+  const mixed: Question[] = [];
+  let round = 0;
+  while (mixed.length < TOTAL_QUESTIONS) {
     let pickedInRound = false;
-    for (const pool of otherModulePools) {
-      if (pool.questions[index]) {
-        mixedOthers.push(pool.questions[index]);
+    for (const pool of order) {
+      if (pool.questions[round]) {
+        mixed.push(pool.questions[round]);
         pickedInRound = true;
-        if (mixedOthers.length >= TOTAL_QUESTIONS - GENERAL_FIRST_COUNT) break;
+        if (mixed.length >= TOTAL_QUESTIONS) break;
       }
     }
     if (!pickedInRound) break;
-    index += 1;
+    round += 1;
   }
-
-  const pickedGeneral = generalQuestions.slice(0, GENERAL_FIRST_COUNT);
-  const pickedOthers = mixedOthers.slice(0, TOTAL_QUESTIONS - pickedGeneral.length);
-  return [...pickedGeneral, ...pickedOthers];
+  return mixed.slice(0, TOTAL_QUESTIONS);
 }
 
 function buildQuestionsForCategory(categoryIndex: number, categoryOrder: Module[]): Question[] {
@@ -174,7 +158,7 @@ export default function HomePage() {
       : 'General Quiz | പൊതു ക്വിസ്';
 
   const homeCardFrame =
-    'quiz-game-shell relative mx-auto w-full max-w-xl overflow-hidden rounded-3xl border-[3px] border-black shadow-[8px_8px_0_0_rgba(0,0,0,0.5)] ring-1 ring-white/[0.06]';
+    'quiz-game-shell relative mx-auto w-full max-w-xl overflow-hidden rounded-3xl border-[3px] border-black shadow-[8px_8px_0_0_rgba(250,204,21,0.85)] ring-1 ring-[#facc15]/[0.12]';
 
   return (
     <main className="relative flex min-h-dvh flex-col overflow-x-hidden bg-[#0a0a0a] quiz-game-shell text-center">
@@ -432,7 +416,7 @@ export default function HomePage() {
 
         {finished && (
           <div
-            className={`${homeCardFrame} relative bg-black/45 p-3 text-center shadow-[0_0_60px_rgba(0,0,0,0.45)] backdrop-blur-md sm:p-4`}
+            className={`${homeCardFrame} relative bg-black/45 p-3 text-center shadow-[0_0_48px_rgba(250,204,21,0.28)] backdrop-blur-md sm:p-4`}
           >
             <div
               className="absolute inset-0 z-0 quiz-game-scrim-contained pointer-events-none rounded-[21px]"
