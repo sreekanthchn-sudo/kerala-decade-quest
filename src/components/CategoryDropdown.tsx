@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { Fragment, useEffect, useRef, useState } from 'react';
 import { Check, ChevronDown } from 'lucide-react';
 import type { Module } from '@/types';
 import { getCategoryBilingualLabel } from '@/utils/categoryLabels';
@@ -10,6 +10,8 @@ type CategoryDropdownProps = {
   value: number;
   isMl: boolean;
   label: string;
+  /** Short helper under the label (e.g. 10 vs 15 questions) */
+  hint?: string;
   playClick: () => void;
   onSelect: (index: number) => void;
   /** Trigger id for label association */
@@ -22,6 +24,7 @@ export default function CategoryDropdown({
   value,
   isMl,
   label,
+  hint,
   playClick,
   onSelect,
   id = 'category-dropdown-trigger',
@@ -49,12 +52,17 @@ export default function CategoryDropdown({
 
   const currentMod = categoryOrder[value];
   const currentLabel = currentMod ? getCategoryBilingualLabel(currentMod, value, isMl) : '';
+  const hasGeneralMixed =
+    categoryOrder.length > 1 && categoryOrder[0]?.slug.includes('general');
 
   return (
-    <div ref={wrapRef} className="relative w-full">
+    <div ref={wrapRef} className="relative z-[200] w-full">
       <label htmlFor={id} className="mb-1.5 block text-center text-[11px] font-bold leading-snug text-[#ffcc00] sm:mb-2 sm:text-xs">
         {label}
       </label>
+      {hint ? (
+        <p className="mb-2 text-center text-[10px] leading-snug text-white/65 sm:text-[11px]">{hint}</p>
+      ) : null}
       <button
         id={id}
         type="button"
@@ -74,7 +82,7 @@ export default function CategoryDropdown({
       </button>
 
       {open && (
-        <div className="absolute left-0 right-0 top-full z-[100] mt-1.5 overflow-hidden rounded-2xl border border-white/20 bg-zinc-950/96 shadow-[0_20px_50px_rgba(0,0,0,0.65)] backdrop-blur-md">
+        <div className="absolute left-0 right-0 top-full z-[300] mt-1.5 overflow-hidden rounded-2xl border border-white/20 bg-zinc-950/96 shadow-[0_20px_50px_rgba(0,0,0,0.65)] backdrop-blur-md">
           <ul
             className="max-h-[min(28rem,calc(70dvh-6rem))] overflow-y-auto overscroll-contain py-1"
             role="listbox"
@@ -83,28 +91,41 @@ export default function CategoryDropdown({
             {categoryOrder.map((mod, idx) => {
               const selected = idx === value;
               return (
-                <li key={mod.slug} role="presentation">
-                  <button
-                    type="button"
-                    role="option"
-                    aria-selected={selected}
-                    onClick={() => {
-                      playClick();
-                      onSelect(idx);
-                      setOpen(false);
-                    }}
-                    className={`flex w-full items-start gap-2 px-3 py-2.5 text-left text-[13px] font-semibold leading-snug transition sm:px-3.5 sm:py-3 sm:text-sm ${
-                      selected
-                        ? 'bg-[#2563eb] text-white'
-                        : 'text-white/95 hover:bg-white/[0.08] active:bg-white/[0.12]'
-                    }`}
-                  >
-                    <span className="mt-0.5 flex min-w-[1.25rem] shrink-0 justify-center" aria-hidden="true">
-                      {selected ? <Check className="h-4 w-4" strokeWidth={2.5} /> : null}
-                    </span>
-                    <span className="min-w-0 flex-1">{getCategoryBilingualLabel(mod, idx, isMl)}</span>
-                  </button>
-                </li>
+                <Fragment key={mod.slug}>
+                  <li role="presentation">
+                    <button
+                      type="button"
+                      role="option"
+                      aria-selected={selected}
+                      onClick={() => {
+                        playClick();
+                        onSelect(idx);
+                        setOpen(false);
+                      }}
+                      className={`flex w-full items-start gap-2 px-3 py-2.5 text-left text-[13px] font-semibold leading-snug transition sm:px-3.5 sm:py-3 sm:text-sm ${
+                        selected
+                          ? 'bg-[#2563eb] text-white'
+                          : 'text-white/95 hover:bg-white/[0.08] active:bg-white/[0.12]'
+                      }`}
+                    >
+                      <span className="mt-0.5 flex min-w-[1.25rem] shrink-0 justify-center" aria-hidden="true">
+                        {selected ? <Check className="h-4 w-4" strokeWidth={2.5} /> : null}
+                      </span>
+                      <span className="min-w-0 flex-1">{getCategoryBilingualLabel(mod, idx, isMl)}</span>
+                    </button>
+                  </li>
+                  {hasGeneralMixed && idx === 0 ? (
+                    <li
+                      role="presentation"
+                      aria-hidden
+                      className="pointer-events-none border-t border-[#facc15]/25 bg-black/40 px-3 py-2 text-left text-[10px] font-black uppercase tracking-wide text-[#facc15]/90 sm:text-[11px]"
+                    >
+                      {isMl
+                        ? 'വകുപ്പ് ക്വിസുകൾ · ഓരോന്നിനും 15 ചോദ്യങ്ങൾ'
+                        : 'Department quizzes · 15 questions each'}
+                    </li>
+                  ) : null}
+                </Fragment>
               );
             })}
           </ul>
