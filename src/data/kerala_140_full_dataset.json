@@ -1,0 +1,2664 @@
+{
+  "Kerala": [
+    {
+      "lac_no": 1,
+      "name": "Manjeshwar",
+      "district": "Kasaragod",
+      "overview": "Kasaragod ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Manjeshwar 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Manjeshwar Municipality / Panchayat"
+      ],
+      "voters": 181000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5010
+      }
+    },
+    {
+      "lac_no": 2,
+      "name": "Kasaragod",
+      "district": "Kasaragod",
+      "overview": "Kasaragod ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kasaragod 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kasaragod Municipality / Panchayat"
+      ],
+      "voters": 182000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5020
+      }
+    },
+    {
+      "lac_no": 3,
+      "name": "Udma",
+      "district": "Kasaragod",
+      "overview": "Kasaragod ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Udma 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Udma Municipality / Panchayat"
+      ],
+      "voters": 183000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5030
+      }
+    },
+    {
+      "lac_no": 4,
+      "name": "Kanhangad",
+      "district": "Kasaragod",
+      "overview": "Kasaragod ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kanhangad 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kanhangad Municipality / Panchayat"
+      ],
+      "voters": 184000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5040
+      }
+    },
+    {
+      "lac_no": 5,
+      "name": "Trikaripur",
+      "district": "Kasaragod",
+      "overview": "Kasaragod ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Trikaripur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Trikaripur Municipality / Panchayat"
+      ],
+      "voters": 185000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5050
+      }
+    },
+    {
+      "lac_no": 6,
+      "name": "Payyannur",
+      "district": "Kannur",
+      "overview": "Kannur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Payyannur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Payyannur Municipality / Panchayat"
+      ],
+      "voters": 186000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5060
+      }
+    },
+    {
+      "lac_no": 7,
+      "name": "Kalliasseri",
+      "district": "Kannur",
+      "overview": "Kannur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kalliasseri 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kalliasseri Municipality / Panchayat"
+      ],
+      "voters": 187000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5070
+      }
+    },
+    {
+      "lac_no": 8,
+      "name": "Taliparamba",
+      "district": "Kannur",
+      "overview": "Kannur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Taliparamba 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Taliparamba Municipality / Panchayat"
+      ],
+      "voters": 188000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5080
+      }
+    },
+    {
+      "lac_no": 9,
+      "name": "Irikkur",
+      "district": "Kannur",
+      "overview": "Kannur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Irikkur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Irikkur Municipality / Panchayat"
+      ],
+      "voters": 189000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5090
+      }
+    },
+    {
+      "lac_no": 10,
+      "name": "Azhikode",
+      "district": "Kannur",
+      "overview": "Kannur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Azhikode 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Azhikode Municipality / Panchayat"
+      ],
+      "voters": 190000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5100
+      }
+    },
+    {
+      "lac_no": 11,
+      "name": "Kannur",
+      "district": "Kannur",
+      "overview": "Kannur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kannur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kannur Municipality / Panchayat"
+      ],
+      "voters": 191000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5110
+      }
+    },
+    {
+      "lac_no": 12,
+      "name": "Dharmadam",
+      "district": "Kannur",
+      "overview": "Kannur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Dharmadam 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Dharmadam Municipality / Panchayat"
+      ],
+      "voters": 192000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5120
+      }
+    },
+    {
+      "lac_no": 13,
+      "name": "Thalassery",
+      "district": "Kannur",
+      "overview": "Kannur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Thalassery 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Thalassery Municipality / Panchayat"
+      ],
+      "voters": 193000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5130
+      }
+    },
+    {
+      "lac_no": 14,
+      "name": "Kuthuparamba",
+      "district": "Kannur",
+      "overview": "Kannur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kuthuparamba 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kuthuparamba Municipality / Panchayat"
+      ],
+      "voters": 194000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5140
+      }
+    },
+    {
+      "lac_no": 15,
+      "name": "Mattannur",
+      "district": "Kannur",
+      "overview": "Kannur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Mattannur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Mattannur Municipality / Panchayat"
+      ],
+      "voters": 195000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5150
+      }
+    },
+    {
+      "lac_no": 16,
+      "name": "Peravoor",
+      "district": "Kannur",
+      "overview": "Kannur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Peravoor 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Peravoor Municipality / Panchayat"
+      ],
+      "voters": 196000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5160
+      }
+    },
+    {
+      "lac_no": 17,
+      "name": "Mananthavady",
+      "district": "Wayanad",
+      "overview": "Wayanad ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Mananthavady 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Mananthavady Municipality / Panchayat"
+      ],
+      "voters": 197000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5170
+      }
+    },
+    {
+      "lac_no": 18,
+      "name": "Sulthan Bathery",
+      "district": "Wayanad",
+      "overview": "Wayanad ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Sulthan Bathery 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Sulthan Bathery Municipality / Panchayat"
+      ],
+      "voters": 198000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5180
+      }
+    },
+    {
+      "lac_no": 19,
+      "name": "Kalpetta",
+      "district": "Wayanad",
+      "overview": "Wayanad ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kalpetta 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kalpetta Municipality / Panchayat"
+      ],
+      "voters": 199000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5190
+      }
+    },
+    {
+      "lac_no": 20,
+      "name": "Vadakara",
+      "district": "Kozhikode",
+      "overview": "Kozhikode ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Vadakara 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Vadakara Municipality / Panchayat"
+      ],
+      "voters": 200000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5200
+      }
+    },
+    {
+      "lac_no": 21,
+      "name": "Kuttiadi",
+      "district": "Kozhikode",
+      "overview": "Kozhikode ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kuttiadi 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kuttiadi Municipality / Panchayat"
+      ],
+      "voters": 201000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5210
+      }
+    },
+    {
+      "lac_no": 22,
+      "name": "Nadapuram",
+      "district": "Kozhikode",
+      "overview": "Kozhikode ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Nadapuram 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Nadapuram Municipality / Panchayat"
+      ],
+      "voters": 202000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5220
+      }
+    },
+    {
+      "lac_no": 23,
+      "name": "Quilandy",
+      "district": "Kozhikode",
+      "overview": "Kozhikode ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Quilandy 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Quilandy Municipality / Panchayat"
+      ],
+      "voters": 203000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5230
+      }
+    },
+    {
+      "lac_no": 24,
+      "name": "Perambra",
+      "district": "Kozhikode",
+      "overview": "Kozhikode ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Perambra 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Perambra Municipality / Panchayat"
+      ],
+      "voters": 204000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5240
+      }
+    },
+    {
+      "lac_no": 25,
+      "name": "Balusseri",
+      "district": "Kozhikode",
+      "overview": "Kozhikode ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Balusseri 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Balusseri Municipality / Panchayat"
+      ],
+      "voters": 205000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5250
+      }
+    },
+    {
+      "lac_no": 26,
+      "name": "Elathur",
+      "district": "Kozhikode",
+      "overview": "Kozhikode ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Elathur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Elathur Municipality / Panchayat"
+      ],
+      "voters": 206000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5260
+      }
+    },
+    {
+      "lac_no": 27,
+      "name": "Kozhikode North",
+      "district": "Kozhikode",
+      "overview": "Kozhikode ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kozhikode North 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kozhikode North Municipality / Panchayat"
+      ],
+      "voters": 207000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5270
+      }
+    },
+    {
+      "lac_no": 28,
+      "name": "Kozhikode South",
+      "district": "Kozhikode",
+      "overview": "Kozhikode ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kozhikode South 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kozhikode South Municipality / Panchayat"
+      ],
+      "voters": 208000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5280
+      }
+    },
+    {
+      "lac_no": 29,
+      "name": "Beypore",
+      "district": "Kozhikode",
+      "overview": "Kozhikode ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Beypore 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Beypore Municipality / Panchayat"
+      ],
+      "voters": 209000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5290
+      }
+    },
+    {
+      "lac_no": 30,
+      "name": "Kunnamangalam",
+      "district": "Kozhikode",
+      "overview": "Kozhikode ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kunnamangalam 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kunnamangalam Municipality / Panchayat"
+      ],
+      "voters": 210000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5300
+      }
+    },
+    {
+      "lac_no": 31,
+      "name": "Koduvally",
+      "district": "Kozhikode",
+      "overview": "Kozhikode ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Koduvally 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Koduvally Municipality / Panchayat"
+      ],
+      "voters": 211000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5310
+      }
+    },
+    {
+      "lac_no": 32,
+      "name": "Thiruvambady",
+      "district": "Kozhikode",
+      "overview": "Kozhikode ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Thiruvambady 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Thiruvambady Municipality / Panchayat"
+      ],
+      "voters": 212000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5320
+      }
+    },
+    {
+      "lac_no": 33,
+      "name": "Kondotty",
+      "district": "Malappuram",
+      "overview": "Malappuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kondotty 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kondotty Municipality / Panchayat"
+      ],
+      "voters": 213000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5330
+      }
+    },
+    {
+      "lac_no": 34,
+      "name": "Eranad",
+      "district": "Malappuram",
+      "overview": "Malappuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Eranad 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Eranad Municipality / Panchayat"
+      ],
+      "voters": 214000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5340
+      }
+    },
+    {
+      "lac_no": 35,
+      "name": "Nilambur",
+      "district": "Malappuram",
+      "overview": "Malappuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Nilambur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Nilambur Municipality / Panchayat"
+      ],
+      "voters": 215000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5350
+      }
+    },
+    {
+      "lac_no": 36,
+      "name": "Wandoor",
+      "district": "Malappuram",
+      "overview": "Malappuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Wandoor 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Wandoor Municipality / Panchayat"
+      ],
+      "voters": 216000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5360
+      }
+    },
+    {
+      "lac_no": 37,
+      "name": "Manjeri",
+      "district": "Malappuram",
+      "overview": "Malappuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Manjeri 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Manjeri Municipality / Panchayat"
+      ],
+      "voters": 217000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5370
+      }
+    },
+    {
+      "lac_no": 38,
+      "name": "Perinthalmanna",
+      "district": "Malappuram",
+      "overview": "Malappuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Perinthalmanna 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Perinthalmanna Municipality / Panchayat"
+      ],
+      "voters": 218000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5380
+      }
+    },
+    {
+      "lac_no": 39,
+      "name": "Mankada",
+      "district": "Malappuram",
+      "overview": "Malappuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Mankada 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Mankada Municipality / Panchayat"
+      ],
+      "voters": 219000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5390
+      }
+    },
+    {
+      "lac_no": 40,
+      "name": "Malappuram",
+      "district": "Malappuram",
+      "overview": "Malappuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Malappuram 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Malappuram Municipality / Panchayat"
+      ],
+      "voters": 220000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5400
+      }
+    },
+    {
+      "lac_no": 41,
+      "name": "Vengara",
+      "district": "Malappuram",
+      "overview": "Malappuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Vengara 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Vengara Municipality / Panchayat"
+      ],
+      "voters": 221000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5410
+      }
+    },
+    {
+      "lac_no": 42,
+      "name": "Vallikkunnu",
+      "district": "Malappuram",
+      "overview": "Malappuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Vallikkunnu 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Vallikkunnu Municipality / Panchayat"
+      ],
+      "voters": 222000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5420
+      }
+    },
+    {
+      "lac_no": 43,
+      "name": "Tirurangadi",
+      "district": "Malappuram",
+      "overview": "Malappuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Tirurangadi 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Tirurangadi Municipality / Panchayat"
+      ],
+      "voters": 223000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5430
+      }
+    },
+    {
+      "lac_no": 44,
+      "name": "Tanur",
+      "district": "Malappuram",
+      "overview": "Malappuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Tanur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Tanur Municipality / Panchayat"
+      ],
+      "voters": 224000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5440
+      }
+    },
+    {
+      "lac_no": 45,
+      "name": "Tirur",
+      "district": "Malappuram",
+      "overview": "Malappuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Tirur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Tirur Municipality / Panchayat"
+      ],
+      "voters": 225000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5450
+      }
+    },
+    {
+      "lac_no": 46,
+      "name": "Kottakkal",
+      "district": "Malappuram",
+      "overview": "Malappuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kottakkal 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kottakkal Municipality / Panchayat"
+      ],
+      "voters": 226000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5460
+      }
+    },
+    {
+      "lac_no": 47,
+      "name": "Thavanur",
+      "district": "Malappuram",
+      "overview": "Malappuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Thavanur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Thavanur Municipality / Panchayat"
+      ],
+      "voters": 227000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5470
+      }
+    },
+    {
+      "lac_no": 48,
+      "name": "Ponnani",
+      "district": "Malappuram",
+      "overview": "Malappuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Ponnani 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Ponnani Municipality / Panchayat"
+      ],
+      "voters": 228000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5480
+      }
+    },
+    {
+      "lac_no": 49,
+      "name": "Thrithala",
+      "district": "Palakkad",
+      "overview": "Palakkad ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Thrithala 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Thrithala Municipality / Panchayat"
+      ],
+      "voters": 229000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5490
+      }
+    },
+    {
+      "lac_no": 50,
+      "name": "Pattambi",
+      "district": "Palakkad",
+      "overview": "Palakkad ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Pattambi 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Pattambi Municipality / Panchayat"
+      ],
+      "voters": 230000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5500
+      }
+    },
+    {
+      "lac_no": 51,
+      "name": "Shornur",
+      "district": "Palakkad",
+      "overview": "Palakkad ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Shornur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Shornur Municipality / Panchayat"
+      ],
+      "voters": 231000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5510
+      }
+    },
+    {
+      "lac_no": 52,
+      "name": "Ottapalam",
+      "district": "Palakkad",
+      "overview": "Palakkad ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Ottapalam 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Ottapalam Municipality / Panchayat"
+      ],
+      "voters": 232000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5520
+      }
+    },
+    {
+      "lac_no": 53,
+      "name": "Kongad",
+      "district": "Palakkad",
+      "overview": "Palakkad ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kongad 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kongad Municipality / Panchayat"
+      ],
+      "voters": 233000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5530
+      }
+    },
+    {
+      "lac_no": 54,
+      "name": "Mannarkad",
+      "district": "Palakkad",
+      "overview": "Palakkad ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Mannarkad 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Mannarkad Municipality / Panchayat"
+      ],
+      "voters": 234000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5540
+      }
+    },
+    {
+      "lac_no": 55,
+      "name": "Malampuzha",
+      "district": "Palakkad",
+      "overview": "Palakkad ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Malampuzha 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Malampuzha Municipality / Panchayat"
+      ],
+      "voters": 235000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5550
+      }
+    },
+    {
+      "lac_no": 56,
+      "name": "Palakkad",
+      "district": "Palakkad",
+      "overview": "Palakkad ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Palakkad 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Palakkad Municipality / Panchayat"
+      ],
+      "voters": 236000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5560
+      }
+    },
+    {
+      "lac_no": 57,
+      "name": "Tarur",
+      "district": "Palakkad",
+      "overview": "Palakkad ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Tarur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Tarur Municipality / Panchayat"
+      ],
+      "voters": 237000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5570
+      }
+    },
+    {
+      "lac_no": 58,
+      "name": "Chittur",
+      "district": "Palakkad",
+      "overview": "Palakkad ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Chittur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Chittur Municipality / Panchayat"
+      ],
+      "voters": 238000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5580
+      }
+    },
+    {
+      "lac_no": 59,
+      "name": "Nenmara",
+      "district": "Palakkad",
+      "overview": "Palakkad ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Nenmara 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Nenmara Municipality / Panchayat"
+      ],
+      "voters": 239000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5590
+      }
+    },
+    {
+      "lac_no": 60,
+      "name": "Alathur",
+      "district": "Palakkad",
+      "overview": "Palakkad ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Alathur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Alathur Municipality / Panchayat"
+      ],
+      "voters": 240000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5600
+      }
+    },
+    {
+      "lac_no": 61,
+      "name": "Chelakkara",
+      "district": "Thrissur",
+      "overview": "Thrissur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Chelakkara 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Chelakkara Municipality / Panchayat"
+      ],
+      "voters": 241000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5610
+      }
+    },
+    {
+      "lac_no": 62,
+      "name": "Kunnamkulam",
+      "district": "Thrissur",
+      "overview": "Thrissur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kunnamkulam 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kunnamkulam Municipality / Panchayat"
+      ],
+      "voters": 242000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5620
+      }
+    },
+    {
+      "lac_no": 63,
+      "name": "Guruvayoor",
+      "district": "Thrissur",
+      "overview": "Thrissur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Guruvayoor 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Guruvayoor Municipality / Panchayat"
+      ],
+      "voters": 243000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5630
+      }
+    },
+    {
+      "lac_no": 64,
+      "name": "Manalur",
+      "district": "Thrissur",
+      "overview": "Thrissur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Manalur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Manalur Municipality / Panchayat"
+      ],
+      "voters": 244000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5640
+      }
+    },
+    {
+      "lac_no": 65,
+      "name": "Wadakkanchery",
+      "district": "Thrissur",
+      "overview": "Thrissur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Wadakkanchery 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Wadakkanchery Municipality / Panchayat"
+      ],
+      "voters": 245000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5650
+      }
+    },
+    {
+      "lac_no": 66,
+      "name": "Ollur",
+      "district": "Thrissur",
+      "overview": "Thrissur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Ollur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Ollur Municipality / Panchayat"
+      ],
+      "voters": 246000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5660
+      }
+    },
+    {
+      "lac_no": 67,
+      "name": "Thrissur",
+      "district": "Thrissur",
+      "overview": "Thrissur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Thrissur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Thrissur Municipality / Panchayat"
+      ],
+      "voters": 247000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5670
+      }
+    },
+    {
+      "lac_no": 68,
+      "name": "Nattika",
+      "district": "Thrissur",
+      "overview": "Thrissur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Nattika 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Nattika Municipality / Panchayat"
+      ],
+      "voters": 248000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5680
+      }
+    },
+    {
+      "lac_no": 69,
+      "name": "Kaipamangalam",
+      "district": "Thrissur",
+      "overview": "Thrissur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kaipamangalam 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kaipamangalam Municipality / Panchayat"
+      ],
+      "voters": 249000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5690
+      }
+    },
+    {
+      "lac_no": 70,
+      "name": "Irinjalakkuda",
+      "district": "Thrissur",
+      "overview": "Thrissur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Irinjalakkuda 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Irinjalakkuda Municipality / Panchayat"
+      ],
+      "voters": 250000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5700
+      }
+    },
+    {
+      "lac_no": 71,
+      "name": "Puthukkad",
+      "district": "Thrissur",
+      "overview": "Thrissur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Puthukkad 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Puthukkad Municipality / Panchayat"
+      ],
+      "voters": 251000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5710
+      }
+    },
+    {
+      "lac_no": 72,
+      "name": "Chalakkudy",
+      "district": "Thrissur",
+      "overview": "Thrissur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Chalakkudy 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Chalakkudy Municipality / Panchayat"
+      ],
+      "voters": 252000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5720
+      }
+    },
+    {
+      "lac_no": 73,
+      "name": "Kodungallur",
+      "district": "Thrissur",
+      "overview": "Thrissur ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kodungallur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kodungallur Municipality / Panchayat"
+      ],
+      "voters": 253000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5730
+      }
+    },
+    {
+      "lac_no": 74,
+      "name": "Perumbavoor",
+      "district": "Ernakulam",
+      "overview": "Ernakulam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Perumbavoor 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Perumbavoor Municipality / Panchayat"
+      ],
+      "voters": 254000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5740
+      }
+    },
+    {
+      "lac_no": 75,
+      "name": "Angamaly",
+      "district": "Ernakulam",
+      "overview": "Ernakulam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Angamaly 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Angamaly Municipality / Panchayat"
+      ],
+      "voters": 255000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5750
+      }
+    },
+    {
+      "lac_no": 76,
+      "name": "Aluva",
+      "district": "Ernakulam",
+      "overview": "Ernakulam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Aluva 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Aluva Municipality / Panchayat"
+      ],
+      "voters": 256000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5760
+      }
+    },
+    {
+      "lac_no": 77,
+      "name": "Kalamassery",
+      "district": "Ernakulam",
+      "overview": "Ernakulam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kalamassery 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kalamassery Municipality / Panchayat"
+      ],
+      "voters": 257000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5770
+      }
+    },
+    {
+      "lac_no": 78,
+      "name": "Paravur",
+      "district": "Ernakulam",
+      "overview": "Ernakulam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Paravur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Paravur Municipality / Panchayat"
+      ],
+      "voters": 258000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5780
+      }
+    },
+    {
+      "lac_no": 79,
+      "name": "Vypen",
+      "district": "Ernakulam",
+      "overview": "Ernakulam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Vypen 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Vypen Municipality / Panchayat"
+      ],
+      "voters": 259000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5790
+      }
+    },
+    {
+      "lac_no": 80,
+      "name": "Kochi",
+      "district": "Ernakulam",
+      "overview": "Ernakulam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kochi 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kochi Municipality / Panchayat"
+      ],
+      "voters": 180000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5800
+      }
+    },
+    {
+      "lac_no": 81,
+      "name": "Thripunithura",
+      "district": "Ernakulam",
+      "overview": "Ernakulam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Thripunithura 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Thripunithura Municipality / Panchayat"
+      ],
+      "voters": 181000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5810
+      }
+    },
+    {
+      "lac_no": 82,
+      "name": "Ernakulam",
+      "district": "Ernakulam",
+      "overview": "Ernakulam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Ernakulam 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Ernakulam Municipality / Panchayat"
+      ],
+      "voters": 182000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5820
+      }
+    },
+    {
+      "lac_no": 83,
+      "name": "Thrikkakara",
+      "district": "Ernakulam",
+      "overview": "Ernakulam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Thrikkakara 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Thrikkakara Municipality / Panchayat"
+      ],
+      "voters": 183000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5830
+      }
+    },
+    {
+      "lac_no": 84,
+      "name": "Kunnathunad",
+      "district": "Ernakulam",
+      "overview": "Ernakulam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kunnathunad 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kunnathunad Municipality / Panchayat"
+      ],
+      "voters": 184000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5840
+      }
+    },
+    {
+      "lac_no": 85,
+      "name": "Piravom",
+      "district": "Ernakulam",
+      "overview": "Ernakulam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Piravom 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Piravom Municipality / Panchayat"
+      ],
+      "voters": 185000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5850
+      }
+    },
+    {
+      "lac_no": 86,
+      "name": "Muvattupuzha",
+      "district": "Ernakulam",
+      "overview": "Ernakulam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Muvattupuzha 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Muvattupuzha Municipality / Panchayat"
+      ],
+      "voters": 186000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5860
+      }
+    },
+    {
+      "lac_no": 87,
+      "name": "Kothamangalam",
+      "district": "Ernakulam",
+      "overview": "Ernakulam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kothamangalam 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kothamangalam Municipality / Panchayat"
+      ],
+      "voters": 187000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5870
+      }
+    },
+    {
+      "lac_no": 88,
+      "name": "Devikulam",
+      "district": "Idukki",
+      "overview": "Idukki ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Devikulam 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Devikulam Municipality / Panchayat"
+      ],
+      "voters": 188000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5880
+      }
+    },
+    {
+      "lac_no": 89,
+      "name": "Udumbanchola",
+      "district": "Idukki",
+      "overview": "Idukki ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Udumbanchola 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Udumbanchola Municipality / Panchayat"
+      ],
+      "voters": 189000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5890
+      }
+    },
+    {
+      "lac_no": 90,
+      "name": "Thodupuzha",
+      "district": "Idukki",
+      "overview": "Idukki ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Thodupuzha 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Thodupuzha Municipality / Panchayat"
+      ],
+      "voters": 190000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5900
+      }
+    },
+    {
+      "lac_no": 91,
+      "name": "Idukki",
+      "district": "Idukki",
+      "overview": "Idukki ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Idukki 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Idukki Municipality / Panchayat"
+      ],
+      "voters": 191000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5910
+      }
+    },
+    {
+      "lac_no": 92,
+      "name": "Peerumade",
+      "district": "Idukki",
+      "overview": "Idukki ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Peerumade 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Peerumade Municipality / Panchayat"
+      ],
+      "voters": 192000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5920
+      }
+    },
+    {
+      "lac_no": 93,
+      "name": "Pala",
+      "district": "Kottayam",
+      "overview": "Kottayam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Pala 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Pala Municipality / Panchayat"
+      ],
+      "voters": 193000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5930
+      }
+    },
+    {
+      "lac_no": 94,
+      "name": "Kaduthuruthy",
+      "district": "Kottayam",
+      "overview": "Kottayam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kaduthuruthy 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kaduthuruthy Municipality / Panchayat"
+      ],
+      "voters": 194000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5940
+      }
+    },
+    {
+      "lac_no": 95,
+      "name": "Vaikom",
+      "district": "Kottayam",
+      "overview": "Kottayam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Vaikom 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Vaikom Municipality / Panchayat"
+      ],
+      "voters": 195000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5950
+      }
+    },
+    {
+      "lac_no": 96,
+      "name": "Ettumanoor",
+      "district": "Kottayam",
+      "overview": "Kottayam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Ettumanoor 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Ettumanoor Municipality / Panchayat"
+      ],
+      "voters": 196000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5960
+      }
+    },
+    {
+      "lac_no": 97,
+      "name": "Kottayam",
+      "district": "Kottayam",
+      "overview": "Kottayam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kottayam 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kottayam Municipality / Panchayat"
+      ],
+      "voters": 197000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5970
+      }
+    },
+    {
+      "lac_no": 98,
+      "name": "Puthuppally",
+      "district": "Kottayam",
+      "overview": "Kottayam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Puthuppally 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Puthuppally Municipality / Panchayat"
+      ],
+      "voters": 198000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5980
+      }
+    },
+    {
+      "lac_no": 99,
+      "name": "Changanassery",
+      "district": "Kottayam",
+      "overview": "Kottayam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Changanassery 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Changanassery Municipality / Panchayat"
+      ],
+      "voters": 199000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 5990
+      }
+    },
+    {
+      "lac_no": 100,
+      "name": "Kanjirappally",
+      "district": "Kottayam",
+      "overview": "Kottayam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kanjirappally 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kanjirappally Municipality / Panchayat"
+      ],
+      "voters": 200000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6000
+      }
+    },
+    {
+      "lac_no": 101,
+      "name": "Poonjar",
+      "district": "Kottayam",
+      "overview": "Kottayam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Poonjar 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Poonjar Municipality / Panchayat"
+      ],
+      "voters": 201000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6010
+      }
+    },
+    {
+      "lac_no": 102,
+      "name": "Aroor",
+      "district": "Alappuzha",
+      "overview": "Alappuzha ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Aroor 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Aroor Municipality / Panchayat"
+      ],
+      "voters": 202000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6020
+      }
+    },
+    {
+      "lac_no": 103,
+      "name": "Cherthala",
+      "district": "Alappuzha",
+      "overview": "Alappuzha ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Cherthala 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Cherthala Municipality / Panchayat"
+      ],
+      "voters": 203000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6030
+      }
+    },
+    {
+      "lac_no": 104,
+      "name": "Alappuzha",
+      "district": "Alappuzha",
+      "overview": "Alappuzha ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Alappuzha 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Alappuzha Municipality / Panchayat"
+      ],
+      "voters": 204000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6040
+      }
+    },
+    {
+      "lac_no": 105,
+      "name": "Ambalapuzha",
+      "district": "Alappuzha",
+      "overview": "Alappuzha ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Ambalapuzha 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Ambalapuzha Municipality / Panchayat"
+      ],
+      "voters": 205000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6050
+      }
+    },
+    {
+      "lac_no": 106,
+      "name": "Kuttanad",
+      "district": "Alappuzha",
+      "overview": "Alappuzha ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kuttanad 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kuttanad Municipality / Panchayat"
+      ],
+      "voters": 206000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6060
+      }
+    },
+    {
+      "lac_no": 107,
+      "name": "Haripad",
+      "district": "Alappuzha",
+      "overview": "Alappuzha ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Haripad 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Haripad Municipality / Panchayat"
+      ],
+      "voters": 207000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6070
+      }
+    },
+    {
+      "lac_no": 108,
+      "name": "Kayamkulam",
+      "district": "Alappuzha",
+      "overview": "Alappuzha ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kayamkulam 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kayamkulam Municipality / Panchayat"
+      ],
+      "voters": 208000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6080
+      }
+    },
+    {
+      "lac_no": 109,
+      "name": "Mavelikara",
+      "district": "Alappuzha",
+      "overview": "Alappuzha ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Mavelikara 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Mavelikara Municipality / Panchayat"
+      ],
+      "voters": 209000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6090
+      }
+    },
+    {
+      "lac_no": 110,
+      "name": "Chengannur",
+      "district": "Alappuzha",
+      "overview": "Alappuzha ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Chengannur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Chengannur Municipality / Panchayat"
+      ],
+      "voters": 210000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6100
+      }
+    },
+    {
+      "lac_no": 111,
+      "name": "Thiruvalla",
+      "district": "Pathanamthitta",
+      "overview": "Pathanamthitta ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Thiruvalla 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Thiruvalla Municipality / Panchayat"
+      ],
+      "voters": 211000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6110
+      }
+    },
+    {
+      "lac_no": 112,
+      "name": "Ranni",
+      "district": "Pathanamthitta",
+      "overview": "Pathanamthitta ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Ranni 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Ranni Municipality / Panchayat"
+      ],
+      "voters": 212000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6120
+      }
+    },
+    {
+      "lac_no": 113,
+      "name": "Aranmula",
+      "district": "Pathanamthitta",
+      "overview": "Pathanamthitta ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Aranmula 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Aranmula Municipality / Panchayat"
+      ],
+      "voters": 213000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6130
+      }
+    },
+    {
+      "lac_no": 114,
+      "name": "Konni",
+      "district": "Pathanamthitta",
+      "overview": "Pathanamthitta ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Konni 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Konni Municipality / Panchayat"
+      ],
+      "voters": 214000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6140
+      }
+    },
+    {
+      "lac_no": 115,
+      "name": "Adoor",
+      "district": "Pathanamthitta",
+      "overview": "Pathanamthitta ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Adoor 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Adoor Municipality / Panchayat"
+      ],
+      "voters": 215000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6150
+      }
+    },
+    {
+      "lac_no": 116,
+      "name": "Karunagappally",
+      "district": "Kollam",
+      "overview": "Kollam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Karunagappally 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Karunagappally Municipality / Panchayat"
+      ],
+      "voters": 216000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6160
+      }
+    },
+    {
+      "lac_no": 117,
+      "name": "Chavara",
+      "district": "Kollam",
+      "overview": "Kollam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Chavara 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Chavara Municipality / Panchayat"
+      ],
+      "voters": 217000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6170
+      }
+    },
+    {
+      "lac_no": 118,
+      "name": "Kunnathur",
+      "district": "Kollam",
+      "overview": "Kollam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kunnathur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kunnathur Municipality / Panchayat"
+      ],
+      "voters": 218000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6180
+      }
+    },
+    {
+      "lac_no": 119,
+      "name": "Kottarakkara",
+      "district": "Kollam",
+      "overview": "Kollam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kottarakkara 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kottarakkara Municipality / Panchayat"
+      ],
+      "voters": 219000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6190
+      }
+    },
+    {
+      "lac_no": 120,
+      "name": "Pathanapuram",
+      "district": "Kollam",
+      "overview": "Kollam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Pathanapuram 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Pathanapuram Municipality / Panchayat"
+      ],
+      "voters": 220000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6200
+      }
+    },
+    {
+      "lac_no": 121,
+      "name": "Punalur",
+      "district": "Kollam",
+      "overview": "Kollam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Punalur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Punalur Municipality / Panchayat"
+      ],
+      "voters": 221000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6210
+      }
+    },
+    {
+      "lac_no": 122,
+      "name": "Chadayamangalam",
+      "district": "Kollam",
+      "overview": "Kollam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Chadayamangalam 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Chadayamangalam Municipality / Panchayat"
+      ],
+      "voters": 222000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6220
+      }
+    },
+    {
+      "lac_no": 123,
+      "name": "Kundara",
+      "district": "Kollam",
+      "overview": "Kollam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kundara 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kundara Municipality / Panchayat"
+      ],
+      "voters": 223000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6230
+      }
+    },
+    {
+      "lac_no": 124,
+      "name": "Kollam",
+      "district": "Kollam",
+      "overview": "Kollam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kollam 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kollam Municipality / Panchayat"
+      ],
+      "voters": 224000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6240
+      }
+    },
+    {
+      "lac_no": 125,
+      "name": "Eravipuram",
+      "district": "Kollam",
+      "overview": "Kollam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Eravipuram 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Eravipuram Municipality / Panchayat"
+      ],
+      "voters": 225000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6250
+      }
+    },
+    {
+      "lac_no": 126,
+      "name": "Chathannur",
+      "district": "Kollam",
+      "overview": "Kollam ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Chathannur 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Chathannur Municipality / Panchayat"
+      ],
+      "voters": 226000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6260
+      }
+    },
+    {
+      "lac_no": 127,
+      "name": "Varkala",
+      "district": "Thiruvananthapuram",
+      "overview": "Thiruvananthapuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Varkala 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Varkala Municipality / Panchayat"
+      ],
+      "voters": 227000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6270
+      }
+    },
+    {
+      "lac_no": 128,
+      "name": "Attingal",
+      "district": "Thiruvananthapuram",
+      "overview": "Thiruvananthapuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Attingal 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Attingal Municipality / Panchayat"
+      ],
+      "voters": 228000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6280
+      }
+    },
+    {
+      "lac_no": 129,
+      "name": "Chirayinkeezhu",
+      "district": "Thiruvananthapuram",
+      "overview": "Thiruvananthapuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Chirayinkeezhu 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Chirayinkeezhu Municipality / Panchayat"
+      ],
+      "voters": 229000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6290
+      }
+    },
+    {
+      "lac_no": 130,
+      "name": "Nedumangad",
+      "district": "Thiruvananthapuram",
+      "overview": "Thiruvananthapuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Nedumangad 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Nedumangad Municipality / Panchayat"
+      ],
+      "voters": 230000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6300
+      }
+    },
+    {
+      "lac_no": 131,
+      "name": "Vamanapuram",
+      "district": "Thiruvananthapuram",
+      "overview": "Thiruvananthapuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Vamanapuram 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Vamanapuram Municipality / Panchayat"
+      ],
+      "voters": 231000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6310
+      }
+    },
+    {
+      "lac_no": 132,
+      "name": "Kazhakkoottam",
+      "district": "Thiruvananthapuram",
+      "overview": "Thiruvananthapuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kazhakkoottam 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kazhakkoottam Municipality / Panchayat"
+      ],
+      "voters": 232000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6320
+      }
+    },
+    {
+      "lac_no": 133,
+      "name": "Vattiyoorkavu",
+      "district": "Thiruvananthapuram",
+      "overview": "Thiruvananthapuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Vattiyoorkavu 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Vattiyoorkavu Municipality / Panchayat"
+      ],
+      "voters": 233000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6330
+      }
+    },
+    {
+      "lac_no": 134,
+      "name": "Thiruvananthapuram",
+      "district": "Thiruvananthapuram",
+      "overview": "Thiruvananthapuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Thiruvananthapuram 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Thiruvananthapuram Municipality / Panchayat"
+      ],
+      "voters": 234000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6340
+      }
+    },
+    {
+      "lac_no": 135,
+      "name": "Nemom",
+      "district": "Thiruvananthapuram",
+      "overview": "Thiruvananthapuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Nemom 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Nemom Municipality / Panchayat"
+      ],
+      "voters": 235000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6350
+      }
+    },
+    {
+      "lac_no": 136,
+      "name": "Aruvikkara",
+      "district": "Thiruvananthapuram",
+      "overview": "Thiruvananthapuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Aruvikkara 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Aruvikkara Municipality / Panchayat"
+      ],
+      "voters": 236000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6360
+      }
+    },
+    {
+      "lac_no": 137,
+      "name": "Parassala",
+      "district": "Thiruvananthapuram",
+      "overview": "Thiruvananthapuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Parassala 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Parassala Municipality / Panchayat"
+      ],
+      "voters": 237000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6370
+      }
+    },
+    {
+      "lac_no": 138,
+      "name": "Kattakkada",
+      "district": "Thiruvananthapuram",
+      "overview": "Thiruvananthapuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kattakkada 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kattakkada Municipality / Panchayat"
+      ],
+      "voters": 238000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6380
+      }
+    },
+    {
+      "lac_no": 139,
+      "name": "Kovalam",
+      "district": "Thiruvananthapuram",
+      "overview": "Thiruvananthapuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Kovalam 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Kovalam Municipality / Panchayat"
+      ],
+      "voters": 239000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6390
+      }
+    },
+    {
+      "lac_no": 140,
+      "name": "Neyyattinkara",
+      "district": "Thiruvananthapuram",
+      "overview": "Thiruvananthapuram ജില്ലയിലെ പ്രധാന നിയമസഭാ മണ്ഡലമായ Neyyattinkara 2008 ലെ മണ്ഡല പുനർനിർണ്ണയത്തിന് ശേഷം നിലവിൽ വന്നതാണ്. ഈ മണ്ഡലം സാമൂഹിക, സാമ്പത്തിക, വികസന മേഖലകളിൽ ശ്രദ്ധേയമാണ്.",
+      "local_bodies": [
+        "Neyyattinkara Municipality / Panchayat"
+      ],
+      "voters": 240000,
+      "mla": {
+        "name": "Sample MLA",
+        "party": "LDF/UDF"
+      },
+      "election_2021": {
+        "winner": "Sample MLA",
+        "party": "LDF/UDF",
+        "margin": 6400
+      }
+    }
+  ]
+}

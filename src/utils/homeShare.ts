@@ -37,10 +37,10 @@ export function buildHomeShareText(params: {
         : `ലെവൽ 1 · വകുപ്പ് ക്വിസ് (${total} ചോദ്യങ്ങൾ)`;
     const extra =
       level === 'general'
-        ? `ഇനി ${departmentCount} വകുപ്പ് വിഭാഗങ്ങളിൽ ഓരോന്നായി ലെവൽ 1 ക്വിസുകൾ തുറന്നിരിക്കുന്നു — മുകളിലെ വിഭാഗം തിരഞ്ഞെടുത്ത് തുടരാം.`
-        : `മറ്റു വകുപ്പ് വിഭാഗങ്ങളും ലെവൽ 1 ൽ ലഭ്യമാണ് — മുകളിലെ ടാബിൽ നിന്ന് തിരഞ്ഞെടുക്കുക.`;
+        ? `ഇനി ${departmentCount} വകുപ്പ് വിഭാഗങ്ങളിൽ ഓരോന്നായി ലെവൽ 1 ക്വിസുകൾ തുറന്നിരിക്കുന്നു - മുകളിലെ വിഭാഗം തിരഞ്ഞെടുത്ത് തുടരാം.`
+        : `മറ്റു വകുപ്പ് വിഭാഗങ്ങളും ലെവൽ 1 ൽ ലഭ്യമാണ് - മുകളിലെ ടാബിൽ നിന്ന് തിരഞ്ഞെടുക്കുക.`;
 
-    return `🏛️ KNOW-KERALAM (2016–2026)
+    return `🏛️ KNOW-KERALAM (2016-2026)
 ${levelLine}
 
 ${categoryTitle}
@@ -60,10 +60,10 @@ ${siteUrl}`;
       : `Level 1 · Department quiz (${total} questions)`;
   const extra =
     level === 'general'
-      ? `${departmentCount} department topics are open at Level 1 — pick a category tab above to continue.`
-      : 'More department quizzes are available at Level 1 — choose another topic from the tabs above.';
+      ? `${departmentCount} department topics are open at Level 1 - pick a category tab above to continue.`
+      : 'More department quizzes are available at Level 1 - choose another topic from the tabs above.';
 
-  return `🏛️ KNOW-KERALAM (2016–2026)
+  return `🏛️ KNOW-KERALAM (2016-2026)
 ${levelLine}
 
 ${categoryTitle}

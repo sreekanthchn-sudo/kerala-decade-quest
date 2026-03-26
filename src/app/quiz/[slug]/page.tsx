@@ -5,7 +5,8 @@ import QuizClient from './QuizClient';
 const modules = modulesData as Module[];
 
 export function generateStaticParams() {
-  return modules.map((m) => ({ slug: m.slug }));
+  // Home-only synthetic category; not a standalone /quiz page.
+  return modules.filter((m) => m.slug !== 'general-quiz').map((m) => ({ slug: m.slug }));
 }
 
 export default async function QuizPage({ params }: { params: Promise<{ slug: string }> }) {

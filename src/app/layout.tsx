@@ -9,9 +9,9 @@ const malayalamFont = Manjari({
 });
 
 export const metadata: Metadata = {
-  title: "KNOW-KERALAM (2016–2026) · knowkeralam.com",
+  title: "KNOW-KERALAM (2016-2026) · knowkeralam.com",
   description:
-    "നോ-കേരളം — അടുത്തറിയാം കഴിഞ്ഞ ഒരു ദശകത്തിന്റെ നേട്ടങ്ങൾ — 21 വകുപ്പുകൾ, ഓരോ റൗണ്ടിൽ 10 ചോദ്യങ്ങൾ. knowkeralam.com",
+    "നോ-കേരളം - അടുത്തറിയാം കഴിഞ്ഞ ഒരു ദശകത്തിന്റെ നേട്ടങ്ങൾ - 21 വകുപ്പുകൾ, ഓരോ റൗണ്ടിൽ 10 ചോദ്യങ്ങൾ. knowkeralam.com",
   keywords: ["നോ-കേരളം", "KNOW-KERALAM", "knowkeralam", "കേരളം", "ഭരണം", "ക്വിസ്", "വികസനം", "LIFE Mission", "KIIFB"],
 };
 

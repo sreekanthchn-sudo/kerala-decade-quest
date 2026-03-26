@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "import:general": "node scripts/import-general-quiz-from-csv.mjs",
+    "import:general:sheet": "node scripts/import-general-quiz-from-google-sheet.mjs"
   },
   "dependencies": {
     "@types/qrcode": "^1.5.6",

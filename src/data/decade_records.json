@@ -1,5 +1,304 @@
 [
   {
+    "slug": "general-quiz",
+    "title": "General Quiz",
+    "title_ml": "പൊതു ക്വിസ്",
+    "dept_tag": "General / Mixed",
+    "icon": "Landmark",
+    "color": "#FACC15",
+    "description": "A mixed round across all departments (10 questions).",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Which is the first state in India to prepare a 'Water Budget'?",
+        "question_ml": "ഇന്ത്യയിൽ ആദ്യമായി ജലബജറ്റ് തയ്യാറാക്കിയ സംസ്ഥാനം",
+        "options": [
+          "Uttar Pradesh",
+          "Tamil Nadu",
+          "Rajasthan",
+          "Kerala"
+        ],
+        "options_ml": [
+          "ഉത്തർപ്രദേശ്",
+          "തമിഴ്നാട്",
+          "രാജസ്ഥാൻ",
+          "കേരളം"
+        ],
+        "answer": 3,
+        "kerala_stat_2026": "-",
+        "national_average": "-",
+        "historical_benchmark": "-",
+        "flex_fact": "A water budget is a tool used to assess the availability of water in a region and the sustainability of its water distribution.",
+        "flex_fact_ml": "ഒരു പ്രദേശത്തെ ജലത്തിന്റെ ലഭ്യതയും ജലവിതരണത്തിന്റെ സുസ്ഥിരതയും വിലയിരുത്തുന്നതിനുള്ള ഒരു ഉപാധിയാണ് ജലബജറ്റ്",
+        "source": "-"
+      },
+      {
+        "id": 2,
+        "question": "Kerala declared internet as a basic right and launched K-FON. What makes K-FON unique in India?",
+        "question_ml": "കേരളം ഇന്റർനെറ്റ് ഒരു അടിസ്ഥാന അവകാശമായി പ്രഖ്യാപിച്ച് K-FON പദ്ധതി ആരംഭിച്ചു. ഇന്ത്യയിൽ K-FON-നെ സവിശേഷമാക്കുന്നത് എന്താണ്?",
+        "options": [
+          "Cheapest plans",
+          "First state to get its own ISP license",
+          "5G network",
+          "Satellite internet"
+        ],
+        "options_ml": [
+          "ഏറ്റവും വിലകുറഞ്ഞ പ്ലാനുകൾ",
+          "സ്വന്തം ISP ലൈസൻസ് നേടിയ ആദ്യ സംസ്ഥാനം",
+          "5G നെറ്റ്‌വർക്ക്",
+          "സാറ്റലൈറ്റ് ഇന്റർനെറ്റ്"
+        ],
+        "answer": 1,
+        "kerala_stat_2026": "K-FON: Kerala is India's first state with its own ISP license (2022)",
+        "national_average": "No other state government operates as an Internet Service Provider",
+        "historical_benchmark": "K-FON construction started 2021; commercial launch June 2023",
+        "flex_fact": "K-FON laid 30,000+ km of fiber optic cable using KSEB poles, creating 375+ points of presence. It offers free internet to 20 lakh BPL families — making Kerala the first state to treat internet access as a right, not a luxury.",
+        "flex_fact_ml": "KSEB പോളുകൾ ഉപയോഗിച്ച് 30,000+ km ഫൈബർ ഓപ്ടിക് കേബിൾ. 20 ലക്ഷം BPL കുടുംബങ്ങൾക്ക് സൗജന്യ ഇന്റർനെറ്റ് — ഇന്റർനെറ്റ് അവകാശമാക്കിയ ആദ്യ സംസ്ഥാനം.",
+        "source": "K-FON Project / DoT ISP License 2022"
+      },
+      {
+        "id": 3,
+        "question": "Sree Narayana Guru Open University — Kerala's first open university — was established in which year?",
+        "question_ml": "കേരളത്തിലെ ആദ്യ ഓപ്പൺ യൂണിവേഴ്സിറ്റിയായ ശ്രീനാരായണ ഗുരു ഓപ്പൺ യൂണിവേഴ്സിറ്റി ഏത് വർഷമാണ് സ്ഥാപിതമായത്?",
+        "options": [
+          "2018",
+          "2019",
+          "2021",
+          "2023"
+        ],
+        "options_ml": [
+          "2018",
+          "2019",
+          "2021",
+          "2023"
+        ],
+        "answer": 2,
+        "kerala_stat_2026": "Established 2021 — named after social reformer Sree Narayana Guru",
+        "national_average": "IGNOU serves nationally but few states have their own open universities",
+        "historical_benchmark": "Kerala was one of the last major states to establish an open university",
+        "flex_fact": "Named after the great social reformer Sree Narayana Guru, the university makes higher education accessible to working adults, homemakers, and those who couldn't pursue regular college education.",
+        "flex_fact_ml": "മഹാനായ സാമൂഹിക പരിഷ്കർത്താവായ ശ്രീനാരായണ ഗുരുവിന്റെ പേരിൽ — ജോലി ചെയ്യുന്ന മുതിർന്നവർ, വീട്ടമ്മമാർ പോലുള്ള നേരിട്ട്  കോളേജിൽ പോയി പഠിക്കാൻ സാധിക്കാത്തവർക്ക്  ഉന്നത വിദ്യാഭ്യാസം ഒരുക്കുന്നു.",
+        "source": "Kerala Higher Education Department"
+      },
+      {
+        "id": 4,
+        "question": "What is the name of India's first Digital University, established in Kerala in 2020?",
+        "question_ml": "2020-ൽ കേരളത്തിൽ സ്ഥാപിതമായ ഇന്ത്യയുടെ ആദ്യ ഡിജിറ്റൽ യൂണിവേഴ്സിറ്റിയുടെ പേര് എന്താണ്?",
+        "options": [
+          "Kerala Technical University",
+          "Digital University of Kerala",
+          "CUSAT Digital",
+          "Kerala Open University"
+        ],
+        "options_ml": [
+          "കേരള ടെക്നിക്കൽ യൂണിവേഴ്സിറ്റി",
+          "ഡിജിറ്റൽ യൂണിവേഴ്സിറ്റി ഓഫ് കേരള",
+          "CUSAT ഡിജിറ്റൽ",
+          "കേരള ഓപ്പൺ യൂണിവേഴ്സിറ്റി"
+        ],
+        "answer": 1,
+        "kerala_stat_2026": "Digital University of Kerala (formerly IIITM-K) — India's first digital university",
+        "national_average": "No other state has a dedicated digital university",
+        "historical_benchmark": "Upgraded from IIITM-K (Indian Institute of Information Technology and Management - Kerala)",
+        "flex_fact": "The Digital University of Kerala offers cutting-edge programs in AI, Data Science, Cybersecurity, and Digital Humanities — preparing Kerala's youth for the knowledge economy.",
+        "flex_fact_ml": "ഡിജിറ്റൽ യൂണിവേഴ്സിറ്റി ഓഫ് കേരള AI, ഡാറ്റ സയൻസ്, സൈബർ സെക്യൂരിറ്റി, ഡിജിറ്റൽ ഹ്യൂമാനിറ്റീസ് അടക്കമുള്ള വിവിധ കോഴ്സുകൾ വാഗ്ദാനം ചെയ്യുന്നു.",
+        "source": "Digital University of Kerala / Kerala Higher Education Department"
+      },
+      {
+        "id": 5,
+        "question": "By February 2026, how many houses were completed under Kerala's LIFE Mission — India's largest state-funded housing programme?",
+        "question_ml": "2026 ഫെബ്രുവരിയോടെ ഇന്ത്യയിലെ ഏറ്റവും വലിയ സംസ്ഥാന ഭവന പദ്ധതിയായ LIFE Mission-ൽ എത്ര വീടുകൾ പൂർത്തിയാക്കി?",
+        "options": [
+          "2,50,000",
+          "3,50,000",
+          "5,00,364",
+          "6,04,046"
+        ],
+        "options_ml": [
+          "2,50,000",
+          "3,50,000",
+          "5,00,364",
+          "6,04,046"
+        ],
+        "answer": 2,
+        "kerala_stat_2026": "5,00,364 houses completed out of 6,04,046 sanctioned",
+        "national_average": "PM Awaas Yojana: Central govt provides ₹72,000 (rural) / ₹1.5L (urban) per house",
+        "historical_benchmark": "Pre-2016: No unified state housing mission existed",
+        "flex_fact": "Kerala spent ₹20,831 crore on LIFE Mission — 73% of houses were fully state-funded without any central assistance.",
+        "flex_fact_ml": "കേരളം LIFE Mission-ന് ₹20,831 കോടി ചെലവഴിച്ചു — 73% വീടുകൾ കേന്ദ്ര സഹായമില്ലാതെ സംസ്ഥാനം സ്വന്തമായി നിർമ്മിച്ചവയാണ്.",
+        "source": "Onmanorama / LIFE Mission Official Data, Feb 2026"
+      },
+      {
+        "id": 6,
+        "question": "What percentage of LIFE Mission houses are titled in the name of women — making it the world's largest women-led housing ownership programme?",
+        "question_ml": "ലൈഫ് മിഷൻ പദ്ധതിയുടെ എത്ര ശതമാനം വീടുകളാണ് സ്ത്രീകളുടെ പേരിൽ രജിസ്റ്റർ ചെയ്തിട്ടുള്ളത്?",
+        "options": [
+          "40%",
+          "65%",
+          "80%",
+          "95%"
+        ],
+        "options_ml": [
+          "40%",
+          "65%",
+          "80%",
+          "95%"
+        ],
+        "answer": 3,
+        "kerala_stat_2026": "~95% of LIFE houses have women title holders",
+        "national_average": "National women property ownership: ~13% (NFHS-5)",
+        "historical_benchmark": "Pre-2016: ~40% women title holders in state housing schemes",
+        "flex_fact": "LIFE Mission used housing as a vehicle for women's asset ownership at scale — 7x the national average. NITI Aayog recognized it as a national best practice.",
+        "flex_fact_ml": "LIFE Mission ഭവനം സ്ത്രീ സ്വത്തുടമസ്ഥതയുടെ ഉപകരണമാക്കി — ദേശീയ ശരാശരിയുടെ 7 മടങ്ങ്. NITI Aayog ദേശീയ തലത്തിൽ  മികച്ച ശീലമായി അംഗീകരിച്ചു.",
+        "source": "LIFE Mission Gender Report / NITI Aayog Best Practice Recognition"
+      },
+      {
+        "id": 7,
+        "question": "How many kilometers of roads were improved through KIIFB funding across Kerala?",
+        "question_ml": "KIIFB ഫണ്ടിംഗ് വഴി കേരളത്തിലുടനീളം എത്ര കിലോമീറ്റർ റോഡുകൾ മെച്ചപ്പെടുത്തി?",
+        "options": [
+          "2,000 km",
+          "5,000 km",
+          "8,000+ km",
+          "1,000 km"
+        ],
+        "options_ml": [
+          "2,000 km",
+          "5,000 km",
+          "8,000+ km",
+          "1,000 km"
+        ],
+        "answer": 2,
+        "kerala_stat_2026": "8,000+ km of roads improved with KIIFB funding",
+        "national_average": "No other state has a dedicated off-budget road fund of this scale",
+        "historical_benchmark": "Pre-2016: Road maintenance depended entirely on annual budget constraints",
+        "flex_fact": "KIIFB allocates ~40% of its portfolio to road infrastructure — ensuring Kerala's roads are maintained regardless of annual budget pressures.",
+        "flex_fact_ml": "KIIFB അതിന്റെ പോർട്ട്‌ഫോളിയോയുടെ ~40% റോഡ് അടിസ്ഥാന സൗകര്യത്തിന് നീക്കിവയ്ക്കുന്നു — വാർഷിക ബജറ്റ് സമ്മർദ്ദങ്ങളെ അവഗണിച്ച് റോഡ് പരിപാലനം ഉറപ്പാക്കുന്നു.",
+        "source": "KIIFB Project Portfolio Reports"
+      },
+      {
+        "id": 8,
+        "question": "Kerala's Infant Mortality Rate (IMR) is 5 per 1,000 live births. What is India's national average?",
+        "question_ml": "കേരളത്തിന്റെ ശിശുമരണ നിരക്ക് (IMR) 1,000 ജനനങ്ങളിൽ 5. ഇന്ത്യയുടെ ദേശീയ ശരാശരി എത്ര?",
+        "options": [
+          "12",
+          "18",
+          "27",
+          "35"
+        ],
+        "options_ml": [
+          "12",
+          "18",
+          "27",
+          "35"
+        ],
+        "answer": 2,
+        "kerala_stat_2026": "Kerala IMR: 8 per 1,000 live births",
+        "national_average": "India national IMR: 27 per 1,000 live births",
+        "historical_benchmark": "Kerala IMR in 2015: 12; reduced to 8 by 2023",
+        "flex_fact": "Kerala's IMR of 8 is comparable to developed nations like the UK (3.7) and USA (5.4) — while India's average of 27 is still higher than Bangladesh (24).",
+        "flex_fact_ml": "കേരളത്തിന്റെ IMR 8 — UK (3.7), USA (5.4) പോലുള്ള വികസിത രാജ്യങ്ങൾക്ക് തുല്യം. ഇന്ത്യ ശരാശരി 27 ബംഗ്ലാദേശിനെക്കാൾ (24) ഉയർന്നത്.",
+        "source": "SRS Bulletin, Registrar General of India"
+      },
+      {
+        "id": 9,
+        "question": "Which campaign was launched by Haritha Keralam Mission in December 2019 for the public-led restoration of water streams?",
+        "question_ml": "നീർച്ചാലുകൾ ജനകീയമായി വീണ്ടെടുക്കുന്നതിന് ഹരിതകേരളം മിഷൻ 2019 ഡിസംബറിൽ തുടക്കം കുറിച്ച ക്യാമ്പയിൻ",
+        "options": [
+          "Freedom from Waste (Malinyathil ninnu Swathanthryam)",
+          "Waste-free New Kerala (Malinyamuktha Navakerala)",
+          "Ini Njan Ozhukatte (Let me flow now",
+          "Sujalam Subhalam"
+        ],
+        "options_ml": [
+          "മാലിന്യത്തിൽ നിന്ന് സ്വാതന്ത്യം",
+          "മാലിന്യമുക്തനവകേരളം",
+          "ഇനി ഞാൻ ഒഴുകട്ടെ",
+          "സുജലം സുഭലം"
+        ],
+        "answer": 2,
+        "kerala_stat_2026": "-",
+        "national_average": "-",
+        "historical_benchmark": "-",
+        "flex_fact": "Through the 'Ini Njan Ozhukatte' campaign aimed at rejuvenating water bodies, Haritha Keralam Mission has restored 1,01,551 km of water streams (including repeated cleaning).",
+        "flex_fact_ml": "ജലസ്രോതസ്സുകളുടെ പുനരുജ്ജീവനം ലക്ഷ്യമിട്ട് നടപ്പാക്കുന്ന 'ഇനി ഞാനൊഴുകട്ടെ' ക്യാമ്പയിൻ വഴി ഹരിതകേരളം മിഷൻ വീണ്ടെടുത്തത് 1,01,551 കിലോമീറ്റർ നീർച്ചാലുകൾ (ആവർത്തിച്ച് വൃത്തിയാക്കിയതുൾപ്പെടെ)",
+        "source": "-"
+      },
+      {
+        "id": 10,
+        "question": "Approximately how many landless people received pattayams in Kerala during 2016–2024?",
+        "question_ml": "2016–2024 കാലഘട്ടത്തിൽ ഏകദേശം എത്ര ഭൂരഹിതർക്കാണ് പട്ടയം ലഭിച്ചത്?",
+        "options": [
+          "1 Lakh",
+          "2 Lakh",
+          "3 Lakh",
+          "4 Lakh"
+        ],
+        "options_ml": [
+          "1 ലക്ഷം",
+          "2 ലക്ഷം",
+          "3 ലക്ഷം",
+          "4 ലക്ഷം"
+        ],
+        "answer": 3,
+        "kerala_stat_2026": "4 ലക്ഷം",
+        "national_average": "-",
+        "historical_benchmark": "-",
+        "flex_fact": "Over 4 lakh people Received land titles during this period. A milestone in Kerala’s land reform efforts.This initiative aims at \"landless-free Kerala\".",
+        "flex_fact_ml": "നിലവിലെ സർക്കാർ 223945 പട്ടയങ്ങൾ വിതരണം ചെയ്തു.",
+        "source": "-"
+      },
+      {
+        "id": 11,
+        "question": "When was Kerala declared as India’s first state without extreme poverty?",
+        "question_ml": "രാജ്യത്തിലെ ആദ്യത്തെ അതിദരിദ്രരില്ലാത്ത സംസ്ഥാനമായി കേരളത്തെ പ്രഖ്യാപിച്ചത് എപ്പോൾ?",
+        "options": [
+          "2024 October 1",
+          "2025 November 1",
+          "2023 January 1",
+          "2025 August 15"
+        ],
+        "options_ml": [
+          "2024 ഒക്ടോബർ 1",
+          "2025 നവംബർ 1",
+          "2023 ജനുവരി 1",
+          "2025 ഓഗസ്റ്റ് 15"
+        ],
+        "answer": 1,
+        "kerala_stat_2026": "2025 നവംബർ 1",
+        "national_average": "-",
+        "historical_benchmark": "-",
+        "flex_fact": "Kerala achieved this milestone through systematic efforts. A historic achievement in poverty eradication. Kerala became a model for other states.",
+        "flex_fact_ml": "2025 നവംബർ 1-ന് കേരളം ഈ നേട്ടം കൈവരിച്ചു.",
+        "source": "-"
+      },
+      {
+        "id": 12,
+        "question": "In which year was the financial assistance scheme for women (including trans women) started in Kerala?",
+        "question_ml": "സ്ത്രീകൾക്ക് (ട്രാൻസ് വുമൺ ഉൾപ്പെടെ) ധനസഹായ പദ്ധതി ആരംഭിച്ചത് ഏത് വർഷം?",
+        "options": [
+          "2026",
+          "2021",
+          "2016",
+          "2014"
+        ],
+        "options_ml": [
+          "2026",
+          "2021",
+          "2016",
+          "2014"
+        ],
+        "answer": 0,
+        "kerala_stat_2026": "2026",
+        "national_average": "-",
+        "historical_benchmark": "-",
+        "flex_fact": "The scheme was launched to support financially vulnerable women. Focuses on inclusive welfare. It includes trans women aged 35–60",
+        "flex_fact_ml": "2026-ൽ പദ്ധതി ആരംഭിച്ചു.",
+        "source": "-"
+      }
+    ]
+  },
+  {
     "slug": "it-electronics",
     "title": "IT, Electronics & Communications",
     "title_ml": "ഐ.ടി, ഇലക്ട്രോണിക്സ്, വാർത്താവിനിമയ വകുപ്പ്",

@@ -1,0 +1,1004 @@
+{
+  "sourcePage": "https://election.reporterlive.com/kerala-assembly",
+  "description": "Reporter Online Election Survey — user-submitted MLA ratings (out of 10), not official election results.",
+  "snapshotDate": "2025-03-25",
+  "scoresByLac": {
+    "7": 8.4,
+    "10": 8.64,
+    "12": 8.35,
+    "29": 8.34,
+    "32": 8.26,
+    "38": 8.34,
+    "41": 8.22,
+    "78": 8.25,
+    "98": 8.35,
+    "107": 8.53,
+    "109": 8.96,
+    "114": 8.68,
+    "120": 8.51,
+    "133": 8.9,
+    "135": 8.36
+  },
+  "constituencies": [
+    {
+      "lac": 1,
+      "nameEnglish": "Manjeshwar",
+      "slug": "manjeshwar",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/manjeshwar",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 2,
+      "nameEnglish": "Kasaragod",
+      "slug": "kasaragod",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kasaragod",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 3,
+      "nameEnglish": "Udma",
+      "slug": "udma",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/udma",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 4,
+      "nameEnglish": "Kanhangad",
+      "slug": "kanhangad",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kanhangad",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 5,
+      "nameEnglish": "Trikaripur",
+      "slug": "trikaripur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/trikaripur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 6,
+      "nameEnglish": "Payyannur",
+      "slug": "payyannur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/payyannur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 7,
+      "nameEnglish": "Kalliasseri",
+      "slug": "kalliasseri",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kalliasseri",
+      "reporterScoreSnapshot": 8.4
+    },
+    {
+      "lac": 8,
+      "nameEnglish": "Taliparamba",
+      "slug": "taliparamba",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/taliparamba",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 9,
+      "nameEnglish": "Irikkur",
+      "slug": "irikkur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/irikkur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 10,
+      "nameEnglish": "Azhikode",
+      "slug": "azhikode",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/azhikode",
+      "reporterScoreSnapshot": 8.64
+    },
+    {
+      "lac": 11,
+      "nameEnglish": "Kannur",
+      "slug": "kannur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kannur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 12,
+      "nameEnglish": "Dharmadam",
+      "slug": "dharmadom",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/dharmadom",
+      "reporterScoreSnapshot": 8.35
+    },
+    {
+      "lac": 13,
+      "nameEnglish": "Thalassery",
+      "slug": "thalassery",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/thalassery",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 14,
+      "nameEnglish": "Kuthuparamba",
+      "slug": "kuthuparamba",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kuthuparamba",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 15,
+      "nameEnglish": "Mattannur",
+      "slug": "mattannur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/mattannur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 16,
+      "nameEnglish": "Peravoor",
+      "slug": "peravoor",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/peravoor",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 17,
+      "nameEnglish": "Mananthavady",
+      "slug": "mananthavady",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/mananthavady",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 18,
+      "nameEnglish": "Sulthan Bathery",
+      "slug": "sulthanbathery",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/sulthanbathery",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 19,
+      "nameEnglish": "Kalpetta",
+      "slug": "kalpetta",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kalpetta",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 20,
+      "nameEnglish": "Vadakara",
+      "slug": "vadakara",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/vadakara",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 21,
+      "nameEnglish": "Kuttiadi",
+      "slug": "kuttiadi",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kuttiadi",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 22,
+      "nameEnglish": "Nadapuram",
+      "slug": "nadapuram",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/nadapuram",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 23,
+      "nameEnglish": "Quilandy",
+      "slug": "quilandy",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/quilandy",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 24,
+      "nameEnglish": "Perambra",
+      "slug": "perambra",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/perambra",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 25,
+      "nameEnglish": "Balusseri",
+      "slug": "balusseri",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/balusseri",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 26,
+      "nameEnglish": "Elathur",
+      "slug": "elathur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/elathur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 27,
+      "nameEnglish": "Kozhikode North",
+      "slug": "kozhikodenorth",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kozhikodenorth",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 28,
+      "nameEnglish": "Kozhikode South",
+      "slug": "kozhikodesouth",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kozhikodesouth",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 29,
+      "nameEnglish": "Beypore",
+      "slug": "beypore",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/beypore",
+      "reporterScoreSnapshot": 8.34
+    },
+    {
+      "lac": 30,
+      "nameEnglish": "Kunnamangalam",
+      "slug": "kunnamangalam",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kunnamangalam",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 31,
+      "nameEnglish": "Koduvally",
+      "slug": "koduvally",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/koduvally",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 32,
+      "nameEnglish": "Thiruvambady",
+      "slug": "thiruvambady",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/thiruvambady",
+      "reporterScoreSnapshot": 8.26
+    },
+    {
+      "lac": 33,
+      "nameEnglish": "Kondotty",
+      "slug": "kondotty",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kondotty",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 34,
+      "nameEnglish": "Eranad",
+      "slug": "eranad",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/eranad",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 35,
+      "nameEnglish": "Nilambur",
+      "slug": "nilambur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/nilambur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 36,
+      "nameEnglish": "Wandoor",
+      "slug": "wandoor",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/wandoor",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 37,
+      "nameEnglish": "Manjeri",
+      "slug": "manjeri",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/manjeri",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 38,
+      "nameEnglish": "Perinthalmanna",
+      "slug": "perinthalmanna",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/perinthalmanna",
+      "reporterScoreSnapshot": 8.34
+    },
+    {
+      "lac": 39,
+      "nameEnglish": "Mankada",
+      "slug": "mankada",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/mankada",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 40,
+      "nameEnglish": "Malappuram",
+      "slug": "malappuram",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/malappuram",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 41,
+      "nameEnglish": "Vengara",
+      "slug": "vengara",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/vengara",
+      "reporterScoreSnapshot": 8.22
+    },
+    {
+      "lac": 42,
+      "nameEnglish": "Vallikkunnu",
+      "slug": "vallikkunnu",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/vallikkunnu",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 43,
+      "nameEnglish": "Tirurangadi",
+      "slug": "tirurangadi",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/tirurangadi",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 44,
+      "nameEnglish": "Tanur",
+      "slug": "tanur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/tanur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 45,
+      "nameEnglish": "Tirur",
+      "slug": "tirur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/tirur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 46,
+      "nameEnglish": "Kottakkal",
+      "slug": "kottakkal",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kottakkal",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 47,
+      "nameEnglish": "Thavanur",
+      "slug": "thavanur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/thavanur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 48,
+      "nameEnglish": "Ponnani",
+      "slug": "ponnani",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/ponnani",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 49,
+      "nameEnglish": "Thrithala",
+      "slug": "thrithala",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/thrithala",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 50,
+      "nameEnglish": "Pattambi",
+      "slug": "pattambi",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/pattambi",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 51,
+      "nameEnglish": "Shornur",
+      "slug": "shornur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/shornur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 52,
+      "nameEnglish": "Ottapalam",
+      "slug": "ottapalam",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/ottapalam",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 53,
+      "nameEnglish": "Kongad",
+      "slug": "kongad",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kongad",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 54,
+      "nameEnglish": "Mannarkad",
+      "slug": "mannarkad",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/mannarkad",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 55,
+      "nameEnglish": "Malampuzha",
+      "slug": "malampuzha",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/malampuzha",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 56,
+      "nameEnglish": "Palakkad",
+      "slug": "palakkad",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/palakkad",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 57,
+      "nameEnglish": "Tarur",
+      "slug": "tarur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/tarur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 58,
+      "nameEnglish": "Chittur",
+      "slug": "chittur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/chittur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 59,
+      "nameEnglish": "Nenmara",
+      "slug": "nenmara",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/nenmara",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 60,
+      "nameEnglish": "Alathur",
+      "slug": "alathur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/alathur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 61,
+      "nameEnglish": "Chelakkara",
+      "slug": "chelakkara",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/chelakkara",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 62,
+      "nameEnglish": "Kunnamkulam",
+      "slug": "kunnamkulam",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kunnamkulam",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 63,
+      "nameEnglish": "Guruvayoor",
+      "slug": "guruvayoor",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/guruvayoor",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 64,
+      "nameEnglish": "Manalur",
+      "slug": "manalur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/manalur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 65,
+      "nameEnglish": "Wadakkanchery",
+      "slug": "wadakkanchery",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/wadakkanchery",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 66,
+      "nameEnglish": "Ollur",
+      "slug": "ollur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/ollur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 67,
+      "nameEnglish": "Thrissur",
+      "slug": "thrissur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/thrissur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 68,
+      "nameEnglish": "Nattika",
+      "slug": "nattika",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/nattika",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 69,
+      "nameEnglish": "Kaipamangalam",
+      "slug": "kaipamangalam",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kaipamangalam",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 70,
+      "nameEnglish": "Irinjalakkuda",
+      "slug": "irinjalakuda",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/irinjalakuda",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 71,
+      "nameEnglish": "Puthukkad",
+      "slug": "puthukkad",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/puthukkad",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 72,
+      "nameEnglish": "Chalakkudy",
+      "slug": "chalakkudy",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/chalakkudy",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 73,
+      "nameEnglish": "Kodungallur",
+      "slug": "kodungallur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kodungallur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 74,
+      "nameEnglish": "Perumbavoor",
+      "slug": "perumbavoor",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/perumbavoor",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 75,
+      "nameEnglish": "Angamaly",
+      "slug": "angamaly",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/angamaly",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 76,
+      "nameEnglish": "Aluva",
+      "slug": "aluva",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/aluva",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 77,
+      "nameEnglish": "Kalamassery",
+      "slug": "kalamassery",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kalamassery",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 78,
+      "nameEnglish": "Paravur",
+      "slug": "paravur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/paravur",
+      "reporterScoreSnapshot": 8.25
+    },
+    {
+      "lac": 79,
+      "nameEnglish": "Vypen",
+      "slug": "vypen",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/vypen",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 80,
+      "nameEnglish": "Kochi",
+      "slug": "kochi",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kochi",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 81,
+      "nameEnglish": "Thripunithura",
+      "slug": "thripunithura",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/thripunithura",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 82,
+      "nameEnglish": "Ernakulam",
+      "slug": "ernakulam",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/ernakulam",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 83,
+      "nameEnglish": "Thrikkakara",
+      "slug": "thrikkakara",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/thrikkakara",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 84,
+      "nameEnglish": "Kunnathunad",
+      "slug": "kunnathunad",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kunnathunad",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 85,
+      "nameEnglish": "Piravom",
+      "slug": "piravom",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/piravom",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 86,
+      "nameEnglish": "Muvattupuzha",
+      "slug": "muvattupuzha",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/muvattupuzha",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 87,
+      "nameEnglish": "Kothamangalam",
+      "slug": "kothamangalam",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kothamangalam",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 88,
+      "nameEnglish": "Devikulam",
+      "slug": "devikulam",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/devikulam",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 89,
+      "nameEnglish": "Udumbanchola",
+      "slug": "udumbanchola",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/udumbanchola",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 90,
+      "nameEnglish": "Thodupuzha",
+      "slug": "thodupuzha",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/thodupuzha",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 91,
+      "nameEnglish": "Idukki",
+      "slug": "idukki",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/idukki",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 92,
+      "nameEnglish": "Peerumade",
+      "slug": "peerumade",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/peerumade",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 93,
+      "nameEnglish": "Pala",
+      "slug": "pala",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/pala",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 94,
+      "nameEnglish": "Kaduthuruthy",
+      "slug": "kaduthuruthy",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kaduthuruthy",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 95,
+      "nameEnglish": "Vaikom",
+      "slug": "vaikom",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/vaikom",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 96,
+      "nameEnglish": "Ettumanoor",
+      "slug": "ettumanoor",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/ettumanoor",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 97,
+      "nameEnglish": "Kottayam",
+      "slug": "kottayam",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kottayam",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 98,
+      "nameEnglish": "Puthuppally",
+      "slug": "puthuppally",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/puthuppally",
+      "reporterScoreSnapshot": 8.35
+    },
+    {
+      "lac": 99,
+      "nameEnglish": "Changanassery",
+      "slug": "changanassery",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/changanassery",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 100,
+      "nameEnglish": "Kanjirappally",
+      "slug": "kanjirappally",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kanjirappally",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 101,
+      "nameEnglish": "Poonjar",
+      "slug": "poonjar",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/poonjar",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 102,
+      "nameEnglish": "Aroor",
+      "slug": "aroor",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/aroor",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 103,
+      "nameEnglish": "Cherthala",
+      "slug": "cherthala",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/cherthala",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 104,
+      "nameEnglish": "Alappuzha",
+      "slug": "alappuzha",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/alappuzha",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 105,
+      "nameEnglish": "Ambalapuzha",
+      "slug": "ambalapuzha",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/ambalapuzha",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 106,
+      "nameEnglish": "Kuttanad",
+      "slug": "kuttanad",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kuttanad",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 107,
+      "nameEnglish": "Haripad",
+      "slug": "haripad",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/haripad",
+      "reporterScoreSnapshot": 8.53
+    },
+    {
+      "lac": 108,
+      "nameEnglish": "Kayamkulam",
+      "slug": "kayamkulam",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kayamkulam",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 109,
+      "nameEnglish": "Mavelikara",
+      "slug": "mavelikkara",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/mavelikkara",
+      "reporterScoreSnapshot": 8.96
+    },
+    {
+      "lac": 110,
+      "nameEnglish": "Chengannur",
+      "slug": "chengannur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/chengannur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 111,
+      "nameEnglish": "Thiruvalla",
+      "slug": "thiruvalla",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/thiruvalla",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 112,
+      "nameEnglish": "Ranni",
+      "slug": "ranni",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/ranni",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 113,
+      "nameEnglish": "Aranmula",
+      "slug": "aranmula",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/aranmula",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 114,
+      "nameEnglish": "Konni",
+      "slug": "konni",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/konni",
+      "reporterScoreSnapshot": 8.68
+    },
+    {
+      "lac": 115,
+      "nameEnglish": "Adoor",
+      "slug": "adoor",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/adoor",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 116,
+      "nameEnglish": "Karunagappally",
+      "slug": "karunagappally",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/karunagappally",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 117,
+      "nameEnglish": "Chavara",
+      "slug": "chavara",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/chavara",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 118,
+      "nameEnglish": "Kunnathur",
+      "slug": "kunnathur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kunnathur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 119,
+      "nameEnglish": "Kottarakkara",
+      "slug": "kottarakkara",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kottarakkara",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 120,
+      "nameEnglish": "Pathanapuram",
+      "slug": "pathanapuram",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/pathanapuram",
+      "reporterScoreSnapshot": 8.51
+    },
+    {
+      "lac": 121,
+      "nameEnglish": "Punalur",
+      "slug": "punalur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/punalur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 122,
+      "nameEnglish": "Chadayamangalam",
+      "slug": "chadayamangalam",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/chadayamangalam",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 123,
+      "nameEnglish": "Kundara",
+      "slug": "kundara",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kundara",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 124,
+      "nameEnglish": "Kollam",
+      "slug": "kollam",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kollam",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 125,
+      "nameEnglish": "Eravipuram",
+      "slug": "eravipuram",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/eravipuram",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 126,
+      "nameEnglish": "Chathannur",
+      "slug": "chathannur",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/chathannur",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 127,
+      "nameEnglish": "Varkala",
+      "slug": "varkala",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/varkala",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 128,
+      "nameEnglish": "Attingal",
+      "slug": "attingal",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/attingal",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 129,
+      "nameEnglish": "Chirayinkeezhu",
+      "slug": "chirayinkeezhu",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/chirayinkeezhu",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 130,
+      "nameEnglish": "Nedumangad",
+      "slug": "nedumangad",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/nedumangad",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 131,
+      "nameEnglish": "Vamanapuram",
+      "slug": "vamanapuram",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/vamanapuram",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 132,
+      "nameEnglish": "Kazhakkoottam",
+      "slug": "kazhakkoottam",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kazhakkoottam",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 133,
+      "nameEnglish": "Vattiyoorkavu",
+      "slug": "vattiyoorkavu",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/vattiyoorkavu",
+      "reporterScoreSnapshot": 8.9
+    },
+    {
+      "lac": 134,
+      "nameEnglish": "Thiruvananthapuram",
+      "slug": "thiruvananthapuram",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/thiruvananthapuram",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 135,
+      "nameEnglish": "Nemom",
+      "slug": "nemom",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/nemom",
+      "reporterScoreSnapshot": 8.36
+    },
+    {
+      "lac": 136,
+      "nameEnglish": "Aruvikkara",
+      "slug": "aruvikkara",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/aruvikkara",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 137,
+      "nameEnglish": "Parassala",
+      "slug": "parassala",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/parassala",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 138,
+      "nameEnglish": "Kattakkada",
+      "slug": "kattakkada",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kattakkada",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 139,
+      "nameEnglish": "Kovalam",
+      "slug": "kovalam",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/kovalam",
+      "reporterScoreSnapshot": null
+    },
+    {
+      "lac": 140,
+      "nameEnglish": "Neyyattinkara",
+      "slug": "neyyattinkara",
+      "surveyUrl": "https://election.reporterlive.com/kerala-assembly/neyyattinkara",
+      "reporterScoreSnapshot": null
+    }
+  ]
+}
