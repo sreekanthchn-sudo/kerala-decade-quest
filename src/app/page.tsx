@@ -182,7 +182,7 @@ export default function HomePage() {
     const title = buildHomeShareTitle(isMl);
     const result = await shareHomeScoreImageAndText({ title, text, url: siteOrigin });
     if (result === 'need-fallback' && typeof window !== 'undefined') {
-      window.open(`https://wa.me/?text=${encodeURIComponent(`${text}\n\n${siteOrigin}`)}`, '_blank');
+      window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
     }
   }, [
     playClick,
