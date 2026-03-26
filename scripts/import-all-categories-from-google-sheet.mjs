@@ -59,6 +59,15 @@ function stripBom(s) {
   return s.charCodeAt(0) === 0xfeff ? s.slice(1) : s;
 }
 
+function normalizeText(s) {
+  if (s == null) return '';
+  return String(s)
+    .replace(/[\u2014\u2013]/g, '-') // — –
+    .replace(/\u00a0/g, ' ') // non-breaking space
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 function fetchText(url) {
   return new Promise((resolve, reject) => {
     https
@@ -150,7 +159,7 @@ function indexHeader(header) {
 
 function val(row, map, key) {
   const idx = map.get(key);
-  return idx == null ? '' : String(row[idx] ?? '').trim();
+  return idx == null ? '' : normalizeText(row[idx] ?? '');
 }
 
 function findFirstKey(keys, tests) {
@@ -329,6 +338,7 @@ async function importSheetIntoModule(modules, slug, sheetTabName) {
     });
   }
 
+  mod.questions = questions;
   return { slug, sheetTabName, imported: questions.length, skipped };
 }
 
