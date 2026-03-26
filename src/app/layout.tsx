@@ -51,11 +51,7 @@ export default function RootLayout({
   return (
     <html lang="ml" data-theme="dark">
       <body className={`${malayalamFont.className} ${malayalamFont.variable} flex min-h-dvh flex-col antialiased`}>
-        {/* Reserve space for sticky footer */}
-        <div className="flex-1 pb-[calc(3.25rem+env(safe-area-inset-bottom))]">{children}</div>
-        <footer className="fixed inset-x-0 bottom-0 z-50 w-full border-t border-white/10 bg-[#0a0a0a]/90 px-4 py-2 text-center text-xs text-white/70 backdrop-blur">
-          Developed by A community-driven initiative by Sameeksha UK &amp; the DYFI Professional Sub-committee.
-        </footer>
+        <div className="flex-1">{children}</div>
       </body>
     </html>
   );
