@@ -51,7 +51,7 @@ export async function shareHomeScoreImageAndText(params: {
 
   if (file && navigator.canShare?.({ files: [file] })) {
     try {
-      await navigator.share({ title, text, files: [file] });
+      await navigator.share({ title, text, url, files: [file] });
       return 'ok';
     } catch (e) {
       if (e instanceof Error && e.name === 'AbortError') return 'cancel';
