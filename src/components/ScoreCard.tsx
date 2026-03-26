@@ -41,7 +41,7 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
 
   const getTitleMl = () => {
     if (pct >= 85) return 'കേരള വികസന ദർശകൻ';
-    if (pct >= 65) return 'നോ-കേരളം നയ വിദഗ്ദ്ധൻ';
+    if (pct >= 65) return 'KNOW-KERALAM നയ വിദഗ്ദ്ധൻ';
     if (pct >= 45) return 'വികസന താൽപര്യക്കാരൻ';
     return 'ജിജ്ഞാസു പര്യവേക്ഷകൻ';
   };
@@ -365,7 +365,7 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
                     marginBottom: '8px',
                   }}
                 >
-                  {'നോ-കേരളം'}
+                  {'KNOW-KERALAM'}
                 </h1>
                 <p
                   style={{

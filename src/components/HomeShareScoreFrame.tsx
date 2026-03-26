@@ -63,7 +63,7 @@ export default function HomeShareScoreFrame({
   const shortCategory = categoryTitle.length > 92 ? `${categoryTitle.slice(0, 89)}…` : categoryTitle;
 
   const nameLine = isMl ? 'KNOW-KERALAM' : 'KNOW-KERALAM';
-  const subLine = isMl ? '2016-2026 · നോ-കേരളം' : '2016-2026 · Kerala decade quiz';
+  const subLine = isMl ? '2016-2026 · KNOW-KERALAM' : '2016-2026 · Kerala decade quiz';
 
   const teamLine = isMl ? 'വിഭാഗം' : 'TOPIC';
   const scoreBig = `${score}/${total}`;

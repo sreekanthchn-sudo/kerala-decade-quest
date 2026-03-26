@@ -84,7 +84,7 @@ function localizedText(en: string | undefined, ml: string | undefined, isMl: boo
 function scoreTierLine(score: number, total: number, isMl: boolean): string {
   const pct = total > 0 ? (score / total) * 100 : 0;
   if (pct >= 85) return isMl ? 'കേരള വികസന ദർശകൻ' : 'Kerala Development Visionary';
-  if (pct >= 65) return isMl ? 'നോ-കേരളം നയ വിദഗ്ദ്ധൻ' : 'KNOW-KERALAM Policy Expert';
+  if (pct >= 65) return isMl ? 'KNOW-KERALAM നയ വിദഗ്ദ്ധൻ' : 'KNOW-KERALAM Policy Expert';
   if (pct >= 45) return isMl ? 'വികസന താൽപര്യക്കാരൻ' : 'Development Enthusiast';
   return isMl ? 'ജിജ്ഞാസു പര്യവേക്ഷകൻ' : 'Curious Explorer';
 }
