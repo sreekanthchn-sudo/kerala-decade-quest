@@ -13,73 +13,44 @@ type Props = {
   isMl: boolean;
 };
 
-/** Ring arc for score % — pure SVG for reliable html2canvas output */
-function ScoreRing({ pct, score, total }: { pct: number; score: number; total: number }) {
-  const size = 200;
-  const stroke = 14;
-  const r = (size - stroke) / 2;
-  const c = 2 * Math.PI * r;
-  const offset = c * (1 - Math.min(100, Math.max(0, pct)) / 100);
+const fontStack = 'var(--font-manjari), "Noto Sans Malayalam", system-ui, sans-serif';
 
+function SlashMarks({ color }: { color: string }) {
   return (
-    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} style={{ display: 'block' }}>
-      <circle
-        cx={size / 2}
-        cy={size / 2}
-        r={r}
-        fill="none"
-        stroke="rgba(255,255,255,0.08)"
-        strokeWidth={stroke}
-      />
-      <circle
-        cx={size / 2}
-        cy={size / 2}
-        r={r}
-        fill="none"
-        stroke="#facc15"
-        strokeWidth={stroke}
-        strokeLinecap="round"
-        strokeDasharray={c}
-        strokeDashoffset={offset}
-        transform={`rotate(-90 ${size / 2} ${size / 2})`}
-        style={{ filter: 'drop-shadow(0 0 12px rgba(250,204,21,0.35))' }}
-      />
-      <text
-        x="50%"
-        y="46%"
-        textAnchor="middle"
-        fill="#ffffff"
-        style={{ fontSize: 38, fontWeight: 900, fontFamily: 'system-ui, "Noto Sans Malayalam", sans-serif' }}
-      >
-        {score}/{total}
-      </text>
-      <text
-        x="50%"
-        y="62%"
-        textAnchor="middle"
-        fill="#facc15"
-        style={{ fontSize: 26, fontWeight: 800, fontFamily: 'system-ui, sans-serif' }}
-      >
-        {pct}%
-      </text>
-    </svg>
+    <div style={{ display: 'flex', gap: 8, alignItems: 'center' }} aria-hidden>
+      {Array.from({ length: 4 }).map((_, i) => (
+        <span
+          key={i}
+          style={{
+            width: 16,
+            height: 4,
+            background: color,
+            transform: 'skewX(-22deg)',
+            borderRadius: 2,
+            opacity: 0.9,
+          }}
+        />
+      ))}
+    </div>
   );
 }
 
 /**
- * Off-screen score card for html2canvas — bold game-show frame (yellow/black).
- * Uses inline layout + SVG so export matches the design reliably.
+ * Off-screen score card for html2canvas — trading-card layout (blue ribbons + bottom stats block).
  */
 export default function HomeShareScoreFrame({
   score,
   total,
-  percentage,
   tierLabel,
   categoryTitle,
   siteUrl,
   level,
   isMl,
 }: Props) {
+  const yellow = '#facc15';
+  const yellowDark = '#ca8a04';
+  const black = '#0a0a0a';
+  const softBlack = '#111111';
   const levelLabel =
     level === 'general'
       ? isMl
@@ -89,8 +60,13 @@ export default function HomeShareScoreFrame({
         ? 'ലെവൽ 1 · വകുപ്പ് ക്വിസ്'
         : 'Level 1 · Department quiz';
 
-  const shortCategory =
-    categoryTitle.length > 120 ? `${categoryTitle.slice(0, 117)}…` : categoryTitle;
+  const shortCategory = categoryTitle.length > 92 ? `${categoryTitle.slice(0, 89)}…` : categoryTitle;
+
+  const nameLine = isMl ? 'KNOW-KERALAM' : 'KNOW-KERALAM';
+  const subLine = isMl ? '2016-2026 · നോ-കേരളം' : '2016-2026 · Kerala decade quiz';
+
+  const teamLine = isMl ? 'വിഭാഗം' : 'TOPIC';
+  const scoreBig = `${score}/${total}`;
 
   return (
     <div
@@ -100,138 +76,277 @@ export default function HomeShareScoreFrame({
         position: 'fixed',
         left: -24000,
         top: 0,
-        width: 420,
-        minHeight: 640,
+        width: 520,
+        minHeight: 780,
         zIndex: -1,
         opacity: 1,
         pointerEvents: 'none',
         overflow: 'hidden',
-        fontFamily: 'system-ui, "Noto Sans Malayalam", "Segoe UI", sans-serif',
-        color: '#fff',
-        background: 'linear-gradient(165deg, #0a0a0a 0%, #141418 45%, #0a0a0a 100%)',
+        fontFamily: fontStack,
         boxSizing: 'border-box',
+        background: '#0a0a0a',
       }}
     >
-      {/* Inner frame — double border game card */}
       <div
         style={{
-          margin: 16,
-          border: '4px solid #000',
-          borderRadius: 20,
-          boxShadow: '8px 8px 0 0 #facc15, inset 0 0 0 2px rgba(250,204,21,0.2)',
-          background: 'linear-gradient(180deg, rgba(250,204,21,0.07) 0%, transparent 32%)',
-          padding: 0,
-          minHeight: 600,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'stretch',
-          overflow: 'hidden',
+          margin: 18,
+          borderRadius: 26,
+          background: black,
+          padding: 10,
+          boxShadow: '0 16px 50px rgba(0,0,0,0.55)',
         }}
       >
-        {/* Header strip */}
         <div
           style={{
-            background: 'linear-gradient(90deg, #ca8a04 0%, #facc15 48%, #eab308 100%)',
-            padding: '14px 16px 12px',
-            borderBottom: '3px solid #000',
+            borderRadius: 22,
+            background: '#ffffff',
+            border: `6px solid ${softBlack}`,
+            overflow: 'hidden',
+            position: 'relative',
+            minHeight: 744,
           }}
         >
-          <p
+          {/* Right vertical strip */}
+          <div
             style={{
-              margin: 0,
-              fontSize: 22,
-              fontWeight: 900,
-              color: '#0a0a0a',
-              letterSpacing: '0.04em',
-              textAlign: 'center',
-            }}
-          >
-            KNOW-KERALAM
-          </p>
-          <p style={{ margin: '4px 0 0', fontSize: 11, fontWeight: 700, color: 'rgba(10,10,10,0.78)', textAlign: 'center' }}>
-            2016 — 2026 · നോ-കേരളം
-          </p>
-        </div>
-
-        <div style={{ padding: '16px 18px 18px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-
-        <div style={{ padding: '4px 4px 0', textAlign: 'center' }}>
-          <span
-            style={{
-              display: 'inline-block',
-              padding: '6px 14px',
-              borderRadius: 999,
-              background: '#171717',
-              border: '2px solid #facc15',
-              color: '#fde047',
-              fontSize: 11,
-              fontWeight: 800,
-              letterSpacing: '0.06em',
+              position: 'absolute',
+              top: 10,
+              right: 10,
+              bottom: 10,
+              width: 36,
+              borderRadius: 14,
+              background: softBlack,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: 'rgba(255,255,255,0.72)',
+              fontSize: 10,
+              fontWeight: 700,
+              letterSpacing: '0.12em',
+              writingMode: 'vertical-rl',
+              transform: 'rotate(180deg)',
               textTransform: 'uppercase',
             }}
           >
-            {levelLabel}
-          </span>
-        </div>
+            knowkeralam.com
+          </div>
 
-        <p
-          style={{
-            margin: '12px 8px 0',
-            fontSize: 12,
-            fontWeight: 600,
-            lineHeight: 1.45,
-            color: 'rgba(255,255,255,0.92)',
-            textAlign: 'center',
-            minHeight: 52,
-          }}
-        >
-          {shortCategory}
-        </p>
-
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: 8, marginBottom: 4 }}>
-          <ScoreRing pct={percentage} score={score} total={total} />
-        </div>
-
-        <div
-          style={{
-            margin: '8px 12px 0',
-            padding: '10px 12px',
-            borderRadius: 12,
-            background: 'rgba(22,101,52,0.35)',
-            border: '1px solid rgba(74,222,128,0.35)',
-            textAlign: 'center',
-          }}
-        >
-          <p style={{ margin: 0, fontSize: 12, fontWeight: 700, color: '#86efac', lineHeight: 1.4 }}>
-            {tierLabel}
-          </p>
-        </div>
-
-        <div style={{ flex: 1, minHeight: 8 }} />
-
-        <div
-          style={{
-            marginTop: 10,
-            paddingTop: 12,
-            borderTop: '2px dashed rgba(250,204,21,0.35)',
-            textAlign: 'center',
-          }}
-        >
-          <p style={{ margin: 0, fontSize: 10, fontWeight: 700, color: 'rgba(255,255,255,0.45)', letterSpacing: '0.12em' }}>
-            {isMl ? 'പൂർണ്ണ ക്വിസ് · Full quiz' : 'Full quiz · knowkeralam.com'}
-          </p>
-          <p
+          {/* Top ribbon */}
+          <div
             style={{
-              margin: '8px 0 0',
-              fontSize: 13,
-              fontWeight: 800,
-              color: '#facc15',
-              wordBreak: 'break-all',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              height: 120,
+              background: `linear-gradient(180deg, ${yellow} 0%, ${yellowDark} 100%)`,
+              clipPath: 'polygon(0 0, 100% 0, 100% 78%, 70% 78%, 66% 100%, 0 100%)',
+            }}
+          />
+          <div style={{ position: 'absolute', top: 18, left: 24, right: 62, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+            <SlashMarks color="rgba(0,0,0,0.65)" />
+            <div style={{ textAlign: 'center', flex: 1 }}>
+              <div
+                style={{
+                  fontSize: 34,
+                  fontWeight: 1000,
+                  letterSpacing: '0.06em',
+                  color: '#0a0a0a',
+                  textTransform: 'uppercase',
+                  lineHeight: 1,
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                {nameLine}
+              </div>
+              <div style={{ marginTop: 8, fontSize: 11, fontWeight: 800, color: 'rgba(10,10,10,0.78)', letterSpacing: '0.12em', whiteSpace: 'nowrap' }}>
+                {subLine}
+              </div>
+            </div>
+          </div>
+
+          {/* Center panel (clean white with soft diagonal stripes) */}
+          <div
+            style={{
+              position: 'absolute',
+              left: 18,
+              right: 62,
+              top: 126,
+              bottom: 190,
+              borderRadius: 18,
+              background:
+                'linear-gradient(90deg, rgba(0,0,0,0.05) 0%, transparent 30%, rgba(0,0,0,0.04) 60%, transparent 100%), repeating-linear-gradient(100deg, rgba(0,0,0,0.03), rgba(0,0,0,0.03) 22px, rgba(0,0,0,0.00) 22px, rgba(0,0,0,0.00) 66px)',
+              border: '2px solid rgba(0,0,0,0.08)',
             }}
           >
-            {siteUrl}
-          </p>
-        </div>
+            <div style={{ padding: 16, height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <div
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 10,
+                  padding: '8px 12px',
+                  borderRadius: 14,
+                  background: softBlack,
+                  color: yellow,
+                  fontSize: 11,
+                  fontWeight: 900,
+                  letterSpacing: '0.14em',
+                  textTransform: 'uppercase',
+                }}
+              >
+                {levelLabel}
+              </div>
+
+              {/* Score card pill above category */}
+              <div style={{ marginTop: 14, display: 'flex', justifyContent: 'center' }}>
+                <div
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    background: yellow,
+                    color: black,
+                    padding: '10px 14px',
+                    borderRadius: 12,
+                    fontSize: 12,
+                    fontWeight: 1000,
+                    letterSpacing: '0.14em',
+                    textTransform: 'uppercase',
+                    boxShadow: '0 10px 22px rgba(0,0,0,0.12)',
+                  }}
+                >
+                  {isMl ? 'സ്കോർ കാർഡ്' : 'SCORE CARD'}
+                </div>
+              </div>
+
+              <div style={{ marginTop: 14, fontSize: 12, fontWeight: 900, color: 'rgba(0,0,0,0.6)', letterSpacing: '0.22em', textTransform: 'uppercase' }}>
+                {teamLine}
+              </div>
+              <div style={{ marginTop: 8, fontSize: 18, fontWeight: 900, color: '#0b0b0c', lineHeight: 1.25 }}>
+                {shortCategory}
+              </div>
+
+              <div
+                style={{
+                  marginTop: 14,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: 12,
+                  alignItems: 'flex-start',
+                }}
+              >
+                <div style={{ lineHeight: 1, paddingLeft: 4 }}>
+                  <div style={{ fontSize: 11, fontWeight: 900, color: 'rgba(0,0,0,0.55)', letterSpacing: '0.2em', textTransform: 'uppercase' }}>
+                    {isMl ? 'മാർക്ക്' : 'MARK'}
+                  </div>
+                  <div style={{ marginTop: 8, fontSize: 44, fontWeight: 1000, color: '#0b0b0c', letterSpacing: '0.01em' }}>
+                    {scoreBig}
+                  </div>
+                </div>
+
+                <div style={{ paddingLeft: 4 }}>
+                  <div style={{ fontSize: 11, fontWeight: 900, color: 'rgba(0,0,0,0.55)', letterSpacing: '0.2em', textTransform: 'uppercase' }}>
+                    {isMl ? 'നില' : 'RANK'}
+                  </div>
+                  <div style={{ marginTop: 8, fontSize: 16, fontWeight: 1000, color: '#0b0b0c', lineHeight: 1.2 }}>
+                    {tierLabel}
+                  </div>
+                </div>
+              </div>
+
+              {/* Keep stripe marks pinned to bottom-right */}
+              <div style={{ marginTop: 'auto', paddingTop: 12, display: 'flex', justifyContent: 'flex-end' }}>
+                <SlashMarks color="rgba(0,0,0,0.55)" />
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom stats block */}
+          <div
+            style={{
+              position: 'absolute',
+              left: 0,
+              right: 0,
+              bottom: 0,
+              height: 210,
+              background: `linear-gradient(180deg, ${softBlack} 0%, ${black} 100%)`,
+              clipPath: 'polygon(0 14%, 62% 14%, 68% 0, 100% 0, 100% 100%, 0 100%)',
+              paddingLeft: 22,
+              paddingRight: 62,
+              paddingTop: 18,
+              boxSizing: 'border-box',
+            }}
+          >
+            {/* Centered content block (reduce right whitespace) */}
+            <div style={{ maxWidth: 420, margin: '0 auto', textAlign: 'center' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/knowkeralam.png"
+                  alt="KNOW-KERALAM"
+                  width={220}
+                  height={110}
+                  style={{
+                    width: 120,
+                    height: 'auto',
+                    objectFit: 'contain',
+                    filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.45))',
+                  }}
+                />
+                <div
+                  style={{
+                    marginTop: 2,
+                    fontSize: 10,
+                    fontWeight: 900,
+                    color: 'rgba(255,255,255,0.72)',
+                    letterSpacing: '0.22em',
+                    textTransform: 'uppercase',
+                  }}
+                >
+                  {isMl ? 'വെബ്സൈറ്റ്' : 'WEBSITE'}
+                </div>
+                <div
+                  style={{
+                    marginTop: 2,
+                    maxWidth: 320,
+                    padding: '5px 10px',
+                    borderRadius: 10,
+                    background: 'rgba(250,204,21,0.12)',
+                    border: '1px solid rgba(250,204,21,0.35)',
+                    fontSize: 12,
+                    fontWeight: 900,
+                    color: 'rgba(250,204,21,0.95)',
+                    lineHeight: 1.25,
+                    whiteSpace: 'nowrap',
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis',
+                  }}
+                  title={siteUrl}
+                >
+                  {siteUrl}
+                </div>
+              </div>
+
+              <div style={{ marginTop: 4, display: 'flex', justifyContent: 'center' }}>
+                <SlashMarks color="rgba(250,204,21,0.65)" />
+              </div>
+            </div>
+          </div>
+
+          {/* Rounded bottom corners white mask like template */}
+          <div
+            style={{
+              position: 'absolute',
+              left: 0,
+              right: 0,
+              bottom: 0,
+              height: 18,
+              background: 'transparent',
+              borderBottomLeftRadius: 16,
+              borderBottomRightRadius: 16,
+            }}
+          />
         </div>
       </div>
     </div>

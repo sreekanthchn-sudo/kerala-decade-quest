@@ -120,8 +120,8 @@ export default function CompareOMeter({
           </div>
           <p className="text-xs italic" style={{ color: 'var(--kl-text-dim)', opacity: 0.6 }}>
             {isMl
-              ? 'ദേശീയ ശരാശരി / മാനദണ്ഡം — പൊതു റിപ്പോർട്ടുകളിൽ നിന്നുള്ള ഏകദേശ കണക്ക്'
-              : 'National avg / benchmark — approximate figures from public reports'}
+              ? 'ദേശീയ ശരാശരി / മാനദണ്ഡം - പൊതു റിപ്പോർട്ടുകളിൽ നിന്നുള്ള ഏകദേശ കണക്ക്'
+              : 'National avg / benchmark - approximate figures from public reports'}
           </p>
         </div>
       )}

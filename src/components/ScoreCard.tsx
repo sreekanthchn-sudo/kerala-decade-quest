@@ -375,7 +375,7 @@ export default function ScoreCard({ mod, score, total, questions, lang, onClose 
                     letterSpacing: '4px',
                   }}
                 >
-                  2016 &mdash; 2026
+                  2016-2026
                 </p>
               </div>
 

@@ -31,78 +31,34 @@ function sortQuestionsById(questions: Question[]): Question[] {
   return [...questions].sort((a, b) => a.id - b.id);
 }
 
-type Pool = { slug: string; questions: Question[] };
-
-function sortPoolsBySlug(pools: Pool[]): Pool[] {
-  return [...pools].sort((a, b) => a.slug.localeCompare(b.slug));
-}
-
-/** Home: general mixed + each department category — same count per round */
+const GENERAL_HOME_SLUG = 'general-quiz';
 
 function getCategoryOrder(modules: Module[]): Module[] {
-  const gen = modules.find((m) => m.slug.includes('general'));
-  const rest = modules.filter((m) => !m.slug.includes('general'));
+  const gen = modules.find((m) => m.slug === GENERAL_HOME_SLUG);
+  const rest = modules.filter((m) => m.slug !== GENERAL_HOME_SLUG);
   return gen ? [gen, ...rest] : [...modules];
 }
 
 /**
- * Category 0 (general quiz): `QUIZ_QUESTIONS_PER_ROUND` questions round-robin
- * across every module pool.
+ * Category 0 (general quiz): only uses the `general-quiz` bank (from the sheet),
+ * not a mixed pull from other departments.
  */
-function buildGeneralMixedQuestions(modules: Module[]): Question[] {
+function buildGeneralQuestionsFromBank(modules: Module[]): Question[] {
   const cap = QUIZ_QUESTIONS_PER_ROUND;
-  const pools: Pool[] = modules.map((m) => ({
-    slug: m.slug,
-    questions: shuffleArray(m.questions),
-  }));
-  const order = shuffleArray([...pools]);
-
-  const mixed: Question[] = [];
-  let round = 0;
-  while (mixed.length < cap) {
-    let pickedInRound = false;
-    for (const pool of order) {
-      if (pool.questions[round]) {
-        mixed.push(pool.questions[round]);
-        pickedInRound = true;
-        if (mixed.length >= cap) break;
-      }
-    }
-    if (!pickedInRound) break;
-    round += 1;
-  }
-  return mixed.slice(0, cap);
+  const bank = modules.find((m) => m.slug === GENERAL_HOME_SLUG)?.questions ?? [];
+  return shuffleArray(bank).slice(0, cap);
 }
 
-/** Same as buildGeneralMixedQuestions but deterministic — no Math.random(). */
-function buildGeneralMixedQuestionsDeterministic(modules: Module[]): Question[] {
+/** Same as buildGeneralQuestionsFromBank but deterministic — no Math.random(). */
+function buildGeneralQuestionsFromBankDeterministic(modules: Module[]): Question[] {
   const cap = QUIZ_QUESTIONS_PER_ROUND;
-  const pools: Pool[] = modules.map((m) => ({
-    slug: m.slug,
-    questions: sortQuestionsById(m.questions),
-  }));
-  const order = sortPoolsBySlug(pools);
-
-  const mixed: Question[] = [];
-  let round = 0;
-  while (mixed.length < cap) {
-    let pickedInRound = false;
-    for (const pool of order) {
-      if (pool.questions[round]) {
-        mixed.push(pool.questions[round]);
-        pickedInRound = true;
-        if (mixed.length >= cap) break;
-      }
-    }
-    if (!pickedInRound) break;
-    round += 1;
-  }
-  return mixed.slice(0, cap);
+  const bank = modules.find((m) => m.slug === GENERAL_HOME_SLUG)?.questions ?? [];
+  return sortQuestionsById(bank).slice(0, cap);
 }
 
 function buildQuestionsForCategory(categoryIndex: number, categoryOrder: Module[]): Question[] {
-  if (categoryIndex === 0 && categoryOrder[0]?.slug.includes('general')) {
-    return buildGeneralMixedQuestions(categoryOrder);
+  if (categoryIndex === 0 && categoryOrder[0]?.slug === GENERAL_HOME_SLUG) {
+    return buildGeneralQuestionsFromBank(categoryOrder);
   }
   const mod = categoryOrder[categoryIndex];
   if (!mod) return [];
@@ -110,12 +66,19 @@ function buildQuestionsForCategory(categoryIndex: number, categoryOrder: Module[
 }
 
 function buildQuestionsForCategoryDeterministic(categoryIndex: number, categoryOrder: Module[]): Question[] {
-  if (categoryIndex === 0 && categoryOrder[0]?.slug.includes('general')) {
-    return buildGeneralMixedQuestionsDeterministic(categoryOrder);
+  if (categoryIndex === 0 && categoryOrder[0]?.slug === GENERAL_HOME_SLUG) {
+    return buildGeneralQuestionsFromBankDeterministic(categoryOrder);
   }
   const mod = categoryOrder[categoryIndex];
   if (!mod) return [];
   return sortQuestionsById(mod.questions).slice(0, QUIZ_QUESTIONS_PER_ROUND);
+}
+
+function bilingualText(en: string | undefined, ml: string | undefined, isMl: boolean): string {
+  const e = (en || '').trim();
+  const m = (ml || '').trim();
+  if (e && m) return isMl ? `${m} | ${e}` : `${e} | ${m}`;
+  return e || m;
 }
 
 function scoreTierLine(score: number, total: number, isMl: boolean): string {
@@ -135,7 +98,15 @@ export default function HomePage() {
   );
 
   useEffect(() => {
-    setQuestions(buildQuestionsForCategory(0, categoryOrder));
+    const first = buildQuestionsForCategory(0, categoryOrder);
+    // If the general-quiz bank is empty (e.g. sheet not imported yet),
+    // fall back to the first department so the UI isn't blank.
+    if (!first.length && categoryOrder.length > 1) {
+      setCategoryIdx(1);
+      setQuestions(buildQuestionsForCategory(1, categoryOrder));
+    } else {
+      setQuestions(first);
+    }
     // Shuffle only after hydration; deterministic initial state matches SSR (see buildQuestionsForCategoryDeterministic).
     // eslint-disable-next-line react-hooks/exhaustive-deps -- run once on mount
   }, []);
@@ -168,9 +139,11 @@ export default function HomePage() {
     if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const questionText = (isMl && question?.question_ml) ? question.question_ml : (question?.question || '');
-  const options = (isMl && question?.options_ml?.length) ? question.options_ml : (question?.options || []);
-  const explanationText = (isMl && question?.flex_fact_ml) ? question.flex_fact_ml : (question?.flex_fact || '');
+  const questionText = bilingualText(question?.question, question?.question_ml, isMl);
+  const options = (question?.options || []).map((enOpt, idx) =>
+    bilingualText(enOpt, question?.options_ml?.[idx], isMl)
+  );
+  const explanationText = bilingualText(question?.flex_fact, question?.flex_fact_ml, isMl);
   const correctAnswer = question?.answer ?? -1;
   const showResult = selectedOption !== null;
   const optionLetters = ['A', 'B', 'C', 'D'];
@@ -355,7 +328,7 @@ export default function HomePage() {
         {finished ? (
           <div className={`mx-auto mb-3 w-full sm:mb-4 lg:mb-5 ${layoutMaxWidth}`}>
             <p className="mb-1.5 text-center text-[11px] font-bold leading-snug text-[#ffcc00] sm:mb-2 sm:text-xs">
-              {isMl ? 'അടുത്ത ക്വിസ് — വിഭാഗം തിരഞ്ഞെടുക്കുക' : 'Next quiz — choose a topic'}
+              {isMl ? 'അടുത്ത ക്വിസ് - വിഭാഗം തിരഞ്ഞെടുക്കുക' : 'Next quiz - choose a topic'}
             </p>
             <p className="mb-2 text-center text-[10px] leading-snug text-white/65 sm:text-[11px]">
               {isMl
@@ -371,7 +344,7 @@ export default function HomePage() {
               ariaLabel={isMl ? 'അടുത്ത ക്വിസ് വിഭാഗം' : 'Next quiz topic'}
             />
           </div>
-        ) : question ? (
+        ) : categoryOrder.length ? (
           <div className={`mx-auto mb-4 w-full sm:mb-5 lg:mb-6 ${layoutMaxWidth}`}>
             <CategoryTabBar
               categoryOrder={categoryOrder}
@@ -385,6 +358,21 @@ export default function HomePage() {
         ) : null}
 
         <section className={`w-full flex-1 ${finished ? '-mt-0.5' : 'mt-0 sm:mt-1 lg:mt-2'}`}>
+        {!finished && !question && categoryOrder.length ? (
+          <div className={`${homeCardFrame} text-left`}>
+            <div className="absolute inset-0 z-0 quiz-game-scrim-contained pointer-events-none rounded-[21px]" aria-hidden />
+            <div className="relative z-10 p-4 sm:p-5 lg:p-7 xl:p-8">
+              <p className="text-sm font-black text-white sm:text-base">
+                {isMl ? 'ക്വിസ് ചോദ്യങ്ങൾ ലോഡ് ചെയ്തിട്ടില്ല.' : 'Quiz questions are not loaded.'}
+              </p>
+              <p className="mt-2 text-[12px] font-semibold leading-relaxed text-white/75 sm:text-[13px]">
+                {isMl
+                  ? 'പൊതു ക്വിസ് (general-quiz) ചോദ്യങ്ങൾ ഷീറ്റിൽ നിന്ന് ഇനിയും ചേർത്തിട്ടില്ലെന്ന് തോന്നുന്നു. മുകളിലെ ടാബിൽ നിന്ന് മറ്റൊരു വകുപ്പ് തിരഞ്ഞെടുക്കാം.'
+                  : 'It looks like the General Quiz (general-quiz) bank is empty. Pick any department from the tabs above.'}
+              </p>
+            </div>
+          </div>
+        ) : null}
         {!finished && question && (
           <div className={`${homeCardFrame} text-left`}>
             <div className="absolute inset-0 z-0 quiz-game-scrim-contained pointer-events-none rounded-[21px]" aria-hidden />
@@ -533,7 +521,7 @@ export default function HomePage() {
                       {isMl ? (
                         <>
                           ഇത്{' '}
-                          <strong className="font-black text-[#fde047]">പൊതു റൗണ്ട്</strong> ആണ് — എല്ലാ വിഭാഗങ്ങളിൽ നിന്നും{' '}
+                          <strong className="font-black text-[#fde047]">പൊതു റൗണ്ട്</strong> ആണ് - എല്ലാ വിഭാഗങ്ങളിൽ നിന്നും{' '}
                           {QUIZ_QUESTIONS_PER_ROUND} ചോദ്യങ്ങൾ. ഇനി{' '}
                           <strong className="font-black text-[#fde047]">ലെവൽ 1</strong> ക്വിസുകൾ തുറന്നിരിക്കുന്നു:{' '}
                           {departmentCount} വകുപ്പ് വിഭാഗങ്ങളിൽ ഓരോന്നിൽ {QUIZ_QUESTIONS_PER_ROUND} ചോദ്യങ്ങൾ. എന്തിനാണ് ഈ റൗണ്ട് പൂർത്തിയാക്കുന്നതെന്ന്
@@ -547,7 +535,7 @@ export default function HomePage() {
                           mixed questions). <strong className="font-black text-[#fde047]">Level 1</strong> unlocks{' '}
                           <strong className="text-white">{departmentCount}</strong> department topics ({QUIZ_QUESTIONS_PER_ROUND}{' '}
                           questions each). This
-                          round opens the full journey — pick your next domain from the category tabs above.
+                          round opens the full journey - pick your next domain from the category tabs above.
                         </>
                       )}
                     </p>
@@ -561,13 +549,13 @@ export default function HomePage() {
                       {isMl ? (
                         <>
                           ഈ വകുപ്പ് വിഭാഗം പൂർത്തിയായി. മറ്റു{' '}
-                          <strong className="font-black text-[#fde047]">ലെവൽ 1</strong> ക്വിസുകൾ മറ്റു മേഖലകളിൽ തുറന്നിരിക്കുന്നു —
+                          <strong className="font-black text-[#fde047]">ലെവൽ 1</strong> ക്വിസുകൾ മറ്റു മേഖലകളിൽ തുറന്നിരിക്കുന്നു -
                           മുകളിലെ ടാബിൽ നിന്ന് അടുത്ത വിഭാഗം തിരഞ്ഞെടുക്കുക.
                         </>
                       ) : (
                         <>
                           You finished this <strong className="font-black text-[#fde047]">Level 1</strong> department quiz.
-                          Other topics are still open — choose another category tab above.
+                          Other topics are still open - choose another category tab above.
                         </>
                       )}
                     </p>

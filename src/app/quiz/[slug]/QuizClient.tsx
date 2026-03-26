@@ -22,6 +22,13 @@ import { QUIZ_QUESTIONS_PER_ROUND } from '@/constants/quiz';
 const modules = sanitizeDeepMalayalam(modulesData as Module[]);
 const TIMER_SECONDS = 30;
 
+function bilingualText(en: string | undefined, ml: string | undefined, isMl: boolean): string {
+  const e = (en || '').trim();
+  const m = (ml || '').trim();
+  if (e && m) return isMl ? `${m} | ${e}` : `${e} | ${m}`;
+  return e || m;
+}
+
 function scoreTierLine(score: number, total: number, isMl: boolean): string {
   const pct = total > 0 ? (score / total) * 100 : 0;
   if (pct >= 85) return isMl ? 'കേരള വികസന ദർശകൻ' : 'Kerala Development Visionary';
@@ -73,9 +80,11 @@ export default function QuizClient({ slug }: { slug: string }) {
   const q = useMemo(() => {
     if (!question) return { text: '', options: [] as string[], flexFact: '' };
     return {
-      text: (isMl && question.question_ml) ? question.question_ml : question.question,
-      options: (isMl && question.options_ml?.length) ? question.options_ml : question.options,
-      flexFact: (isMl && question.flex_fact_ml) ? question.flex_fact_ml : question.flex_fact,
+      text: bilingualText(question.question, question.question_ml, isMl),
+      options: question.options.map((enOpt, idx) =>
+        bilingualText(enOpt, question.options_ml?.[idx], isMl)
+      ),
+      flexFact: bilingualText(question.flex_fact, question.flex_fact_ml, isMl),
     };
   }, [question, isMl]);
 
@@ -172,7 +181,7 @@ export default function QuizClient({ slug }: { slug: string }) {
     if (!mod) return '';
     const pct = Math.round((score / shuffledQuestions.length) * 100);
     if (isMl) {
-      return `ഞാൻ ${mod.title_ml} ക്വിസിൽ ${score}/${shuffledQuestions.length} (${pct}%) നേടി! 🌴\n\nനോ-കേരളം — നിങ്ങളും പരീക്ഷിക്കൂ: `;
+      return `ഞാൻ ${mod.title_ml} ക്വിസിൽ ${score}/${shuffledQuestions.length} (${pct}%) നേടി! 🌴\n\nനോ-കേരളം - നിങ്ങളും പരീക്ഷിക്കൂ: `;
     }
     return `I scored ${score}/${shuffledQuestions.length} (${pct}%) on ${mod.title} on KNOW-KERALAM! 🌴\n\nTest your knowledge: `;
   }, [mod, score, shuffledQuestions.length, isMl]);
@@ -243,7 +252,7 @@ export default function QuizClient({ slug }: { slug: string }) {
 
             <div className="border-y border-[#facc15]/20 py-2 sm:py-3">
               <h2 className="text-balance text-lg font-black leading-tight text-white sm:text-xl md:text-[1.35rem]">
-                {isMl ? mod.title_ml : mod.title}
+                {bilingualText(mod.title, mod.title_ml, isMl)}
               </h2>
               <p className="mx-auto mt-1 max-w-md text-pretty text-[0.8125rem] leading-snug text-white/80 sm:text-[0.9rem]">
                 {pct >= 80
