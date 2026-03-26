@@ -48,6 +48,7 @@ function shuffleArray<T>(arr: T[]): T[] {
 }
 
 export default function QuizClient({ slug }: { slug: string }) {
+  const SITE_URL = 'https://www.knowkeralam.com';
   const modIndex = modules.findIndex((m) => m.slug === slug);
   const mod = modules[modIndex];
   const nextMod = modules[modIndex + 1] || modules[0];
@@ -187,7 +188,7 @@ export default function QuizClient({ slug }: { slug: string }) {
   }, [mod, score, shuffledQuestions.length, isMl]);
 
   const handleShare = useCallback(async () => {
-    const url = typeof window !== 'undefined' ? window.location.origin : '';
+    const url = new URL(`/quiz/${slug}`, SITE_URL).toString();
     const text = shareText + url;
 
     if (navigator.share) {
@@ -197,7 +198,7 @@ export default function QuizClient({ slug }: { slug: string }) {
     } else {
       window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
     }
-  }, [shareText]);
+  }, [shareText, slug]);
 
   if (!mod) {
     return (

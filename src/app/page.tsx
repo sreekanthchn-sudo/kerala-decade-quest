@@ -90,6 +90,7 @@ function scoreTierLine(score: number, total: number, isMl: boolean): string {
 }
 
 export default function HomePage() {
+  const SITE_URL = 'https://www.knowkeralam.com';
   const modules = modulesData as Module[];
   const categoryOrder = useMemo(() => getCategoryOrder(modules), [modules]);
   const [categoryIdx, setCategoryIdx] = useState(0);
@@ -115,13 +116,9 @@ export default function HomePage() {
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
   const [lang, setLang] = useState<'ml' | 'en'>('ml');
-  const [siteOrigin, setSiteOrigin] = useState('https://knowkeralam.com');
+  const [siteOrigin] = useState(SITE_URL);
   const [exportFrameMounted, setExportFrameMounted] = useState(false);
   const { playCorrect, playIncorrect, playClick } = useSound();
-
-  useEffect(() => {
-    setSiteOrigin(window.location.origin);
-  }, []);
 
   useEffect(() => {
     setExportFrameMounted(true);

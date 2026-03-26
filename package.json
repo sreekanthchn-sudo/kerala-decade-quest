@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "import:general": "node scripts/import-general-quiz-from-csv.mjs",
-    "import:general:sheet": "node scripts/import-general-quiz-from-google-sheet.mjs"
+    "import:general:sheet": "node scripts/import-general-quiz-from-google-sheet.mjs",
+    "import:all:sheet": "DRY_RUN=1 node scripts/import-all-categories-from-google-sheet.mjs",
+    "import:all:sheet:write": "DRY_RUN=0 node scripts/import-all-categories-from-google-sheet.mjs"
   },
   "dependencies": {
     "@types/qrcode": "^1.5.6",
