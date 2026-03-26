@@ -1,7 +1,7 @@
 export type HomeShareLevel = 'general' | 'department';
 
 export function buildHomeShareTitle(isMl: boolean): string {
-  return isMl ? 'KNOW-KERALAM · നോ-കേരളം' : 'KNOW-KERALAM · Kerala decade quiz';
+  return isMl ? 'KNOW-KERALAM' : 'KNOW-KERALAM · Kerala decade quiz';
 }
 
 /**
