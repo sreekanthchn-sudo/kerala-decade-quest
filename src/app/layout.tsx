@@ -16,9 +16,10 @@ export const metadata: Metadata = {
   keywords: ["KNOW-KERALAM", "knowkeralam", "കേരളം", "ഭരണം", "ക്വിസ്", "വികസനം", "LIFE Mission", "KIIFB"],
   icons: {
     icon: [
+      { url: "/icon.png", type: "image/png" },
       { url: "/favicon.ico" },
-      { url: "/decadefavicon.ico" },
     ],
+    apple: [{ url: "/apple-icon.png", type: "image/png" }],
   },
   openGraph: {
     title: "KNOW-KERALAM (2016-2026) · knowkeralam.com",
