@@ -648,6 +648,9 @@ export default function HomePage() {
         {/* Full viewport width — sibling of max-w-xl, not inside px-4 */}
         <div className="relative z-10 mt-2 w-full min-w-0 shrink-0 pb-[max(1rem,env(safe-area-inset-bottom))] sm:mt-3 md:mt-4 lg:mt-5">
           <AchievementMarquee isMl={isMl} />
+          <footer className="mx-auto mt-2 w-full max-w-5xl px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] text-center text-[11px] font-medium text-white/60 sm:mt-3 sm:text-xs">
+            Developed by A community-driven initiative by Sameeksha UK &amp; the DYFI Professional Sub-committee.
+          </footer>
         </div>
 
         {exportFrameMounted && finished
