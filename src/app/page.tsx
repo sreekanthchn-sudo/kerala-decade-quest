@@ -74,10 +74,10 @@ function buildQuestionsForCategoryDeterministic(categoryIndex: number, categoryO
   return sortQuestionsById(mod.questions).slice(0, QUIZ_QUESTIONS_PER_ROUND);
 }
 
-function bilingualText(en: string | undefined, ml: string | undefined, isMl: boolean): string {
+function localizedText(en: string | undefined, ml: string | undefined, isMl: boolean): string {
   const e = (en || '').trim();
   const m = (ml || '').trim();
-  if (e && m) return isMl ? `${m} | ${e}` : `${e} | ${m}`;
+  if (isMl) return m || e;
   return e || m;
 }
 
@@ -139,11 +139,11 @@ export default function HomePage() {
     if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const questionText = bilingualText(question?.question, question?.question_ml, isMl);
+  const questionText = localizedText(question?.question, question?.question_ml, isMl);
   const options = (question?.options || []).map((enOpt, idx) =>
-    bilingualText(enOpt, question?.options_ml?.[idx], isMl)
+    localizedText(enOpt, question?.options_ml?.[idx], isMl)
   );
-  const explanationText = bilingualText(question?.flex_fact, question?.flex_fact_ml, isMl);
+  const explanationText = localizedText(question?.flex_fact, question?.flex_fact_ml, isMl);
   const correctAnswer = question?.answer ?? -1;
   const showResult = selectedOption !== null;
   const optionLetters = ['A', 'B', 'C', 'D'];

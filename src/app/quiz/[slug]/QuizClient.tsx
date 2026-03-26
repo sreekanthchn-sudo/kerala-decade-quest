@@ -22,10 +22,10 @@ import { QUIZ_QUESTIONS_PER_ROUND } from '@/constants/quiz';
 const modules = sanitizeDeepMalayalam(modulesData as Module[]);
 const TIMER_SECONDS = 30;
 
-function bilingualText(en: string | undefined, ml: string | undefined, isMl: boolean): string {
+function localizedText(en: string | undefined, ml: string | undefined, isMl: boolean): string {
   const e = (en || '').trim();
   const m = (ml || '').trim();
-  if (e && m) return isMl ? `${m} | ${e}` : `${e} | ${m}`;
+  if (isMl) return m || e;
   return e || m;
 }
 
@@ -80,11 +80,11 @@ export default function QuizClient({ slug }: { slug: string }) {
   const q = useMemo(() => {
     if (!question) return { text: '', options: [] as string[], flexFact: '' };
     return {
-      text: bilingualText(question.question, question.question_ml, isMl),
+      text: localizedText(question.question, question.question_ml, isMl),
       options: question.options.map((enOpt, idx) =>
-        bilingualText(enOpt, question.options_ml?.[idx], isMl)
+        localizedText(enOpt, question.options_ml?.[idx], isMl)
       ),
-      flexFact: bilingualText(question.flex_fact, question.flex_fact_ml, isMl),
+      flexFact: localizedText(question.flex_fact, question.flex_fact_ml, isMl),
     };
   }, [question, isMl]);
 
@@ -252,7 +252,7 @@ export default function QuizClient({ slug }: { slug: string }) {
 
             <div className="border-y border-[#facc15]/20 py-2 sm:py-3">
               <h2 className="text-balance text-lg font-black leading-tight text-white sm:text-xl md:text-[1.35rem]">
-                {bilingualText(mod.title, mod.title_ml, isMl)}
+                {localizedText(mod.title, mod.title_ml, isMl)}
               </h2>
               <p className="mx-auto mt-1 max-w-md text-pretty text-[0.8125rem] leading-snug text-white/80 sm:text-[0.9rem]">
                 {pct >= 80
