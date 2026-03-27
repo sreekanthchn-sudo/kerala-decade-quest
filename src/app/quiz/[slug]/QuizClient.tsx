@@ -77,6 +77,21 @@ export default function QuizClient({ slug }: { slug: string }) {
   const isCorrect = selectedOption === question?.answer;
   const isMl = lang === 'ml';
 
+  // Prevent browser back from being used to retry an active round.
+  useEffect(() => {
+    if (finished || typeof window === 'undefined') return;
+
+    const trapState = { quizSlug: slug, quizGuard: true };
+    window.history.pushState(trapState, '', window.location.href);
+
+    const onPopState = () => {
+      window.history.pushState(trapState, '', window.location.href);
+    };
+
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, [slug, finished]);
+
   // Get text in current language with fallback
   const q = useMemo(() => {
     if (!question) return { text: '', options: [] as string[], flexFact: '' };
