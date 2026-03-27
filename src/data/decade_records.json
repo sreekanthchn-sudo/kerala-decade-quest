@@ -203,7 +203,7 @@
       {
         "id": 9,
         "question": "Which campaign was launched by Haritha Keralam Mission in December 2019 for the public-led restoration of water streams?",
-        "question_ml": "നീർച്ചാലുകൾ ജനകീയമായി വീണ്ടെടുക്കുന്നതിന് ഹരിതകേരളം മിഷൻ 2019 ഡിസംബറിൽ തുടക്കം കുറിച്ച ക്യാമ്പയിൻ",
+        "question_ml": "നീർച്ചാലുകൾ ജനകീയമായി വീണ്ടെടുക്കുന്നതിന് ഹരിതകേരളം മിഷൻ 2019 ഡിസംബറിൽ തുടക്കം കുറിച്ച ക്യാമ്പയിൻ?",
         "options": [
           "Freedom from Waste (Malinyathil ninnu Swathanthryam)",
           "Waste-free New Kerala (Malinyamuktha Navakerala)",
@@ -2308,30 +2308,6 @@
       },
       {
         "id": 2,
-        "question": "How many protected areas (National Parks + Wildlife Sanctuaries) does Kerala have?",
-        "question_ml": "കേരളത്തിൽ ആകെ എത്ര സംരക്ഷിത പ്രദേശങ്ങളാണ് (ദേശീയോദ്യാനങ്ങളും വന്യജീവി സങ്കേതങ്ങളും ഉൾപ്പെടെ) ഉള്ളത്?",
-        "options": [
-          "5",
-          "10",
-          "17",
-          "25"
-        ],
-        "options_ml": [
-          "5",
-          "10",
-          "17",
-          "25"
-        ],
-        "answer": 2,
-        "kerala_stat_2026": "17 protected areas - 5 National Parks + 12 Wildlife Sanctuaries covering 2,324 sq km",
-        "national_average": "Kerala has one of the highest protected area densities for a small state",
-        "historical_benchmark": "23% of forest area is under protection",
-        "flex_fact": "17 protected areas covering 2,324 sq km - 23% of Kerala's forest area is under strict protection. This is one of the highest protection ratios among Indian states.",
-        "flex_fact_ml": "2,324 sq km ഉൾക്കൊള്ളുന്ന 17 സംരക്ഷിത പ്രദേശങ്ങൾ - കേരളത്തിന്റെ വനപ്രദേശത്തിന്റെ 23% കർശന സംരക്ഷണത്തിലാണ്.",
-        "source": "MoEF&CC / Kerala Forest Department"
-      },
-      {
-        "id": 3,
         "question": "Parambikulam Tiger Reserve won which prestigious global award for tiger conservation excellence?",
         "question_ml": "കടുവ സംരക്ഷണത്തിലെ മികവിന് പറമ്പിക്കുളം കടുവ സംരക്ഷണ കേന്ദ്രത്തിന് ലഭിച്ച അന്താരാഷ്ട്ര പുരസ്കാരം ഏതാണ്?",
         "options": [
@@ -2355,31 +2331,7 @@
         "source": "TX2 Award / NTCA"
       },
       {
-        "id": 4,
-        "question": "Kerala is home to approximately how many wild elephants - among the highest density per sq km of forest in India?",
-        "question_ml": "വനത്തിന്റെ വിസ്തൃതിയുമായി താരതമ്യം ചെയ്യുമ്പോൾ ഇന്ത്യയിൽ വന്യജീവി സാന്ദ്രത ഏറ്റവും കൂടുതലുള്ള കേരളത്തിൽ, ഏകദേശം എത്ര കാട്ടാനകളുണ്ട്?",
-        "options": [
-          "1,000+",
-          "3,000+",
-          "5,700+",
-          "500+"
-        ],
-        "options_ml": [
-          "1,000+",
-          "3,000+",
-          "5,700+",
-          "500+"
-        ],
-        "answer": 2,
-        "kerala_stat_2026": "~5,700+ elephants (wild + captive) - highest elephant density per sq km",
-        "national_average": "India total: ~30,000 wild elephants",
-        "historical_benchmark": "Kerala has maintained stable elephant population through corridor protection",
-        "flex_fact": "Kerala's elephant density per square kilometer of forest is among the highest in Asia - a testament to effective wildlife corridor management and human-elephant coexistence programs.",
-        "flex_fact_ml": "കേരളത്തിന്റെ വന ചതുരശ്ര കിലോമീറ്ററിന് ആന സാന്ദ്രത ഏഷ്യയിൽ ഏറ്റവും ഉയർന്നതിൽ ഒന്ന് - ഫലപ്രദമായ വന്യജീവി ഇടനാഴി പരിപാലനത്തിന്റെ തെളിവ്.",
-        "source": "Project Elephant Census / Kerala Forest Department"
-      },
-      {
-        "id": 5,
+        "id": 3,
         "question": "Forest fire incidents in Kerala declined by what percentage between 2016-2026 - against the national increasing trend?",
         "question_ml": "ദേശീയതലത്തിൽ കാട്ടുതീ വർധിച്ചുകൊണ്ടിരിക്കുന്ന പ്രവണതയ്ക്ക് വിരുദ്ധമായി, 2016 മുതൽ 2026 വരെയുള്ള കാലയളവിൽ കേരളത്തിലെ വനങ്ങളിലെ തീപിടുത്തങ്ങൾ എത്ര ശതമാനമാണ് കുറഞ്ഞത്?",
         "options": [
@@ -2403,7 +2355,7 @@
         "source": "Kerala Forest Dept / FSI"
       },
       {
-        "id": 6,
+        "id": 4,
         "question": "Vana Mithram - Kerala's citizen forest monitoring programme - has trained how many volunteers?",
         "question_ml": "കേരളത്തിന്റെ പൗര വന നിരീക്ഷണ പരിപാടിയായ 'വനമിത്ര' ത്തിലൂടെ ഇതുവരെ എത്ര വളണ്ടിയർമാർക്കാണ് (സന്നദ്ധപ്രവർത്തകർ) പരിശീലനം നൽകിയത്?",
         "options": [
@@ -2427,7 +2379,7 @@
         "source": "Kerala Forest Department"
       },
       {
-        "id": 7,
+        "id": 5,
         "question": "Kerala protects how many square kilometers of the Western Ghats - one of the world's 8 'hottest biodiversity hotspots'?",
         "question_ml": "ലോകത്തിലെ ഏറ്റവും പ്രധാനപ്പെട്ട എട്ട് ജൈവവൈവിധ്യ ഹോട്ട്‌സ്‌പോട്ടുകളിൽ (Biodiversity Hotspots) ഒന്നായ പശ്ചിമഘട്ടത്തിന്റെ എത്ര ചതുരശ്ര കിലോമീറ്റർ ഭാഗമാണ് കേരളം സംരക്ഷിക്കുന്നത്",
         "options": [
@@ -2451,7 +2403,7 @@
         "source": "UNESCO / IUCN"
       },
       {
-        "id": 8,
+        "id": 6,
         "question": "Kerala was the first state to complete People's Biodiversity Registers in all local self-government bodies - covering how many?",
         "question_ml": "എല്ലാ തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങളിലും ജനകീയ ജൈവവൈവിധ്യ രജിസ്റ്ററുകൾ (PBR) പൂർത്തിയാക്കിയ ഇന്ത്യയിലെ ആദ്യ സംസ്ഥാനമായി കേരളം മാറി. കേരളത്തിൽ ആകെ എത്ര ജൈവവൈവിധ്യ രജിസ്റ്ററുകളാണ് ഇത്തരത്തിൽ തയ്യാറാക്കിയിട്ടുള്ളത്?",
         "options": [
@@ -2475,7 +2427,7 @@
         "source": "Kerala State Biodiversity Board"
       },
       {
-        "id": 9,
+        "id": 7,
         "question": "Periyar Tiger Reserve's community eco-tourism model employs whom as tiger-protection watchers?",
         "question_ml": "പെരിയാർ കടുവ സംരക്ഷണ കേന്ദ്രത്തിലെ കമ്മ്യൂണിറ്റി ഇക്കോ-ടൂറിസം മാതൃകയിൽ, കടുവ സംരക്ഷണ വാച്ചർമാരായി (Tiger Protection Watchers) നിയമിച്ചിരിക്കുന്നത് ആരെയാണ്?",
         "options": [
@@ -2499,7 +2451,7 @@
         "source": "Periyar Tiger Reserve / Kerala Forest Department"
       },
       {
-        "id": 10,
+        "id": 8,
         "question": "Cochin International Airport (CIAL) - the world's first fully solar-powered airport - received which UN award?",
         "question_ml": "ലോകത്തിലെ ആദ്യത്തെ സമ്പൂർണ്ണ സൗരോർജ്ജ വിമാനത്താവളമായ കൊച്ചി അന്താരാഷ്ട്ര വിമാനത്താവളത്തിന് (CIAL) ഐക്യരാഷ്ട്രസഭയുടെ (UN) ഏത് ഉന്നത പുരസ്കാരമാണ് ലഭിച്ചത്?",
         "options": [
@@ -2523,7 +2475,7 @@
         "source": "CIAL Annual Reports / UNEP"
       },
       {
-        "id": 11,
+        "id": 9,
         "question": "Marayoor in Idukki district contains India's only natural forest of which valuable tree?",
         "question_ml": "ഇടുക്കി ജില്ലയിലെ മറയൂരിൽ കാണപ്പെടുന്ന ഇന്ത്യയിലെ ഏറ്റവും വിലയേറിയ ഏക പ്രകൃതിദത്ത വനം ഏതാണ് ?",
         "options": [
@@ -2547,7 +2499,7 @@
         "source": "Kerala Forest Department"
       },
       {
-        "id": 12,
+        "id": 10,
         "question": "Haritha Keralam Mission's waste management component deployed how many waste workers through Kudumbashree?",
         "question_ml": "ഹരിതകേരളം മിഷന്റെ മാലിന്യ നിർമ്മാർജ്ജന പ്രവർത്തനങ്ങൾക്കായി കുടുംബശ്രീ വഴി എത്ര ഹരിതകർമ്മ സേനാംഗങ്ങളെയാണ് (Waste Management Workers) വിന്യസിച്ചിട്ടുള്ളത്",
         "options": [
@@ -2571,31 +2523,7 @@
         "source": "Haritha Keralam Mission / Kudumbashree"
       },
       {
-        "id": 13,
-        "question": "How many tiger reserves does Kerala currently have?",
-        "question_ml": "കേരളത്തിൽ നിലവിൽ എത്ര കടുവ സംരക്ഷണ കേന്ദ്രങ്ങൾ ഉണ്ട്?",
-        "options": [
-          "2",
-          "3",
-          "5",
-          "1"
-        ],
-        "options_ml": [
-          "2",
-          "3",
-          "5",
-          "1"
-        ],
-        "answer": 2,
-        "kerala_stat_2026": "5 tiger reserves - Periyar, Parambikulam, Wayanad, and expanded areas",
-        "national_average": "India has 53 tiger reserves - Kerala has 5 in just 38,000 sq km",
-        "historical_benchmark": "Expanded from 3 to 5 during LDF tenure",
-        "flex_fact": "Kerala has 5 tiger reserves in a state smaller than Switzerland - one of the highest tiger reserve densities in the world. Tiger population: ~190 in the broader landscape.",
-        "flex_fact_ml": "വിസ്തൃതിയിൽ സ്വിറ്റ്‌സർലൻഡിനേക്കാൾ ചെറിയ സംസ്ഥാനമായിരുന്നിട്ടും കേരളത്തിൽ അഞ്ച് കടുവ സംരക്ഷണ കേന്ദ്രങ്ങളാണ് (Tiger Conservation Landscapes) ഉള്ളത്. ലോകത്തിലെ തന്നെ ഏറ്റവും ഉയർന്ന കടുവ സംരക്ഷണ സാന്ദ്രതയുള്ള (Tiger Conservation Density) മേഖലകളിൽ ഒന്നാണിത്.",
-        "source": "NTCA Tiger Census 2022"
-      },
-      {
-        "id": 14,
+        "id": 11,
         "question": "KFRI (Kerala Forest Research Institute) - one of Asia's oldest tropical forest research institutions - was established in which year?",
         "question_ml": "ഏഷ്യയിലെ ഏറ്റവും പഴക്കമേറിയ ഉഷ്ണമേഖലാ വന ഗവേഷണ സ്ഥാപനങ്ങളിലൊന്നായ കെ.എഫ്.ആർ.ഐ (KFRI) സ്ഥാപിതമായത് ഏത് വർഷമാണ്",
         "options": [
@@ -2619,7 +2547,7 @@
         "source": "KFRI / IPCC"
       },
       {
-        "id": 15,
+        "id": 12,
         "question": "Kerala's Idukki Arch Dam - Asia's largest double-curvature arch dam - generates how many MW of power?",
         "question_ml": "ഏഷ്യയിലെ ഏറ്റവും വലിയ ഡബിൾ-കർവേച്ചർ ആർച്ച് ഡാമായ ഇടുക്കി ആർച്ച് ഡാം എത്ര MW വൈദ്യുതി ഉത്പാദിപ്പിക്കുന്നു?",
         "options": [
@@ -2656,7 +2584,7 @@
       {
         "id": 1,
         "question": "Kerala contributed how many athletes to India's Olympic/Asian Games contingent - among the highest per capita?",
-        "question_ml": "ഇന്ത്യയുടെ ഒളിമ്പിക്/ഏഷ്യൻ ഗെയിംസ് സംഘത്തിലേക്ക് ആളോഹരി ഏറ്റവും ഉയർന്നതിൽ - കേരളം എത്ര കായികതാരങ്ങളെ?",
+        "question_ml": "ഇന്ത്യയുടെ ഒളിമ്പിക്, ഏഷ്യൻ ഗെയിംസ് സംഘങ്ങളിലേക്കുള്ള കായികതാരങ്ങളുടെ ആളോഹരി പങ്കാളിത്തത്തിൽ കേരളം മുൻപന്തിയിലാണ്. ഏറ്റവും ഒടുവിലത്തെ കണക്കുകൾ പ്രകാരം, ഏഷ്യൻ ഗെയിംസിനുള്ള ഇന്ത്യൻ സംഘത്തിൽ കേരളത്തിൽ നിന്ന് 42 കായികതാരങ്ങളാണ് ഉൾപ്പെട്ടിരുന്നത്",
         "options": [
           "5-10",
           "15-20",
@@ -2674,13 +2602,13 @@
         "national_average": "Kerala produces more Olympic-level athletes per capita than any state",
         "historical_benchmark": "PT Usha, Anju Bobby George, and many more from God's Own Country",
         "flex_fact": "From PT Usha to current stars - Kerala sends 30+ athletes per Olympic cycle. For a state with 2.5% of India's population, this is extraordinary.",
-        "flex_fact_ml": "PT ഉഷ മുതൽ ഇന്നത്തെ താരങ്ങൾ വരെ - ഓരോ ഒളിമ്പിക് ചക്രത്തിലും 30+ കായികതാരങ്ങൾ. ഇന്ത്യയുടെ 2.5% ജനസംഖ്യയുള്ള സംസ്ഥാനത്ത് ഇത് അസാധാരണം.",
+        "flex_fact_ml": "പി.ടി. ഉഷ മുതൽ ഇങ്ങോട്ടുള്ള ഓരോ ഒളിമ്പിക്സ് ചക്രത്തിലും മുപ്പതിലധികം (30+) കായികതാരങ്ങളെയാണ് കേരളം ഇന്ത്യയ്ക്കായി സംഭാവന ചെയ്യുന്നത്. ഇന്ത്യയുടെ ആകെ ജനസംഖ്യയുടെ വെറും 2.5 ശതമാനം മാത്രമുള്ള ഒരു സംസ്ഥാനത്തെ സംബന്ധിച്ചിടത്തോളം ഇത് അസാധാരണമായ നേട്ടമാണ്",
         "source": "Kerala Sports Council / IOA"
       },
       {
         "id": 2,
         "question": "Kerala's sports budget allocation per capita is among the highest in India - approximately how much?",
-        "question_ml": "കേരളത്തിന്റെ ആളോഹരി കായിക ബജറ്റ് വിഹിതം ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്നതിൽ - ഏകദേശം?",
+        "question_ml": "ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്ന ആളോഹരി കായിക ബജറ്റ് വിഹിതമുള്ള സംസ്ഥാനങ്ങളിലൊന്നാണ് കേരളം. കായിക മേഖലയുടെ വികസനത്തിനായി പ്രതിവർഷം ഏകദേശം 150 രൂപയിൽ കൂടുതൽ ആളോഹരി വിഹിതമായി കേരളം ചെലവഴിക്കുന്നു",
         "options": [
           "₹50/person",
           "₹100/person",
@@ -2698,13 +2626,13 @@
         "national_average": "National average per capita sports spending: ₹50-80",
         "historical_benchmark": "Budget increased 3x under LDF government",
         "flex_fact": "₹200+ per person on sports - 3x the national average. Kerala invests in its athletes from grassroots to Olympic level.",
-        "flex_fact_ml": "കായികത്തിന് ₹200+/ആൾ - ദേശീയ ശരാശരിയുടെ 3 മടങ്ങ്. അടിത്തട്ട് മുതൽ ഒളിമ്പിക് തലം വരെ കായികതാരങ്ങളിൽ കേരളം നിക്ഷേപിക്കുന്നു.",
+        "flex_fact_ml": "കായിക മേഖലയ്ക്കായി ഒരാൾക്ക് 200 രൂപയിലധികം വിനിയോഗിക്കുന്ന കേരളത്തിന്റെ ആളോഹരി വിഹിതം ദേശീയ ശരാശരിയേക്കാൾ മൂന്നിരട്ടി കൂടുതലാണ്. തദ്ദേശ സ്വയംഭരണ തലം മുതൽ ഒളിമ്പിക്സ് തലം വരെയുള്ള കായികതാരങ്ങളുടെ വളർച്ചയ്ക്കായി കേരളം വലിയ തോതിൽ നിക്ഷേപം നടത്തുന്നു",
         "source": "Kerala Sports Council / Budget Documents"
       },
       {
         "id": 3,
         "question": "How many sports schools (G V Raja Sports Schools) does Kerala operate for nurturing young talent?",
-        "question_ml": "യുവ കായിക പ്രതിഭകളെ പരിപോഷിപ്പിക്കുന്ന - കേരളം എത്ര സ്പോർട്സ് സ്കൂളുകൾ (G V Raja) നടത്തുന്നു?",
+        "question_ml": "യുവ കായിക പ്രതിഭകളെ പരിപോഷിപ്പിക്കുന്നതിനായി ജി.വി. രാജ (G.V. Raja) ഉൾപ്പെടെ എത്ര സ്പോർട്സ് സ്കൂളുകളാണ് കേരള സർക്കാർ നടത്തുന്നത്?",
         "options": [
           "5",
           "10",
@@ -2728,7 +2656,7 @@
       {
         "id": 4,
         "question": "International stadiums in Kerala - Jawaharlal Nehru Stadium (Kochi) and Greenfield Stadium (TVM) - can seat how many combined?",
-        "question_ml": "കേരളത്തിലെ അന്താരാഷ്ട്ര സ്റ്റേഡിയങ്ങൾ - JN സ്റ്റേഡിയം (കൊച്ചി), ഗ്രീൻഫീൽഡ് (TVM) - ആകെ ഇരിപ്പിടങ്ങൾ?",
+        "question_ml": "കേരളത്തിലെ പ്രമുഖ അന്താരാഷ്ട്ര സ്റ്റേഡിയങ്ങളായ കൊച്ചിയിലെ ജവഹർലാൽ നെഹ്‌റു (JLN) സ്റ്റേഡിയം, തിരുവനന്തപുരത്തെ ഗ്രീൻഫീൽഡ് ഇന്റർനാഷണൽ സ്റ്റേഡിയം എന്നിവയുടെ ആകെ ഇരിപ്പിട ശേഷി (Seating Capacity) എത്രയാണ്?",
         "options": [
           "40,000",
           "60,000",
@@ -2746,13 +2674,13 @@
         "national_average": "Kerala has some of India's best football infrastructure",
         "historical_benchmark": "Both have hosted FIFA U-17 World Cup 2017 and international matches",
         "flex_fact": "90,000+ seats across two FIFA-quality stadiums - Kerala hosted FIFA U-17 World Cup 2017 matches, proving its world-class sports infrastructure.",
-        "flex_fact_ml": "രണ്ട് FIFA-ഗുണമേന്മ സ്റ്റേഡിയങ്ങളിലായി 90,000+ ഇരിപ്പിടങ്ങൾ - FIFA U-17 വേൾഡ് കപ്പ് 2017 മത്സരങ്ങൾ ആതിഥേയത്വം വഹിച്ച് ലോകോത്തര കായിക അടിസ്ഥാന സൗകര്യം തെളിയിച്ചു.",
+        "flex_fact_ml": "ഫിഫ (FIFA) നിലവാരത്തിലുള്ള രണ്ട് സ്റ്റേഡിയങ്ങളിലായി തൊണ്ണൂറായിരത്തിലധികം (90,000+) ഇരിപ്പിട സൗകര്യം കേരളത്തിലുണ്ട്. 2017-ലെ ഫിഫ അണ്ടർ-17 ലോകകപ്പ് മത്സരങ്ങൾക്ക് ആതിഥേയത്വം വഹിച്ചതിലൂടെ കേരളത്തിന്റെ ലോകോത്തര കായിക അടിസ്ഥാന സൗകര്യങ്ങൾ രാജ്യാന്തര തലത്തിൽ തെളിയിക്കപ്പെട്ടു.",
         "source": "Kerala Sports / FIFA"
       },
       {
         "id": 5,
         "question": "Kerala's property registration system has been fully digitized - documents are now delivered in how many minutes?",
-        "question_ml": "കേരളത്തിന്റെ വസ്തു രജിസ്ട്രേഷൻ സംവിധാനം പൂർണ്ണമായും ഡിജിറ്റൈസ് ചെയ്തു - രേഖകൾ ഇപ്പോൾ എത്ര മിനിറ്റിൽ?",
+        "question_ml": "കേരളത്തിന്റെ ആധാരമെഴുത്തും വസ്തു രജിസ്ട്രേഷൻ സംവിധാനവും പൂർണ്ണമായും ഡിജിറ്റൈസ് ചെയ്തിരിക്കുകയാണ്. പുതിയ സംവിധാനം വഴി രജിസ്ട്രേഷൻ നടപടികൾ പൂർത്തിയാക്കി ആധാരത്തിന്റെ പകർപ്പ് ഏകദേശം 20 മുതൽ 30 മിനിറ്റിനുള്ളിൽ തന്നെ തിരികെ ലഭിക്കുന്നു.\"",
         "options": [
           "30 minutes",
           "1 hour",
@@ -4511,7 +4439,7 @@
       {
         "id": 1,
         "question": "Kerala's Milma (KCMMF) daily milk procurement has grown to approximately how much?",
-        "question_ml": "കേരളത്തിന്റെ മിൽമ (KCMMF) ദൈനംദിന പാൽ സംഭരണം ഏകദേശം എത്രയായി ഉയർന്നു?",
+        "question_ml": "കേരള സഹകരണ പാൽ വിപണന ഫെഡറേഷന്റെ (KCMMF) ബ്രാൻഡായ മിൽമയുടെ ദൈനംദിന ശരാശരി പാൽ സംഭരണം ഇപ്പോൾ ഏകദേശം എത്രയായി ഉയർന്നിട്ടുണ്ട്?",
         "options": [
           "10 Lakh litres",
           "20 Lakh litres",
@@ -6499,7 +6427,7 @@
         "national_average": "National industry share: ~30%",
         "historical_benchmark": "Kerala's industrial base is diversifying beyond traditional sectors",
         "flex_fact": "Kerala's industry share is growing - with MSME, IT, and food processing leading the diversification away from traditional dependence on services and remittances.",
-        "flex_fact_ml": "കേരളത്തിന്റെ വ്യാവസായിക വിഹിതം വളരുന്നു - MSME, IT, ഭക്ഷ്യ സംസ്കരണം പരമ്പരാഗത സേവന-പ്രവാസി ആശ്രയത്വത്തിൽ നിന്ന് വൈവിധ്യവൽക്കരണം നയിക്കുന്നു.",
+        "flex_fact_ml": "കേരളത്തിന്റെ വ്യാവസായിക വിഹിതം വളരുന്നു - MSME, IT, ഭക്ഷ്യ സംസ്കരണം പരമ്പരാഗത ആശ്രയത്വത്തിൽ നിന്ന് വൈവിധ്യവൽക്കരണം നയിക്കുന്നു.",
         "source": "Kerala Economic Review / Planning Board"
       },
       {
@@ -6577,7 +6505,7 @@
       {
         "id": 5,
         "question": "Kerala's judiciary has how many courts - among the highest judicial infrastructure density in India?",
-        "question_ml": "ഇന്ത്യയിലെ ഏറ്റവും ഉയർന്ന ജുഡീഷ്യൽ ഇൻഫ്രാസ്ട്രക്ചർ സാന്ദ്രതയിൽ - കേരളത്തിന്റെ ജുഡീഷ്യറിയിൽ എത്ര കോടതികൾ?",
+        "question_ml": "ഇന്ത്യയിലെ ജുഡീഷ്യൽ ഇൻഫ്രാസ്ട്രക്ചർ സാന്ദ്രതയിൽ ഏറ്റവും ഉയർന്ന സംസ്‌ഥാനമായ കേരളത്തിന്റെ ജുഡീഷ്യറിയിൽ എത്ര കോടതികൾ ഉണ്ട്?",
         "options": [
           "200+",
           "400+",
@@ -6601,7 +6529,7 @@
       {
         "id": 6,
         "question": "Coir industry - Kerala's traditional industry - employs how many workers (mostly women)?",
-        "question_ml": "കയർ വ്യവസായം - കേരളത്തിന്റെ പരമ്പരാഗത വ്യവസായം - (പ്രധാനമായും സ്ത്രീകൾ) എത്ര തൊഴിലാളികൾക്ക്?",
+        "question_ml": "കേരളത്തിന്റെ പരമ്പരാഗത വ്യവസായമായ കയർ വ്യവസായത്തിൽ എത്ര തൊഴിലാളികൾ (പ്രധാനമായും സ്ത്രീകൾ) ഉണ്ട്?",
         "options": [
           "1 Lakh+",
           "2 Lakh+",
@@ -6625,7 +6553,7 @@
       {
         "id": 7,
         "question": "Kerala's Legal Services Authority provides free legal aid to how many people annually?",
-        "question_ml": "കേരളത്തിന്റെ ലീഗൽ സർവീസസ് അതോറിറ്റി വാർഷികമായി എത്ര ആളുകൾക്ക് സൗജന്യ നിയമ സഹായം?",
+        "question_ml": "കേരളത്തിന്റെ ലീഗൽ സർവീസസ് അതോറിറ്റി വർഷത്തിൽ എത്ര ആളുകൾക്ക് സൗജന്യ നിയമ സഹായം നൽകുന്നു ?",
         "options": [
           "10,000+",
           "25,000+",
@@ -6643,13 +6571,13 @@
         "national_average": "Kerala's free legal aid reaches more people per capita than most states",
         "historical_benchmark": "Ensures justice for those who can't afford lawyers",
         "flex_fact": "50,000+ people who can't afford lawyers get free legal aid - because in Kerala, access to justice isn't a privilege of the wealthy.",
-        "flex_fact_ml": "വക്കീലിനെ വാങ്ങാൻ കഴിയാത്ത 50,000+ ആളുകൾക്ക് സൗജന്യ നിയമ സഹായം - കേരളത്തിൽ നീതിയിലേക്കുള്ള പ്രവേശനം സമ്പന്നരുടെ പ്രത്യേകാവകാശമല്ല.",
+        "flex_fact_ml": "വക്കീലിനെ നിയമിക്കാൻ കഴിയാത്ത 50,000+ ആളുകൾക്ക് സൗജന്യ നിയമ സഹായം - കേരളത്തിൽ നീതിയിലേക്കുള്ള പ്രവേശനം സമ്പന്നരുടെ പ്രത്യേകാവകാശമല്ല.",
         "source": "Kerala Legal Services Authority"
       },
       {
         "id": 8,
         "question": "Kerala's handloom industry - another traditional sector - employs how many weavers?",
-        "question_ml": "കേരളത്തിന്റെ കൈത്തറി വ്യവസായം - മറ്റൊരു പരമ്പരാഗത മേഖല - എത്ര നെയ്ത്തുകാർക്ക്?",
+        "question_ml": "കേരളത്തിന്റെ മറ്റൊരു പരമ്പരാഗത മേഖല ആയ കൈത്തറി വ്യവസായം എത്ര നെയ്ത്തുകാർക്ക് തൊഴിലവസരം നൽകുന്നു?",
         "options": [
           "50,000+",
           "1 Lakh+",
@@ -6673,7 +6601,7 @@
       {
         "id": 9,
         "question": "SIDCO (Small Industries Development Corporation) provides industrial sheds and support to how many small industries?",
-        "question_ml": "SIDCO (സ്മാൾ ഇൻഡസ്ട്രീസ് ഡെവലപ്‌മെന്റ് കോർപ്പറേഷൻ) എത്ര ചെറുകിട വ്യവസായങ്ങൾക്ക്?",
+        "question_ml": "SIDCO (സ്മാൾ ഇൻഡസ്ട്രീസ് ഡെവലപ്‌മെന്റ് കോർപ്പറേഷൻ) എത്ര ചെറുകിട വ്യവസായങ്ങൾക്ക് സഹായം നൽകുന്നുണ്ട്??",
         "options": [
           "500+",
           "1,000+",
@@ -6697,7 +6625,7 @@
       {
         "id": 10,
         "question": "Kerala's Lok Adalats (People's Courts) resolve how many cases annually through alternative dispute resolution?",
-        "question_ml": "കേരളത്തിലെ ലോക് അദാലത്തുകൾ (ജനകീയ കോടതികൾ) ബദൽ തർക്ക പരിഹാരത്തിലൂടെ വാർഷികമായി എത്ര കേസുകൾ പരിഹരിക്കുന്നു?",
+        "question_ml": "കേരളത്തിലെ ലോക് അദാലത്തുകൾ (ജനകീയ കോടതികൾ) ബദൽ തർക്ക പരിഹാരത്തിലൂടെ വർഷത്തിൽ എത്ര കേസുകൾ പരിഹരിക്കുന്നു?",
         "options": [
           "10,000+",
           "50,000+",
@@ -6721,7 +6649,7 @@
       {
         "id": 11,
         "question": "Kerala's minimum wage is among the highest in India - approximately how much for an unskilled worker per day?",
-        "question_ml": "കേരളത്തിന്റെ മിനിമം വേതനം ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്നതിൽ - അവിദഗ്ധ തൊഴിലാളിക്ക് ദിനംപ്രതി ഏകദേശം?",
+        "question_ml": "ഇന്ത്യയിലെ സംസ്‌ഥാനങ്ങളിൽ വെച്ച് ഏറ്റവും ഉയർന്ന നിരക്കായ ,കേരളത്തിലെ അവിദഗ്ധ തൊഴിലാളിക്ക് ദിനംപ്രതി കൊടുക്കുന്ന മിനിമം വേതനം എത്രയാണ് ?",
         "options": [
           "₹200",
           "₹300",
@@ -6769,7 +6697,7 @@
       {
         "id": 13,
         "question": "Kerala's consumer dispute resolution system is considered among India's best - what is the average case disposal time?",
-        "question_ml": "കേരളത്തിന്റെ ഉപഭോക്തൃ തർക്ക പരിഹാര സംവിധാനം ഇന്ത്യയിലെ മികച്ചവയിൽ - ശരാശരി കേസ് തീർപ്പ് സമയം?",
+        "question_ml": "ഇന്ത്യയിലെ മികച്ച ഉപഭോക്തൃ തർക്ക പരിഹാര സംവിധാനമായ കേരളത്തിലെ ശരാശരി കേസ് തീർപ്പ് സമയം?",
         "options": [
           "6 months",
           "1 year",
@@ -6793,7 +6721,7 @@
       {
         "id": 14,
         "question": "The Bamboo Corporation of Kerala promotes bamboo-based industries - employing how many workers?",
-        "question_ml": "കേരള ബാംബൂ കോർപ്പറേഷൻ മുള അടിസ്ഥാനമാക്കിയ വ്യവസായങ്ങൾ പ്രോത്സാഹിപ്പിക്കുന്നു - എത്ര തൊഴിലാളികൾ?",
+        "question_ml": "മുള അടിസ്ഥാനമാക്കിയ വ്യവസായങ്ങൾ പ്രോത്സാഹിപ്പിക്കുന്ന കേരള ബാംബൂ കോർപ്പറേഷനിൽ എത്ര തൊഴിലാളികൾ?",
         "options": [
           "5,000+",
           "10,000+",
@@ -6817,7 +6745,7 @@
       {
         "id": 15,
         "question": "Kerala's Ease of Doing Business (EoDB) ranking has improved significantly - what key reform drove this?",
-        "question_ml": "കേരളത്തിന്റെ ഈസ് ഓഫ് ഡൂയിംഗ് ബിസിനസ് (EoDB) റാങ്കിംഗ് ഗണ്യമായി മെച്ചപ്പെട്ടു - ഏത് പ്രധാന പരിഷ്കരണം?",
+        "question_ml": "ഏത് പ്രധാന പരിഷ്കരണത്തിലൂടെ ആണ് കേരളത്തിന്റെ ഈസ് ഓഫ് ഡൂയിംഗ് ബിസിനസ് (EoDB) റാങ്കിംഗ് ഗണ്യമായി മെച്ചപ്പെട്ടത് ?",
         "options": [
           "Deregulation",
           "Single-window K-SWIFT + online approval system",
@@ -6852,7 +6780,7 @@
       {
         "id": 1,
         "question": "Kerala became the first Indian state to convert ALL government school classrooms to hi-tech. How many classrooms were transformed?",
-        "question_ml": "എല്ലാ സർക്കാർ സ്കൂൾ ക്ലാസ്‌മുറികളും ഹൈ-ടെക് ആക്കിയ ആദ്യ ഇന്ത്യൻ സംസ്ഥാനം. എത്ര ക്ലാസ്‌മുറികൾ മാറ്റി?",
+        "question_ml": "എല്ലാ സർക്കാർ സ്കൂൾ ക്ലാസ്‌മുറികളും ഹൈ-ടെക് ആക്കിയ ആദ്യ ഇന്ത്യൻ സംസ്ഥാനമായ കേരളത്തിൽ എത്ര ക്ലാസ്‌മുറികൾ ഹൈടെക് ആക്കി?",
         "options": [
           "10,000",
           "25,000",
@@ -6894,13 +6822,13 @@
         "national_average": "Government school enrollment is declining nationally",
         "historical_benchmark": "2015-16: 5,715 schools declared 'uneconomic' due to low enrollment",
         "flex_fact": "In 2015-16, thousands of government schools faced closure. After ₹5,000 crore investment in hi-tech classrooms, robotic labs, and AI integration, enrollment surged by 5 lakh+ - the greatest turnaround in Indian public education.",
-        "flex_fact_ml": "2015-16ൽ ആയിരക്കണക്കിന് സ്കൂളുകൾ അടച്ചുപൂട്ടൽ ഭീഷണി. ₹5,000 കോടി നിക്ഷേപത്തിന് ശേഷം 5 ലക്ഷം+ പുതിയ ചേർക്കൽ - ഇന്ത്യൻ പൊതു വിദ്യാഭ്യാസത്തിലെ ഏറ്റവും വലിയ തിരിച്ചുവരവ്.",
+        "flex_fact_ml": "2015-16ൽ ആയിരക്കണക്കിന് സ്കൂളുകൾ അടച്ചുപൂട്ടൽ ഭീഷണി. ₹5,000 കോടി നിക്ഷേപത്തിന് ശേഷം 5 ലക്ഷം+ പുതിയ അഡ്മിഷൻ - ഇന്ത്യൻ പൊതു വിദ്യാഭ്യാസത്തിലെ ഏറ്റവും വലിയ തിരിച്ചുവരവ്.",
         "source": "NewsClick / Kerala Education Statistics"
       },
       {
         "id": 3,
         "question": "Kerala became the first Indian state to introduce AI into school curriculum. In which year?",
-        "question_ml": "സ്കൂൾ പാഠ്യപദ്ധതിയിൽ AI ഉൾപ്പെടുത്തിയ ആദ്യ ഇന്ത്യൻ സംസ്ഥാനം കേരളം. ഏത് വർഷം?",
+        "question_ml": "ഏത് വർഷമാണ്‌ കേരളം സ്കൂൾ പാഠ്യപദ്ധതിയിൽ AI ഉൾപ്പെടുത്തിയ ആദ്യ ഇന്ത്യൻ സംസ്ഥാനമായി മാറിയത്?",
         "options": [
           "2020",
           "2022",
@@ -6924,7 +6852,7 @@
       {
         "id": 4,
         "question": "What is Kerala's literacy rate - the highest among all Indian states for decades?",
-        "question_ml": "ദശകങ്ങളായി എല്ലാ ഇന്ത്യൻ സംസ്ഥാനങ്ങളിലും ഏറ്റവും ഉയർന്ന കേരളത്തിന്റെ സാക്ഷരതാ നിരക്ക്?",
+        "question_ml": "ദശകങ്ങളായി എല്ലാ ഇന്ത്യൻ സംസ്ഥാനങ്ങളിലും വെച്ച് ഏറ്റവും ഉയർന്ന സാക്ഷരതാ നിരക്ക് കേരളത്തിന്റെ ആണ്. എത്രയാണത്?",
         "options": [
           "89%",
           "93%",
@@ -6948,7 +6876,7 @@
       {
         "id": 5,
         "question": "What is Kerala's school dropout rate at Class X - the lowest in India?",
-        "question_ml": "ഇന്ത്യയിലെ ഏറ്റവും കുറഞ്ഞ - ക്ലാസ് X-ലെ കേരളത്തിന്റെ സ്കൂൾ ഡ്രോപ്പൗട്ട് നിരക്ക്?",
+        "question_ml": "ഇന്ത്യയിലെ ഏറ്റവും കുറഞ്ഞ നിരക്കായ , കേരളത്തിന്റെ ക്ലാസ് X-ലെ സ്കൂൾ ഡ്രോപ്പൗട്ട് നിരക്ക്?",
         "options": [
           "0.3%",
           "2%",
@@ -6972,7 +6900,7 @@
       {
         "id": 6,
         "question": "Kerala's Little KITEs technology clubs operate in schools. How many active clubs exist by 2026?",
-        "question_ml": "കേരളത്തിന്റെ Little KITEs ടെക്നോളജി ക്ലബ്ബുകൾ സ്കൂളുകളിൽ പ്രവർത്തിക്കുന്നു. 2026 ആയപ്പോഴേക്കും എത്ര ക്ലബ്ബുകൾ?",
+        "question_ml": "കേരളത്തിന്റെ Little KITEs ടെക്നോളജി ക്ലബ്ബുകൾ സ്കൂളുകളിൽ പ്രവർത്തിക്കുന്നു. 2026 ആയപ്പോഴേക്കും എത്ര ക്ലബ്ബുകൾ നിലവിലുണ്ട്?",
         "options": [
           "2,000",
           "5,000",
@@ -7020,7 +6948,7 @@
       {
         "id": 8,
         "question": "What is Kerala's Gross Enrolment Ratio (GER) in higher education - among the top in India?",
-        "question_ml": "ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്ന കേരളത്തിന്റെ ഉന്നത വിദ്യാഭ്യാസ GER?",
+        "question_ml": "ഇന്ത്യയിലെ ഏറ്റവും ഉയർന്ന നിരക്കായ കേരളത്തിന്റെ ഉന്നത വിദ്യാഭ്യാസ GER?",
         "options": [
           "28%",
           "35%",
@@ -7044,7 +6972,7 @@
       {
         "id": 9,
         "question": "What is the name of Kerala's TV channel that broadcast free educational content during COVID-19 lockdowns - becoming a national model?",
-        "question_ml": "COVID-19 ലോക്ക്ഡൗൺ സമയത്ത് സൗജന്യ വിദ്യാഭ്യാസ ഉള്ളടക്കം സംപ്രേഷണം ചെയ്ത - ദേശീയ മാതൃകയായ - കേരളത്തിന്റെ ടിവി ചാനലിന്റെ പേര്?",
+        "question_ml": "COVID-19 ലോക്ക്ഡൗൺ സമയത്ത് സൗജന്യ വിദ്യാഭ്യാസ അദ്ധ്യായങ്ങൾ സംപ്രേഷണം ചെയ്ത ,ദേശീയ മാതൃകയായ ,കേരളത്തിന്റെ ടിവി ചാനലിന്റെ പേര്?",
         "options": [
           "Kerala Vision",
           "KITE Victers",
@@ -7062,13 +6990,13 @@
         "national_average": "No other state had a dedicated educational TV channel ready when COVID hit",
         "historical_benchmark": "Victers channel existed since 2005; became crucial during COVID",
         "flex_fact": "When schools closed in March 2020, Kerala's KITE Victers channel launched 'First Bell' within days - broadcasting classes for all grades. Other states took months to develop similar content.",
-        "flex_fact_ml": "2020 മാർച്ചിൽ സ്കൂളുകൾ അടച്ചപ്പോൾ, KITE വിക്ടേഴ്സ് ദിവസങ്ങൾക്കുള്ളിൽ 'First Bell' ആരംഭിച്ചു - എല്ലാ ക്ലാസുകൾക്കും ക്ലാസുകൾ സംപ്രേഷണം ചെയ്തു.",
+        "flex_fact_ml": "2020 മാർച്ചിൽ സ്കൂളുകൾ അടച്ചപ്പോൾ, KITE വിക്ടേഴ്സ് ദിവസങ്ങൾക്കുള്ളിൽ 'First Bell' ആരംഭിച്ചു - എല്ലാ ക്ലാസുകൾക്കും പാഠഭാഗങ്ങൾ സംപ്രേഷണം ചെയ്തു.",
         "source": "KITE Kerala / General Education Dept"
       },
       {
         "id": 10,
         "question": "Kerala's gender parity index (GPI) in secondary education exceeds 1.0, meaning:",
-        "question_ml": "കേരളത്തിന്റെ സെക്കൻഡറി വിദ്യാഭ്യാസ ലിംഗ സമത്വ സൂചിക (GPI) 1.0 കവിയുന്നു, അതായത്:",
+        "question_ml": "കേരളത്തിന്റെ സെക്കൻഡറി വിദ്യാഭ്യാസ ലിംഗ സമത്വ സൂചിക (GPI) 1.0 കവിയുന്നു.എന്താണ് ഇത് കൊണ്ട് ഉദ്ദേശിക്കുന്നത്?",
         "options": [
           "More boys than girls enrolled",
           "Equal boys and girls",
@@ -7140,7 +7068,7 @@
       {
         "id": 13,
         "question": "What is Kerala's average student-teacher ratio in government schools - one of the best in India?",
-        "question_ml": "ഇന്ത്യയിലെ മികച്ചവയിൽ ഒന്നായ സർക്കാർ സ്കൂളുകളിലെ ശരാശരി വിദ്യാർത്ഥി-അധ്യാപക അനുപാതം?",
+        "question_ml": "ഇന്ത്യയിലെ മികച്ച നിരക്കുകളിൽ ഒന്നായ കേരളത്തിന്റെ സർക്കാർ സ്കൂളുകളിലെ ശരാശരി വിദ്യാർത്ഥി-അധ്യാപക അനുപാതം?",
         "options": [
           "15:1",
           "21:1",
@@ -7164,7 +7092,7 @@
       {
         "id": 14,
         "question": "How many model residential schools has Kerala established specifically for tribal (ST) students?",
-        "question_ml": "ആദിവാസി (ST) വിദ്യാർത്ഥികൾക്കായി എത്ര മോഡൽ റസിഡൻഷ്യൽ സ്കൂളുകൾ സ്ഥാപിച്ചു?",
+        "question_ml": "ആദിവാസി (ST) വിദ്യാർത്ഥികൾക്കായി എത്ര മോഡൽ റസിഡൻഷ്യൽ സ്കൂളുകൾ കേരളത്തിൽ സ്ഥാപിച്ചു?",
         "options": [
           "14",
           "30",
@@ -7223,7 +7151,7 @@
       {
         "id": 1,
         "question": "Kerala's cooperative sector has how many primary cooperative societies - among the highest density in India?",
-        "question_ml": "ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്ന സാന്ദ്രതയിൽ - കേരളത്തിന്റെ സഹകരണ മേഖലയിൽ എത്ര പ്രാഥമിക സഹകരണ സംഘങ്ങൾ?",
+        "question_ml": "ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്ന സാന്ദ്രതയുള്ള കേരളത്തിന്റെ സഹകരണ മേഖലയിൽ എത്ര പ്രാഥമിക സഹകരണ സംഘങ്ങൾ ഉണ്ട്?",
         "options": [
           "5,000+",
           "10,000+",
@@ -7247,7 +7175,7 @@
       {
         "id": 2,
         "question": "Cooperative banks in Kerala hold deposits of approximately how much - rivaling some commercial banks?",
-        "question_ml": "ചില വാണിജ്യ ബാങ്കുകളോട് മത്സരിക്കുന്ന - കേരളത്തിലെ സഹകരണ ബാങ്കുകൾ ഏകദേശം എത്ര നിക്ഷേപം?",
+        "question_ml": "ചില വാണിജ്യ ബാങ്കുകളോട് മത്സരിക്കുന്ന ,കേരളത്തിലെ സഹകരണ ബാങ്കുകളിൽ ഏകദേശം എത്ര നിക്ഷേപം?",
         "options": [
           "₹25,000 Cr",
           "₹50,000 Cr",
@@ -7265,13 +7193,13 @@
         "national_average": "Kerala's cooperative banking is the strongest in India",
         "historical_benchmark": "Cooperative banks serve 70%+ of Kerala's rural population",
         "flex_fact": "₹1 Lakh Cr+ in deposits - Kerala's cooperative banks serve 70%+ of rural families, providing credit where commercial banks won't go.",
-        "flex_fact_ml": "₹1 ലക്ഷം കോടി+ നിക്ഷേപം - 70%+ ഗ്രാമീണ കുടുംബങ്ങൾക്ക് സേവനം, വാണിജ്യ ബാങ്കുകൾ പോകാത്തിടത്ത് വായ്പ.",
+        "flex_fact_ml": "₹1 ലക്ഷം കോടി+ നിക്ഷേപം - 70%+ ഗ്രാമീണ കുടുംബങ്ങൾക്ക് സേവനം, വാണിജ്യ ബാങ്കുകൾ നൽകാത്ത വായ്പ.",
         "source": "Kerala Cooperative Banks / RBI"
       },
       {
         "id": 3,
         "question": "New Mangalore and Kochi ports together handle what percentage of India's total port cargo from Kerala's coast?",
-        "question_ml": "ന്യൂ മംഗളൂരും കൊച്ചി തുറമുഖങ്ങളും ചേർന്ന് ഇന്ത്യയുടെ ആകെ തുറമുഖ ചരക്കിന്റെ എത്ര ശതമാനം?",
+        "question_ml": "ന്യൂ മംഗളൂരും കൊച്ചി തുറമുഖങ്ങളും ചേർന്ന് ഇന്ത്യയുടെ ആകെ തുറമുഖ ചരക്കിന്റെ എത്ര ശതമാനം കൈകാര്യം ചെയ്യുന്നു?",
         "options": [
           "2%",
           "5%",
@@ -7295,7 +7223,7 @@
       {
         "id": 4,
         "question": "Kerala Devaswom Board manages how many temples - one of the largest temple management systems in the world?",
-        "question_ml": "ലോകത്തിലെ ഏറ്റവും വലിയ ക്ഷേത്ര മാനേജ്മെന്റ് സംവിധാനങ്ങളിൽ ഒന്ന് - കേരള ദേവസ്വം ബോർഡ് എത്ര ക്ഷേത്രങ്ങൾ?",
+        "question_ml": "ലോകത്തിലെ ഏറ്റവും വലിയ ക്ഷേത്ര മാനേജ്മെന്റ് സംവിധാനങ്ങളിൽ ഒന്നായ കേരള ദേവസ്വം ബോർഡ് എത്ര ക്ഷേത്രങ്ങൾ?",
         "options": [
           "500+",
           "1,000+",
@@ -7313,13 +7241,13 @@
         "national_average": "Among the largest organized temple management systems globally",
         "historical_benchmark": "Sabarimala alone attracts 5 Cr+ pilgrims annually",
         "flex_fact": "2,500+ temples managed with transparent governance - including Sabarimala, which attracts 5 Cr+ pilgrims annually, making it one of the world's largest pilgrimages.",
-        "flex_fact_ml": "സുതാര്യ ഭരണത്തോടെ 2,500+ ക്ഷേത്രങ്ങൾ - വാർഷികമായി 5 കോടി+ തീർത്ഥാടകരെ ആകർഷിക്കുന്ന ശബരിമല ഉൾപ്പെടെ.",
+        "flex_fact_ml": "സുതാര്യ ഭരണത്തോടെ 2,500+ ക്ഷേത്രങ്ങൾ - ശബരിമല മാത്രമായി വാർഷത്തിൽ 5 കോടി+ തീർത്ഥാടകരെ ആകർഷിക്കുന്നു .",
         "source": "Travancore / Cochin Devaswom Board"
       },
       {
         "id": 5,
         "question": "Consumer cooperative stores (Consumerfed) in Kerala offer essentials at discounted prices through how many outlets?",
-        "question_ml": "ഉപഭോക്തൃ സഹകരണ സ്റ്റോറുകൾ (Consumerfed) അവശ്യ വസ്തുക്കൾ കിഴിവ് വിലയിൽ - എത്ര ഔട്ട്‌ലെറ്റുകൾ?",
+        "question_ml": "അവശ്യ വസ്തുക്കൾ കിഴിവ് വിലയിൽ ലഭിക്കുന്ന ഉപഭോക്തൃ സഹകരണ സ്റ്റോറുകളുടെ (Consumerfed) - എത്ര ഔട്ട്‌ലെറ്റുകൾ കേരളത്തിൽ ഉണ്ട്?",
         "options": [
           "100+",
           "300+",
@@ -7343,7 +7271,7 @@
       {
         "id": 6,
         "question": "Kerala's inland waterway network - the longest in India - spans how many kilometers?",
-        "question_ml": "ഇന്ത്യയിൽ ഏറ്റവും നീളമേറിയ - കേരളത്തിന്റെ ഉൾനാടൻ ജലപാത ശൃംഖല എത്ര കിലോമീറ്റർ?",
+        "question_ml": "ഇന്ത്യയിൽ ഏറ്റവും നീളമേറിയ കേരളത്തിന്റെ ഉൾനാടൻ ജലപാത ശൃംഖല എത്ര കിലോമീറ്റർ ഉണ്ട്?",
         "options": [
           "500 km",
           "1,000 km",
@@ -7367,7 +7295,7 @@
       {
         "id": 7,
         "question": "Sabarimala Ayyappa Temple attracts approximately how many pilgrims during the annual season?",
-        "question_ml": "വാർഷിക സീസണിൽ ശബരിമല അയ്യപ്പ ക്ഷേത്രം ഏകദേശം എത്ര തീർത്ഥാടകരെ ആകർഷിക്കുന്നു?",
+        "question_ml": "വാർഷിക സീസണിൽ ശബരിമല അയ്യപ്പ ക്ഷേത്രം ഏകദേശം എത്ര തീർത്ഥാടകർ സന്ദർശിക്കുന്നു ?",
         "options": [
           "1 Cr",
           "3 Cr",
@@ -7415,7 +7343,7 @@
       {
         "id": 9,
         "question": "Minor ports in Kerala handle what types of cargo primarily?",
-        "question_ml": "കേരളത്തിലെ ചെറു തുറമുഖങ്ങൾ പ്രധാനമായും ഏത് തരം ചരക്ക്?",
+        "question_ml": "കേരളത്തിലെ ചെറു തുറമുഖങ്ങൾ പ്രധാനമായും ഏത് തരം ചരക്ക് കൈകാര്യം ചെയ്യുന്നു??",
         "options": [
           "Oil only",
           "Fish, construction materials, and coastal cargo",
@@ -7433,13 +7361,13 @@
         "national_average": "Kerala has 17 minor ports along its 590 km coastline",
         "historical_benchmark": "Minor ports serve local fishing and construction industries",
         "flex_fact": "17 minor ports along 590 km of coast - serving local fishing, construction, and small-scale trade. Kerala's coastline is India's most economically active per kilometer.",
-        "flex_fact_ml": "590 km തീരത്ത് 17 ചെറു തുറമുഖങ്ങൾ - പ്രാദേശിക മത്സ്യബന്ധനം, നിർമ്മാണം, ചെറുകിട വ്യാപാരം. കിലോമീറ്ററിന് ഇന്ത്യയിൽ ഏറ്റവും സാമ്പത്തികമായി സജീവമായ തീരം.",
+        "flex_fact_ml": "590 km തീരത്ത് 17 ചെറു തുറമുഖങ്ങൾ - പ്രാദേശിക മത്സ്യബന്ധനം, നിർമ്മാണം, ചെറുകിട വ്യാപാരം. ഇന്ത്യയിൽ ഏറ്റവും സാമ്പത്തികമായി സജീവമായ തീരം.",
         "source": "Kerala Ports Dept"
       },
       {
         "id": 10,
         "question": "Kerala's cooperative credit system provides agricultural loans at what subsidized interest rate?",
-        "question_ml": "കേരളത്തിന്റെ സഹകരണ വായ്പ സംവിധാനം കാർഷിക വായ്പകൾ എത്ര സബ്‌സിഡി പലിശ നിരക്കിൽ?",
+        "question_ml": "കേരളത്തിന്റെ സഹകരണ വായ്പ സംവിധാനം കാർഷിക വായ്പകൾ എത്ര സബ്‌സിഡി പലിശ നിരക്കിൽ കൊടുക്കുന്നു?",
         "options": [
           "7%",
           "5%",
@@ -7463,7 +7391,7 @@
       {
         "id": 11,
         "question": "Guruvayur Temple - managed by the Cochin Devaswom Board - attracts approximately how many devotees daily?",
-        "question_ml": "കൊച്ചി ദേവസ്വം ബോർഡ് നിയന്ത്രിക്കുന്ന ഗുരുവായൂർ ക്ഷേത്രം ദിനംപ്രതി ഏകദേശം എത്ര ഭക്തരെ ആകർഷിക്കുന്നു?",
+        "question_ml": "കൊച്ചി ദേവസ്വം ബോർഡ് നിയന്ത്രിക്കുന്ന ഗുരുവായൂർ ക്ഷേത്രത്തിൽ ദിനംപ്രതി ഏകദേശം എത്ര ഭക്തർ സന്ദർശനം നടത്തുന്നു ?",
         "options": [
           "10,000",
           "25,000",
@@ -7487,7 +7415,7 @@
       {
         "id": 12,
         "question": "Cooperative farming societies in Kerala help small farmers by providing what collective benefit?",
-        "question_ml": "കേരളത്തിലെ സഹകരണ കൃഷി സംഘങ്ങൾ ചെറുകിട കർഷകരെ ഏത് കൂട്ടായ ആനുകൂല്യം നൽകി സഹായിക്കുന്നു?",
+        "question_ml": "കേരളത്തിലെ സഹകരണ കൃഷി സംഘങ്ങൾ ചെറുകിട കർഷകർക്ക് ഏത് കൂട്ടായ ആനുകൂല്യം നൽകി സഹായിക്കുന്നു?",
         "options": [
           "Individual marketing",
           "Collective bargaining power for prices, inputs, and market access",
@@ -7511,7 +7439,7 @@
       {
         "id": 13,
         "question": "How many fishing harbours and landing centres does Kerala have along its coastline?",
-        "question_ml": "തീരത്ത് കേരളത്തിൽ എത്ര ഫിഷിംഗ് ഹാർബറുകളും ലാൻഡിംഗ് സെന്ററുകളും ഉണ്ട്?",
+        "question_ml": "കേരളത്തിൽ എത്ര ഫിഷിംഗ് ഹാർബറുകളും ലാൻഡിംഗ് സെന്ററുകളും ഉണ്ട്?",
         "options": [
           "50+",
           "100+",
@@ -7535,7 +7463,7 @@
       {
         "id": 14,
         "question": "The cooperative movement in Kerala traces its roots to which year - one of India's oldest?",
-        "question_ml": "ഇന്ത്യയിലെ ഏറ്റവും പഴക്കമുള്ളവയിൽ ഒന്ന് - കേരളത്തിലെ സഹകരണ പ്രസ്ഥാനം ഏത് വർഷം?",
+        "question_ml": "ഇന്ത്യയിലെ ഏറ്റവും പഴക്കമുള്ള കേരളത്തിലെ സഹകരണ പ്രസ്ഥാനം ഏത് വർഷം ആരംഭിച്ചു ?",
         "options": [
           "1950",
           "1930",
@@ -7559,7 +7487,7 @@
       {
         "id": 15,
         "question": "Beypore port - one of Kerala's ancient ports - was historically famous for building which type of vessel?",
-        "question_ml": "കേരളത്തിന്റെ പുരാതന തുറമുഖങ്ങളിൽ ഒന്നായ ബേപ്പൂർ - ചരിത്രപരമായി ഏത് തരം കപ്പൽ നിർമ്മാണത്തിന്?",
+        "question_ml": "കേരളത്തിന്റെ പുരാതന തുറമുഖങ്ങളിൽ ഒന്നായ ബേപ്പൂർ, ചരിത്രപരമായി ഏത് തരം കപ്പൽ നിർമ്മാണത്തിനാണ് പ്രശസ്തി നേടിയിട്ടുള്ളത് ?",
         "options": [
           "Steam ships",
           "Uru (traditional wooden ships)",
@@ -7594,7 +7522,7 @@
       {
         "id": 1,
         "question": "Kerala's Infant Mortality Rate (IMR) is 5 per 1,000 live births. What is India's national average?",
-        "question_ml": "കേരളത്തിന്റെ ശിശുമരണ നിരക്ക് (IMR) 1,000 ജനനങ്ങളിൽ 5. ഇന്ത്യയുടെ ദേശീയ ശരാശരി എത്ര?",
+        "question_ml": "കേരളത്തിന്റെ ശിശുമരണ നിരക്ക് (IMR) 1,000 ജനനങ്ങളിൽ 5 ആണ്. ഇന്ത്യയുടെ ദേശീയ ശരാശരി എത്ര?",
         "options": [
           "12",
           "18",
@@ -7618,7 +7546,7 @@
       {
         "id": 2,
         "question": "Kerala's Maternal Mortality Ratio (MMR) of 20 per lakh live births is the lowest in India. The national average is approximately:",
-        "question_ml": "ഇന്ത്യയിലെ ഏറ്റവും കുറഞ്ഞ MMR ആയ ലക്ഷം ജനനങ്ങളിൽ 20 കേരളത്തിനുണ്ട്. ദേശീയ ശരാശരി ഏകദേശം:",
+        "question_ml": "ഇന്ത്യയിലെ ഏറ്റവും കുറഞ്ഞ MMR ആയ ലക്ഷം ജനനങ്ങളിൽ 20 കേരളത്തിലാണ്. ദേശീയ ശരാശരി ഏകദേശം എത്രയാണ്?",
         "options": [
           "45",
           "65",
@@ -7642,7 +7570,7 @@
       {
         "id": 3,
         "question": "Under the Aardram Mission, Kerala converted Primary Health Centres into Family Health Centres (FHCs). How many PHCs were targeted for upgrade?",
-        "question_ml": "ആർദ്രം മിഷനിൽ, കേരളം പ്രാഥമിക ആരോഗ്യ കേന്ദ്രങ്ങളെ ഫാമിലി ഹെൽത്ത് സെന്ററുകളാക്കി (FHC). എത്ര PHC-കൾ ലക്ഷ്യമിട്ടു?",
+        "question_ml": "ആർദ്രം മിഷനിൽ, കേരളം പ്രാഥമിക ആരോഗ്യ കേന്ദ്രങ്ങളെ ഫാമിലി ഹെൽത്ത് സെന്ററുകളാക്കി (FHC). എത്ര PHC-കൾ ആക്കി മാറ്റി?",
         "options": [
           "200",
           "500",
@@ -7690,7 +7618,7 @@
       {
         "id": 5,
         "question": "Kerala's Neonatal Mortality Rate (NMR) of 4 per 1,000 is the lowest in India. India's national NMR is:",
-        "question_ml": "ഇന്ത്യയിലെ ഏറ്റവും കുറഞ്ഞ 4 ആയ കേരളത്തിന്റെ NMR-ന് അപേക്ഷിച്ച്, ഇന്ത്യയുടെ ദേശീയ NMR:",
+        "question_ml": "ഇന്ത്യയിലെ ഏറ്റവും കുറഞ്ഞ NMR ആയ കേരളത്തിന്റെ ആയിരത്തിൽ 4 എന്ന കണക്ക് താരതമ്യം ചെയ്യുമ്പോൾ , ഇന്ത്യയുടെ ദേശീയ NMR എത്രയാണ് ?",
         "options": [
           "8",
           "12",
@@ -7708,7 +7636,7 @@
         "national_average": "India NMR: 19 per 1,000",
         "historical_benchmark": "Only 6 states have achieved SDG NMR target of ≤12",
         "flex_fact": "Kerala's NMR of 4 matches developed nations like Japan (1) and Sweden (2). India's NMR of 19 means a newborn is nearly 5x more likely to die nationally than in Kerala.",
-        "flex_fact_ml": "കേരളത്തിന്റെ NMR 4 - ജപ്പാൻ (1), സ്വീഡൻ (2) എന്നിവയ്ക്ക് തുല്യം. ഇന്ത്യ ശരാശരിയിൽ നവജാതശിശു കേരളത്തെക്കാൾ 5 മടങ്ങ് കൂടുതൽ മരിക്കാൻ സാധ്യത.",
+        "flex_fact_ml": "കേരളത്തിന്റെ NMR 4 - ജപ്പാൻ (1), സ്വീഡൻ (2) എന്നിവയ്ക്ക് തുല്യം. ഇന്ത്യൻ ശരാശരി കേരളത്തെക്കാൾ 5 മടങ്ങ് കൂടുതൽ .",
         "source": "Ministry of Health & Family Welfare / SRS Data"
       },
       {
@@ -7738,7 +7666,7 @@
       {
         "id": 7,
         "question": "What is Kerala's institutional delivery rate - proportion of births happening in hospitals - the highest in India?",
-        "question_ml": "ആശുപത്രിയിൽ നടക്കുന്ന പ്രസവങ്ങളുടെ അനുപാതമായ കേരളത്തിന്റെ സ്ഥാപന പ്രസവ നിരക്ക് - ഇന്ത്യയിലെ ഏറ്റവും ഉയർന്നത്?",
+        "question_ml": "ആശുപത്രിയിൽ നടക്കുന്ന പ്രസവങ്ങളുടെ അനുപാതമായ സ്ഥാപന പ്രസവ നിരക്ക് ഇന്ത്യയിലെ ഏറ്റവും ഉയർന്ന സംസ്‌ഥാനം കേരളത്തിലാണ്.അതെത്രയാണ്?",
         "options": [
           "85%",
           "92%",
@@ -7780,7 +7708,7 @@
         "national_average": "Rest of India combined: ~200 palliative care units",
         "historical_benchmark": "Kerala has 85%+ of India's total palliative care units",
         "flex_fact": "Kerala has more palliative care units than the rest of India combined. WHO and The Lancet have recognized the Kerala Palliative Care Model as a global best practice for end-of-life care.",
-        "flex_fact_ml": "ഇന്ത്യയിലെ മറ്റ് എല്ലാ സംസ്ഥാനങ്ങളും ചേർന്നതിനേക്കാൾ കൂടുതൽ പാലിയേറ്റീവ് കെയർ യൂണിറ്റുകൾ കേരളത്തിൽ. WHO, The Lancet ആഗോള മികച്ച ശീലമായി അംഗീകരിച്ചു.",
+        "flex_fact_ml": "ഇന്ത്യയിലെ മറ്റ് എല്ലാ സംസ്ഥാനങ്ങളും ചേർന്നതിനേക്കാൾ കൂടുതൽ പാലിയേറ്റീവ് കെയർ യൂണിറ്റുകൾ കേരളത്തിൽ. WHO, The Lancet ആഗോള മാതൃകയായി അംഗീകരിച്ചു .",
         "source": "Institute of Palliative Medicine, Calicut / WHO Reports"
       },
       {
@@ -7810,7 +7738,7 @@
       {
         "id": 10,
         "question": "What is Kerala's life expectancy at birth - the highest among all Indian states?",
-        "question_ml": "എല്ലാ ഇന്ത്യൻ സംസ്ഥാനങ്ങളിലും ഏറ്റവും ഉയർന്ന ജനനസമയത്തെ ആയുർദൈർഘ്യം?",
+        "question_ml": "എല്ലാ ഇന്ത്യൻ സംസ്ഥാനങ്ങളിലും വെച്ച് ഏറ്റവും ഉയർന്ന ജനനസമയ ആയുർദൈർഘ്യം കേരളത്തിലാണ്. അതെത്രയാണ് ?",
         "options": [
           "68 years",
           "72 years",
@@ -7852,7 +7780,7 @@
         "national_average": "Most states: cardiac care available only in tertiary hospitals",
         "historical_benchmark": "Pre-2016: Advanced cardiac care limited to Thiruvananthapuram and Kochi",
         "flex_fact": "Every district in Kerala now has free cath lab and cardiac surgery facilities. Previously, patients had to travel to Thiruvananthapuram or Kochi - often dying en route.",
-        "flex_fact_ml": "ഓരോ ജില്ലയിലും ഇപ്പോൾ സൗജന്യ കാത്ത് ലാബും ഹൃദയ ശസ്ത്രക്രിയ സൗകര്യവും. നേരത്തെ രോഗികൾ തിരുവനന്തപുരം/കൊച്ചിയിലേക്ക് യാത്ര ചെയ്യണമായിരുന്നു.",
+        "flex_fact_ml": "ഓരോ ജില്ലയിലും ഇപ്പോൾ സൗജന്യ കാത്ത് ലാബും ഹൃദയ ശസ്ത്രക്രിയ സൗകര്യവും. നേരത്തെ രോഗികൾക്ക് തിരുവനന്തപുരം/കൊച്ചിയിലേക്ക് യാത്ര ചെയ്യണമായിരുന്നു.",
         "source": "Kerala Health Dept / Hridayam Scheme"
       },
       {
@@ -7876,7 +7804,7 @@
         "national_average": "Most states struggled for weeks to set up food distribution",
         "historical_benchmark": "No precedent existed for this scale of emergency feeding",
         "flex_fact": "While other states scrambled, Kerala's Kudumbashree network activated 1,000+ community kitchens within 24 hours - feeding 35 lakh migrant workers with hot meals delivered to their doorstep.",
-        "flex_fact_ml": "മറ്റ് സംസ്ഥാനങ്ങൾ പാടുപെടുമ്പോൾ, Kudumbashree 24 മണിക്കൂറിനുള്ളിൽ 1,000+ കമ്മ്യൂണിറ്റി കിച്ചണുകൾ സജീവമാക്കി - 35 ലക്ഷം കുടിയേറ്റ തൊഴിലാളികൾക്ക് ചൂടുള്ള ഭക്ഷണം.",
+        "flex_fact_ml": "മറ്റ് സംസ്ഥാനങ്ങൾ പാടുപെടുമ്പോൾ, കുടുംബശ്രീ 24 മണിക്കൂറിനുള്ളിൽ 1,000+ കമ്മ്യൂണിറ്റി കിച്ചണുകൾ സജീവമാക്കി - 35 ലക്ഷം കുടിയേറ്റ തൊഴിലാളികൾക്ക് ചൂടുള്ള ഭക്ഷണം.",
         "source": "Kerala Civil Supplies Dept / COVID-19 Control Room Data 2020"
       },
       {
@@ -7900,7 +7828,7 @@
         "national_average": "Only 12 states/UTs have achieved the SDG U5MR target",
         "historical_benchmark": "India's average U5MR has declined 78% since 1990",
         "flex_fact": "A child under 5 in Kerala is safer than in many European countries. Kerala's U5MR of 8 compares with UK (4.3) and better than Mexico (13).",
-        "flex_fact_ml": "കേരളത്തിലെ 5 വയസ്സിന് താഴെയുള്ള കുട്ടി പല യൂറോപ്യൻ രാജ്യങ്ങളെക്കാളും സുരക്ഷിതം. U5MR 8 - UK (4.3), മെക്സിക്കോ (13).",
+        "flex_fact_ml": "കേരളത്തിലെ 5 വയസ്സിന് താഴെയുള്ള കുട്ടികൾ പല യൂറോപ്യൻ രാജ്യങ്ങളെക്കാളും സുരക്ഷിതർ . U5MR 8 - UK (4.3), മെക്സിക്കോ (13).",
         "source": "Ministry of Health & Family Welfare"
       },
       {
@@ -7924,7 +7852,7 @@
         "national_average": "No other state has universal cancer screening at PHC level",
         "historical_benchmark": "Launched as part of Aardram Mission's FHC upgrade",
         "flex_fact": "Snehi screens for breast, cervical, and oral cancers at the primary care level - catching cancer early when it's treatable. No other Indian state offers this at PHC scale.",
-        "flex_fact_ml": "സ്നേഹി പ്രാഥമിക പരിചരണ തലത്തിൽ സ്തനം, ഗർഭാശയ ഗ്രീവ, വായ ക്യാൻസർ സ്ക്രീനിങ് - ചികിത്സിക്കാവുന്ന ഘട്ടത്തിൽ നേരത്തെ കണ്ടെത്തൽ.",
+        "flex_fact_ml": "സ്നേഹി പ്രാഥമിക പരിചരണ തലത്തിൽ സ്തനം, ഗർഭാശയ, വായ ക്യാൻസർ സ്ക്രീനിങ് - ചികിത്സിക്കാവുന്ന ഘട്ടത്തിൽ നേരത്തെ കണ്ടെത്തൽ.",
         "source": "Kerala Health Dept / Aardram Mission"
       },
       {
@@ -7965,7 +7893,7 @@
       {
         "id": 1,
         "question": "Kerala's marine fish production is approximately how much annually - among India's top producing states?",
-        "question_ml": "ഇന്ത്യയിൽ ഏറ്റവും കൂടുതൽ ഉത്പാദിപ്പിക്കുന്ന സംസ്ഥാനങ്ങളിൽ - കേരളത്തിന്റെ സമുദ്ര മത്സ്യ ഉത്പാദനം വാർഷികമായി ഏകദേശം?",
+        "question_ml": "ഇന്ത്യയിൽ ഏറ്റവും കൂടുതൽ ഉത്പാദിപ്പിക്കുന്ന സംസ്ഥാനങ്ങളിൽ ഒന്നായ കേരളത്തിന്റെ സമുദ്ര മത്സ്യ ഉത്പാദനം വർഷത്തിൽ എത്രയാണ്?",
         "options": [
           "3 Lakh tonnes",
           "5 Lakh tonnes",
@@ -7989,7 +7917,7 @@
       {
         "id": 2,
         "question": "Kerala's International Film Festival (IFFK) is ranked among the top how many film festivals in Asia?",
-        "question_ml": "കേരളത്തിന്റെ അന്താരാഷ്ട്ര ചലച്ചിത്ര മേള (IFFK) ഏഷ്യയിലെ ടോപ് എത്ര ചലച്ചിത്ര മേളകളിൽ?",
+        "question_ml": "ഏഷ്യയിലെ മികച്ച ചലച്ചിത്ര മേളകളിൽ എത്രാമത് സ്‌ഥാനമാണ് കേരളത്തിന്റെ അന്താരാഷ്ട്ര ചലച്ചിത്ര മേളക്ക് (IFFK) ?",
         "options": [
           "Top 20",
           "Top 10",
@@ -8013,7 +7941,7 @@
       {
         "id": 3,
         "question": "Matsyafed (Kerala State Co-operative Federation for Fisheries Development) supports how many fishermen families?",
-        "question_ml": "മത്സ്യഫെഡ് (കേരള സ്റ്റേറ്റ് കോ-ഓപ്പറേറ്റീവ് ഫെഡറേഷൻ ഫോർ ഫിഷറീസ് ഡെവലപ്‌മെന്റ്) എത്ര മത്സ്യത്തൊഴിലാളി കുടുംബങ്ങളെ?",
+        "question_ml": "മത്സ്യഫെഡ് (കേരള സ്റ്റേറ്റ് കോ-ഓപ്പറേറ്റീവ് ഫെഡറേഷൻ ഫോർ ഫിഷറീസ് ഡെവലപ്‌മെന്റ്) എത്ര മത്സ്യത്തൊഴിലാളി കുടുംബങ്ങളെ സഹായിക്കുന്നു ?",
         "options": [
           "50,000+",
           "1 Lakh+",
@@ -8061,7 +7989,7 @@
       {
         "id": 5,
         "question": "Kerala's Youth Commission was the first in India - providing what service to the state's youth?",
-        "question_ml": "ഇന്ത്യയിൽ ആദ്യത്തേതായ കേരളത്തിന്റെ യൂത്ത് കമ്മീഷൻ സംസ്ഥാനത്തെ യുവാക്കൾക്ക് ഏത് സേവനം?",
+        "question_ml": "ഇന്ത്യയിൽ ആദ്യത്തേതായ കേരളത്തിന്റെ യൂത്ത് കമ്മീഷൻ സംസ്ഥാനത്തെ യുവാക്കൾക്ക് ഏത് സേവനം ലഭ്യമാക്കുന്നു ?",
         "options": [
           "Military training",
           "Policy advocacy and grievance redressal for youth",
@@ -8085,7 +8013,7 @@
       {
         "id": 6,
         "question": "Kathakali, Mohiniyattam, and Koodiyattam - Kerala's classical art forms - have been recognized by UNESCO as what?",
-        "question_ml": "കഥകളി, മോഹിനിയാട്ടം, കൂടിയാട്ടം - കേരളത്തിന്റെ ശാസ്ത്രീയ കലാരൂപങ്ങൾ - UNESCO ഏതായി അംഗീകരിച്ചു?",
+        "question_ml": "കേരളത്തിന്റെ ശാസ്ത്രീയ കലാരൂപങ്ങൾ ആയ കഥകളി, മോഹിനിയാട്ടം, കൂടിയാട്ടം എന്നിവക്ക് UNESCO എന്ത് അംഗീകാരം നൽകി ?",
         "options": [
           "World Heritage Sites",
           "Intangible Cultural Heritage of Humanity",
@@ -8109,7 +8037,7 @@
       {
         "id": 7,
         "question": "Kerala's deep-sea fishing fleet has been modernized with how many mechanized boats?",
-        "question_ml": "കേരളത്തിന്റെ ആഴക്കടൽ മത്സ്യബന്ധന കപ്പൽ എത്ര യന്ത്രവൽകൃത ബോട്ടുകളുമായി നവീകരിച്ചു?",
+        "question_ml": "കേരളത്തിലെ ആഴക്കടൽ മത്സ്യബന്ധന കപ്പൽശാല എത്ര യന്ത്രവൽകൃത ബോട്ടുകൾ ഉൾപ്പെടുത്തി നവീകരിച്ചു?",
         "options": [
           "5,000+",
           "10,000+",
@@ -8157,7 +8085,7 @@
       {
         "id": 9,
         "question": "How many youth clubs and Nehru Yuva Kendra units operate across Kerala for youth empowerment?",
-        "question_ml": "യുവശാക്തീകരണത്തിനായി കേരളത്തിലുടനീളം എത്ര യൂത്ത് ക്ലബ്ബുകളും നെഹ്റു യുവ കേന്ദ്ര യൂണിറ്റുകളും?",
+        "question_ml": "യുവശാക്തീകരണത്തിനായി കേരളത്തിലുടനീളം എത്ര യൂത്ത് ക്ലബ്ബുകളും നെഹ്റു യുവ കേന്ദ്ര യൂണിറ്റുകളും ഉണ്ട് ?",
         "options": [
           "2,000+",
           "5,000+",
@@ -8181,7 +8109,7 @@
       {
         "id": 10,
         "question": "Onam - Kerala's biggest festival - celebrates the legend of which king's annual return?",
-        "question_ml": "കേരളത്തിന്റെ ഏറ്റവും വലിയ ഉത്സവമായ ഓണം ഏത് രാജാവിന്റെ വാർഷിക വരവിന്റെ ഐതിഹ്യം?",
+        "question_ml": "കേരളത്തിലെ ഏറ്റവും വലിയ ഉത്സവമായ ഓണം ഏത് രാജാവിന്റെ വാർഷിക തിരിച്ചുവരവിന്റെ ഐതിഹ്യം ആഘോഷിക്കുന്നു?",
         "options": [
           "Raja Raja Chola",
           "Mahabali",
@@ -8205,7 +8133,7 @@
       {
         "id": 11,
         "question": "Kerala's fish per capita consumption is among the highest in India at approximately how much per year?",
-        "question_ml": "ഇന്ത്യയിൽ ഏറ്റവും ഉയർന്ന ആളോഹരി മത്സ്യ ഉപഭോഗത്തിൽ - കേരളത്തിൽ വാർഷികമായി ഏകദേശം?",
+        "question_ml": "ഇന്ത്യയിലെ ഏറ്റവും ഉയർന്ന മത്സ്യ ഉപഭോഗം കേരളത്തിലാണ്, അതായത് പ്രതിവർഷം എത്ര?",
         "options": [
           "5 kg",
           "10 kg",
@@ -8229,7 +8157,7 @@
       {
         "id": 12,
         "question": "Kerala's Nehru Trophy Boat Race on Vembanad Lake features what type of boats?",
-        "question_ml": "വേമ്പനാട് കായലിലെ നെഹ്‌റു ട്രോഫി വള്ളംകളിയിൽ ഏത് തരം വള്ളങ്ങൾ?",
+        "question_ml": "വേമ്പനാട് തടാകത്തിൽ നടക്കുന്ന കേരളത്തിലെ നെഹ്‌റു ട്രോഫി വള്ളംകളിയിൽ ഏതൊക്കെ തരം വള്ളങ്ങളാണ് പങ്കെടുക്കുന്നത്?",
         "options": [
           "Motor boats",
           "Chundan Vallom (snake boats)",
@@ -8253,7 +8181,7 @@
       {
         "id": 13,
         "question": "Kerala's fishermen insurance scheme provides coverage of how much - among the highest for fishing communities?",
-        "question_ml": "കേരളത്തിന്റെ മത്സ്യത്തൊഴിലാളി ഇൻഷുറൻസ് പദ്ധതി - മത്സ്യബന്ധന സമൂഹങ്ങൾക്ക് ഏറ്റവും ഉയർന്നതിൽ - എത്ര കവറേജ്?",
+        "question_ml": "കേരളത്തിലെ മത്സ്യത്തൊഴിലാളി ഇൻഷുറൻസ് പദ്ധതി എത്ര തുകയുടെ പരിരക്ഷ നൽകുന്നു - മത്സ്യബന്ധന സമൂഹങ്ങൾക്ക് ഏറ്റവും ഉയർന്ന തുകകളിൽ ഒന്ന്?",
         "options": [
           "₹1 Lakh",
           "₹3 Lakh",
@@ -8277,7 +8205,7 @@
       {
         "id": 14,
         "question": "How many libraries does Kerala have - contributing to India's highest reading culture?",
-        "question_ml": "ഇന്ത്യയിലെ ഏറ്റവും ഉയർന്ന വായനാ സംസ്കാരത്തിന് - കേരളത്തിൽ എത്ര ലൈബ്രറികൾ ഉണ്ട്?",
+        "question_ml": "ഇന്ത്യയിലെ ഏറ്റവും ഉയർന്ന വായനാ സംസ്കാരത്തിന് സംഭാവന നൽകുന്ന എത്ര ലൈബ്രറികളാണ് കേരളത്തിൽ ഉള്ളത്?",
         "options": [
           "2,000+",
           "5,000+",
@@ -8301,7 +8229,7 @@
       {
         "id": 15,
         "question": "The Kochi-Muziris Biennale - India's largest art exhibition - was first held in which year?",
-        "question_ml": "ഇന്ത്യയിലെ ഏറ്റവും വലിയ കലാ പ്രദർശനമായ കൊച്ചി-മുസിരിസ് ബിനാലെ ആദ്യം ഏത് വർഷം?",
+        "question_ml": "ഇന്ത്യയിലെ ഏറ്റവും വലിയ കലാ പ്രദർശനമായ കൊച്ചി-മുസിരിസ് ബിനാലെ തുടങ്ങിയത് ഏത് വർഷം?",
         "options": [
           "2008",
           "2010",
