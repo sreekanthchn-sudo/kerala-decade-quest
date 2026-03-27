@@ -63,13 +63,13 @@
         "options": [
           "2018",
           "2019",
-          "2021",
+          "2020",
           "2023"
         ],
         "options_ml": [
           "2018",
           "2019",
-          "2021",
+          "2020",
           "2023"
         ],
         "answer": 2,
@@ -183,17 +183,17 @@
         "options": [
           "12",
           "18",
-          "27",
+          "25",
           "35"
         ],
         "options_ml": [
           "12",
           "18",
-          "27",
+          "25",
           "35"
         ],
         "answer": 2,
-        "kerala_stat_2026": "Kerala IMR: 8 per 1,000 live births",
+        "kerala_stat_2026": "Kerala IMR: 5 per 1,000 live births",
         "national_average": "India national IMR: 27 per 1,000 live births",
         "historical_benchmark": "Kerala IMR in 2015: 12; reduced to 8 by 2023",
         "flex_fact": "Kerala's IMR of 5 is comparable to developed nations like the UK (3.7) and USA (5.4) - while India's average of 27 is still higher than Bangladesh (24).",
