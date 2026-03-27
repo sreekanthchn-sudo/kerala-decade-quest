@@ -293,7 +293,31 @@
         "national_average": "-",
         "historical_benchmark": "-",
         "flex_fact": "The scheme was launched to support financially vulnerable women. Focuses on inclusive welfare. It includes trans women aged 35-60",
-        "flex_fact_ml": "2026-ൽ പദ്ധതി ആരംഭിച്ചു.",
+        "flex_fact_ml": "സംസ്ഥാനത്ത് നടപ്പിലാക്കി വരുന്ന സാമൂഹ്യക്ഷേമ പദ്ധതികളിലൊന്നിലും ഗുണഭോക്താക്കളല്ലാത്ത 35 മുതൽ 60 വരെ പ്രായമുള്ള ട്രാൻസ് വുമൺ ഉൾപ്പെടെയുള്ള സ്ത്രീകൾക്ക് പ്രതിമാസം 1000/- രൂപ ധനസഹായം ഉറപ്പാക്കുന്നതാണ് പദ്ധതി. 2026 ൽ ആരംഭിച്ച ഈ പദ്ധതിയുടെ അനുകൂല്യം 10.18 ലക്ഷം സ്ത്രീകൾക്ക് ലഭ്യമാണ്.",
+        "source": "-"
+      },
+      {
+        "id": 13,
+        "question": "Which city has India's first Water Metro?",
+        "question_ml": "രാജ്യത്തിലെ ആദ്യ വാട്ടർ മെട്രോ ഏത് നഗരത്തിലാണ്?",
+        "options": [
+          "Kochi",
+          "Kollam",
+          "Trivandrum",
+          "Alappuza"
+        ],
+        "options_ml": [
+          "കൊച്ചി",
+          "കൊല്ലം",
+          "തിരുവനന്തപുരം",
+          "കോഴിക്കോട്"
+        ],
+        "answer": 0,
+        "kerala_stat_2026": "കൊച്ചി",
+        "national_average": "-",
+        "historical_benchmark": "-",
+        "flex_fact": "Water Metro India’s first water metro project. Launched for urban transport. Connects islands with the city.",
+        "flex_fact_ml": "ദ്വീപുകളെ നഗരത്തോട് ബന്ധിപ്പിക്കുന്ന 1136 കോടി രൂപയുടെ ഈ പദ്ധതി ഗതാഗതക്കുരുക്കിൽ വീർപ്പുമുട്ടിയിരുന്ന കൊച്ചിയുടെ യാത്രാക്ലേശങ്ങൾക്ക് വലിയ ആശ്വാസമാണ് നൽകുന്നത്.76 കിലോമീറ്റർ നീളുന്ന ജലപാതയിൽ പരിസ്ഥിതി സൗഹൃദമായ അത്യാധുനിക എസി ബോട്ടുകൾ ഇതിനോടകം ജനങ്ങളുടെ ദൈനംദിന യാത്രാനുഭവമായി മാറിക്കഴിഞ്ഞു.",
         "source": "-"
       }
     ]
@@ -1787,7 +1811,7 @@
         "options": [
           "Freedom from Waste (Malinyathil ninnu Swathanthryam)",
           "Waste-free New Kerala (Malinyamuktha Navakerala)",
-          "Ini Njan Ozhukatte (Let me flow now",
+          "Ini Njan Ozhukatte (Let me flow now)",
           "Sujalam Subhalam"
         ],
         "options_ml": [
@@ -1863,7 +1887,7 @@
           "Punarjjani"
         ],
         "options_ml": [
-          "നീരുറവ് (ans)",
+          "നീരുറവ്",
           "പുനരുജ്ജീവനം",
           "ജലാഞ്ജലി",
           "പുനർജ്ജനി"
@@ -1889,7 +1913,7 @@
         "options_ml": [
           "മണ്ണിന് ജലം",
           "തെളിനീരിന്റെ നവകേരളം",
-          "ജലമാണ് ജീവൻ (ans)",
+          "ജലമാണ് ജീവൻ",
           "ശുചിത്വ കേരളം സുസ്ഥിര കേരളം"
         ],
         "answer": 2,
