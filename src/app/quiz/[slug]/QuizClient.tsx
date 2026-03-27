@@ -3,7 +3,7 @@
 import { useState, useCallback, useMemo, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import {
-  ArrowLeft, ArrowRight, RotateCcw, Share2, ChevronRight, Trophy,
+  ArrowRight, RotateCcw, Share2, ChevronRight, Trophy,
   Sparkles, Timer, Volume2, VolumeX, Flame,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -76,6 +76,21 @@ export default function QuizClient({ slug }: { slug: string }) {
   const question = shuffledQuestions[currentIndex];
   const isCorrect = selectedOption === question?.answer;
   const isMl = lang === 'ml';
+
+  // Prevent browser back from being used to retry an active round.
+  useEffect(() => {
+    if (finished || typeof window === 'undefined') return;
+
+    const trapState = { quizSlug: slug, quizGuard: true };
+    window.history.pushState(trapState, '', window.location.href);
+
+    const onPopState = () => {
+      window.history.pushState(trapState, '', window.location.href);
+    };
+
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, [slug, finished]);
 
   // Get text in current language with fallback
   const q = useMemo(() => {
@@ -363,12 +378,7 @@ export default function QuizClient({ slug }: { slug: string }) {
       <div className="relative z-10 flex-1 flex flex-col max-w-lg mx-auto w-full px-4 pt-3 pb-0">
         {/* Compact top bar — back + score + controls */}
         <div className="flex items-center justify-between mb-3 shrink-0">
-          <Link
-            href="/"
-            className="flex items-center gap-1 p-1.5 rounded-lg text-white/80 hover:text-[#facc15] active:opacity-80 transition-colors"
-          >
-            <ArrowLeft className="w-5 h-5" />
-          </Link>
+          <div className="w-8 h-8 shrink-0" aria-hidden />
 
           {/* Center: ministry name + progress */}
           <div className="flex-1 mx-3 min-w-0">

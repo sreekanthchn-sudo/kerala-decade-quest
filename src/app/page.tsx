@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { createPortal } from 'react-dom';
 import Link from 'next/link';
-import { ArrowLeft, RotateCcw, Share2, Trophy } from 'lucide-react';
+import { RotateCcw, Share2, Trophy } from 'lucide-react';
 import modulesData from '@/data/decade_records.json';
 import { useSound } from '@/hooks/useSound';
 import type { Module, Question } from '@/types';
@@ -375,22 +375,7 @@ export default function HomePage() {
             <div className="absolute inset-0 z-0 quiz-game-scrim-contained pointer-events-none rounded-[21px]" aria-hidden />
             <div className="relative z-10 p-4 sm:p-5 lg:p-7 xl:p-8">
               <div className="flex items-center justify-between mb-2 lg:mb-3">
-                {currentIndex > 0 ? (
-                  <button
-                    type="button"
-                    onClick={() => {
-                      playClick();
-                      setCurrentIndex((i) => i - 1);
-                      setSelectedOption(null);
-                    }}
-                    className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border-2 border-white/20 bg-black/30 text-white/90 transition-all hover:text-[#facc15] active:scale-95"
-                    aria-label={isMl ? 'മുമ്പത്തെ ചോദ്യം' : 'Previous question'}
-                  >
-                    <ArrowLeft className="h-5 w-5" />
-                  </button>
-                ) : (
-                  <span className="inline-block h-9 w-9 shrink-0" aria-hidden />
-                )}
+                <span className="inline-block h-9 w-9 shrink-0" aria-hidden />
 
                 <div className="flex items-center gap-1.5 rounded-full border-2 border-black bg-[#facc15] px-3 py-1 shadow-[2px_2px_0_0_#000]">
                   <Trophy className="h-4 w-4 text-black" />
